@@ -163,7 +163,7 @@ h3 {
 
 .details-panel {
   max-height: var(--top-card-height);
-  overflow: auto;
+  overflow: hidden;
   padding: 18px;
 }
 
@@ -741,11 +741,17 @@ tr.clickable-row:hover {
   font-size: 0.9rem;
 }
 
-.edit-lock-button {
+.species-edit-top-actions {
   grid-column: 3;
   grid-row: 1 / 3;
+  display: inline-flex;
+  gap: 4px;
   align-self: start;
   justify-self: end;
+}
+
+.edit-lock-button,
+.edit-save-button {
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface-soft);
@@ -760,13 +766,19 @@ tr.clickable-row:hover {
   background: #e4eee7;
 }
 
+.edit-save-button {
+  color: var(--accent-strong);
+}
+
 .species-edit-form.is-locked .detail-control input,
 .species-edit-form.is-locked .detail-control select,
 .species-edit-form.is-locked .detail-control textarea,
 .species-edit-form.is-locked .dot-picker-dropdown summary,
 .species-edit-form.is-locked .single-picker-dropdown summary,
 .species-edit-form.is-locked .multi-text-picker-dropdown summary,
-.species-edit-form.is-locked .species-edit-actions button {
+.species-edit-form.is-locked .lookalike-add,
+.species-edit-form.is-locked .lookalike-remove,
+.species-edit-form.is-locked .edit-save-button {
   cursor: not-allowed;
   opacity: 0.62;
 }
@@ -1053,6 +1065,123 @@ tr.clickable-row:hover {
   background: #d9f2e4;
 }
 
+.lookalikes-editor {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px;
+  gap: 6px;
+  align-items: start;
+}
+
+.lookalikes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: 0;
+}
+
+.lookalike-item {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 3px 2px 7px;
+  background: var(--surface-soft);
+}
+
+.lookalike-name-chip {
+  max-width: 150px;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lookalike-add,
+.lookalike-remove {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--accent-strong);
+  font-weight: 900;
+}
+
+.lookalike-add {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+
+.lookalike-remove {
+  width: 18px;
+  height: 18px;
+  font-size: 0.72rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(31, 41, 36, 0.34);
+}
+
+.lookalike-modal {
+  width: min(420px, 100%);
+  display: grid;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.modal-field {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.modal-field input,
+.modal-field textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 8px;
+  background: var(--surface-soft);
+  color: var(--text);
+  font-weight: 400;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.modal-actions button {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 10px;
+  background: var(--surface-soft);
+}
+
+.modal-actions button[type="submit"] {
+  border-color: var(--accent);
+  background: #d9f2e4;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
 .advanced-detail-fields {
   border-top: 1px solid var(--border);
   padding-top: 4px;
@@ -1067,19 +1196,6 @@ tr.clickable-row:hover {
 
 .advanced-detail-fields .detail-edit-row:first-of-type {
   margin-top: 5px;
-}
-
-.species-edit-actions {
-  position: sticky;
-  bottom: 0;
-  margin-top: 2px;
-  border-top: 1px solid var(--border);
-  padding-top: 6px;
-  background: var(--surface);
-}
-
-.species-edit-actions .secondary-button {
-  width: 100%;
 }
 
 .detail-missing {

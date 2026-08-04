@@ -587,6 +587,16 @@
     scientificName.className = "scientific-name";
     scientificName.textContent = formatScientificName(species.vetenskapligt_namn);
 
+    const editActions = document.createElement("div");
+    editActions.className = "species-edit-top-actions";
+
+    const saveButton = document.createElement("button");
+    saveButton.type = "submit";
+    saveButton.className = "edit-save-button";
+    saveButton.setAttribute("aria-label", "Spara och ladda ner JSON");
+    saveButton.title = "Spara och ladda ner JSON";
+    saveButton.textContent = "💾";
+
     const lockButton = document.createElement("button");
     lockButton.type = "button";
     lockButton.className = "edit-lock-button";
@@ -596,7 +606,8 @@
     lockButton.textContent = "🔒";
     lockButton.addEventListener("click", () => toggleSpeciesEditLock(form, lockButton));
 
-    nameRow.append(swedishName, scientificName, lockButton);
+    editActions.append(saveButton, lockButton);
+    nameRow.append(swedishName, scientificName, editActions);
     form.append(nameRow);
 
     const advancedDetails = document.createElement("details");
@@ -621,16 +632,6 @@
 
     form.append(advancedDetails);
 
-    const actions = document.createElement("div");
-    actions.className = "species-edit-actions";
-
-    const saveButton = document.createElement("button");
-    saveButton.type = "submit";
-    saveButton.className = "secondary-button";
-    saveButton.textContent = "Spara och ladda ner JSON";
-
-    actions.append(saveButton);
-    form.append(actions);
     setSpeciesFormLocked(form, true);
     elements.details.append(form);
   }
@@ -651,7 +652,7 @@
       button.title = isLocked ? "Lås upp redigering" : "Lås redigering";
     }
 
-    form.querySelectorAll("input, select, textarea, .dot-toggle, .dot-picker-dropdown summary, .single-picker-option, .single-picker-dropdown summary, .multi-text-picker-option, .multi-text-picker-dropdown summary, .species-edit-actions button").forEach((control) => {
+    form.querySelectorAll("input, select, textarea, .dot-toggle, .dot-picker-dropdown summary, .single-picker-option, .single-picker-dropdown summary, .multi-text-picker-option, .multi-text-picker-dropdown summary, .lookalike-add, .lookalike-remove, .edit-save-button").forEach((control) => {
       if (control.classList.contains("edit-lock-button")) {
         return;
       }
@@ -713,6 +714,10 @@
 
     if (field.type === "textlista") {
       return createTextareaControl(id, field.key, normalizeSpeciesValues(value).join("\n"), "lines");
+    }
+
+    if (field.key === "forvaxlingsarter") {
+      return createLookalikesControl(id, field.key, value);
     }
 
     if (field.type === "objektlista") {
@@ -857,6 +862,161 @@
     optionsWrap.querySelectorAll(".multi-text-picker-option[data-value]").forEach((button) => {
       button.setAttribute("aria-pressed", String(selected.has(button.dataset.value)));
     });
+  }
+
+  function createLookalikesControl(id, name, value) {
+    const lookalikes = Array.isArray(value) ? [...value] : [];
+    const group = document.createElement("div");
+    group.className = "lookalikes-editor";
+    group.id = id;
+
+    const hidden = document.createElement("input");
+    hidden.type = "hidden";
+    hidden.name = name;
+    hidden.dataset.valueType = "json";
+    group.append(hidden);
+
+    const list = document.createElement("div");
+    list.className = "lookalikes-list";
+
+    const addButton = document.createElement("button");
+    addButton.type = "button";
+    addButton.className = "lookalike-add";
+    addButton.textContent = "+";
+    addButton.setAttribute("aria-label", "Lägg till förväxlingsart");
+    addButton.title = "Lägg till förväxlingsart";
+    addButton.addEventListener("click", () => {
+      openLookalikeModal((lookalike) => {
+        lookalikes.push(lookalike);
+        syncLookalikesControl(hidden, list, lookalikes);
+      });
+    });
+
+    group.append(list, addButton);
+    syncLookalikesControl(hidden, list, lookalikes);
+    return group;
+  }
+
+  function syncLookalikesControl(hidden, list, lookalikes) {
+    hidden.value = JSON.stringify(lookalikes);
+    list.replaceChildren();
+
+    if (lookalikes.length === 0) {
+      const empty = document.createElement("span");
+      empty.className = "detail-missing";
+      empty.textContent = "? Uppgift saknas";
+      list.append(empty);
+      return;
+    }
+
+    lookalikes.forEach((lookalike, index) => {
+      const item = document.createElement("div");
+      item.className = "lookalike-item";
+      item.title = formatLookalikeTooltip(lookalike);
+
+      const nameLine = document.createElement("span");
+      nameLine.className = "lookalike-name-chip";
+      nameLine.textContent = capitalizeFirst(lookalike.svenskt_namn) || getSpeciesEpithet(lookalike.vetenskapligt_namn) || "Namnlös";
+
+      const removeButton = document.createElement("button");
+      removeButton.type = "button";
+      removeButton.className = "lookalike-remove";
+      removeButton.textContent = "x";
+      removeButton.setAttribute("aria-label", "Ta bort förväxlingsart");
+      removeButton.addEventListener("click", () => {
+        lookalikes.splice(index, 1);
+        syncLookalikesControl(hidden, list, lookalikes);
+      });
+
+      item.append(nameLine, removeButton);
+      list.append(item);
+    });
+  }
+
+  function formatLookalikeTooltip(lookalike) {
+    return [
+      formatScientificName(lookalike.vetenskapligt_namn),
+      lookalike.skillnad ? `Skillnad: ${lookalike.skillnad}` : "Ingen skillnad angiven"
+    ].filter(Boolean).join("\n");
+  }
+
+  function openLookalikeModal(onSubmit) {
+    const overlay = document.createElement("div");
+    overlay.className = "modal-overlay";
+
+    const modal = document.createElement("form");
+    modal.className = "lookalike-modal";
+    modal.setAttribute("role", "dialog");
+    modal.setAttribute("aria-modal", "true");
+    modal.setAttribute("aria-label", "Lägg till förväxlingsart");
+
+    const heading = document.createElement("h3");
+    heading.textContent = "Förväxlingsart";
+
+    const swedishInput = createModalInput("modal-svenskt-namn", "Svenskt namn");
+    const scientificInput = createModalInput("modal-vetenskapligt-namn", "Vetenskapligt namn");
+    const differenceInput = createModalTextarea("modal-skillnad", "Viktig skillnad");
+
+    const actions = document.createElement("div");
+    actions.className = "modal-actions";
+
+    const cancelButton = document.createElement("button");
+    cancelButton.type = "button";
+    cancelButton.textContent = "Avbryt";
+    cancelButton.addEventListener("click", () => overlay.remove());
+
+    const addButton = document.createElement("button");
+    addButton.type = "submit";
+    addButton.textContent = "Lägg till";
+
+    actions.append(cancelButton, addButton);
+    modal.append(heading, swedishInput.wrapper, scientificInput.wrapper, differenceInput.wrapper, actions);
+    overlay.append(modal);
+    document.body.append(overlay);
+
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) {
+        overlay.remove();
+      }
+    });
+
+    modal.addEventListener("submit", (event) => {
+      event.preventDefault();
+      onSubmit({
+        svenskt_namn: swedishInput.input.value.trim(),
+        vetenskapligt_namn: scientificInput.input.value.trim(),
+        skillnad: differenceInput.input.value.trim()
+      });
+      overlay.remove();
+    });
+
+    swedishInput.input.focus();
+  }
+
+  function createModalInput(id, labelText) {
+    const wrapper = document.createElement("label");
+    wrapper.className = "modal-field";
+    wrapper.htmlFor = id;
+    wrapper.textContent = labelText;
+
+    const input = document.createElement("input");
+    input.id = id;
+    input.type = "text";
+    wrapper.append(input);
+    return { wrapper, input };
+  }
+
+  function createModalTextarea(id, labelText) {
+    const wrapper = document.createElement("label");
+    wrapper.className = "modal-field";
+    wrapper.htmlFor = id;
+    wrapper.textContent = labelText;
+
+    const input = document.createElement("textarea");
+    input.id = id;
+    input.rows = 3;
+    wrapper.append(input);
+    return { wrapper, input };
   }
 
   function createDotToggleControl(id, field, value) {
