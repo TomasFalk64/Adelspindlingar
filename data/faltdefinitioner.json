@@ -3,11 +3,9 @@
     "vetenskapligt_namn": {
       "typ": "text"
     },
-
     "svenskt_namn": {
       "typ": "text"
     },
-
     "skivfarg_unga": {
       "typ": "flerval",
       "alternativ": [
@@ -16,7 +14,6 @@
         "gråvit"
       ]
     },
-
     "koh_hatt": {
       "typ": "flerval",
       "alternativ": [
@@ -26,7 +23,6 @@
         "brun"
       ]
     },
-
     "koh_fotknol": {
       "typ": "flerval",
       "alternativ": [
@@ -36,7 +32,6 @@
         "brun"
       ]
     },
-
     "koh_kott": {
       "typ": "flerval",
       "alternativ": [
@@ -46,7 +41,6 @@
         "brun"
       ]
     },
-
     "fotknol_form": {
       "typ": "flerval",
       "alternativ": [
@@ -55,15 +49,13 @@
         "ingen bulb"
       ]
     },
-
     "miljo": {
       "typ": "flerval",
       "alternativ": [
-        "lövskog",
-        "barrskog"
+        "Lövskog",
+        "Barrskog"
       ]
     },
-
     "tradslag": {
       "typ": "flerval",
       "alternativ": [
@@ -79,22 +71,34 @@
         "sälg"
       ]
     },
-
     "hattfarg": {
       "typ": "flerval",
-      "alternativ": []
+      "alternativ": [
+        "blå",
+        "gul",
+        "gråvit",
+        "grön",
+        "röd",
+        "brun",
+        "?"
+      ]
     },
-
     "fotfarg": {
       "typ": "flerval",
-      "alternativ": []
+      "alternativ": [
+        "blå",
+        "gul",
+        "gråvit",
+        "grön",
+        "röd",
+        "brun",
+        "?"
+      ]
     },
-
     "lukt": {
       "typ": "flerval",
       "alternativ": []
     },
-
     "fruktkroppstid": {
       "typ": "flerval",
       "alternativ": [
@@ -103,11 +107,9 @@
         "höst"
       ]
     },
-
     "viktiga_karaktarer": {
       "typ": "textlista"
     },
-
     "forvaxlingsarter": {
       "typ": "objektlista",
       "falt": {
@@ -122,7 +124,6 @@
         }
       }
     },
-
     "bilder": {
       "typ": "objektlista",
       "falt": {
@@ -139,8 +140,13 @@
           "typ": "text"
         }
       }
+    },
+    "hattfarg_beskrivning": {
+      "typ": "text"
+    },
+    "fotfarg_beskrivning": {
+      "typ": "text"
     }
   },
-
   "arter": []
 }

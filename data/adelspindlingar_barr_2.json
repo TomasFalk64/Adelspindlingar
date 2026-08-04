@@ -1,0 +1,381 @@
+{
+  "arter": [
+    {
+      "vetenskapligt_namn": "Cortinarius napus",
+      "svenskt_namn": "rovspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "ingen",
+        "brun"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius norrlandicus",
+      "svenskt_namn": "norrlandsspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [],
+      "koh_fotknol": [],
+      "koh_kott": [
+        "röd"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius odorifer",
+      "svenskt_namn": "anisspindling",
+      "skivfarg_unga": [
+        "gul"
+      ],
+      "koh_hatt": [
+        "röd"
+      ],
+      "koh_fotknol": [
+        "röd"
+      ],
+      "koh_kott": [
+        "röd"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius olivaceodionysae",
+      "svenskt_namn": "denisespindling",
+      "skivfarg_unga": [
+        "blå"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "brun"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius percomis",
+      "svenskt_namn": "kryddspindling",
+      "skivfarg_unga": [
+        "gul"
+      ],
+      "koh_hatt": [
+        "röd"
+      ],
+      "koh_fotknol": [],
+      "koh_kott": [
+        "röd"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius piceae",
+      "svenskt_namn": "barrfagerspindling",
+      "skivfarg_unga": [
+        "gråvit",
+        "blå"
+      ],
+      "koh_hatt": [
+        "ingen",
+        "brun"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius pini",
+      "svenskt_namn": "jämtlandsspindling",
+      "skivfarg_unga": [
+        "blå"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius pinophilus",
+      "svenskt_namn": "vaxspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "gul"
+      ],
+      "koh_fotknol": [
+        "gul"
+      ],
+      "koh_kott": [
+        "gul"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius pseudoarcuatorum",
+      "svenskt_namn": "narrspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius pseudoglaucopus",
+      "svenskt_namn": "violettrandad spindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "brun"
+      ],
+      "koh_fotknol": [
+        "brun"
+      ],
+      "koh_kott": [
+        "brun"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius russeoides",
+      "svenskt_namn": "odörspindling",
+      "skivfarg_unga": [
+        "gul"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius russus",
+      "svenskt_namn": "rostspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "gul"
+      ],
+      "koh_fotknol": [
+        "gul"
+      ],
+      "koh_kott": [
+        "gul"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius serarius",
+      "svenskt_namn": "blåbrun spindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius spadicellus",
+      "svenskt_namn": "råttspindling",
+      "skivfarg_unga": [
+        "blå"
+      ],
+      "koh_hatt": [
+        "gul"
+      ],
+      "koh_fotknol": [
+        "gul"
+      ],
+      "koh_kott": [
+        "gul"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius spectabilis",
+      "svenskt_namn": "klenodspindling",
+      "skivfarg_unga": [
+        "blå"
+      ],
+      "koh_hatt": [
+        "röd"
+      ],
+      "koh_fotknol": [
+        "röd"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius subfraudulosus",
+      "svenskt_namn": "granrotspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius subgracilis",
+      "svenskt_namn": "trollspindling",
+      "skivfarg_unga": [
+        "blå"
+      ],
+      "koh_hatt": [
+        "ingen",
+        "röd"
+      ],
+      "koh_fotknol": [
+        "röd"
+      ],
+      "koh_kott": [],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius sulfurinus",
+      "svenskt_namn": "persiljespindling",
+      "skivfarg_unga": [
+        "gul"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen",
+        "röd"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius terpsichores",
+      "svenskt_namn": "tallpraktspindling",
+      "skivfarg_unga": [
+        "blå"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius violaceomaculatus",
+      "svenskt_namn": "violettfläckig spindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "gul"
+      ],
+      "koh_fotknol": [
+        "gul"
+      ],
+      "koh_kott": [
+        "gul"
+      ],
+      "miljo": [
+        "barrskog"
+      ]
+    }
+  ]
+}

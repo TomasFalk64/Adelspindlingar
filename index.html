@@ -48,18 +48,30 @@
         <div id="result-counts" class="result-counts" aria-live="polite">Laddar arter...</div>
         <label class="search-label" for="name-search">Sök i träffarna</label>
         <input id="name-search" type="search" placeholder="Svenskt eller vetenskapligt namn">
+        <div class="result-sort-row">
+          <button id="sort-results" class="sort-name-button" type="button" aria-label="Sortera efter vetenskapligt namn">↓ Svenskt namn</button>
+        </div>
         <div id="compact-results" class="compact-results"></div>
       </div>
     </aside>
 
-    <aside class="details-panel panel" aria-labelledby="details-heading">
+    <aside class="details-panel panel" aria-label="Artinformation">
       <div class="sticky-details">
-        <h2 id="details-heading">Artinformation</h2>
         <div id="species-details" class="species-details">
           <p class="muted">Välj en art i träfflistan eller tabellen för att visa detaljer.</p>
         </div>
       </div>
     </aside>
+
+    <section class="panel all-species-panel" aria-labelledby="all-species-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="all-species-heading">Alla arter</h2>
+          <p>Sortera listan genom att klicka på rubrikerna.</p>
+        </div>
+      </div>
+      <div id="all-species-table" class="all-species-table"></div>
+    </section>
   </main>
 
   <script src="app.js" defer></script>
