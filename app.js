@@ -43,6 +43,15 @@
     "fruktkroppstid"
   ];
 
+  const OPTION_COLORS = {
+    blå: "#3d6fb6",
+    gul: "#d6a719",
+    gråvit: "#d9ddd8",
+    röd: "#b64235",
+    brun: "#76523d",
+    ingen: "#eef0ea"
+  };
+
   const state = {
     fields: [],
     species: [],
@@ -158,10 +167,11 @@
       fieldset.dataset.field = field.key;
 
       const legend = document.createElement("legend");
-      const legendRow = document.createElement("div");
-      legendRow.className = "legend-row";
+      legend.className = "visually-hidden";
+      legend.textContent = field.label;
 
       const title = document.createElement("h3");
+      title.className = "filter-title";
       title.textContent = field.label;
 
       const resetButton = document.createElement("button");
@@ -170,9 +180,7 @@
       resetButton.textContent = "Återställ";
       resetButton.addEventListener("click", () => resetFilterGroup(field.key));
 
-      legendRow.append(title, resetButton);
-      legend.append(legendRow);
-      fieldset.append(legend);
+      fieldset.append(legend, title);
 
       const optionsGrid = document.createElement("div");
       optionsGrid.className = "options-grid";
@@ -190,13 +198,23 @@
         input.value = option;
 
         const text = document.createElement("span");
-        text.textContent = option;
+        const color = getOptionColor(option);
+
+        if (color) {
+          label.classList.add("choice-with-swatch");
+          text.style.setProperty("--choice-color", color);
+          text.style.setProperty("--choice-text-color", getOptionTextColor(option));
+        }
+
+        const optionText = document.createElement("span");
+        optionText.textContent = option;
+        text.append(optionText);
 
         label.append(input, text);
         optionsGrid.append(label);
       });
 
-      fieldset.append(optionsGrid);
+      fieldset.append(optionsGrid, resetButton);
       fragment.append(fieldset);
     });
 
@@ -669,5 +687,14 @@
     }
 
     return String(value).replace(/"/g, '\\"');
+  }
+
+  function getOptionColor(option) {
+    return OPTION_COLORS[String(option).toLocaleLowerCase("sv")] || null;
+  }
+
+  function getOptionTextColor(option) {
+    const key = String(option).toLocaleLowerCase("sv");
+    return key === "gul" || key === "gråvit" || key === "ingen" ? "#1f2924" : "#ffffff";
   }
 }());

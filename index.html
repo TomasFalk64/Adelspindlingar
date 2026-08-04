@@ -8,11 +8,11 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-content">
       <p class="eyebrow">Cortinarius</p>
       <h1>Artbestämning av ädelspindlingar</h1>
       <p class="intro">
-        Markera de karaktärer du har observerat. Listan uppdateras direkt och arter med saknade uppgifter visas som möjliga träffar.
+        Markera de karaktärer du sett. Listan uppdateras direkt och arter visas som möjliga träffar.
       </p>
     </div>
   </header>
@@ -40,13 +40,6 @@
         </div>
         <div id="comparison" class="comparison"></div>
       </section>
-
-      <section class="panel" aria-labelledby="details-heading">
-        <h2 id="details-heading">Artinformation</h2>
-        <div id="species-details" class="species-details">
-          <p class="muted">Välj en art i träfflistan eller tabellen för att visa detaljer.</p>
-        </div>
-      </section>
     </div>
 
     <aside class="results-panel" aria-labelledby="results-heading">
@@ -56,6 +49,15 @@
         <label class="search-label" for="name-search">Sök i träffarna</label>
         <input id="name-search" type="search" placeholder="Svenskt eller vetenskapligt namn">
         <div id="compact-results" class="compact-results"></div>
+      </div>
+    </aside>
+
+    <aside class="details-panel panel" aria-labelledby="details-heading">
+      <div class="sticky-details">
+        <h2 id="details-heading">Artinformation</h2>
+        <div id="species-details" class="species-details">
+          <p class="muted">Välj en art i träfflistan eller tabellen för att visa detaljer.</p>
+        </div>
       </div>
     </aside>
   </main>
