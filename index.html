@@ -12,7 +12,7 @@
       <p class="eyebrow">Cortinarius</p>
       <h1>Artbestämning av ädelspindlingar</h1>
       <p class="intro">
-        Du har hittat en ädelspindling och undrar vad det kan var för någon.
+        Du har hittat en ädelspindling och undrar vad det kan vara för någon.
       </p>
     </div>
   </header>
@@ -24,7 +24,7 @@
           <div>
             <h2 id="filters-heading">Vad ser du?</h2>
           </div>
-          <button class="secondary-button" type="button" id="reset-all">Rensa alla observationer</button>
+          <button class="secondary-button" type="button" id="reset-all">Rensa allt</button>
         </div>
         <div id="load-error" class="error-message" hidden></div>
         <form id="filter-form" class="filter-form"></form>
@@ -35,8 +35,10 @@
       <div class="sticky-results">
         <h2 id="results-heading">Kanske någon av dessa</h2>
         <div id="result-counts" class="result-counts" aria-live="polite">Laddar arter...</div>
-        <label class="search-label" for="name-search">Sök i träffarna</label>
-        <input id="name-search" type="search" placeholder="Svenskt eller vetenskapligt namn">
+        <label class="search-label visually-hidden" for="name-search">Sök i träffarna</label>
+        <div class="name-search-wrap">
+          <input id="name-search" type="search" placeholder="Sök på namn">
+        </div>
         <div class="result-sort-row">
           <button id="sort-results" class="sort-name-button" type="button" aria-label="Sortera efter vetenskapligt namn">↓ Svenskt namn</button>
         </div>

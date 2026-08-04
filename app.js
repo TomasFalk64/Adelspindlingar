@@ -103,13 +103,13 @@
   ];
 
   const OPTION_COLORS = {
-    blå: "#3d6fb6",
-    gul: "#d6a719",
-    gråvit: "#d9ddd8",
-    grön: "#4f8f59",
-    röd: "#b64235",
-    brun: "#76523d",
-    ingen: "#eef0ea"
+    blå: "#5f6f9d",
+    gul: "#c5a63a",
+    gråvit: "#d8d3c2",
+    grön: "#6f8758",
+    röd: "#a34a3d",
+    brun: "#7a5a43",
+    ingen: "#e7e2d2"
   };
 
   const OPTION_HELP_TEXTS = {
