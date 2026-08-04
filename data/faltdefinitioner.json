@@ -1,0 +1,146 @@
+{
+  "faltdefinitioner": {
+    "vetenskapligt_namn": {
+      "typ": "text"
+    },
+
+    "svenskt_namn": {
+      "typ": "text"
+    },
+
+    "skivfarg_unga": {
+      "typ": "flerval",
+      "alternativ": [
+        "blå",
+        "gul",
+        "gråvit"
+      ]
+    },
+
+    "koh_hatt": {
+      "typ": "flerval",
+      "alternativ": [
+        "röd",
+        "ingen",
+        "gul",
+        "brun"
+      ]
+    },
+
+    "koh_fotknol": {
+      "typ": "flerval",
+      "alternativ": [
+        "röd",
+        "ingen",
+        "gul",
+        "brun"
+      ]
+    },
+
+    "koh_kott": {
+      "typ": "flerval",
+      "alternativ": [
+        "röd",
+        "ingen",
+        "gul",
+        "brun"
+      ]
+    },
+
+    "fotknol_form": {
+      "typ": "flerval",
+      "alternativ": [
+        "rundad bulb",
+        "skarpt kantad bulb",
+        "ingen bulb"
+      ]
+    },
+
+    "miljo": {
+      "typ": "flerval",
+      "alternativ": [
+        "lövskog",
+        "barrskog"
+      ]
+    },
+
+    "tradslag": {
+      "typ": "flerval",
+      "alternativ": [
+        "gran",
+        "tall",
+        "bok",
+        "ek",
+        "björk",
+        "hassel",
+        "asp",
+        "al",
+        "lind",
+        "sälg"
+      ]
+    },
+
+    "hattfarg": {
+      "typ": "flerval",
+      "alternativ": []
+    },
+
+    "fotfarg": {
+      "typ": "flerval",
+      "alternativ": []
+    },
+
+    "lukt": {
+      "typ": "flerval",
+      "alternativ": []
+    },
+
+    "fruktkroppstid": {
+      "typ": "flerval",
+      "alternativ": [
+        "vår",
+        "sommar",
+        "höst"
+      ]
+    },
+
+    "viktiga_karaktarer": {
+      "typ": "textlista"
+    },
+
+    "forvaxlingsarter": {
+      "typ": "objektlista",
+      "falt": {
+        "vetenskapligt_namn": {
+          "typ": "text"
+        },
+        "svenskt_namn": {
+          "typ": "text"
+        },
+        "skillnad": {
+          "typ": "text"
+        }
+      }
+    },
+
+    "bilder": {
+      "typ": "objektlista",
+      "falt": {
+        "fil": {
+          "typ": "text"
+        },
+        "bildtext": {
+          "typ": "text"
+        },
+        "fotograf": {
+          "typ": "text"
+        },
+        "licens": {
+          "typ": "text"
+        }
+      }
+    }
+  },
+
+  "arter": []
+}
