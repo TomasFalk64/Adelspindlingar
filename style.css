@@ -109,10 +109,11 @@ h3 {
 }
 
 .app-shell {
+  --top-card-height: min(74vh, 720px);
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 330px) minmax(280px, 330px);
   gap: 24px;
-  align-items: start;
+  align-items: stretch;
   padding: 24px 0 42px;
 }
 
@@ -141,6 +142,11 @@ h3 {
   padding: 22px;
 }
 
+.filter-panel {
+  max-height: var(--top-card-height);
+  overflow: auto;
+}
+
 .sticky-results,
 .sticky-details {
   position: sticky;
@@ -148,16 +154,25 @@ h3 {
 }
 
 .sticky-results {
-  max-height: calc(100vh - 32px);
+  max-height: var(--top-card-height);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 18px;
 }
 
 .details-panel {
+  max-height: var(--top-card-height);
+  overflow: auto;
   padding: 18px;
 }
 
+.sticky-details {
+  max-height: calc(var(--top-card-height) - 36px);
+  overflow: auto;
+}
+
+.comparison-panel,
 .all-species-panel {
   grid-column: 1 / -1;
 }
@@ -458,6 +473,16 @@ h3 {
   overflow-x: auto;
 }
 
+.comparison table {
+  min-width: 620px;
+  font-size: 0.86rem;
+}
+
+.comparison th,
+.comparison td {
+  padding: 5px 7px;
+}
+
 table {
   width: 100%;
   min-width: 720px;
@@ -488,15 +513,23 @@ tr.clickable-row:hover {
 
 .comparison-cell {
   border-radius: 6px;
-  padding: 6px 8px;
+  display: inline-flex;
+  min-height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
   font-weight: 700;
 }
 
 .cell-values {
-  display: block;
-  margin-top: 4px;
+  display: inline;
+  margin-top: 0;
   color: var(--text);
   font-weight: 400;
+}
+
+.compact-status-cell {
+  font-weight: 800;
 }
 
 .all-species-table {
@@ -1104,12 +1137,11 @@ tr.clickable-row:hover {
     order: 2;
   }
 
-  .main-column .panel:nth-child(2) {
+  .details-panel {
     order: 3;
   }
 
-  .details-panel {
-    grid-column: 1 / -1;
+  .comparison-panel {
     order: 4;
   }
 
@@ -1149,7 +1181,10 @@ tr.clickable-row:hover {
   .sticky-results,
   .sticky-details {
     position: static;
-    max-height: none;
+  }
+
+  .details-panel {
+    overflow: auto;
   }
 
   .section-head {

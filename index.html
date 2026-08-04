@@ -12,14 +12,14 @@
       <p class="eyebrow">Cortinarius</p>
       <h1>Artbestämning av ädelspindlingar</h1>
       <p class="intro">
-        Markera de karaktärer du sett. Listan uppdateras direkt och arter visas som möjliga träffar.
+        Du har hittat en ädelspindling och undrar vad det kan var för någon. Vad ser du?
       </p>
     </div>
   </header>
 
   <main class="app-shell wrap">
     <div class="main-column">
-      <section class="panel" aria-labelledby="filters-heading">
+      <section class="panel filter-panel" aria-labelledby="filters-heading">
         <div class="section-head">
           <div>
             <h2 id="filters-heading">Observerade karaktärer</h2>
@@ -29,16 +29,6 @@
         </div>
         <div id="load-error" class="error-message" hidden></div>
         <form id="filter-form" class="filter-form"></form>
-      </section>
-
-      <section class="panel" aria-labelledby="comparison-heading">
-        <div class="section-head">
-          <div>
-            <h2 id="comparison-heading">Jämförande resultat</h2>
-            <p id="comparison-summary">Fyll i fler observationer för att visa en detaljerad jämförelse.</p>
-          </div>
-        </div>
-        <div id="comparison" class="comparison"></div>
       </section>
     </div>
 
@@ -62,6 +52,16 @@
         </div>
       </div>
     </aside>
+
+    <section class="panel comparison-panel" aria-labelledby="comparison-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="comparison-heading">Jämförande resultat</h2>
+          <p id="comparison-summary">Fyll i fler observationer för att visa en detaljerad jämförelse.</p>
+        </div>
+      </div>
+      <div id="comparison" class="comparison"></div>
+    </section>
 
     <section class="panel all-species-panel" aria-labelledby="all-species-heading">
       <div class="section-head">

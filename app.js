@@ -86,6 +86,22 @@
     { key: "koh_kott", label: "Kött", type: "values" }
   ];
 
+  const DEFAULT_COMPARISON_FIELDS = [
+    "skivfarg_unga",
+    "koh_hatt",
+    "koh_fotknol",
+    "koh_kott",
+    "fotknol_form",
+    "miljo",
+    "tradslag",
+    "hattfarg",
+    "hattfarg_beskrivning",
+    "fotfarg",
+    "fotfarg_beskrivning",
+    "lukt",
+    "fruktkroppstid"
+  ];
+
   const OPTION_COLORS = {
     blå: "#3d6fb6",
     gul: "#d6a719",
@@ -376,6 +392,7 @@
     } else {
       renderSpeciesDetails(null);
     }
+
   }
 
   function renderCompactResults() {
@@ -399,7 +416,7 @@
     );
 
     elements.resultCounts.innerHTML = `
-      ${fullCount} fullständiga träffar, ${possibleCount} möjliga träffar.
+      ${fullCount} troliga och ${possibleCount} möjliga träffar.
     `;
 
     elements.compactResults.replaceChildren();
@@ -463,7 +480,7 @@
   }
 
   function renderComparison(filters) {
-    const selectedFields = Object.keys(filters);
+    const selectedFields = [...new Set([...Object.keys(filters), ...DEFAULT_COMPARISON_FIELDS])];
     elements.comparison.replaceChildren();
 
     if (state.evaluated.length > 10) {
@@ -473,11 +490,6 @@
 
     if (state.evaluated.length === 0) {
       elements.comparisonSummary.textContent = "Inga arter återstår med de valda observationerna.";
-      return;
-    }
-
-    if (selectedFields.length === 0) {
-      elements.comparisonSummary.textContent = "Välj minst en observation för att jämföra karaktärer.";
       return;
     }
 
@@ -511,19 +523,30 @@
 
       appendCell(row, getDisplayName(result.species));
       appendCell(row, formatScientificName(result.species.vetenskapligt_namn), "scientific-cell");
-      appendCell(row, result.status === "full" ? "Full träff" : "Möjlig - uppgifter saknas");
+      appendCell(row, result.status === "full" ? "Trolig" : "Möjlig", "compact-status-cell");
 
       selectedFields.forEach((field) => {
         const td = document.createElement("td");
         const cell = document.createElement("div");
         const evaluation = result.evaluations[field] || { state: "missing", values: [] };
         cell.className = `comparison-cell ${getCellClass(evaluation.state)}`;
-        cell.textContent = getEvaluationLabel(evaluation.state);
+        cell.title = getEvaluationLabel(evaluation.state);
 
-        const values = document.createElement("span");
-        values.className = "cell-values";
-        values.textContent = evaluation.values.length > 0 ? evaluation.values.join(", ") : "Ingen uppgift";
-        cell.append(values);
+        if (evaluation.state === "missing") {
+          const missing = document.createElement("span");
+          missing.className = "unknown-marker";
+          missing.textContent = "?";
+          missing.title = "Uppgift saknas";
+          cell.append(missing);
+        } else if (MARKER_DETAIL_FIELDS.has(field)) {
+          cell.append(renderValueMarkers(evaluation.values));
+        } else {
+          const values = document.createElement("span");
+          values.className = "cell-values";
+          values.textContent = evaluation.values.length > 0 ? evaluation.values.join(", ") : "?";
+          cell.append(values);
+        }
+
         td.append(cell);
         row.append(td);
       });
