@@ -18,17 +18,45 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "bok",
+        "ek",
+        "hassel",
+        "lind"
+      ],
+      "hattfarg": [
+        "vit"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "blek fagerfagerspindling",
+          "vetenskapligt_namn": "cortinarus catarinae",
+          "skillnad": "har ljusgul hatt"
+        },
+        {
+          "svenskt_namn": "blåslöjad spökspindling",
+          "vetenskapligt_namn": "cortinarius parasuaveolens",
+          "skillnad": "lilafärgad bulbkant som ung"
+        }
+      ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "hattfarg_beskrivning": "krämvit med bruna missfärgningar",
+      "fotfarg_beskrivning": "vit sedan brunfläckig",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius alcalinophilus",
@@ -60,7 +88,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius amoenolens",
@@ -91,7 +125,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius aquilanus",
@@ -122,7 +162,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius arcifolius",
@@ -152,7 +198,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius arcuatorum",
@@ -182,7 +234,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius argenteolilacinus",
@@ -213,7 +271,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius aureocalceolatus",
@@ -243,7 +307,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius bergeronii",
@@ -273,7 +343,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius caerulescens",
@@ -303,7 +379,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius caesiocortinatus",
@@ -333,7 +415,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius calochrous",
@@ -363,7 +451,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius catharinae",
@@ -394,7 +488,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cisticola",
@@ -426,7 +526,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius citrinus",
@@ -456,7 +562,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius coerulescentium",
@@ -486,7 +598,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cordatae",
@@ -516,7 +634,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cruentipellis",
@@ -548,7 +672,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius dionysae",
@@ -579,7 +709,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius elegantior",
@@ -610,7 +746,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius elegantissimus",
@@ -642,7 +784,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius eucaeruleus",
@@ -672,7 +820,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius flavidolilacinus",
@@ -697,7 +851,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius flavovirens",
@@ -729,7 +889,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius fulvocitrinus",
@@ -761,7 +927,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius gracilior",
@@ -792,7 +964,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius humolens",
@@ -823,7 +1001,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius ionodactylus",
@@ -853,7 +1037,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius langeorum",
@@ -885,7 +1075,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius lilacinovelatus",
@@ -916,7 +1112,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius luhmannii",
@@ -946,7 +1148,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius luteocingulatus",
@@ -979,7 +1187,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius magicus",
@@ -1012,7 +1226,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius majoranae",
@@ -1043,7 +1263,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius marklundii (camptoros)",
@@ -1075,7 +1301,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius moënne-loccozii",
@@ -1107,7 +1339,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius molochinus",
@@ -1138,7 +1376,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius multiformium",
@@ -1169,7 +1413,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius nanceiensis",
@@ -1200,7 +1450,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius nymphicolor",
@@ -1230,7 +1486,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius obsoletus",
@@ -1261,7 +1523,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius odoratus",
@@ -1291,7 +1559,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius olearioides",
@@ -1321,7 +1595,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius osmophorus",
@@ -1352,7 +1632,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius parasuaveolens",
@@ -1382,7 +1668,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius platypus",
@@ -1413,7 +1705,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius praestans",
@@ -1444,7 +1742,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius prasinocyaneus",
@@ -1474,7 +1778,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius prasinus",
@@ -1505,7 +1815,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius pseudovulpinus",
@@ -1536,7 +1852,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius quercilicis",
@@ -1566,7 +1888,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius rapaceotomentosus",
@@ -1598,7 +1926,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius rhizophorus",
@@ -1628,7 +1962,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius rufoolivaceus",
@@ -1661,7 +2001,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius saporatus",
@@ -1692,7 +2038,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius selandicus",
@@ -1724,7 +2076,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius sodagnitus",
@@ -1754,7 +2112,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius splendens",
@@ -1784,7 +2148,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius squameoradicans",
@@ -1814,7 +2184,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius stjernegaardii",
@@ -1845,7 +2221,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius suaveolens",
@@ -1877,7 +2259,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius subalbescens",
@@ -1908,7 +2296,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius sulfurinus*",
@@ -1939,7 +2333,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius tiliae",
@@ -1969,7 +2369,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius vesterholtii",
@@ -2000,7 +2406,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius violaceipes",
@@ -2030,7 +2442,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius viridocoeruleus",
@@ -2062,7 +2480,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius vulpinus",
@@ -2092,7 +2516,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius xanthochlorus",
@@ -2125,7 +2555,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius xanthoochraceus",
@@ -2155,7 +2591,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius xanthophyllus",
@@ -2185,7 +2627,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius xanthosuavis",
@@ -2215,7 +2663,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius napus",
@@ -2246,7 +2700,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius norrlandicus",
@@ -2272,7 +2732,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius odorifer",
@@ -2302,7 +2768,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius olivaceodionysae",
@@ -2332,7 +2804,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius percomis",
@@ -2360,7 +2838,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius piceae",
@@ -2392,7 +2876,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius pini",
@@ -2422,7 +2912,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius pinophilus",
@@ -2452,7 +2948,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius pseudoarcuatorum",
@@ -2482,7 +2984,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius pseudoglaucopus",
@@ -2512,7 +3020,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius russeoides",
@@ -2542,7 +3056,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius russus",
@@ -2572,7 +3092,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius serarius",
@@ -2602,7 +3128,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius spadicellus",
@@ -2632,7 +3164,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius spectabilis",
@@ -2662,7 +3200,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius subfraudulosus",
@@ -2692,7 +3236,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius subgracilis",
@@ -2721,7 +3271,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius sulfurinus",
@@ -2752,7 +3308,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius terpsichores",
@@ -2782,7 +3344,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius violaceomaculatus",
@@ -2812,7 +3380,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius areni-silvae",
@@ -2842,7 +3416,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius atrovirens",
@@ -2872,7 +3452,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius aureofulvus",
@@ -2903,7 +3489,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius aureopulverulentus",
@@ -2933,7 +3525,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius barbaricus",
@@ -2963,7 +3561,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius blattoi",
@@ -2993,7 +3597,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius caesiocanescens & foetens",
@@ -3024,7 +3634,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius caesiocinctus",
@@ -3054,7 +3670,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cedretorum",
@@ -3080,7 +3702,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius citrinoolivaceus",
@@ -3111,7 +3739,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cobaltinus",
@@ -3141,7 +3775,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius corrosus",
@@ -3171,7 +3811,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cremeiamarescens",
@@ -3201,7 +3847,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cumatilis",
@@ -3231,7 +3883,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius cupreorufus",
@@ -3261,7 +3919,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius dalecarlicus",
@@ -3291,7 +3955,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius elegantior",
@@ -3321,7 +3991,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius flavipallens",
@@ -3352,7 +4028,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius gentianeus",
@@ -3382,7 +4064,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius glaucopus",
@@ -3413,7 +4101,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius haasii",
@@ -3443,7 +4137,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius inexspectatus",
@@ -3473,7 +4173,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius kristinae",
@@ -3503,7 +4209,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius lithophilus",
@@ -3533,7 +4245,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius luteobrunnescens",
@@ -3563,7 +4281,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius meinhardii",
@@ -3593,7 +4317,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius metarius",
@@ -3623,7 +4353,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     },
     {
       "vetenskapligt_namn": "Cortinarius mussivus",
@@ -3653,7 +4389,13 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": ""
+      "fotfarg_beskrivning": "",
+      "kottfarg": [],
+      "kottfarg_beskrivning": "",
+      "slemmig": [],
+      "extra_1": [],
+      "extra_2": [],
+      "extra_3": []
     }
   ]
 }

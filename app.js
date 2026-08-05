@@ -604,6 +604,12 @@
       event.preventDefault();
       saveSpeciesDetails(species, form);
     });
+    form.addEventListener("input", () => {
+      syncSpeciesDetails(species, form, { silentInvalidJson: true });
+    });
+    form.addEventListener("change", () => {
+      syncSpeciesDetails(species, form, { silentInvalidJson: true });
+    });
 
     const nameRow = document.createElement("div");
     nameRow.className = "species-edit-name-row";
@@ -827,6 +833,7 @@
           item.setAttribute("aria-pressed", String(item.dataset.value === selectedValue));
         });
         dropdown.removeAttribute("open");
+        group.dispatchEvent(new Event("change", { bubbles: true }));
       });
       optionsWrap.append(button);
     });
@@ -890,6 +897,7 @@
         hidden.value = JSON.stringify(Array.from(selected));
         updateMultiTextPreview(selectedPreview, selected);
         updateMultiTextPressed(optionsWrap, selected);
+        group.dispatchEvent(new Event("change", { bubbles: true }));
       });
       optionsWrap.append(button);
     });
@@ -934,6 +942,7 @@
       openLookalikeModal((lookalike) => {
         lookalikes.push(lookalike);
         syncLookalikesControl(hidden, list, lookalikes);
+        group.dispatchEvent(new Event("change", { bubbles: true }));
       });
     });
 
@@ -971,6 +980,7 @@
       removeButton.addEventListener("click", () => {
         lookalikes.splice(index, 1);
         syncLookalikesControl(hidden, list, lookalikes);
+        hidden.dispatchEvent(new Event("change", { bubbles: true }));
       });
 
       item.append(nameLine, removeButton);
@@ -1207,28 +1217,52 @@
     const species = state.species.find((candidate) => getSpeciesKey(candidate) === state.selectedSpeciesKey);
 
     if (form && species) {
-      saveSpeciesDetails(species, form);
-      return;
+      syncSpeciesDetails(species, form);
+      refreshDerivedViews(species);
     }
 
     downloadUpdatedSpeciesJson();
   }
 
   function saveSpeciesDetails(species, form) {
+    syncSpeciesDetails(species, form);
+    refreshDerivedViews(species);
+    renderSpeciesDetails(species);
+    downloadUpdatedSpeciesJson();
+  }
+
+  function syncSpeciesDetails(species, form, options = {}) {
     DETAIL_FIELDS.forEach((fieldKey) => {
       const control = form.elements[fieldKey];
       if (!control) {
         return;
       }
 
+      if (options.silentInvalidJson && control.dataset.valueType === "json" && !isValidJsonArrayControl(control)) {
+        return;
+      }
+
       species[fieldKey] = readDetailControlValue(control, fieldKey);
     });
+  }
 
+  function isValidJsonArrayControl(control) {
+    const text = control.value.trim();
+    if (!text) {
+      return true;
+    }
+
+    try {
+      return Array.isArray(JSON.parse(text));
+    } catch {
+      return false;
+    }
+  }
+
+  function refreshDerivedViews(species) {
     renderAllSpeciesTable();
     updateResults();
     state.selectedSpeciesKey = getSpeciesKey(species);
-    renderSpeciesDetails(species);
-    downloadUpdatedSpeciesJson();
     renderCompactResults();
   }
 
