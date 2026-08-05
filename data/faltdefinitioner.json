@@ -18,27 +18,27 @@
       "typ": "flerval",
       "alternativ": [
         "röd",
-        "ingen",
         "gul",
-        "brun"
+        "brun",
+        "ingen"
       ]
     },
     "koh_fotknol": {
       "typ": "flerval",
       "alternativ": [
         "röd",
-        "ingen",
         "gul",
-        "brun"
+        "brun",
+        "ingen"
       ]
     },
     "koh_kott": {
       "typ": "flerval",
       "alternativ": [
         "röd",
-        "ingen",
         "gul",
-        "brun"
+        "brun",
+        "ingen"
       ]
     },
     "fotknol_form": {
@@ -76,11 +76,10 @@
       "alternativ": [
         "blå",
         "gul",
-        "gråvit",
+        "vit",
         "grön",
         "röd",
-        "brun",
-        "?"
+        "brun"
       ]
     },
     "fotfarg": {
@@ -88,11 +87,28 @@
       "alternativ": [
         "blå",
         "gul",
-        "gråvit",
+        "vit",
         "grön",
         "röd",
-        "brun",
-        "?"
+        "brun"
+      ]
+    },
+    "kottfarg": {
+      "typ": "flerval",
+      "alternativ": [
+        "blå",
+        "gul",
+        "vit",
+        "grön",
+        "röd",
+        "brun"
+      ]
+    },
+    "slemmig": {
+      "typ": "flerval",
+      "alternativ": [
+        "Ja",
+        "Nej"
       ]
     },
     "lukt": {
@@ -145,6 +161,9 @@
       "typ": "text"
     },
     "fotfarg_beskrivning": {
+      "typ": "text"
+    },
+    "kottfarg_beskrivning": {
       "typ": "text"
     }
   },

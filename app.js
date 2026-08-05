@@ -16,6 +16,9 @@
     hattfarg_beskrivning: "Hattfärg, beskrivning",
     fotfarg: "Fotfärg",
     fotfarg_beskrivning: "Fotfärg, beskrivning",
+    kottfarg: "Köttfärg",
+    kottfarg_beskrivning: "Köttfärg, beskrivning",
+    slemmig: "Slemmig",
     lukt: "Lukt",
     fruktkroppstid: "Fruktkroppstid",
     viktiga_karaktarer: "Viktiga karaktärer",
@@ -38,13 +41,16 @@
     "koh_hatt",
     "koh_fotknol",
     "koh_kott",
-    "fotknol_form",
     "miljo",
     "tradslag",
     "hattfarg",
     "hattfarg_beskrivning",
     "fotfarg",
     "fotfarg_beskrivning",
+    "kottfarg",
+    "kottfarg_beskrivning",
+    "fotknol_form",
+    "slemmig",
     "lukt",
     "fruktkroppstid",
     "viktiga_karaktarer",
@@ -58,7 +64,8 @@
     "koh_fotknol",
     "koh_kott",
     "hattfarg",
-    "fotfarg"
+    "fotfarg",
+    "kottfarg"
   ]);
 
   const READONLY_DETAIL_FIELDS = new Set([
@@ -74,8 +81,19 @@
     "hattfarg",
     "hattfarg_beskrivning",
     "fotfarg",
-    "fotfarg_beskrivning"
+    "fotfarg_beskrivning",
+    "kottfarg",
+    "kottfarg_beskrivning",
+    "slemmig"
   ]);
+
+  const COLOR_DESCRIPTION_FIELDS = {
+    hattfarg: "hattfarg_beskrivning",
+    fotfarg: "fotfarg_beskrivning",
+    kottfarg: "kottfarg_beskrivning"
+  };
+
+  const DESCRIPTION_COLOR_FIELDS = new Set(Object.values(COLOR_DESCRIPTION_FIELDS));
 
   const ALL_SPECIES_COLUMNS = [
     { key: "vetenskapligt_namn", label: "Cortinarius", type: "name" },
@@ -98,18 +116,22 @@
     "hattfarg_beskrivning",
     "fotfarg",
     "fotfarg_beskrivning",
+    "kottfarg",
+    "kottfarg_beskrivning",
+    "slemmig",
     "lukt",
     "fruktkroppstid"
   ];
 
   const OPTION_COLORS = {
-    blå: "#5f6f9d",
-    gul: "#c5a63a",
-    gråvit: "#d8d3c2",
-    grön: "#6f8758",
-    röd: "#a34a3d",
-    brun: "#7a5a43",
-    ingen: "#e7e2d2"
+    blå: "#536aa8",
+    gul: "#d2ad24",
+    gråvit: "#cfc8b4",
+    vit: "#f4f1e8",
+    grön: "#678a4f",
+    röd: "#b34438",
+    brun: "#80563d",
+    ingen: "#eee8d8"
   };
 
   const OPTION_HELP_TEXTS = {
@@ -157,6 +179,7 @@
   function cacheElements() {
     elements.form = document.querySelector("#filter-form");
     elements.resetAll = document.querySelector("#reset-all");
+    elements.saveData = document.querySelector("#save-data");
     elements.nameSearch = document.querySelector("#name-search");
     elements.sortResults = document.querySelector("#sort-results");
     elements.resultCounts = document.querySelector("#result-counts");
@@ -171,6 +194,7 @@
   function bindEvents() {
     elements.form.addEventListener("change", updateResults);
     elements.resetAll.addEventListener("click", resetFilters);
+    elements.saveData.addEventListener("click", saveCurrentData);
     elements.nameSearch.addEventListener("input", renderCompactResults);
     elements.sortResults.addEventListener("click", toggleCompactResultSort);
     document.addEventListener("click", closeDotPickersOnOutsideClick);
@@ -563,10 +587,14 @@
     elements.details.replaceChildren();
 
     if (!species) {
+      const heading = document.createElement("h2");
+      heading.className = "empty-details-heading";
+      heading.textContent = "Artinfo";
+
       const message = document.createElement("p");
       message.className = "muted";
       message.textContent = "Välj en art i träfflistan eller tabellen för att visa detaljer.";
-      elements.details.append(message);
+      elements.details.append(heading, message);
       return;
     }
 
@@ -590,13 +618,6 @@
     const editActions = document.createElement("div");
     editActions.className = "species-edit-top-actions";
 
-    const saveButton = document.createElement("button");
-    saveButton.type = "submit";
-    saveButton.className = "edit-save-button";
-    saveButton.setAttribute("aria-label", "Spara och ladda ner JSON");
-    saveButton.title = "Spara och ladda ner JSON";
-    saveButton.textContent = "💾";
-
     const lockButton = document.createElement("button");
     lockButton.type = "button";
     lockButton.className = "edit-lock-button";
@@ -606,7 +627,7 @@
     lockButton.textContent = "🔒";
     lockButton.addEventListener("click", () => toggleSpeciesEditLock(form, lockButton));
 
-    editActions.append(saveButton, lockButton);
+    editActions.append(lockButton);
     nameRow.append(swedishName, scientificName, editActions);
     form.append(nameRow);
 
@@ -619,6 +640,10 @@
 
     DETAIL_FIELDS.forEach((field) => {
       if (READONLY_DETAIL_FIELDS.has(field)) {
+        return;
+      }
+
+      if (DESCRIPTION_COLOR_FIELDS.has(field)) {
         return;
       }
 
@@ -652,7 +677,7 @@
       button.title = isLocked ? "Lås upp redigering" : "Lås redigering";
     }
 
-    form.querySelectorAll("input, select, textarea, .dot-toggle, .dot-picker-dropdown summary, .single-picker-option, .single-picker-dropdown summary, .multi-text-picker-option, .multi-text-picker-dropdown summary, .lookalike-add, .lookalike-remove, .edit-save-button").forEach((control) => {
+    form.querySelectorAll("input, select, textarea, .dot-toggle, .dot-picker-dropdown summary, .single-picker-option, .single-picker-dropdown summary, .multi-text-picker-option, .multi-text-picker-dropdown summary, .lookalike-add, .lookalike-remove").forEach((control) => {
       if (control.classList.contains("edit-lock-button")) {
         return;
       }
@@ -700,7 +725,11 @@
     const value = species[field.key];
     const id = `detail-${field.key}`;
 
-    if (field.key === "fotknol_form") {
+    if (COLOR_DESCRIPTION_FIELDS[field.key]) {
+      return createColorDescriptionControl(id, field, value, species[COLOR_DESCRIPTION_FIELDS[field.key]]);
+    }
+
+    if (field.key === "fotknol_form" || field.key === "slemmig") {
       return createSingleOptionControl(id, field, value);
     }
 
@@ -731,6 +760,22 @@
     input.value = typeof value === "string" ? value : normalizeSpeciesValues(value).join(", ");
     input.dataset.valueType = "text";
     return input;
+  }
+
+  function createColorDescriptionControl(id, field, value, descriptionValue) {
+    const group = createDotToggleControl(id, field, value);
+    const descriptionInput = document.createElement("input");
+    descriptionInput.name = COLOR_DESCRIPTION_FIELDS[field.key];
+    descriptionInput.type = "text";
+    descriptionInput.value = typeof descriptionValue === "string" ? descriptionValue : "";
+    descriptionInput.dataset.valueType = "text";
+    descriptionInput.className = "color-description-input";
+    descriptionInput.setAttribute("aria-label", `${getFieldLabel(field.key)}, beskrivning`);
+
+    const dropdown = group.querySelector(".dot-picker-dropdown");
+    group.classList.add("dot-picker-with-description");
+    group.insertBefore(descriptionInput, dropdown);
+    return group;
   }
 
   function createSingleOptionControl(id, field, value) {
@@ -1157,6 +1202,18 @@
     return textarea;
   }
 
+  function saveCurrentData() {
+    const form = elements.details.querySelector(".species-edit-form");
+    const species = state.species.find((candidate) => getSpeciesKey(candidate) === state.selectedSpeciesKey);
+
+    if (form && species) {
+      saveSpeciesDetails(species, form);
+      return;
+    }
+
+    downloadUpdatedSpeciesJson();
+  }
+
   function saveSpeciesDetails(species, form) {
     DETAIL_FIELDS.forEach((fieldKey) => {
       const control = form.elements[fieldKey];
@@ -1383,8 +1440,8 @@
       return field.options;
     }
 
-    if (field.key === "hattfarg" || field.key === "fotfarg") {
-      return ["blå", "gul", "gråvit", "grön", "röd", "brun", "?"];
+    if (field.key === "hattfarg" || field.key === "fotfarg" || field.key === "kottfarg") {
+      return ["blå", "gul", "vit", "grön", "röd", "brun"];
     }
 
     return Object.keys(OPTION_COLORS);
@@ -1648,7 +1705,7 @@
 
   function getOptionTextColor(option) {
     const key = String(option).toLocaleLowerCase("sv");
-    return key === "gul" || key === "gråvit" || key === "ingen" || key === "?" ? "#1f2924" : "#ffffff";
+    return key === "gul" || key === "gråvit" || key === "vit" || key === "ingen" || key === "?" ? "#1f2924" : "#ffffff";
   }
 
   function getMarkerClassName(key) {
