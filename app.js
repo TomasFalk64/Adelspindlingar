@@ -187,6 +187,7 @@
     elements.comparison = document.querySelector("#comparison");
     elements.comparisonSummary = document.querySelector("#comparison-summary");
     elements.details = document.querySelector("#species-details");
+    elements.detailsPanel = document.querySelector(".details-panel");
     elements.allSpeciesTable = document.querySelector("#all-species-table");
     elements.error = document.querySelector("#load-error");
   }
@@ -585,6 +586,7 @@
 
   function renderSpeciesDetails(species) {
     elements.details.replaceChildren();
+    elements.detailsPanel.classList.toggle("is-empty", !species);
 
     if (!species) {
       const heading = document.createElement("h2");

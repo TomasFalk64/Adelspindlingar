@@ -192,10 +192,26 @@ h3 {
   padding: 18px;
 }
 
+.details-panel.is-empty {
+  align-self: start;
+  max-height: none;
+  overflow: visible;
+}
+
 .sticky-details {
   max-height: calc(var(--top-card-height) - 36px);
   overflow: auto;
 }
+
+.details-panel.is-empty .sticky-details {
+  max-height: none;
+  overflow: visible;
+}
+
+.details-panel.is-empty .species-details {
+  min-height: 0;
+}
+
 
 .comparison-panel,
 .all-species-panel {
