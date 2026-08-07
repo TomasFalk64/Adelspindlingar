@@ -1,7 +1,8 @@
 (function () {
   const DATA_PATHS = {
     fieldDefinitions: "data/faltdefinitioner.json",
-    species: "data/adelspindlingar.json"
+    species: "data/adelspindlingar.json",
+    redlist: "data/rodlistade_2025.json"
   };
 
   const FIELD_LABELS = {
@@ -143,10 +144,24 @@
     }
   };
 
+  const REDLIST_LABELS = {
+    CR: "Akut hotad",
+    EN: "Starkt hotad",
+    VU: "Sårbar",
+    NT: "Nära hotad",
+    LC: "Livskraftig",
+    DD: "Kunskapsbrist",
+    NE: "Ej bedömd"
+  };
+
+  const REDLIST_CATEGORIES = new Set(Object.keys(REDLIST_LABELS));
+
   const state = {
     fieldDefinitions: [],
     fields: [],
     species: [],
+    redlistByScientificName: new Map(),
+    redlistBySwedishName: new Map(),
     evaluated: [],
     selectedSpeciesKey: null,
     compactSortKey: "svenskt_namn",
@@ -169,6 +184,8 @@
       state.fieldDefinitions = normalizeFieldDefinitions(data.fieldDefinitions);
       state.fields = state.fieldDefinitions.filter(isFilterableField);
       state.species = data.species;
+      state.redlistByScientificName = createRedlistLookup(data.redlist, "Vetenskapligt_namn");
+      state.redlistBySwedishName = createRedlistLookup(data.redlist, "Svenskt_namn");
       renderFilterForm();
       renderAllSpeciesTable();
       updateResults();
@@ -183,6 +200,8 @@
     elements.saveData = document.querySelector("#save-data");
     elements.openSources = document.querySelector("#open-sources");
     elements.sourcesDialog = document.querySelector("#sources-dialog");
+    elements.openPhlegmacium = document.querySelector("#open-phlegmacium");
+    elements.phlegmaciumDialog = document.querySelector("#phlegmacium-dialog");
     elements.nameSearch = document.querySelector("#name-search");
     elements.sortResults = document.querySelector("#sort-results");
     elements.resultCounts = document.querySelector("#result-counts");
@@ -200,8 +219,10 @@
     elements.form.addEventListener("change", updateResults);
     elements.resetAll.addEventListener("click", resetFilters);
     elements.saveData.addEventListener("click", saveCurrentData);
-    elements.openSources.addEventListener("click", openSourcesDialog);
-    elements.sourcesDialog.addEventListener("click", closeSourcesDialogOnBackdropClick);
+    elements.openSources.addEventListener("click", () => openDialog(elements.sourcesDialog));
+    elements.sourcesDialog.addEventListener("click", closeDialogOnBackdropClick);
+    elements.openPhlegmacium.addEventListener("click", () => openDialog(elements.phlegmaciumDialog));
+    elements.phlegmaciumDialog.addEventListener("click", closeDialogOnBackdropClick);
     elements.nameSearch.addEventListener("input", renderCompactResults);
     elements.sortResults.addEventListener("click", toggleCompactResultSort);
     elements.comparisonDifferingOnly.addEventListener("change", () => {
@@ -214,9 +235,10 @@
   }
 
   async function loadData() {
-    const [fieldResponse, speciesResponse] = await Promise.all([
+    const [fieldResponse, speciesResponse, redlistResponse] = await Promise.all([
       fetch(DATA_PATHS.fieldDefinitions),
-      fetch(DATA_PATHS.species)
+      fetch(DATA_PATHS.species),
+      fetch(DATA_PATHS.redlist)
     ]);
 
     if (!fieldResponse.ok) {
@@ -227,9 +249,14 @@
       throw new Error(`Kunde inte ladda ${DATA_PATHS.species}: ${speciesResponse.status}`);
     }
 
-    const [fieldDefinitions, speciesData] = await Promise.all([
+    if (!redlistResponse.ok) {
+      throw new Error(`Kunde inte ladda ${DATA_PATHS.redlist}: ${redlistResponse.status}`);
+    }
+
+    const [fieldDefinitions, speciesData, redlistData] = await Promise.all([
       fieldResponse.json(),
-      speciesResponse.json()
+      speciesResponse.json(),
+      redlistResponse.json()
     ]);
 
     if (!fieldDefinitions || typeof fieldDefinitions.faltdefinitioner !== "object") {
@@ -240,9 +267,14 @@
       throw new Error("adelspindlingar.json saknar listan arter.");
     }
 
+    if (!Array.isArray(redlistData)) {
+      throw new Error("rodlistade_2025.json ska vara en lista.");
+    }
+
     return {
       fieldDefinitions: fieldDefinitions.faltdefinitioner,
-      species: speciesData.arter
+      species: speciesData.arter,
+      redlist: redlistData
     };
   }
 
@@ -261,6 +293,19 @@
         };
       })
       .filter((field) => field.key);
+  }
+
+  function createRedlistLookup(rows, key) {
+    const lookup = new Map();
+
+    rows.forEach((row) => {
+      const normalized = normalizeLookupName(row[key]);
+      if (normalized && !lookup.has(normalized)) {
+        lookup.set(normalized, row);
+      }
+    });
+
+    return lookup;
   }
 
   function isFilterableField(field) {
@@ -499,15 +544,15 @@
     renderCompactResults();
   }
 
-  function openSourcesDialog() {
-    if (typeof elements.sourcesDialog.showModal === "function") {
-      elements.sourcesDialog.showModal();
+  function openDialog(dialog) {
+    if (typeof dialog?.showModal === "function") {
+      dialog.showModal();
     }
   }
 
-  function closeSourcesDialogOnBackdropClick(event) {
-    if (event.target === elements.sourcesDialog) {
-      elements.sourcesDialog.close();
+  function closeDialogOnBackdropClick(event) {
+    if (event.target instanceof HTMLDialogElement) {
+      event.target.close();
     }
   }
 
@@ -635,11 +680,14 @@
     return JSON.stringify(normalizeSpeciesValues(value).sort((a, b) => a.localeCompare(b, "sv")));
   }
 
-  function renderSpeciesDetails(species) {
+  function renderSpeciesDetails(species, options = {}) {
     elements.details.replaceChildren();
     elements.detailsPanel.classList.toggle("is-empty", !species);
 
     if (!species) {
+      const emptyHead = document.createElement("div");
+      emptyHead.className = "species-empty-head";
+
       const heading = document.createElement("h2");
       heading.className = "empty-details-heading";
       heading.textContent = "Artinfo";
@@ -647,7 +695,8 @@
       const message = document.createElement("p");
       message.className = "muted";
       message.textContent = "Välj en art i träfflistan eller tabellen för att visa detaljer.";
-      elements.details.append(heading, message);
+      emptyHead.append(heading, createAddSpeciesButton());
+      elements.details.append(emptyHead, message);
       return;
     }
 
@@ -667,6 +716,9 @@
     const nameRow = document.createElement("div");
     nameRow.className = "species-edit-name-row";
 
+    const nameText = document.createElement("div");
+    nameText.className = "species-name-text";
+
     const swedishName = document.createElement("strong");
     swedishName.textContent = getDisplayName(species);
 
@@ -674,8 +726,17 @@
     scientificName.className = "scientific-name";
     scientificName.textContent = formatScientificName(species.vetenskapligt_namn);
 
+    nameText.append(swedishName, scientificName);
+
+    const redlistBadge = createRedlistBadge(species);
+    if (redlistBadge) {
+      nameText.append(redlistBadge);
+    }
+
     const editActions = document.createElement("div");
     editActions.className = "species-edit-top-actions";
+
+    const addSpeciesButton = createAddSpeciesButton();
 
     const lockButton = document.createElement("button");
     lockButton.type = "button";
@@ -686,8 +747,8 @@
     lockButton.textContent = "🔒";
     lockButton.addEventListener("click", () => toggleSpeciesEditLock(form, lockButton));
 
-    editActions.append(lockButton);
-    nameRow.append(swedishName, scientificName, editActions);
+    editActions.append(addSpeciesButton, lockButton);
+    nameRow.append(nameText, editActions);
     form.append(nameRow);
 
     const advancedDetails = document.createElement("details");
@@ -716,8 +777,53 @@
 
     form.append(advancedDetails);
 
-    setSpeciesFormLocked(form, true);
+    setSpeciesFormLocked(form, !options.unlocked);
     elements.details.append(form);
+  }
+
+  function createAddSpeciesButton() {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "edit-add-button";
+    button.textContent = "+";
+    button.setAttribute("aria-label", "Lägg till ny art");
+    button.title = "Lägg till ny art";
+    button.addEventListener("click", openNewSpeciesModal);
+    return button;
+  }
+
+  function createRedlistBadge(species) {
+    const redlist = getRedlistEntry(species);
+    const category = String(redlist?.["Rödlistning"] || "").trim().toUpperCase();
+
+    if (!REDLIST_CATEGORIES.has(category)) {
+      return null;
+    }
+
+    const badge = document.createElement("span");
+    badge.className = `redlist-badge redlist-badge-${category.toLowerCase()}`;
+    badge.textContent = category;
+    badge.title = [
+      `Kategori: ${REDLIST_LABELS[category]}`,
+      redlist.Kriterium ? `Kriterium: ${redlist.Kriterium}` : ""
+    ].filter(Boolean).join("\n");
+    return badge;
+  }
+
+  function getRedlistEntry(species) {
+    const scientificNames = [
+      species.vetenskapligt_namn,
+      formatScientificName(species.vetenskapligt_namn)
+    ].map(normalizeLookupName).filter(Boolean);
+
+    for (const name of scientificNames) {
+      const match = state.redlistByScientificName.get(name);
+      if (match) {
+        return match;
+      }
+    }
+
+    return state.redlistBySwedishName.get(normalizeLookupName(species.svenskt_namn)) || null;
   }
 
   function toggleSpeciesEditLock(form, button) {
@@ -1099,6 +1205,117 @@
     });
 
     swedishInput.input.focus();
+  }
+
+  function openNewSpeciesModal() {
+    const overlay = document.createElement("div");
+    overlay.className = "modal-overlay";
+
+    const modal = document.createElement("form");
+    modal.className = "lookalike-modal new-species-modal";
+    modal.setAttribute("role", "dialog");
+    modal.setAttribute("aria-modal", "true");
+    modal.setAttribute("aria-label", "Lägg till ny art");
+
+    const heading = document.createElement("h3");
+    heading.textContent = "Ny art";
+
+    const swedishInput = createModalInput("new-species-svenskt-namn", "Svenskt namn");
+    const scientificInput = createModalInput("new-species-vetenskapligt-namn", "Vetenskapligt namn");
+    scientificInput.input.required = true;
+
+    const errorMessage = document.createElement("p");
+    errorMessage.className = "modal-error";
+    errorMessage.hidden = true;
+
+    const actions = document.createElement("div");
+    actions.className = "modal-actions";
+
+    const cancelButton = document.createElement("button");
+    cancelButton.type = "button";
+    cancelButton.textContent = "Avbryt";
+    cancelButton.addEventListener("click", () => overlay.remove());
+
+    const addButton = document.createElement("button");
+    addButton.type = "submit";
+    addButton.textContent = "Skapa art";
+
+    actions.append(cancelButton, addButton);
+    modal.append(heading, swedishInput.wrapper, scientificInput.wrapper, errorMessage, actions);
+    overlay.append(modal);
+    document.body.append(overlay);
+
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) {
+        overlay.remove();
+      }
+    });
+
+    modal.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const names = {
+        svenskt_namn: swedishInput.input.value.trim(),
+        vetenskapligt_namn: scientificInput.input.value.trim()
+      };
+      const duplicate = findDuplicateSpecies(names);
+      if (duplicate) {
+        errorMessage.textContent = `${getDisplayName(duplicate)} finns redan.`;
+        errorMessage.hidden = false;
+        return;
+      }
+
+      const species = createEmptySpecies(names);
+      state.species.push(species);
+      overlay.remove();
+      refreshDerivedViews(species);
+      selectSpecies(species, { unlocked: true, scrollToDetails: true });
+    });
+
+    swedishInput.input.focus();
+  }
+
+  function findDuplicateSpecies(names) {
+    const swedishName = normalizeNameForComparison(names.svenskt_namn);
+    const scientificName = normalizeScientificNameForComparison(names.vetenskapligt_namn);
+
+    return state.species.find((species) => {
+      const sameSwedish = swedishName && normalizeNameForComparison(species.svenskt_namn) === swedishName;
+      const sameScientific = scientificName && normalizeScientificNameForComparison(species.vetenskapligt_namn) === scientificName;
+      return sameSwedish || sameScientific;
+    });
+  }
+
+  function normalizeNameForComparison(value) {
+    return String(value || "").trim().toLocaleLowerCase("sv");
+  }
+
+  function normalizeLookupName(value) {
+    return normalizeNameForComparison(value);
+  }
+
+  function normalizeScientificNameForComparison(value) {
+    return normalizeNameForComparison(formatScientificName(value));
+  }
+
+  function createEmptySpecies(names) {
+    const species = {};
+
+    state.fieldDefinitions.forEach((field) => {
+      species[field.key] = getEmptyFieldValue(field);
+    });
+
+    species.svenskt_namn = names.svenskt_namn;
+    species.vetenskapligt_namn = names.vetenskapligt_namn;
+    return species;
+  }
+
+  function getEmptyFieldValue(field) {
+    if (field.type === "flerval" || field.type === "textlista" || field.type === "objektlista") {
+      return [];
+    }
+
+    return "";
   }
 
   function createModalInput(id, labelText) {
@@ -1615,7 +1832,7 @@
 
   function selectSpecies(species, options = {}) {
     state.selectedSpeciesKey = getSpeciesKey(species);
-    renderSpeciesDetails(species);
+    renderSpeciesDetails(species, { unlocked: options.unlocked });
     renderCompactResults();
 
     if (options.scrollToDetails) {

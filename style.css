@@ -140,6 +140,16 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.inline-info-link {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--accent-strong);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .sources-dialog {
   width: min(640px, calc(100% - 32px));
   border: 1px solid var(--border);
@@ -866,6 +876,13 @@ tr.clickable-row:hover {
   padding-bottom: 6px;
 }
 
+.species-name-text {
+  grid-column: 1 / 3;
+  display: grid;
+  justify-items: start;
+  gap: 2px;
+}
+
 .species-edit-name-row strong {
   font-family: var(--font-display);
   font-size: 0.98rem;
@@ -874,6 +891,56 @@ tr.clickable-row:hover {
 .species-edit-name-row .scientific-name {
   margin: 0;
   font-size: 0.9rem;
+}
+
+.redlist-badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 42px;
+  min-height: 24px;
+  border: 1px solid rgba(75, 53, 32, 0.18);
+  border-radius: 3px;
+  padding: 2px 8px;
+  color: #211913;
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.redlist-badge-cr {
+  background: #b84b4a;
+  color: #fff8ef;
+}
+
+.redlist-badge-en {
+  background: #c95370;
+  color: #fff8ef;
+}
+
+.redlist-badge-vu {
+  background: #d9855f;
+  color: #fff8ef;
+}
+
+.redlist-badge-nt {
+  background: #d9aaa8;
+}
+
+.redlist-badge-lc {
+  background: #b3c746;
+}
+
+.redlist-badge-dd,
+.redlist-badge-ne {
+  background: #c8c6be;
+}
+
+.species-empty-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .species-edit-top-actions {
@@ -885,15 +952,24 @@ tr.clickable-row:hover {
   justify-self: end;
 }
 
+.edit-add-button,
 .edit-lock-button,
 .edit-save-button {
   border: 1px solid var(--border);
   border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
   background: var(--surface-soft);
   width: 30px;
   height: 30px;
   padding: 0;
   line-height: 1;
+}
+
+.edit-add-button {
+  color: #4b3520;
+  font-size: 1.35rem;
+  font-weight: 800;
 }
 
 .edit-lock-button[aria-pressed="true"] {
@@ -1328,6 +1404,13 @@ tr.clickable-row:hover {
   gap: 8px;
 }
 
+.modal-error {
+  margin: 0;
+  color: var(--contradiction-text);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
 .modal-actions button {
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -1340,6 +1423,11 @@ tr.clickable-row:hover {
   background: #d9f2e4;
   color: var(--accent-strong);
   font-weight: 800;
+}
+
+.new-species-modal .modal-actions button {
+  padding: 5px 8px;
+  font-size: 0.86rem;
 }
 
 .advanced-detail-fields {

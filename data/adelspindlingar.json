@@ -51,7 +51,9 @@
       "bilder": [],
       "hattfarg_beskrivning": "krämvit med bruna missfärgningar",
       "fotfarg_beskrivning": "vit sedan brunfläckig",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -137,7 +139,8 @@
         "Lövskog"
       ],
       "fotknol_form": [
-        "rundad bulb"
+        "rundad bulb",
+        "kantad bulb"
       ],
       "tradslag": [
         "bok"
@@ -370,7 +373,8 @@
         "Lövskog"
       ],
       "fotknol_form": [
-        "rundad bulb"
+        "rundad bulb",
+        "ingen bulb"
       ],
       "tradslag": [
         "bok",
@@ -1239,18 +1243,30 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "gul"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul",
+        "brun"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "gul",
+        "brun"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1276,18 +1292,27 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "rundad bulb",
+        "ingen bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "gul"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "honung",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "liten, halvgenomskinlig",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1313,19 +1338,29 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "gul",
+        "grön"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
-      "kottfarg_beskrivning": "",
+      "kottfarg": [
+        "vit"
+      ],
+      "kottfarg_beskrivning": "som äldre med gula fläckar",
       "slemmig": [],
       "extra_1": [],
       "extra_2": [],
@@ -1349,18 +1384,31 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "blå",
+        "röd",
+        "brun"
+      ],
+      "fotfarg": [
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "lilarödbrun hatt med blå fot"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1387,18 +1435,27 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
+      "hattfarg": [
+        "gul",
+        "vit"
+      ],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "saknar gult på skivor kött och fot"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1424,18 +1481,27 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "vit",
+        "gul"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1460,18 +1526,31 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "gul",
+        "vit",
+        "blå",
+        "brun"
+      ],
+      "fotfarg": [
+        "vit",
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "blå",
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1499,18 +1578,28 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "rundad bulb",
+        "ingen bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1538,18 +1627,30 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
+      "fotfarg": [
+        "blå",
+        "gul",
+        "brun"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "blå",
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1575,18 +1676,28 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "rundad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul"
+      ],
+      "lukt": "angenäm citronmeliss",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1613,18 +1724,32 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "grön",
+        "gul",
+        "röd",
+        "brun"
+      ],
+      "fotfarg": [
+        "vit",
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "blå",
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -1651,19 +1776,29 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattfarg": [
+        "blå",
+        "brun"
+      ],
+      "fotfarg": [
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "flamming med fläckar och streck",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
-      "kottfarg_beskrivning": "",
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
+      "kottfarg_beskrivning": "blå ton i fot senare orangebrunt",
       "slemmig": [],
       "extra_1": [],
       "extra_2": [],
