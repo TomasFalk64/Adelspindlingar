@@ -84,6 +84,7 @@
     "fotfarg_beskrivning",
     "kottfarg",
     "kottfarg_beskrivning",
+    "fotknol_form",
     "slemmig"
   ]);
 
@@ -180,12 +181,15 @@
     elements.form = document.querySelector("#filter-form");
     elements.resetAll = document.querySelector("#reset-all");
     elements.saveData = document.querySelector("#save-data");
+    elements.openSources = document.querySelector("#open-sources");
+    elements.sourcesDialog = document.querySelector("#sources-dialog");
     elements.nameSearch = document.querySelector("#name-search");
     elements.sortResults = document.querySelector("#sort-results");
     elements.resultCounts = document.querySelector("#result-counts");
     elements.compactResults = document.querySelector("#compact-results");
     elements.comparison = document.querySelector("#comparison");
     elements.comparisonSummary = document.querySelector("#comparison-summary");
+    elements.comparisonDifferingOnly = document.querySelector("#comparison-differing-only");
     elements.details = document.querySelector("#species-details");
     elements.detailsPanel = document.querySelector(".details-panel");
     elements.allSpeciesTable = document.querySelector("#all-species-table");
@@ -196,8 +200,15 @@
     elements.form.addEventListener("change", updateResults);
     elements.resetAll.addEventListener("click", resetFilters);
     elements.saveData.addEventListener("click", saveCurrentData);
+    elements.openSources.addEventListener("click", openSourcesDialog);
+    elements.sourcesDialog.addEventListener("click", closeSourcesDialogOnBackdropClick);
     elements.nameSearch.addEventListener("input", renderCompactResults);
     elements.sortResults.addEventListener("click", toggleCompactResultSort);
+    elements.comparisonDifferingOnly.addEventListener("change", () => {
+      renderComparison(getSelectedFilters(), {
+        showOnlyDiffering: elements.comparisonDifferingOnly.checked
+      });
+    });
     document.addEventListener("click", closeDotPickersOnOutsideClick);
     document.addEventListener("keydown", closeDotPickersOnEscape);
   }
@@ -409,6 +420,7 @@
     }
 
     renderCompactResults();
+    elements.comparisonDifferingOnly.checked = false;
     renderComparison(filters);
 
     if (state.selectedSpeciesKey) {
@@ -487,6 +499,18 @@
     renderCompactResults();
   }
 
+  function openSourcesDialog() {
+    if (typeof elements.sourcesDialog.showModal === "function") {
+      elements.sourcesDialog.showModal();
+    }
+  }
+
+  function closeSourcesDialogOnBackdropClick(event) {
+    if (event.target === elements.sourcesDialog) {
+      elements.sourcesDialog.close();
+    }
+  }
+
   function compareCompactResults(a, b) {
     const primaryA = getCompactSortValue(a.species, state.compactSortKey);
     const primaryB = getCompactSortValue(b.species, state.compactSortKey);
@@ -504,8 +528,10 @@
     return key === "svenskt_namn" ? getDisplayName(species) : formatScientificName(species.vetenskapligt_namn);
   }
 
-  function renderComparison(filters) {
+  function renderComparison(filters, options = {}) {
     const selectedFields = [...new Set([...Object.keys(filters), ...DEFAULT_COMPARISON_FIELDS])];
+    const showOnlyDiffering = Boolean(options.showOnlyDiffering);
+    const comparisonFields = showOnlyDiffering ? selectedFields.filter(isDifferingComparisonField) : selectedFields;
     elements.comparison.replaceChildren();
 
     if (state.evaluated.length > 10) {
@@ -525,7 +551,7 @@
     const tbody = document.createElement("tbody");
     const headerRow = document.createElement("tr");
 
-    ["Svenskt namn", "Vetenskapligt namn", "Träffstatus", ...selectedFields.map(getFieldLabel), "Viktiga karaktärer"].forEach((heading) => {
+    ["Svenskt namn", "Vetenskapligt namn", "Träffstatus", ...comparisonFields.map(getFieldLabel), "Viktiga karaktärer"].forEach((heading) => {
       const th = document.createElement("th");
       th.scope = "col";
       th.textContent = heading;
@@ -538,11 +564,11 @@
       const row = document.createElement("tr");
       row.className = "clickable-row";
       row.tabIndex = 0;
-      row.addEventListener("click", () => selectSpecies(result.species));
+      row.addEventListener("click", () => selectSpecies(result.species, { scrollToDetails: true }));
       row.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          selectSpecies(result.species);
+          selectSpecies(result.species, { scrollToDetails: true });
         }
       });
 
@@ -550,10 +576,10 @@
       appendCell(row, formatScientificName(result.species.vetenskapligt_namn), "scientific-cell");
       appendCell(row, result.status === "full" ? "Trolig" : "Möjlig", "compact-status-cell");
 
-      selectedFields.forEach((field) => {
+      comparisonFields.forEach((field) => {
         const td = document.createElement("td");
         const cell = document.createElement("div");
-        const evaluation = result.evaluations[field] || { state: "missing", values: [] };
+        const evaluation = getComparisonFieldEvaluation(result, field);
         cell.className = `comparison-cell ${getCellClass(evaluation.state)}`;
         cell.title = getEvaluationLabel(evaluation.state);
 
@@ -582,6 +608,31 @@
 
     table.append(thead, tbody);
     elements.comparison.append(table);
+  }
+
+  function getComparisonFieldEvaluation(result, field) {
+    if (result.evaluations[field]) {
+      return result.evaluations[field];
+    }
+
+    const values = normalizeSpeciesValues(result.species[field]);
+    return {
+      state: values.length > 0 ? "known" : "missing",
+      values
+    };
+  }
+
+  function isDifferingComparisonField(field) {
+    if (state.evaluated.length <= 1) {
+      return true;
+    }
+
+    const firstValue = getCanonicalComparisonValue(state.evaluated[0].species[field]);
+    return state.evaluated.some((result) => getCanonicalComparisonValue(result.species[field]) !== firstValue);
+  }
+
+  function getCanonicalComparisonValue(value) {
+    return JSON.stringify(normalizeSpeciesValues(value).sort((a, b) => a.localeCompare(b, "sv")));
   }
 
   function renderSpeciesDetails(species) {
@@ -737,7 +788,7 @@
       return createColorDescriptionControl(id, field, value, species[COLOR_DESCRIPTION_FIELDS[field.key]]);
     }
 
-    if (field.key === "fotknol_form" || field.key === "slemmig") {
+    if (field.key === "slemmig") {
       return createSingleOptionControl(id, field, value);
     }
 
@@ -1379,11 +1430,11 @@
       const row = document.createElement("tr");
       row.className = "clickable-row";
       row.tabIndex = 0;
-      row.addEventListener("click", () => selectSpecies(species));
+      row.addEventListener("click", () => selectSpecies(species, { scrollToDetails: true }));
       row.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          selectSpecies(species);
+          selectSpecies(species, { scrollToDetails: true });
         }
       });
 
@@ -1562,10 +1613,26 @@
     }
   }
 
-  function selectSpecies(species) {
+  function selectSpecies(species, options = {}) {
     state.selectedSpeciesKey = getSpeciesKey(species);
     renderSpeciesDetails(species);
     renderCompactResults();
+
+    if (options.scrollToDetails) {
+      scrollDetailsIntoView();
+    }
+  }
+
+  function scrollDetailsIntoView() {
+    if (!elements.detailsPanel) {
+      return;
+    }
+
+    const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    elements.detailsPanel.scrollIntoView({
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+      block: "start"
+    });
   }
 
   function resetFilters() {
@@ -1697,6 +1764,10 @@
       return "cell-match";
     }
 
+    if (stateName === "known") {
+      return "";
+    }
+
     if (stateName === "contradiction") {
       return "cell-contradiction";
     }
@@ -1707,6 +1778,10 @@
   function getEvaluationLabel(stateName) {
     if (stateName === "match") {
       return "✓ Stämmer";
+    }
+
+    if (stateName === "known") {
+      return "Angivet";
     }
 
     if (stateName === "contradiction") {

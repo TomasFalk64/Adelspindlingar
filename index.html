@@ -15,8 +15,39 @@
       <p class="intro">
         Du har hittat en ädelspindling och undrar vad det kan vara för någon.
       </p>
+      <p class="source-note">
+        <button id="open-sources" class="source-link" type="button">Artfakta och källor</button>
+      </p>
     </div>
   </header>
+
+  <dialog id="sources-dialog" class="sources-dialog" aria-labelledby="sources-dialog-heading">
+    <div class="sources-dialog-head">
+      <h2 id="sources-dialog-heading">Källor och vidare läsning</h2>
+      <form method="dialog">
+        <button class="dialog-close-button" type="submit" aria-label="Stäng">×</button>
+      </form>
+    </div>
+    <p>
+      Fakta om arternas kännetecken, ekologi och signalvärde bygger huvudsakligen på följande referenser:
+    </p>
+    <article class="source-reference">
+      <h3>Ädelspindlingar · guide till svenska naturvårdsarter</h3>
+      <p>Sveriges Mykologiska Förening, 2024</p>
+      <p>Johan Nitare, Tommy Knutsson, Tor Erik Brandrud, Thomas S. Jeppesen & Tobias G. Frøslev</p>
+      <p>ISBN 9789152791097</p>
+    </article>
+    <article class="source-reference">
+      <h3>Skyddsvärd skog – Naturvårdsarter och andra kriterier för naturvärdesbedömning</h3>
+      <p>Johan Nitare</p>
+      <p>Skogsstyrelsens förlag</p>
+      <p>2019, tredje reviderade upplagan utgiven 2023</p>
+      <p>ISBN 978-91-986297-5-0</p>
+    </article>
+    <p>
+      Där kan man läsa mer utförligt om arternas ekologi, naturvårdsrelevans och användning vid naturvärdesbedömning.
+    </p>
+  </dialog>
 
   <main class="app-shell wrap">
     <div class="main-column">
@@ -61,6 +92,10 @@
           <h2 id="comparison-heading">Jämförande resultat</h2>
           <p id="comparison-summary">Fyll i fler observationer för att visa en detaljerad jämförelse.</p>
         </div>
+        <label class="comparison-differing-toggle">
+          <input id="comparison-differing-only" type="checkbox">
+          Visa bara skiljande karaktärer
+        </label>
       </div>
       <div id="comparison" class="comparison"></div>
     </section>
