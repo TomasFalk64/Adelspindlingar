@@ -143,7 +143,7 @@
     "bilder": {
       "typ": "objektlista",
       "falt": {
- n       "fil": {
+        "fil": {
           "typ": "text"
         },
         "bildtext": {
