@@ -1187,6 +1187,7 @@
     modal.append(heading, swedishInput.wrapper, scientificInput.wrapper, differenceInput.wrapper, actions);
     overlay.append(modal);
     document.body.append(overlay);
+    attachLookalikeSuggestions(swedishInput.input, scientificInput.input);
 
     overlay.addEventListener("click", (event) => {
       if (event.target === overlay) {
@@ -1205,6 +1206,81 @@
     });
 
     swedishInput.input.focus();
+  }
+
+  function attachLookalikeSuggestions(swedishInput, scientificInput) {
+    const suggestions = document.createElement("div");
+    suggestions.className = "lookalike-suggestions";
+    suggestions.hidden = true;
+    suggestions.id = "lookalike-suggestions";
+    suggestions.setAttribute("role", "listbox");
+    suggestions.setAttribute("aria-label", "Artforslag");
+    swedishInput.setAttribute("autocomplete", "off");
+    swedishInput.setAttribute("aria-controls", suggestions.id);
+    swedishInput.insertAdjacentElement("afterend", suggestions);
+
+    const renderSuggestions = () => {
+      const matches = findLookalikeSuggestions(swedishInput.value);
+      suggestions.replaceChildren();
+      suggestions.hidden = matches.length === 0;
+
+      matches.forEach((species) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "lookalike-suggestion";
+        button.setAttribute("role", "option");
+
+        const swedishName = document.createElement("span");
+        swedishName.className = "lookalike-suggestion-swedish";
+        swedishName.textContent = getDisplayName(species);
+
+        const scientificName = document.createElement("span");
+        scientificName.className = "lookalike-suggestion-scientific";
+        scientificName.textContent = formatScientificName(species.vetenskapligt_namn);
+
+        button.append(swedishName, scientificName);
+        button.addEventListener("mousedown", (event) => event.preventDefault());
+        button.addEventListener("click", () => {
+          swedishInput.value = species.svenskt_namn || "";
+          scientificInput.value = formatScientificName(species.vetenskapligt_namn);
+          suggestions.hidden = true;
+          suggestions.replaceChildren();
+          scientificInput.focus();
+        });
+        suggestions.append(button);
+      });
+    };
+
+    swedishInput.addEventListener("input", renderSuggestions);
+    swedishInput.addEventListener("focus", renderSuggestions);
+    swedishInput.addEventListener("blur", () => {
+      window.setTimeout(() => {
+        suggestions.hidden = true;
+      }, 100);
+    });
+  }
+
+  function findLookalikeSuggestions(query) {
+    const normalizedQuery = normalizeNameForComparison(query);
+    if (!normalizedQuery) {
+      return [];
+    }
+
+    return state.species
+      .filter((species) => normalizeNameForComparison(species.svenskt_namn).includes(normalizedQuery))
+      .sort((a, b) => {
+        const aName = normalizeNameForComparison(a.svenskt_namn);
+        const bName = normalizeNameForComparison(b.svenskt_namn);
+        const aStarts = aName.startsWith(normalizedQuery);
+        const bStarts = bName.startsWith(normalizedQuery);
+
+        if (aStarts !== bStarts) {
+          return aStarts ? -1 : 1;
+        }
+
+        return aName.localeCompare(bName, "sv");
+      })
+      .slice(0, 3);
   }
 
   function openNewSpeciesModal() {

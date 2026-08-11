@@ -1398,6 +1398,45 @@ tr.clickable-row:hover {
   font-weight: 400;
 }
 
+.lookalike-suggestions {
+  display: grid;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.lookalike-suggestions[hidden] {
+  display: none;
+}
+
+.lookalike-suggestion {
+  display: grid;
+  gap: 1px;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: #fbfcf8;
+  color: var(--text);
+  text-align: left;
+}
+
+.lookalike-suggestion:hover,
+.lookalike-suggestion:focus-visible {
+  border-color: var(--accent);
+  background: #d9f2e4;
+}
+
+.lookalike-suggestion-swedish {
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.lookalike-suggestion-scientific {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: italic;
+}
+
 .modal-actions {
   display: flex;
   justify-content: end;

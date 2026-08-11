@@ -564,7 +564,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "hatt ofta med gula fläckar"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "ljusviolett, trådig ej hydrofan, vita velumrester i centrum",
@@ -663,7 +665,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "bruna velumfjäll i hattcentrum"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -866,7 +870,9 @@
         "vit"
       ],
       "kottfarg_beskrivning": "",
-      "slemmig": [],
+      "slemmig": [
+        "Ja"
+      ],
       "extra_1": [],
       "extra_2": [],
       "extra_3": []
@@ -1207,9 +1213,11 @@
         "gul",
         "vit"
       ],
-      "lukt": "",
+      "lukt": "mjöl",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "smakar och doftar mjöl"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -1350,7 +1358,7 @@
         "vit",
         "gul"
       ],
-      "lukt": "",
+      "lukt": "jord, rättika",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
@@ -1447,7 +1455,7 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
-        "saknar gult på skivor kött och fot"
+        "yttre gröngult velum, saknar gult på skivor kött och fot"
       ],
       "forvaxlingsarter": [],
       "bilder": [],
@@ -1897,14 +1905,24 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "banan",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "viktiga_karaktarer": [
+        "saknar bulb, hat med mörkare centrum"
+      ],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "knölfotad bananspindling",
+          "vetenskapligt_namn": "",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2189,13 +2207,18 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "rundad bulb",
+        "ingen bulb"
+      ],
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "ulligt vitt velum på främst hatt"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -2266,7 +2289,7 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "hattkant med flammiga blå toner",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
@@ -2377,9 +2400,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "hattkant filtad som syns med lupp"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -2452,9 +2477,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "flammig hatt"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -2489,9 +2516,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "hatt ockrabrun/rödbrun med vita velumflockar"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -2563,9 +2592,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "hattkant med dropplika fläckar"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -2599,10 +2630,18 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "viktiga_karaktarer": [
+        "hela svampen kromgul"
+      ],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "äggspindling",
+          "vetenskapligt_namn": "",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2710,9 +2749,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "karamell, doftschersmin",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "droppfläckig hattkant. sötaktig doft"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -2872,7 +2913,7 @@
     },
     {
       "vetenskapligt_namn": "Cortinarius viridocoeruleus",
-      "svenskt_namn": "blåäggad spindling",
+      "svenskt_namn": "blåeggad spindling",
       "skivfarg_unga": [
         "gråvit",
         "blå"
@@ -2894,9 +2935,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "skivor med blå egg"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -2969,9 +3012,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "hatt gröngul med mörknande centrum"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -3005,7 +3050,7 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "jäst",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
@@ -3041,9 +3086,11 @@
       "tradslag": [],
       "hattfarg": [],
       "fotfarg": [],
-      "lukt": [],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "distinkt violett skikt under hatthud"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -3602,7 +3649,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "blålila zon ovan bulb pga lila velumtrådar"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
