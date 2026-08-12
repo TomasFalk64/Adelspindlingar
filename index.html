@@ -13,7 +13,7 @@
       <h1>Artbestämning av ädelspindlingar</h1>
       <button id="save-data" class="edit-save-button header-save-button" type="button" aria-label="Spara och ladda ner JSON" title="Spara och ladda ner JSON">💾</button>
       <p class="intro">
-        Du har hittat en <button id="open-phlegmacium" class="inline-info-link" type="button">ädelspindling</button> och undrar vad det kan vara för någon.
+        Du har hittat en <button id="open-phlegmacium" class="inline-info-link" type="button">ädelspindling</button> och undrar om det kan vara någon av de naturvårdsintressanta.
       </p>
       <p class="source-note">
         <button id="open-sources" class="source-link" type="button">Källor och lästips</button>
@@ -113,6 +113,20 @@
         </label>
       </div>
       <div id="comparison" class="comparison"></div>
+    </section>
+
+    <section class="panel comparison-panel" aria-labelledby="lookalike-comparison-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="lookalike-comparison-heading">Vald art och förväxlingsarter</h2>
+          <p id="lookalike-comparison-summary">Välj en art för att se den och dess förväxlingsarter.</p>
+        </div>
+        <label class="comparison-differing-toggle">
+          <input id="comparison-differing-only-duplicate" type="checkbox">
+          Visa bara skiljande karaktärer
+        </label>
+      </div>
+      <div id="lookalike-comparison" class="comparison"></div>
     </section>
 
     <section class="panel all-species-panel" aria-labelledby="all-species-heading">

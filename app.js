@@ -216,6 +216,9 @@
     elements.comparison = document.querySelector("#comparison");
     elements.comparisonSummary = document.querySelector("#comparison-summary");
     elements.comparisonDifferingOnly = document.querySelector("#comparison-differing-only");
+    elements.comparisonDifferingOnlyDuplicate = document.querySelector("#comparison-differing-only-duplicate");
+    elements.lookalikeComparison = document.querySelector("#lookalike-comparison");
+    elements.lookalikeComparisonSummary = document.querySelector("#lookalike-comparison-summary");
     elements.details = document.querySelector("#species-details");
     elements.detailsPanel = document.querySelector(".details-panel");
     elements.allSpeciesTable = document.querySelector("#all-species-table");
@@ -233,9 +236,12 @@
     elements.nameSearch.addEventListener("input", renderCompactResults);
     elements.sortResults.addEventListener("click", toggleCompactResultSort);
     elements.comparisonDifferingOnly.addEventListener("change", () => {
-      renderComparison(getSelectedFilters(), {
-        showOnlyDiffering: elements.comparisonDifferingOnly.checked
-      });
+      const filters = getSelectedFilters();
+      renderComparison(filters, { showOnlyDiffering: elements.comparisonDifferingOnly.checked });
+    });
+    elements.comparisonDifferingOnlyDuplicate.addEventListener("change", () => {
+      const filters = getSelectedFilters();
+      renderLookalikeComparison(filters, { showOnlyDiffering: elements.comparisonDifferingOnlyDuplicate.checked });
     });
     document.addEventListener("click", closeDotPickersOnOutsideClick);
     document.addEventListener("keydown", closeDotPickersOnEscape);
@@ -589,7 +595,9 @@
 
     renderCompactResults();
     elements.comparisonDifferingOnly.checked = false;
-    renderComparison(filters);
+    elements.comparisonDifferingOnlyDuplicate.checked = false;
+    renderComparison(filters, { showOnlyDiffering: false });
+    renderLookalikeComparison(filters, { showOnlyDiffering: false });
 
     if (state.selectedSpeciesKey) {
       const selected = state.evaluated.find((result) => getSpeciesKey(result.species) === state.selectedSpeciesKey);
@@ -793,6 +801,129 @@
     };
   }
 
+  function renderLookalikeComparison(filters = getSelectedFilters(), options = {}) {
+    const selectedFields = [...new Set([
+      ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY),
+      ...DEFAULT_COMPARISON_FIELDS
+    ])];
+    const { showOnlyDiffering = false } = options;
+    elements.lookalikeComparison.replaceChildren();
+
+    if (!state.selectedSpeciesKey) {
+      elements.lookalikeComparisonSummary.textContent = "Välj en art för att se den och dess förväxlingsarter.";
+      return;
+    }
+
+    const selected = state.evaluated.find((result) => getSpeciesKey(result.species) === state.selectedSpeciesKey);
+    if (!selected) {
+      elements.lookalikeComparisonSummary.textContent = "Den valda arten finns inte i jämförelsen.";
+      return;
+    }
+
+    const speciesList = [selected.species, ...getLookalikeSpecies(selected.species)];
+    const fieldFilters = Object.fromEntries(
+      Object.entries(filters).filter(([field]) => field !== LANDSCAPE_FILTER_KEY)
+    );
+    const evaluated = speciesList.map((species) => evaluateSpecies(species, fieldFilters));
+    const comparisonFields = showOnlyDiffering
+      ? selectedFields.filter((field) => isDifferingComparisonFieldForResults(evaluated, field))
+      : selectedFields;
+
+    elements.lookalikeComparisonSummary.textContent = `${evaluated.length} arter visas i listan.`;
+    elements.lookalikeComparison.append(createComparisonTable(evaluated, comparisonFields));
+  }
+
+  function getLookalikeSpecies(species) {
+    if (!Array.isArray(species.forvaxlingsarter) || species.forvaxlingsarter.length === 0) {
+      return [];
+    }
+
+    return species.forvaxlingsarter.map((lookalike) => {
+      const normalizedSwedish = normalizeLookupName(lookalike.svenskt_namn);
+      const normalizedScientific = normalizeLookupName(lookalike.vetenskapligt_namn);
+      const matched = state.species.find((candidate) => {
+        const candidateNames = [
+          normalizeLookupName(candidate.svenskt_namn),
+          normalizeLookupName(candidate.vetenskapligt_namn),
+          normalizeLookupName(formatScientificName(candidate.vetenskapligt_namn))
+        ];
+        return candidateNames.includes(normalizedSwedish) || candidateNames.includes(normalizedScientific);
+      });
+
+      return matched || {
+        svenskt_namn: lookalike.svenskt_namn || "",
+        vetenskapligt_namn: lookalike.vetenskapligt_namn || "",
+        forvaxlingsarter: [],
+        // include the minimal lookup fields so comparison can still render
+      };
+    });
+  }
+
+  function createComparisonTable(results, comparisonFields) {
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const tbody = document.createElement("tbody");
+    const headerRow = document.createElement("tr");
+
+    ["Svenskt namn", "Vetenskapligt namn", "Träffstatus", ...comparisonFields.map(getFieldLabel), "Viktiga karaktärer"].forEach((heading) => {
+      const th = document.createElement("th");
+      th.scope = "col";
+      th.textContent = heading;
+      headerRow.append(th);
+    });
+
+    thead.append(headerRow);
+
+    results.forEach((result) => {
+      const row = document.createElement("tr");
+      row.className = "clickable-row";
+      row.tabIndex = 0;
+      row.addEventListener("click", () => selectSpecies(result.species, { scrollToDetails: true }));
+      row.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          selectSpecies(result.species, { scrollToDetails: true });
+        }
+      });
+
+      appendCell(row, getDisplayName(result.species));
+      appendCell(row, formatScientificName(result.species.vetenskapligt_namn), "scientific-cell");
+      appendCell(row, result.status === "full" ? "Trolig" : result.status === "possible" ? "Möjlig" : "Kontradiktor", "compact-status-cell");
+
+      comparisonFields.forEach((field) => {
+        const td = document.createElement("td");
+        const cell = document.createElement("div");
+        const evaluation = getComparisonFieldEvaluation(result, field);
+        cell.className = `comparison-cell ${getCellClass(evaluation.state)}`;
+        cell.title = getEvaluationLabel(evaluation.state);
+
+        if (evaluation.state === "missing") {
+          const missing = document.createElement("span");
+          missing.className = "unknown-marker";
+          missing.textContent = "?";
+          missing.title = "Uppgift saknas";
+          cell.append(missing);
+        } else if (MARKER_DETAIL_FIELDS.has(field)) {
+          cell.append(renderValueMarkers(evaluation.values));
+        } else {
+          const values = document.createElement("span");
+          values.className = "cell-values";
+          values.textContent = evaluation.values.length > 0 ? evaluation.values.join(", ") : "?";
+          cell.append(values);
+        }
+
+        td.append(cell);
+        row.append(td);
+      });
+
+      appendCell(row, formatList(result.species.viktiga_karaktarer));
+      tbody.append(row);
+    });
+
+    table.append(thead, tbody);
+    return table;
+  }
+
   function isDifferingComparisonField(field) {
     if (state.evaluated.length <= 1) {
       return true;
@@ -800,6 +931,15 @@
 
     const firstValue = getCanonicalComparisonValue(state.evaluated[0].species[field]);
     return state.evaluated.some((result) => getCanonicalComparisonValue(result.species[field]) !== firstValue);
+  }
+
+  function isDifferingComparisonFieldForResults(results, field) {
+    if (results.length <= 1) {
+      return true;
+    }
+
+    const firstValue = getCanonicalComparisonValue(results[0].species[field]);
+    return results.some((result) => getCanonicalComparisonValue(result.species[field]) !== firstValue);
   }
 
   function getCanonicalComparisonValue(value) {
@@ -2484,6 +2624,7 @@
     state.selectedSpeciesKey = getSpeciesKey(species);
     renderSpeciesDetails(species, { unlocked: options.unlocked });
     renderCompactResults();
+    renderLookalikeComparison();
 
     if (options.scrollToDetails) {
       scrollDetailsIntoView();

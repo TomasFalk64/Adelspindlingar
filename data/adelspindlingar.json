@@ -811,7 +811,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "brunskivig citronspindling",
+          "vetenskapligt_namn": "Cortinarius fulvocitrinus",
+          "skillnad": "Reciprok förväxlingsart till brunskivig citronspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -962,7 +968,18 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "örnspindling",
+          "vetenskapligt_namn": "Cortinarius aquilanus",
+          "skillnad": "Reciprok förväxlingsart till örnspindling"
+        },
+        {
+          "svenskt_namn": "frökenspindling",
+          "vetenskapligt_namn": "Cortinarius gracilior",
+          "skillnad": "Reciprok förväxlingsart till frökenspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1065,7 +1082,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "sydlig gyllenspindling",
+          "vetenskapligt_namn": "Cortinarius bergeronii",
+          "skillnad": "Reciprok förväxlingsart till sydlig gyllenspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1116,7 +1139,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "tallpraktspindling",
+          "vetenskapligt_namn": "Cortinarius terpsichores",
+          "skillnad": "Reciprok förväxlingsart till tallpraktspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1235,6 +1264,11 @@
           "svenskt_namn": "grönkantad spindling",
           "vetenskapligt_namn": "Cortinarius prasinus",
           "skillnad": "smakar inte mjöl och har röd KOH-reaktion"
+        },
+        {
+          "svenskt_namn": "mullspindling",
+          "vetenskapligt_namn": "Cortinarius humolens",
+          "skillnad": "Reciprok förväxlingsart till mullspindling"
         }
       ],
       "bilder": [],
@@ -1409,6 +1443,11 @@
           "svenskt_namn": "persiljespindling",
           "vetenskapligt_namn": "Cortinarius sulfurinus",
           "skillnad": ""
+        },
+        {
+          "svenskt_namn": "gulslöjad spindling",
+          "vetenskapligt_namn": "Cortinarius langeorum",
+          "skillnad": "Reciprok förväxlingsart till gulslöjad spindling"
         }
       ],
       "bilder": [],
@@ -1630,7 +1669,18 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "vattrad spindling",
+          "vetenskapligt_namn": "Cortinarius arcifolius",
+          "skillnad": "Reciprok förväxlingsart till vattrad spindling"
+        },
+        {
+          "svenskt_namn": "pålrotsspindling",
+          "vetenskapligt_namn": "Cortinarius aureocalceolatus",
+          "skillnad": "Reciprok förväxlingsart till pålrotsspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1828,7 +1878,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "vattrad spindling",
+          "vetenskapligt_namn": "Cortinarius arcifolius",
+          "skillnad": "Reciprok förväxlingsart till vattrad spindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1877,7 +1933,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "vattrad spindling",
+          "vetenskapligt_namn": "Cortinarius arcifolius",
+          "skillnad": "Reciprok förväxlingsart till vattrad spindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "flamming med fläckar och streck",
       "fotfarg_beskrivning": "",
@@ -2146,7 +2208,13 @@
       "lukt": [],
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "fläckig saffransspindling",
+          "vetenskapligt_namn": "Cortinarius alcalinophilus",
+          "skillnad": "Reciprok förväxlingsart till fläckig saffransspindling"
+        }
+      ],
       "bilder": [
         {
           "fil": "data/bilder/saffranspindling_1.jpg",
@@ -2232,7 +2300,13 @@
       "lukt": [],
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "spökspindling",
+          "vetenskapligt_namn": "Cortinarius albertii",
+          "skillnad": "Reciprok förväxlingsart till spökspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2269,7 +2343,13 @@
       "lukt": [],
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "lilaflockig spindling",
+          "vetenskapligt_namn": "Cortinarius lilacinovelatus",
+          "skillnad": "Reciprok förväxlingsart till lilaflockig spindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2384,7 +2464,13 @@
       "lukt": "hattkant med flammiga blå toner",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "mjölspindling",
+          "vetenskapligt_namn": "Cortinarius flavovirens",
+          "skillnad": "Reciprok förväxlingsart till mjölspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2613,7 +2699,13 @@
       "viktiga_karaktarer": [
         "hatt ockrabrun/rödbrun med vita velumflockar"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "blåfotad sockelspindling",
+          "vetenskapligt_namn": "Cortinarius flavidolilacinus",
+          "skillnad": "Reciprok förväxlingsart till blåfotad sockelspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2806,7 +2898,13 @@
       "lukt": [],
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "bananspindling",
+          "vetenskapligt_namn": "Cortinarius nanceiensis",
+          "skillnad": "Reciprok förväxlingsart till bananspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2956,7 +3054,13 @@
       "lukt": [],
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "lilaflockig spindling",
+          "vetenskapligt_namn": "Cortinarius lilacinovelatus",
+          "skillnad": "Reciprok förväxlingsart till lilaflockig spindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -3032,7 +3136,13 @@
       "viktiga_karaktarer": [
         "skivor med blå egg"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "vattrad spindling",
+          "vetenskapligt_namn": "Cortinarius arcifolius",
+          "skillnad": "Reciprok förväxlingsart till vattrad spindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -3145,7 +3255,18 @@
       "lukt": "jäst",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "örnspindling",
+          "vetenskapligt_namn": "Cortinarius aquilanus",
+          "skillnad": "Reciprok förväxlingsart till örnspindling"
+        },
+        {
+          "svenskt_namn": "gulslöjad spindling",
+          "vetenskapligt_namn": "Cortinarius langeorum",
+          "skillnad": "Reciprok förväxlingsart till gulslöjad spindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -3265,7 +3386,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "siljansspindling",
+          "vetenskapligt_namn": "Cortinarius dalecarlicus",
+          "skillnad": "Reciprok förväxlingsart till siljansspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "hattkant länge inrullad och ljus",
       "fotfarg_beskrivning": "",
@@ -3544,6 +3671,11 @@
           "svenskt_namn": "kristinspindling",
           "vetenskapligt_namn": "",
           "skillnad": ""
+        },
+        {
+          "svenskt_namn": "siljansspindling",
+          "vetenskapligt_namn": "Cortinarius dalecarlicus",
+          "skillnad": "Reciprok förväxlingsart till siljansspindling"
         }
       ],
       "bilder": [],
@@ -3744,7 +3876,13 @@
       "viktiga_karaktarer": [
         "blålila zon ovan bulb pga lila velumtrådar"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "siljansspindling",
+          "vetenskapligt_namn": "Cortinarius dalecarlicus",
+          "skillnad": "Reciprok förväxlingsart till siljansspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -3795,7 +3933,18 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "kryddspindling",
+          "vetenskapligt_namn": "Cortinarius percomis",
+          "skillnad": "Reciprok förväxlingsart till kryddspindling"
+        },
+        {
+          "svenskt_namn": "stor odörspindling",
+          "vetenskapligt_namn": "Cortinarius mussivus",
+          "skillnad": "Reciprok förväxlingsart till stor odörspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "blekgul mot kanten",
       "fotfarg_beskrivning": "",
@@ -4167,7 +4316,18 @@
       "viktiga_karaktarer": [
         "bacalmycel och mycelsträngar  KOH+"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "mullspindling",
+          "vetenskapligt_namn": "Cortinarius humolens",
+          "skillnad": "Reciprok förväxlingsart till mullspindling"
+        },
+        {
+          "svenskt_namn": "kungsspindling",
+          "vetenskapligt_namn": "Cortinarius elegantior",
+          "skillnad": "Reciprok förväxlingsart till kungsspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -4482,7 +4642,13 @@
       "viktiga_karaktarer": [
         "metalliskt guldglänsande fintrådig hatt, gula velumrester på fotknölen"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "pålrotsspindling",
+          "vetenskapligt_namn": "Cortinarius aureocalceolatus",
+          "skillnad": "Reciprok förväxlingsart till pålrotsspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -4531,7 +4697,18 @@
       "viktiga_karaktarer": [
         "blålila ton i övre fotdel"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "barrfagerspindling",
+          "vetenskapligt_namn": "Cortinarius piceae",
+          "skillnad": "Reciprok förväxlingsart till barrfagerspindling"
+        },
+        {
+          "svenskt_namn": "gulsträngad fagerspindling",
+          "vetenskapligt_namn": "Cortinarius haasii",
+          "skillnad": "Reciprok förväxlingsart till gulsträngad fagerspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "vit med gulkantad bulb",
@@ -4627,7 +4804,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "tallpraktspindling",
+          "vetenskapligt_namn": "Cortinarius terpsichores",
+          "skillnad": "Reciprok förväxlingsart till tallpraktspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "gråblå",
       "fotfarg_beskrivning": "",
@@ -4676,7 +4859,23 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "klenodspindling",
+          "vetenskapligt_namn": "Cortinarius spectabilis",
+          "skillnad": "Reciprok förväxlingsart till klenodspindling"
+        },
+        {
+          "svenskt_namn": "koboltspindling",
+          "vetenskapligt_namn": "Cortinarius cobaltinus",
+          "skillnad": "Reciprok förväxlingsart till koboltspindling"
+        },
+        {
+          "svenskt_namn": "lazuritspindling",
+          "vetenskapligt_namn": "Cortinarius lithophilus",
+          "skillnad": "Reciprok förväxlingsart till lazuritspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "grågul sämskskinn",
       "fotfarg_beskrivning": "",
@@ -4725,6 +4924,11 @@
           "svenskt_namn": "gyllenspindling",
           "vetenskapligt_namn": "",
           "skillnad": "gyllengul hatt, kött saknar blå toner"
+        },
+        {
+          "svenskt_namn": "sydlig gyllenspindling",
+          "vetenskapligt_namn": "Cortinarius bergeronii",
+          "skillnad": "Reciprok förväxlingsart till sydlig gyllenspindling"
         }
       ],
       "bilder": [],
@@ -4833,6 +5037,11 @@
           "svenskt_namn": "lazuritspindling",
           "vetenskapligt_namn": "",
           "skillnad": ""
+        },
+        {
+          "svenskt_namn": "klenodspindling",
+          "vetenskapligt_namn": "Cortinarius spectabilis",
+          "skillnad": "Reciprok förväxlingsart till klenodspindling"
         }
       ],
       "bilder": [],
@@ -5122,6 +5331,11 @@
           "svenskt_namn": "violettrandad spindling",
           "vetenskapligt_namn": "",
           "skillnad": ""
+        },
+        {
+          "svenskt_namn": "bullspindling",
+          "vetenskapligt_namn": "Cortinarius corrosus",
+          "skillnad": "Reciprok förväxlingsart till bullspindling"
         }
       ],
       "bilder": [],
@@ -5232,7 +5446,18 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "gulsträngad fagerspindling",
+          "vetenskapligt_namn": "Cortinarius haasii",
+          "skillnad": "Reciprok förväxlingsart till gulsträngad fagerspindling"
+        },
+        {
+          "svenskt_namn": "kristinspindling",
+          "vetenskapligt_namn": "Cortinarius kristinae",
+          "skillnad": "Reciprok förväxlingsart till kristinspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -5282,7 +5507,18 @@
       "viktiga_karaktarer": [
         "hatthud bitter om man lägger mot tungan. Liten kantad bulb"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "bullspindling",
+          "vetenskapligt_namn": "Cortinarius corrosus",
+          "skillnad": "Reciprok förväxlingsart till bullspindling"
+        },
+        {
+          "svenskt_namn": "dvärgblekspindling",
+          "vetenskapligt_namn": "Cortinarius cremeiamarescens",
+          "skillnad": "Reciprok förväxlingsart till dvärgblekspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -5490,6 +5726,11 @@
           "svenskt_namn": "trillingspindling",
           "vetenskapligt_namn": "",
           "skillnad": ""
+        },
+        {
+          "svenskt_namn": "barrfagerspindling",
+          "vetenskapligt_namn": "Cortinarius piceae",
+          "skillnad": "Reciprok förväxlingsart till barrfagerspindling"
         }
       ],
       "bilder": [],
@@ -5649,7 +5890,13 @@
       "viktiga_karaktarer": [
         "hela svampen kraftigt gul"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "svavelspindling",
+          "vetenskapligt_namn": "Cortinarius splendens",
+          "skillnad": "Reciprok förväxlingsart till svavelspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -5697,7 +5944,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "barrfagerspindling",
+          "vetenskapligt_namn": "Cortinarius piceae",
+          "skillnad": "Reciprok förväxlingsart till barrfagerspindling"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -5752,6 +6005,11 @@
           "svenskt_namn": "odörspindling",
           "vetenskapligt_namn": "",
           "skillnad": ""
+        },
+        {
+          "svenskt_namn": "kryddspindling",
+          "vetenskapligt_namn": "Cortinarius percomis",
+          "skillnad": "Reciprok förväxlingsart till kryddspindling"
         }
       ],
       "bilder": [],
