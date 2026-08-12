@@ -710,6 +710,7 @@
       ...DEFAULT_COMPARISON_FIELDS
     ])];
     const showOnlyDiffering = Boolean(options.showOnlyDiffering);
+    const includeMatchStatus = !showOnlyDiffering;
     const comparisonFields = showOnlyDiffering ? selectedFields.filter(isDifferingComparisonField) : selectedFields;
     elements.comparison.replaceChildren();
 
@@ -730,7 +731,13 @@
     const tbody = document.createElement("tbody");
     const headerRow = document.createElement("tr");
 
-    ["Svenskt namn", "Vetenskapligt namn", "Träffstatus", ...comparisonFields.map(getFieldLabel), "Viktiga karaktärer"].forEach((heading) => {
+    [
+      "Svenskt namn",
+      "Vetenskapligt namn",
+      ...(includeMatchStatus ? ["Träffstatus"] : []),
+      ...comparisonFields.map(getFieldLabel),
+      "Viktiga karaktärer"
+    ].forEach((heading) => {
       const th = document.createElement("th");
       th.scope = "col";
       th.textContent = heading;
@@ -753,7 +760,9 @@
 
       appendCell(row, getDisplayName(result.species));
       appendCell(row, formatScientificName(result.species.vetenskapligt_namn), "scientific-cell");
-      appendCell(row, result.status === "full" ? "Trolig" : "Möjlig", "compact-status-cell");
+      if (includeMatchStatus) {
+        appendCell(row, result.status === "full" ? "Trolig" : "Möjlig", "compact-status-cell");
+      }
 
       comparisonFields.forEach((field) => {
         const td = document.createElement("td");
@@ -830,7 +839,9 @@
       : selectedFields;
 
     elements.lookalikeComparisonSummary.textContent = `${evaluated.length} arter visas i listan.`;
-    elements.lookalikeComparison.append(createComparisonTable(evaluated, comparisonFields));
+    elements.lookalikeComparison.append(createComparisonTable(evaluated, comparisonFields, {
+      includeMatchStatus: !showOnlyDiffering
+    }));
   }
 
   function getLookalikeSpecies(species) {
@@ -859,13 +870,20 @@
     });
   }
 
-  function createComparisonTable(results, comparisonFields) {
+  function createComparisonTable(results, comparisonFields, options = {}) {
+    const { includeMatchStatus = true } = options;
     const table = document.createElement("table");
     const thead = document.createElement("thead");
     const tbody = document.createElement("tbody");
     const headerRow = document.createElement("tr");
 
-    ["Svenskt namn", "Vetenskapligt namn", "Träffstatus", ...comparisonFields.map(getFieldLabel), "Viktiga karaktärer"].forEach((heading) => {
+    [
+      "Svenskt namn",
+      "Vetenskapligt namn",
+      ...(includeMatchStatus ? ["Träffstatus"] : []),
+      ...comparisonFields.map(getFieldLabel),
+      "Viktiga karaktärer"
+    ].forEach((heading) => {
       const th = document.createElement("th");
       th.scope = "col";
       th.textContent = heading;
@@ -888,7 +906,9 @@
 
       appendCell(row, getDisplayName(result.species));
       appendCell(row, formatScientificName(result.species.vetenskapligt_namn), "scientific-cell");
-      appendCell(row, result.status === "full" ? "Trolig" : result.status === "possible" ? "Möjlig" : "Kontradiktor", "compact-status-cell");
+      if (includeMatchStatus) {
+        appendCell(row, result.status === "full" ? "Trolig" : result.status === "possible" ? "Möjlig" : "Kontradiktor", "compact-status-cell");
+      }
 
       comparisonFields.forEach((field) => {
         const td = document.createElement("td");

@@ -1648,7 +1648,9 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "bok"
+      ],
       "hattfarg": [
         "gul",
         "vit",
@@ -1670,10 +1672,15 @@
         {
           "svenskt_namn": "pålrotsspindling",
           "vetenskapligt_namn": "Cortinarius aureocalceolatus"
+        },
+        {
+          "svenskt_namn": "lövstrimspindling",
+          "vetenskapligt_namn": "Cortinarius magicus",
+          "skillnad": "har brunare hatt och kraftigare tillspetsad fot"
         }
       ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "gulaktiga velumplättar",
       "fotfarg_beskrivning": "",
       "kottfarg": [
         "blå",
@@ -1710,7 +1717,9 @@
         "rundad bulb",
         "ingen bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "ek"
+      ],
       "hattfarg": [
         "gul",
         "brun"
@@ -1721,7 +1730,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "klubbspindling",
+          "vetenskapligt_namn": "cortinarus varius",
+          "skillnad": "växer i barrskog, har rent vit fot och KOH gul i köttet"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1758,7 +1773,11 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "bok",
+        "ek",
+        "hassel"
+      ],
       "hattfarg": [
         "gul",
         "brun"
@@ -1771,7 +1790,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "strimspindling",
+          "vetenskapligt_namn": "Cortinarius glaucopus",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1807,7 +1832,11 @@
       "fotknol_form": [
         "rundad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "hassel",
+        "ek",
+        "lind"
+      ],
       "hattfarg": [
         "gul",
         "brun"
@@ -1819,7 +1848,23 @@
       "lukt": "angenäm citronmeliss",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "kryddspindling",
+          "vetenskapligt_namn": "Cortinarius percomis",
+          "skillnad": "växer med gran"
+        },
+        {
+          "svenskt_namn": "lövkryddspindling",
+          "vetenskapligt_namn": "Cortinarius xanthosuavis",
+          "skillnad": "har banandoft"
+        },
+        {
+          "svenskt_namn": "bananspindling",
+          "vetenskapligt_namn": "Cortinarius nanceiensis",
+          "skillnad": "har banandoft och rödbrunt hattcentrum"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1855,7 +1900,10 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "lind",
+        "hassel"
+      ],
       "hattfarg": [
         "grön",
         "gul",
@@ -1873,10 +1921,15 @@
         {
           "svenskt_namn": "vattrad spindling",
           "vetenskapligt_namn": "Cortinarius arcifolius"
+        },
+        {
+          "svenskt_namn": "blåeggad spindling",
+          "vetenskapligt_namn": "Cortinarius viridocoeruleus",
+          "skillnad": "har blå skivegg"
         }
       ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "hygrofan med mörkare hattkant",
       "fotfarg_beskrivning": "",
       "kottfarg": [
         "vit",
@@ -1912,7 +1965,10 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "hassel",
+        "ek"
+      ],
       "hattfarg": [
         "blå",
         "brun"
@@ -1962,19 +2018,54 @@
         "Lövskog"
       ],
       "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "tradslag": [
+        "ek"
+      ],
+      "hattfarg": [
+        "vit",
+        "blå"
+      ],
+      "fotfarg": [
+        "vit",
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "nymfspindling",
+          "vetenskapligt_namn": "Cortinarius nymphicolor",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "blåslöjad spökspindling",
+          "vetenskapligt_namn": "Cortinarius parasuaveolens",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "lilaflockig spindling",
+          "vetenskapligt_namn": "Cortinarius lilacinovelatus",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "lindspindling",
+          "vetenskapligt_namn": "Cortinarius tiliae",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "syrenblå",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
-      "kottfarg_beskrivning": "",
-      "slemmig": [],
+      "kottfarg": [
+        "vit",
+        "blå",
+        "gul"
+      ],
+      "kottfarg_beskrivning": "vit med blå ton i fot senare gulbrun i fot",
+      "slemmig": [
+        "Ja"
+      ],
       "extra_1": [],
       "extra_2": [],
       "extra_3": []
@@ -1998,18 +2089,38 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "rundad bulb"
+      ],
+      "tradslag": [
+        "hassel",
+        "bok",
+        "ek"
+      ],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "granatspindling",
+          "vetenskapligt_namn": "Cortinarius cruentipellis",
+          "skillnad": "har kantad bulb och gulare toner i hatt"
+        }
+      ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "inväxta fibrer",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -5236,7 +5347,7 @@
       "kottfarg": [
         "vit"
       ],
-      "kottfarg_beskrivning": "gulgrön ton",
+      "kottfarg_beskrivning": "vitt, i kant gulgrön ton",
       "slemmig": [
         "Ja"
       ],
