@@ -1,19 +1,34 @@
 (function () {
-  const GRAPH_PATH = "data/Artgraf_Uppland_50m.json";
   const DEFAULT_MIN_WEIGHT = 1;
   const MAX_VISIBLE_SPECIES = 10;
-  const GRAPH_CONTEXT = "Uppland - arter sedda inom 50m";
+  const GRAPH_OPTIONS = {
+    Uppland: {
+      path: "data/Artgraf_Uppland_50m.json",
+      context: "Uppland - arter sedda inom 50m"
+    },
+    Jämtland: {
+      path: "data/Artgraf_Jämtland_50m.json",
+      context: "Jämtland - arter sedda inom 50m"
+    },
+    combined: {
+      path: "data/Artgraf_Kombinerad_50m.json",
+      context: "Kombinerad vy - arter sedda inom 50m"
+    }
+  };
 
-  let graphPromise = null;
+  const graphPromiseCache = new Map();
   let activeNetwork = null;
 
   window.SpeciesGraph = {
     open
   };
 
-  async function open(species) {
+  async function open(species, options = {}) {
     const speciesName = getSpeciesName(species);
-    const overlay = createModal(speciesName);
+    const { landscapes } = options;
+    const { path: graphPath, context: graphContext } = getGraphOptions(landscapes);
+
+    const overlay = createModal(speciesName, graphContext);
     document.body.append(overlay.root);
     overlay.closeButton.focus();
 
@@ -25,7 +40,7 @@
     setStatus(overlay, "Laddar grafdata...");
 
     try {
-      const graph = await loadGraph();
+      const graph = await loadGraph(graphPath);
       renderGraphModal(overlay, graph, speciesName);
     } catch (error) {
       console.error(error);
@@ -33,7 +48,7 @@
     }
   }
 
-  function createModal(speciesName) {
+  function createModal(speciesName, graphContext) {
     const root = document.createElement("div");
     root.className = "modal-overlay species-graph-overlay";
 
@@ -53,7 +68,7 @@
     title.textContent = "Nätverksgraf";
     const context = document.createElement("p");
     context.className = "species-graph-context";
-    context.textContent = GRAPH_CONTEXT;
+    context.textContent = graphContext;
     titleLine.append(title, context);
     const subtitle = document.createElement("p");
     subtitle.className = "species-graph-species-name";
@@ -124,17 +139,30 @@
     return { root, modal, closeButton, slider, value, status, canvas };
   }
 
-  async function loadGraph() {
-    if (!graphPromise) {
-      graphPromise = fetch(GRAPH_PATH).then((response) => {
+  async function loadGraph(graphPath) {
+    if (!graphPromiseCache.has(graphPath)) {
+      const graphPromise = fetch(graphPath).then((response) => {
         if (!response.ok) {
-          throw new Error(`Kunde inte ladda ${GRAPH_PATH}: ${response.status}`);
+          throw new Error(`Kunde inte ladda ${graphPath}: ${response.status}`);
         }
         return response.json();
       });
+      graphPromiseCache.set(graphPath, graphPromise);
     }
 
-    return graphPromise;
+    return graphPromiseCache.get(graphPath);
+  }
+
+  function getGraphOptions(landscapes) {
+    const selectedLandscapes = Array.isArray(landscapes)
+      ? landscapes.map((value) => String(value).trim())
+      : [];
+
+    if (selectedLandscapes.length === 1 && GRAPH_OPTIONS[selectedLandscapes[0]]) {
+      return GRAPH_OPTIONS[selectedLandscapes[0]];
+    }
+
+    return GRAPH_OPTIONS.combined;
   }
 
   function renderGraphModal(overlay, graph, speciesName) {

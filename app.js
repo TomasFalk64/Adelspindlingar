@@ -1365,7 +1365,9 @@
     button.append(icon);
     button.addEventListener("click", () => {
       if (window.SpeciesGraph?.open) {
-        window.SpeciesGraph.open(species);
+        const filters = getSelectedFilters();
+        const landscapes = filters[LANDSCAPE_FILTER_KEY] || [];
+        window.SpeciesGraph.open(species, { landscapes });
       }
     });
     return button;
