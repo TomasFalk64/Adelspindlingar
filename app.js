@@ -700,6 +700,11 @@
       return;
     }
 
+    if (!options.unlocked) {
+      renderLockedSpeciesDetails(species);
+      return;
+    }
+
     const form = document.createElement("form");
     form.className = "species-edit-form";
     form.addEventListener("submit", (event) => {
@@ -729,9 +734,8 @@
     nameText.append(swedishName, scientificName);
 
     const redlistBadge = createRedlistBadge(species);
-    if (redlistBadge) {
-      nameText.append(redlistBadge);
-    }
+    const nameBadge = redlistBadge || document.createElement("span");
+    nameBadge.classList.add("species-name-badge");
 
     const editActions = document.createElement("div");
     editActions.className = "species-edit-top-actions";
@@ -745,18 +749,57 @@
     lockButton.setAttribute("aria-label", "Lås upp redigering");
     lockButton.title = "Lås upp redigering";
     lockButton.textContent = "🔒";
-    lockButton.addEventListener("click", () => toggleSpeciesEditLock(form, lockButton));
+    lockButton.addEventListener("click", () => {
+      syncSpeciesDetails(species, form, { silentInvalidJson: true });
+      renderSpeciesDetails(species);
+    });
 
     editActions.append(addSpeciesButton, lockButton);
-    nameRow.append(nameText, editActions);
+    nameRow.append(nameText, nameBadge, editActions);
     form.append(nameRow);
 
-    const advancedDetails = document.createElement("details");
+    const advancedDetails = document.createElement("div");
     advancedDetails.className = "advanced-detail-fields";
 
-    const advancedSummary = document.createElement("summary");
-    advancedSummary.textContent = "Fler fält";
-    advancedDetails.append(advancedSummary);
+    const groupedEditableFields = new Set([
+      "skivfarg_unga",
+      "fotknol_form",
+      "koh_hatt",
+      "koh_fotknol",
+      "koh_kott",
+      "hattfarg",
+      "fotfarg",
+      "kottfarg",
+      "miljo",
+      "tradslag",
+      "lukt",
+      "slemmig",
+      "fruktkroppstid"
+    ]);
+
+    form.append(
+      createEditableFieldGroup(species, "Skivf\u00e4rg och fotkn\u00f6l", [
+        "skivfarg_unga",
+        "fotknol_form"
+      ], "compact-field-grid compact-field-grid-2"),
+      createEditableFieldGroup(species, "KOH", [
+        "koh_hatt",
+        "koh_fotknol",
+        "koh_kott"
+      ], "compact-field-grid compact-field-grid-3"),
+      createEditableFieldGroup(species, "F\u00e4rger", [
+        "hattfarg",
+        "fotfarg",
+        "kottfarg"
+      ], "compact-field-grid compact-field-grid-3"),
+      createEditableFieldGroup(species, "Karakt\u00e4rer", [
+        "miljo",
+        "tradslag",
+        "lukt",
+        "slemmig",
+        "fruktkroppstid"
+      ], "compact-field-grid compact-field-grid-2")
+    );
 
     DETAIL_FIELDS.forEach((field) => {
       if (READONLY_DETAIL_FIELDS.has(field)) {
@@ -767,18 +810,208 @@
         return;
       }
 
-      const row = renderEditableDetailField(species, field);
-      if (PRIMARY_DETAIL_FIELDS.has(field)) {
-        form.append(row);
-      } else {
-        advancedDetails.append(row);
+      if (groupedEditableFields.has(field)) {
+        return;
       }
+
+      if (field === "bilder") {
+        return;
+      }
+
+      const row = renderEditableDetailField(species, field);
+      advancedDetails.append(row);
     });
 
     form.append(advancedDetails);
+    form.append(renderEditableDetailField(species, "bilder"));
 
     setSpeciesFormLocked(form, !options.unlocked);
     elements.details.append(form);
+  }
+
+  function renderLockedSpeciesDetails(species) {
+    const view = document.createElement("div");
+    view.className = "species-compact-view";
+
+    const nameRow = document.createElement("div");
+    nameRow.className = "species-edit-name-row species-compact-name-row";
+
+    const nameText = document.createElement("div");
+    nameText.className = "species-name-text";
+
+    const swedishName = document.createElement("strong");
+    swedishName.textContent = getDisplayName(species);
+
+    const scientificName = document.createElement("span");
+    scientificName.className = "scientific-name";
+    scientificName.textContent = formatScientificName(species.vetenskapligt_namn);
+
+    nameText.append(swedishName, scientificName);
+
+    const redlistBadge = createRedlistBadge(species);
+    const nameBadge = redlistBadge || document.createElement("span");
+    nameBadge.classList.add("species-name-badge");
+
+    const editActions = document.createElement("div");
+    editActions.className = "species-edit-top-actions";
+
+    const addSpeciesButton = createAddSpeciesButton();
+    const unlockButton = document.createElement("button");
+    unlockButton.type = "button";
+    unlockButton.className = "edit-lock-button";
+    unlockButton.textContent = "\u{1F512}";
+    unlockButton.setAttribute("aria-pressed", "false");
+    unlockButton.setAttribute("aria-label", "L\u00e5s upp redigering");
+    unlockButton.title = "L\u00e5s upp redigering";
+    unlockButton.addEventListener("click", () => renderSpeciesDetails(species, { unlocked: true }));
+
+    editActions.append(addSpeciesButton, unlockButton);
+    nameRow.append(nameText, nameBadge, editActions);
+    view.append(nameRow);
+
+    view.append(
+      createCompactGroup("Skivf\u00e4rg och fotkn\u00f6l", [
+        createCompactField(species, "skivfarg_unga"),
+        createCompactField(species, "fotknol_form")
+      ], "compact-field-grid compact-field-grid-2"),
+      createCompactGroup("KOH", [
+        createCompactField(species, "koh_hatt"),
+        createCompactField(species, "koh_fotknol"),
+        createCompactField(species, "koh_kott")
+      ], "compact-field-grid compact-field-grid-3"),
+      createCompactGroup("F\u00e4rger", [
+        createCompactField(species, "hattfarg", species.hattfarg_beskrivning),
+        createCompactField(species, "fotfarg", species.fotfarg_beskrivning),
+        createCompactField(species, "kottfarg", species.kottfarg_beskrivning)
+      ], "compact-field-grid compact-field-grid-3"),
+      createCompactGroup("Karakt\u00e4rer", [
+        createCompactField(species, "miljo"),
+        createCompactField(species, "tradslag"),
+        createCompactField(species, "lukt"),
+        createCompactField(species, "slemmig"),
+        createCompactField(species, "fruktkroppstid")
+      ], "compact-field-grid compact-field-grid-2")
+    );
+
+    const importantCharacters = createCompactTextSection("Viktiga karakt\u00e4rer", normalizeSpeciesValues(species.viktiga_karaktarer));
+    if (importantCharacters) {
+      view.append(importantCharacters);
+    }
+
+    const lookalikes = createCompactLookalikes(species);
+    if (lookalikes) {
+      view.append(lookalikes);
+    }
+
+    const imagesSection = document.createElement("section");
+    imagesSection.className = "compact-section compact-images-section";
+
+    const imagesHeading = document.createElement("h3");
+    imagesHeading.textContent = "Bilder";
+
+    const images = Array.isArray(species.bilder) ? species.bilder : [];
+    const imageGrid = createImageGrid(species, images);
+    const imageContent = imageGrid || document.createElement("div");
+    if (!imageGrid) {
+      imageContent.className = "compact-empty-images";
+    }
+    imagesSection.append(imagesHeading, imageContent);
+    view.append(imagesSection);
+
+    elements.details.append(view);
+  }
+
+  function createCompactGroup(headingText, fields, className) {
+    const section = document.createElement("section");
+    section.className = "compact-section";
+
+    const heading = document.createElement("h3");
+    heading.textContent = headingText;
+
+    const grid = document.createElement("div");
+    grid.className = className;
+    fields.forEach((field) => grid.append(field));
+
+    section.append(heading, grid);
+    return section;
+  }
+
+  function createCompactField(species, fieldKey, description = "") {
+    const field = document.createElement("div");
+    field.className = "compact-field";
+    const hasDescription = arguments.length >= 3;
+    if (hasDescription) {
+      field.classList.add("compact-field-with-description");
+    }
+
+    const label = document.createElement("span");
+    label.className = "compact-field-label";
+    label.textContent = getFieldLabel(fieldKey);
+
+    const value = document.createElement("div");
+    value.className = "compact-field-value";
+
+    if (MARKER_DETAIL_FIELDS.has(fieldKey)) {
+      value.append(renderValueMarkers(species[fieldKey]));
+    } else {
+      const values = normalizeSpeciesValues(species[fieldKey]);
+      value.textContent = values.length > 0 ? values.join(", ") : "";
+    }
+
+    field.append(label, value);
+
+    if (hasDescription) {
+      const descriptionText = document.createElement("p");
+      descriptionText.className = "compact-field-description";
+      descriptionText.textContent = description || "";
+      field.append(descriptionText);
+    }
+
+    return field;
+  }
+
+  function createCompactTextSection(headingText, values) {
+    if (!values.length) {
+      return null;
+    }
+
+    const section = document.createElement("section");
+    section.className = "compact-section";
+
+    const heading = document.createElement("h3");
+    heading.textContent = headingText;
+
+    section.append(heading, renderTextList(values));
+    return section;
+  }
+
+  function createCompactLookalikes(species) {
+    if (!Array.isArray(species.forvaxlingsarter) || species.forvaxlingsarter.length === 0) {
+      return null;
+    }
+
+    const section = document.createElement("section");
+    section.className = "compact-section";
+
+    const heading = document.createElement("h3");
+    heading.textContent = "F\u00f6rv\u00e4xlingsarter";
+
+    const list = document.createElement("ul");
+    list.className = "detail-list";
+
+    species.forvaxlingsarter.forEach((lookalike) => {
+      const item = document.createElement("li");
+      const name = [
+        lookalike.svenskt_namn,
+        formatScientificName(lookalike.vetenskapligt_namn)
+      ].filter(Boolean).join(" - ");
+      const difference = lookalike.skillnad ? `: ${lookalike.skillnad}` : "";
+      item.textContent = `${name}${difference}`;
+      list.append(item);
+    });
+
+    section.append(heading, list);
+    return section;
   }
 
   function createAddSpeciesButton() {
@@ -861,6 +1094,9 @@
     const field = getFieldDefinition(fieldKey);
     const wrapper = document.createElement("div");
     wrapper.className = "detail-edit-row";
+    if (fieldKey === "bilder") {
+      wrapper.classList.add("detail-edit-row-images");
+    }
 
     const label = document.createElement("label");
     label.htmlFor = `detail-${fieldKey}`;
@@ -884,6 +1120,26 @@
 
     wrapper.append(label, controlWrap);
     return wrapper;
+  }
+
+  function createEditableFieldGroup(species, headingText, fields, className) {
+    const section = document.createElement("section");
+    section.className = "compact-section editable-compact-section";
+
+    const heading = document.createElement("h3");
+    heading.textContent = headingText;
+
+    const grid = document.createElement("div");
+    grid.className = className;
+
+    fields.forEach((fieldKey) => {
+      const row = renderEditableDetailField(species, fieldKey);
+      row.classList.add("detail-edit-row-compact");
+      grid.append(row);
+    });
+
+    section.append(heading, grid);
+    return section;
   }
 
   function createDetailControl(species, field) {
@@ -914,6 +1170,10 @@
       return createLookalikesControl(id, field.key, value);
     }
 
+    if (field.key === "bilder") {
+      return createImagesControl(id, field.key, value, species);
+    }
+
     if (field.type === "objektlista") {
       return createTextareaControl(id, field.key, JSON.stringify(Array.isArray(value) ? value : [], null, 2), "json");
     }
@@ -925,6 +1185,29 @@
     input.value = typeof value === "string" ? value : normalizeSpeciesValues(value).join(", ");
     input.dataset.valueType = "text";
     return input;
+  }
+
+  function createImagesControl(id, name, value, species) {
+    const images = Array.isArray(value) ? value : [];
+    const group = document.createElement("div");
+    group.id = id;
+    group.className = "image-control";
+
+    const hidden = document.createElement("input");
+    hidden.type = "hidden";
+    hidden.name = name;
+    hidden.value = JSON.stringify(images);
+    hidden.dataset.valueType = "json";
+    group.append(hidden);
+
+    const grid = createImageGrid(species, images);
+    const imageContent = grid || document.createElement("div");
+    if (!grid) {
+      imageContent.className = "compact-empty-images";
+    }
+    group.append(imageContent);
+
+    return group;
   }
 
   function createColorDescriptionControl(id, field, value, descriptionValue) {
@@ -1869,20 +2152,39 @@
     heading.textContent = "Bilder";
 
     if (!Array.isArray(species.bilder) || species.bilder.length === 0) {
-      elements.details.append(heading, renderMissingText());
+      const emptyImages = document.createElement("div");
+      emptyImages.className = "compact-empty-images";
+      elements.details.append(heading, emptyImages);
       return;
     }
 
+    const grid = createImageGrid(species, species.bilder);
+    const imageContent = grid || document.createElement("div");
+    if (!grid) {
+      imageContent.className = "compact-empty-images";
+    }
+    elements.details.append(heading, imageContent);
+  }
+
+  function createImageGrid(species, images) {
     const grid = document.createElement("div");
     grid.className = "image-grid";
 
-    species.bilder.forEach((image) => {
+    images.forEach((image, index) => {
       if (!image.fil) {
         return;
       }
 
       const figure = document.createElement("figure");
       figure.className = "image-card";
+
+      const openButton = document.createElement("button");
+      openButton.type = "button";
+      openButton.className = "image-open-button";
+      openButton.setAttribute("aria-label", `Visa större bild: ${image.bildtext || getDisplayName(species)}`);
+      openButton.addEventListener("click", () => {
+        openImageLightbox(species, images, index);
+      });
 
       const img = document.createElement("img");
       img.src = image.fil;
@@ -1895,15 +2197,124 @@
       const caption = document.createElement("figcaption");
       caption.textContent = [image.bildtext, image.fotograf, image.licens].filter(Boolean).join(" | ");
 
-      figure.append(img, caption);
+      openButton.append(img, caption);
+      figure.append(openButton);
       grid.append(figure);
     });
 
-    if (grid.children.length > 0) {
-      elements.details.append(heading, grid);
-    } else {
-      elements.details.append(heading, renderMissingText());
+    if (grid.children.length === 1) {
+      grid.classList.add("image-grid-single");
     }
+
+    return grid.children.length > 0 ? grid : null;
+  }
+
+  function openImageLightbox(species, images, startIndex) {
+    let currentIndex = startIndex;
+    let zoom = 1;
+
+    const overlay = document.createElement("div");
+    overlay.className = "modal-overlay image-lightbox-overlay";
+
+    const modal = document.createElement("div");
+    modal.className = "image-lightbox";
+    modal.setAttribute("role", "dialog");
+    modal.setAttribute("aria-modal", "true");
+    modal.setAttribute("aria-label", "Större bild");
+
+    const toolbar = document.createElement("div");
+    toolbar.className = "image-lightbox-toolbar";
+
+    const controls = document.createElement("div");
+    controls.className = "image-lightbox-controls";
+
+    const zoomOutButton = createLightboxButton("-", "Zooma ut");
+    const resetButton = createLightboxButton("100%", "Återställ zoom");
+    const zoomInButton = createLightboxButton("+", "Zooma in");
+    const closeButton = createLightboxButton("x", "Stäng");
+    closeButton.classList.add("image-lightbox-close");
+
+    controls.append(zoomOutButton, resetButton, zoomInButton, closeButton);
+    toolbar.append(controls);
+
+    const viewport = document.createElement("div");
+    viewport.className = "image-lightbox-viewport";
+
+    const figure = document.createElement("figure");
+    figure.className = "image-lightbox-figure";
+
+    const image = document.createElement("img");
+    image.className = "image-lightbox-image";
+
+    const caption = document.createElement("figcaption");
+    caption.className = "image-lightbox-caption";
+
+    figure.append(image, caption);
+    viewport.append(figure);
+
+    modal.append(toolbar, viewport);
+    overlay.append(modal);
+    document.body.append(overlay);
+
+    function render() {
+      const item = images[currentIndex];
+      image.src = item.fil;
+      image.alt = item.bildtext || getDisplayName(species);
+      caption.textContent = [item.bildtext, item.fotograf, item.licens].filter(Boolean).join(" | ");
+      applyZoom();
+    }
+
+    function setZoom(nextZoom) {
+      zoom = Math.min(5, Math.max(1, nextZoom));
+      applyZoom();
+    }
+
+    function applyZoom() {
+      figure.style.width = `${zoom * 100}%`;
+      image.style.maxWidth = zoom === 1 ? "100%" : "none";
+      image.style.maxHeight = zoom === 1 ? "100%" : "none";
+      resetButton.textContent = `${Math.round(zoom * 100)}%`;
+    }
+
+    function close() {
+      document.removeEventListener("keydown", onKeydown);
+      overlay.remove();
+    }
+
+    function onKeydown(event) {
+      if (event.key === "Escape") {
+        close();
+      }
+    }
+
+    zoomOutButton.addEventListener("click", () => setZoom(zoom - 0.25));
+    resetButton.addEventListener("click", () => setZoom(1));
+    zoomInButton.addEventListener("click", () => setZoom(zoom + 0.25));
+    closeButton.addEventListener("click", close);
+
+    viewport.addEventListener("wheel", (event) => {
+      event.preventDefault();
+      setZoom(zoom + (event.deltaY < 0 ? 0.2 : -0.2));
+    }, { passive: false });
+
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) {
+        close();
+      }
+    });
+
+    document.addEventListener("keydown", onKeydown);
+    render();
+    closeButton.focus();
+  }
+
+  function createLightboxButton(text, label) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = text;
+    button.setAttribute("aria-label", label);
+    button.title = label;
+    return button;
   }
 
   function selectSpecies(species, options = {}) {

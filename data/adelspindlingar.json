@@ -1137,9 +1137,15 @@
         "gråvit",
         "blå"
       ],
-      "koh_hatt": [],
-      "koh_fotknol": [],
-      "koh_kott": [],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
       "miljo": [
         "Lövskog"
       ],
@@ -1162,7 +1168,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "sockelspindling",
+          "vetenskapligt_namn": "Cortinarius saporatus",
+          "skillnad": "utan violetta toner på bulben"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1218,7 +1230,13 @@
       "viktiga_karaktarer": [
         "smakar och doftar mjöl"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "grönkantad spindling",
+          "vetenskapligt_namn": "Cortinarius prasinus",
+          "skillnad": "smakar inte mjöl och har röd KOH-reaktion"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1254,7 +1272,9 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "bok"
+      ],
       "hattfarg": [
         "gul"
       ],
@@ -1266,7 +1286,13 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "citronspindling",
+          "vetenskapligt_namn": "Cortinarius citrinus",
+          "skillnad": "kött ej bruntonat"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1275,7 +1301,7 @@
         "gul",
         "brun"
       ],
-      "kottfarg_beskrivning": "",
+      "kottfarg_beskrivning": "brunaktigt i fotens övre del",
       "slemmig": [],
       "extra_1": [],
       "extra_2": [],
@@ -1304,7 +1330,10 @@
         "rundad bulb",
         "ingen bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "hassel",
+        "ek"
+      ],
       "hattfarg": [
         "gul"
       ],
@@ -1314,7 +1343,13 @@
       "lukt": "honung",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "granatspindling",
+          "vetenskapligt_namn": "Cortinarius cruentipellis",
+          "skillnad": "foten gulnar och varmgul hatt"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "liten, halvgenomskinlig",
       "fotfarg_beskrivning": "",
@@ -1349,7 +1384,10 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "bok",
+        "ek"
+      ],
       "hattfarg": [
         "gul",
         "grön"
@@ -1361,7 +1399,18 @@
       "lukt": "jord, rättika",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "mjölspindling",
+          "vetenskapligt_namn": "Cortinarius flavovirens",
+          "skillnad": "har mjöldoft"
+        },
+        {
+          "svenskt_namn": "persiljespindling",
+          "vetenskapligt_namn": "Cortinarius sulfurinus",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1395,7 +1444,9 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "hassel"
+      ],
       "hattfarg": [
         "blå",
         "röd",
@@ -1446,7 +1497,9 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "bok"
+      ],
       "hattfarg": [
         "gul",
         "vit"
@@ -1457,7 +1510,18 @@
       "viktiga_karaktarer": [
         "yttre gröngult velum, saknar gult på skivor kött och fot"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "jästspindling",
+          "vetenskapligt_namn": "Cortinarius xanthoochraceus",
+          "skillnad": "vitt velum"
+        },
+        {
+          "svenskt_namn": "mullspindling",
+          "vetenskapligt_namn": "Cortinarius humolens",
+          "skillnad": "har gulaktiga skivor"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -1492,7 +1556,11 @@
       "fotknol_form": [
         "kantad bulb"
       ],
-      "tradslag": [],
+      "tradslag": [
+        "bok",
+        "ek",
+        "lind"
+      ],
       "hattfarg": [
         "vit",
         "gul"
@@ -1503,7 +1571,18 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "vesterholtspindling",
+          "vetenskapligt_namn": "Cortinarius vesterholtii",
+          "skillnad": "har mörkare hatt"
+        },
+        {
+          "svenskt_namn": "bredfotsspindling",
+          "vetenskapligt_namn": "Cortinarius platypus",
+          "skillnad": "saknar violett yttre velum och blå toner påbulben"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
@@ -2068,7 +2147,20 @@
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/saffranspindling_1.jpg",
+          "bildtext": "Saffransspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/saffranspindling_2.jpg",
+          "bildtext": "saffransspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [],
