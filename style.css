@@ -331,7 +331,7 @@ h3 {
 
 .filter-form {
   display: grid;
-  gap: 10px;
+  gap: 7px;
 }
 
 .filter-group {
@@ -342,7 +342,7 @@ h3 {
   min-width: 0;
   min-inline-size: 0;
   margin: 0;
-  padding: 0 0 10px;
+  padding: 0 0 7px;
   border: 0;
   border-bottom: 1px solid var(--border);
 }
@@ -381,10 +381,11 @@ h3 {
 .filter-group .reset-group {
   grid-column: 3;
   justify-self: end;
-  min-width: 34px;
-  width: 34px;
-  min-height: 34px;
-  padding: 4px;
+  min-width: 28px;
+  width: 28px;
+  min-height: 28px;
+  height: 28px;
+  padding: 1px;
   font-size: 1rem;
   line-height: 1;
 }
@@ -1682,6 +1683,33 @@ tr.clickable-row:hover {
   display: none;
 }
 
+.species-graph-button {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0;
+  background: var(--surface-soft);
+  color: var(--accent-strong);
+  line-height: 1;
+}
+
+.species-graph-button:hover,
+.species-graph-button:focus-visible {
+  border-color: var(--accent);
+  background: #e4eee7;
+}
+
+.species-graph-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
 .image-grid-single {
   grid-template-columns: minmax(0, 1fr);
 }
@@ -1833,6 +1861,97 @@ tr.clickable-row:hover {
   max-width: 100%;
   max-height: 100%;
   transition: width 120ms ease;
+}
+
+.species-graph-overlay {
+  z-index: 70;
+}
+
+.species-graph-modal {
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  gap: 10px;
+  width: min(94vw, 980px);
+  height: min(88vh, 720px);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.species-graph-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.species-graph-title-line,
+.species-graph-head h3,
+.species-graph-head p,
+.species-graph-status {
+  margin: 0;
+}
+
+.species-graph-title-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: baseline;
+}
+
+.species-graph-head h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.species-graph-context::before {
+  content: "- ";
+}
+
+.species-graph-head p,
+.species-graph-status {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.species-graph-close {
+  min-width: 34px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-soft);
+  color: var(--text);
+  font-weight: 900;
+}
+
+.species-graph-control {
+  display: grid;
+  grid-template-columns: auto minmax(140px, 1fr) minmax(34px, auto);
+  gap: 10px;
+  align-items: center;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.species-graph-control input[type="range"] {
+  width: 100%;
+}
+
+.species-graph-weight {
+  color: var(--accent-strong);
+  text-align: right;
+}
+
+.species-graph-canvas {
+  min-height: 280px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fbfcf8;
 }
 
 .hidden {

@@ -2,8 +2,11 @@
   const DATA_PATHS = {
     fieldDefinitions: "data/faltdefinitioner.json",
     species: "data/adelspindlingar.json",
-    redlist: "data/rodlistade_2025.json"
+    redlist: "data/rodlistade_2025.json",
+    landscapeOccurrences: "data/artforekomst_landskap.json"
   };
+
+  const LANDSCAPE_FILTER_KEY = "landskap";
 
   const FIELD_LABELS = {
     skivfarg_unga: "Skivfärg som ung",
@@ -162,6 +165,8 @@
     species: [],
     redlistByScientificName: new Map(),
     redlistBySwedishName: new Map(),
+    landscapeOccurrences: {},
+    landscapeOccurrenceLookup: new Map(),
     evaluated: [],
     selectedSpeciesKey: null,
     compactSortKey: "svenskt_namn",
@@ -186,6 +191,8 @@
       state.species = data.species;
       state.redlistByScientificName = createRedlistLookup(data.redlist, "Vetenskapligt_namn");
       state.redlistBySwedishName = createRedlistLookup(data.redlist, "Svenskt_namn");
+      state.landscapeOccurrences = normalizeLandscapeOccurrences(data.landscapeOccurrences);
+      state.landscapeOccurrenceLookup = createLandscapeOccurrenceLookup(state.landscapeOccurrences);
       renderFilterForm();
       renderAllSpeciesTable();
       updateResults();
@@ -235,10 +242,11 @@
   }
 
   async function loadData() {
-    const [fieldResponse, speciesResponse, redlistResponse] = await Promise.all([
+    const [fieldResponse, speciesResponse, redlistResponse, landscapeResponse] = await Promise.all([
       fetch(DATA_PATHS.fieldDefinitions),
       fetch(DATA_PATHS.species),
-      fetch(DATA_PATHS.redlist)
+      fetch(DATA_PATHS.redlist),
+      fetch(DATA_PATHS.landscapeOccurrences)
     ]);
 
     if (!fieldResponse.ok) {
@@ -253,10 +261,15 @@
       throw new Error(`Kunde inte ladda ${DATA_PATHS.redlist}: ${redlistResponse.status}`);
     }
 
-    const [fieldDefinitions, speciesData, redlistData] = await Promise.all([
+    if (!landscapeResponse.ok) {
+      throw new Error(`Kunde inte ladda ${DATA_PATHS.landscapeOccurrences}: ${landscapeResponse.status}`);
+    }
+
+    const [fieldDefinitions, speciesData, redlistData, landscapeOccurrences] = await Promise.all([
       fieldResponse.json(),
       speciesResponse.json(),
-      redlistResponse.json()
+      redlistResponse.json(),
+      landscapeResponse.json()
     ]);
 
     if (!fieldDefinitions || typeof fieldDefinitions.faltdefinitioner !== "object") {
@@ -271,10 +284,15 @@
       throw new Error("rodlistade_2025.json ska vara en lista.");
     }
 
+    if (!landscapeOccurrences || typeof landscapeOccurrences !== "object" || Array.isArray(landscapeOccurrences)) {
+      throw new Error("artforekomst_landskap.json ska vara ett objekt med landskap.");
+    }
+
     return {
       fieldDefinitions: fieldDefinitions.faltdefinitioner,
       species: speciesData.arter,
-      redlist: redlistData
+      redlist: redlistData,
+      landscapeOccurrences
     };
   }
 
@@ -303,6 +321,25 @@
       if (normalized && !lookup.has(normalized)) {
         lookup.set(normalized, row);
       }
+    });
+
+    return lookup;
+  }
+
+  function normalizeLandscapeOccurrences(occurrences) {
+    return Object.fromEntries(Object.entries(occurrences)
+      .map(([landscape, names]) => [
+        landscape,
+        Array.isArray(names) ? names.filter(Boolean).map(String) : []
+      ])
+      .filter(([landscape]) => landscape));
+  }
+
+  function createLandscapeOccurrenceLookup(occurrences) {
+    const lookup = new Map();
+
+    Object.entries(occurrences).forEach(([landscape, names]) => {
+      lookup.set(landscape, new Set(names.map(normalizeLookupName).filter(Boolean)));
     });
 
     return lookup;
@@ -385,20 +422,86 @@
       fragment.append(fieldset);
     });
 
+    const landscapeFieldset = createLandscapeFilterGroup();
+    if (landscapeFieldset) {
+      fragment.append(landscapeFieldset);
+    }
+
     elements.form.append(fragment);
   }
 
+  function createLandscapeFilterGroup() {
+    const landscapes = Object.keys(state.landscapeOccurrences).sort((a, b) => a.localeCompare(b, "sv"));
+    if (landscapes.length === 0) {
+      return null;
+    }
+
+    const fieldset = document.createElement("fieldset");
+    fieldset.className = "filter-group";
+    fieldset.dataset.field = LANDSCAPE_FILTER_KEY;
+
+    const legend = document.createElement("legend");
+    legend.className = "visually-hidden";
+    legend.textContent = "Landskap";
+
+    const title = document.createElement("h3");
+    title.className = "filter-title";
+    title.textContent = "Landskap";
+
+    const resetButton = document.createElement("button");
+    resetButton.className = "reset-group";
+    resetButton.type = "button";
+    resetButton.title = "Återställ Landskap";
+    resetButton.setAttribute("aria-label", "Återställ Landskap");
+    resetButton.textContent = "🗑️";
+    resetButton.addEventListener("click", () => resetFilterGroup(LANDSCAPE_FILTER_KEY));
+
+    const optionsGrid = document.createElement("div");
+    optionsGrid.className = "options-grid";
+
+    landscapes.forEach((landscape) => {
+      const id = `filter-${LANDSCAPE_FILTER_KEY}-${slugify(landscape)}`;
+      const label = document.createElement("label");
+      label.className = "choice";
+      label.htmlFor = id;
+
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = id;
+      input.name = LANDSCAPE_FILTER_KEY;
+      input.value = landscape;
+
+      const text = document.createElement("span");
+      text.textContent = landscape;
+
+      label.append(input, text);
+      optionsGrid.append(label);
+    });
+
+    fieldset.append(legend, title, optionsGrid, resetButton);
+    return fieldset;
+  }
+
   function getSelectedFilters() {
-    return state.fields.reduce((filters, field) => {
+    const filters = state.fields.reduce((selectedFilters, field) => {
       const checked = Array.from(elements.form.querySelectorAll(`input[name="${cssEscape(field.key)}"]:checked`))
         .map((input) => input.value);
 
       if (checked.length > 0) {
-        filters[field.key] = checked;
+        selectedFilters[field.key] = checked;
       }
 
-      return filters;
+      return selectedFilters;
     }, {});
+
+    const selectedLandscapes = Array.from(elements.form.querySelectorAll(`input[name="${LANDSCAPE_FILTER_KEY}"]:checked`))
+      .map((input) => input.value);
+
+    if (selectedLandscapes.length > 0) {
+      filters[LANDSCAPE_FILTER_KEY] = selectedLandscapes;
+    }
+
+    return filters;
   }
 
   function evaluateSpecies(species, filters) {
@@ -444,8 +547,10 @@
   }
 
   function filterSpecies(filters) {
+    const { [LANDSCAPE_FILTER_KEY]: selectedLandscapes, ...fieldFilters } = filters;
     return state.species
-      .map((species) => evaluateSpecies(species, filters))
+      .filter((species) => speciesMatchesSelectedLandscapes(species, selectedLandscapes))
+      .map((species) => evaluateSpecies(species, fieldFilters))
       .filter((result) => result.status !== "contradiction")
       .sort((a, b) => {
         if (a.status !== b.status) {
@@ -454,6 +559,24 @@
 
         return getDisplayName(a.species).localeCompare(getDisplayName(b.species), "sv");
       });
+  }
+
+  function speciesMatchesSelectedLandscapes(species, selectedLandscapes) {
+    if (!Array.isArray(selectedLandscapes) || selectedLandscapes.length === 0) {
+      return true;
+    }
+
+    const names = [
+      species.svenskt_namn,
+      getDisplayName(species),
+      species.vetenskapligt_namn,
+      formatScientificName(species.vetenskapligt_namn)
+    ].map(normalizeLookupName).filter(Boolean);
+
+    return selectedLandscapes.some((landscape) => {
+      const occurrenceNames = state.landscapeOccurrenceLookup.get(landscape);
+      return occurrenceNames && names.some((name) => occurrenceNames.has(name));
+    });
   }
 
   function updateResults() {
@@ -574,7 +697,10 @@
   }
 
   function renderComparison(filters, options = {}) {
-    const selectedFields = [...new Set([...Object.keys(filters), ...DEFAULT_COMPARISON_FIELDS])];
+    const selectedFields = [...new Set([
+      ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY),
+      ...DEFAULT_COMPARISON_FIELDS
+    ])];
     const showOnlyDiffering = Boolean(options.showOnlyDiffering);
     const comparisonFields = showOnlyDiffering ? selectedFields.filter(isDifferingComparisonField) : selectedFields;
     elements.comparison.replaceChildren();
@@ -915,7 +1041,7 @@
     if (!imageGrid) {
       imageContent.className = "compact-empty-images";
     }
-    imagesSection.append(imagesHeading, imageContent);
+    imagesSection.append(imagesHeading, imageContent, createSpeciesGraphButton(species));
     view.append(imagesSection);
 
     elements.details.append(view);
@@ -1205,9 +1331,44 @@
     if (!grid) {
       imageContent.className = "compact-empty-images";
     }
-    group.append(imageContent);
+    group.append(imageContent, createSpeciesGraphButton(species));
 
     return group;
+  }
+
+  function createSpeciesGraphButton(species) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "species-graph-button";
+    button.setAttribute("aria-label", "Visa nätverksgraf");
+    button.title = "Visa nätverksgraf";
+    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    icon.classList.add("species-graph-icon");
+    icon.setAttribute("viewBox", "0 0 24 24");
+    icon.setAttribute("fill", "none");
+    icon.setAttribute("stroke", "currentColor");
+    icon.setAttribute("stroke-width", "2");
+    icon.setAttribute("stroke-linecap", "round");
+    icon.setAttribute("stroke-linejoin", "round");
+    icon.setAttribute("aria-hidden", "true");
+    [
+      ["path", { d: "M8.5 10.5 15.5 6.5" }],
+      ["path", { d: "M8.5 13.5 15.5 17.5" }],
+      ["circle", { cx: "6", cy: "12", r: "3" }],
+      ["circle", { cx: "18", cy: "5", r: "3" }],
+      ["circle", { cx: "18", cy: "19", r: "3" }]
+    ].forEach(([tagName, attributes]) => {
+      const child = document.createElementNS("http://www.w3.org/2000/svg", tagName);
+      Object.entries(attributes).forEach(([name, value]) => child.setAttribute(name, value));
+      icon.append(child);
+    });
+    button.append(icon);
+    button.addEventListener("click", () => {
+      if (window.SpeciesGraph?.open) {
+        window.SpeciesGraph.open(species);
+      }
+    });
+    return button;
   }
 
   function createColorDescriptionControl(id, field, value, descriptionValue) {
@@ -2163,7 +2324,7 @@
     if (!grid) {
       imageContent.className = "compact-empty-images";
     }
-    elements.details.append(heading, imageContent);
+    elements.details.append(heading, imageContent, createSpeciesGraphButton(species));
   }
 
   function createImageGrid(species, images) {
