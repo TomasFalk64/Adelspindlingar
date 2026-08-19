@@ -2149,9 +2149,22 @@
       "fotknol_form": [
         "ingen bulb"
       ],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
+      "tradslag": [
+        "hassel",
+        "avenbok",
+        "ek",
+        "lind"
+      ],
+      "hattfarg": [
+        "röd",
+        "brun",
+        "gul"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul",
+        "grön"
+      ],
       "lukt": "banan",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -2162,12 +2175,31 @@
           "svenskt_namn": "knölfotad bananspindling",
           "vetenskapligt_namn": "",
           "skillnad": ""
+        },
+        {
+          "svenskt_namn": "mejramspindling",
+          "vetenskapligt_namn": "Cortinarius majoranae",
+          "skillnad": "är större och kraftigare och med annan doft"
+        },
+        {
+          "svenskt_namn": "lövkryddspindling",
+          "vetenskapligt_namn": "Cortinarius xanthosuavis",
+          "skillnad": "har ockragul hatt"
+        },
+        {
+          "svenskt_namn": "kryddspindling",
+          "vetenskapligt_namn": "Cortinarius percomis",
+          "skillnad": "har beigegul hatt, annan doft och växer i kalkbarrskog"
         }
       ],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "fotfarg_beskrivning": "blekt gröngul med  purpurbruna velumband mot basen",
+      "kottfarg": [
+        "vit",
+        "gul",
+        "grön"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2193,18 +2225,46 @@
         "Lövskog"
       ],
       "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "tradslag": [
+        "ek",
+        "avenbok",
+        "hassel"
+      ],
+      "hattfarg": [
+        "vit",
+        "gul",
+        "blå"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "syrenblå spindling",
+          "vetenskapligt_namn": "Cortinarius molochinus",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "blåslöjad spökspindling",
+          "vetenskapligt_namn": "Cortinarius parasuaveolens",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "lilaflockig spindling",
+          "vetenskapligt_namn": "Cortinarius lilacinovelatus",
+          "skillnad": "har ej röd KOH"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": "",
-      "kottfarg": [],
-      "kottfarg_beskrivning": "",
+      "fotfarg_beskrivning": "blåaktig ton överst",
+      "kottfarg": [
+        "vit"
+      ],
+      "kottfarg_beskrivning": "svagt blålila",
       "slemmig": [],
       "extra_1": [],
       "extra_2": [],
@@ -2229,18 +2289,40 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "tradslag": [
+        "bok"
+      ],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "liten rävspindling",
+          "vetenskapligt_namn": "Cortinarius pseudovulpinus",
+          "skillnad": "har gulnande kött"
+        },
+        {
+          "svenskt_namn": "lövklubbspindling",
+          "vetenskapligt_namn": "Cortinarius luteocingulatus",
+          "skillnad": "växer med ek"
+        }
+      ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "hattfarg_beskrivning": "med vitludd i hattkant",
+      "fotfarg_beskrivning": "vitt velum",
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2266,19 +2348,38 @@
         "Lövskog"
       ],
       "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "tradslag": [
+        "ek",
+        "avenbok"
+      ],
+      "hattfarg": [
+        "gul",
+        "grön"
+      ],
+      "fotfarg": [
+        "gul",
+        "grön"
+      ],
+      "lukt": "sötaktig",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "mjölspindling",
+          "vetenskapligt_namn": "Cortinarius flavovirens",
+          "skillnad": "doftar mjöl"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
-      "slemmig": [],
+      "slemmig": [
+        "Ja"
+      ],
       "extra_1": [],
       "extra_2": [],
       "extra_3": []
@@ -2301,11 +2402,22 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "hassel",
+        "ek",
+        "bok",
+        "lind"
+      ],
+      "hattfarg": [
+        "gul"
+      ],
+      "fotfarg": [
+        "gul"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [
@@ -2330,9 +2442,13 @@
       ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
-      "slemmig": [],
+      "slemmig": [
+        "Ja"
+      ],
       "extra_1": [],
       "extra_2": [],
       "extra_3": []
@@ -2356,18 +2472,32 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "hassel",
+        "ek",
+        "bok",
+        "lind"
+      ],
+      "hattfarg": [
+        "gul",
+        "vit"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "sötaktig",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2392,23 +2522,47 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek",
+        "hassel",
+        "lind"
+      ],
+      "hattfarg": [
+        "vit",
+        "gul"
+      ],
+      "fotfarg": [
+        "vit",
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "spökspindling",
           "vetenskapligt_namn": "Cortinarius albertii"
+        },
+        {
+          "svenskt_namn": "blek fagerspindling",
+          "vetenskapligt_namn": "Cortinarius catharinae",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "nymfspindling",
+          "vetenskapligt_namn": "Cortinarius nymphicolor",
+          "skillnad": ""
         }
       ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "hudfärgad",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2434,23 +2588,50 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "bok"
+      ],
+      "hattfarg": [
+        "vit",
+        "gul"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [
         {
+          "svenskt_namn": "blek fagerspindling",
+          "vetenskapligt_namn": "Cortinarius catharinae",
+          "skillnad": "hatt KOH röd"
+        },
+        {
+          "svenskt_namn": "spökspindling",
+          "vetenskapligt_namn": "Cortinarius albertii",
+          "skillnad": "hatt KOH röd"
+        },
+        {
+          "svenskt_namn": "blåslöjad spökspindling",
+          "vetenskapligt_namn": "Cortinarius parasuaveolens",
+          "skillnad": "hatt KOH röd"
+        },
+        {
           "svenskt_namn": "lilaflockig spindling",
-          "vetenskapligt_namn": "Cortinarius lilacinovelatus"
+          "vetenskapligt_namn": "Cortinarius lilacinovelatus",
+          "skillnad": ""
         }
       ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2480,21 +2661,35 @@
         "rundad bulb",
         "ingen bulb"
       ],
-      "tradslag": [],
-      "hattfarg": [],
-      "fotfarg": [],
+      "tradslag": [
+        "ek",
+        "bok",
+        "avenbok",
+        "lind",
+        "hassel"
+      ],
+      "hattfarg": [
+        "brun"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
-        "ulligt vitt velum på främst hatt"
+        "rynkad hattkant"
       ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
-      "slemmig": [],
+      "slemmig": [
+        "Ja"
+      ],
       "extra_1": [],
       "extra_2": [],
       "extra_3": []
