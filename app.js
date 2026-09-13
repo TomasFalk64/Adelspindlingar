@@ -17,6 +17,7 @@
     miljo: "Miljö",
     tradslag: "Associerade trädslag",
     hattfarg: "Hattfärg",
+    hattstruktur: "Hattstruktur",
     hattfarg_beskrivning: "Hattfärg, beskrivning",
     fotfarg: "Fotfärg",
     fotfarg_beskrivning: "Fotfärg, beskrivning",
@@ -49,6 +50,7 @@
     "tradslag",
     "hattfarg",
     "hattfarg_beskrivning",
+    "hattstruktur",
     "fotfarg",
     "fotfarg_beskrivning",
     "kottfarg",
@@ -119,6 +121,7 @@
     "tradslag",
     "hattfarg",
     "hattfarg_beskrivning",
+    "hattstruktur",
     "fotfarg",
     "fotfarg_beskrivning",
     "kottfarg",
@@ -706,7 +709,7 @@
 
   function renderComparison(filters, options = {}) {
     const selectedFields = [...new Set([
-      ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY),
+      ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY && field !== "hattstruktur"),
       ...DEFAULT_COMPARISON_FIELDS
     ])];
     const showOnlyDiffering = Boolean(options.showOnlyDiffering);
@@ -812,7 +815,7 @@
 
   function renderLookalikeComparison(filters = getSelectedFilters(), options = {}) {
     const selectedFields = [...new Set([
-      ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY),
+      ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY && field !== "hattstruktur"),
       ...DEFAULT_COMPARISON_FIELDS
     ])];
     const { showOnlyDiffering = false } = options;
@@ -1060,7 +1063,8 @@
       "tradslag",
       "lukt",
       "slemmig",
-      "fruktkroppstid"
+      "fruktkroppstid",
+      "hattstruktur"
     ]);
 
     form.append(
@@ -1083,7 +1087,8 @@
         "tradslag",
         "lukt",
         "slemmig",
-        "fruktkroppstid"
+        "fruktkroppstid",
+        "hattstruktur"
       ], "compact-field-grid compact-field-grid-2")
     );
 
@@ -1175,7 +1180,8 @@
         createCompactField(species, "tradslag"),
         createCompactField(species, "lukt"),
         createCompactField(species, "slemmig"),
-        createCompactField(species, "fruktkroppstid")
+        createCompactField(species, "fruktkroppstid"),
+        createCompactField(species, "hattstruktur")
       ], "compact-field-grid compact-field-grid-2")
     );
 

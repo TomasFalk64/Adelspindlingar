@@ -42,6 +42,16 @@ button {
   cursor: pointer;
 }
 
+button,
+.choice,
+.comparison-differing-toggle,
+.dot-picker-dropdown summary,
+.single-picker-dropdown summary,
+.multi-text-picker-dropdown summary {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,

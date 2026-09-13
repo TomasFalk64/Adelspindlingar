@@ -83,6 +83,14 @@
         "brun"
       ]
     },
+    "hattstruktur": {
+      "typ": "flerval",
+      "alternativ": [
+        "slät",
+        "fjällig",
+        "inväxt trådig"
+      ]
+    },
     "fotfarg": {
       "typ": "flerval",
       "alternativ": [
@@ -144,7 +152,7 @@
     "bilder": {
       "typ": "objektlista",
       "falt": {
-        "fil": {
+nde        "fil": {
           "typ": "text"
         },
         "bildtext": {
