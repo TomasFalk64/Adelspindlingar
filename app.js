@@ -131,6 +131,26 @@
     "fruktkroppstid"
   ];
 
+  const MUSHROOM_FIELDS = {
+    g_hatcolor: "hattfarg",
+    g_hatstructure: "hattstruktur",
+    g_capKOH: "koh_hatt",
+    g_skivor: "skivfarg_unga",
+    g_footcolor: "fotfarg",
+    g_Bulbform: "fotknol_form",
+    g_bulbKOH: "koh_fotknol",
+    g_fleshcolor: "kottfarg",
+    g_flesh_KOH: "koh_kott"
+  };
+
+  const MUSHROOM_EXTRA_FIELDS = [
+    { key: LANDSCAPE_FILTER_KEY, label: "Landskap" },
+    { key: "miljo", label: "Miljö" },
+    { key: "tradslag", label: "Trädslag" },
+    { key: "slemmig", label: "Slemmig" },
+    { key: "fruktkroppstid", label: "Fruktkroppstid" }
+  ];
+
   const OPTION_COLORS = {
     blå: "#536aa8",
     gul: "#d2ad24",
@@ -186,6 +206,8 @@
   async function init() {
     cacheElements();
     bindEvents();
+    initCollapsibleSections();
+    initObservationViews();
 
     try {
       const data = await loadData();
@@ -199,9 +221,320 @@
       renderFilterForm();
       renderAllSpeciesTable();
       updateResults();
+      initMushroomImage();
     } catch (error) {
       showError(error);
     }
+  }
+
+  function initCollapsibleSections() {
+    const sections = [
+      [".mushroom-panel", "mushroom-heading"],
+      [".sticky-results", "results-heading"],
+      [".details-panel", "details-heading"],
+      [".comparison-panel", "comparison-heading"],
+      [".comparison-panel", "lookalike-comparison-heading"],
+      [".all-species-panel", "all-species-heading"]
+    ];
+    sections.forEach(([selector, headingId]) => {
+      const heading = document.getElementById(headingId);
+      const section = heading.closest(selector);
+      const header = heading.closest(".section-head") || heading;
+      const contents = Array.from(section.children).filter((child) => child !== header);
+      if (header !== heading) {
+        Array.from(header.children).forEach((child) => {
+          if (child !== heading && !child.contains(heading) && !child.hasAttribute("data-collapse-persistent")) contents.push(child);
+        });
+        contents.push(...header.querySelectorAll("p"));
+      }
+      section.classList.add("collapsible-section");
+      contents.forEach((content, index) => {
+        content.classList.add("collapsible-content");
+        if (!content.id) content.id = `${headingId}-content-${index}`;
+      });
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "section-toggle";
+      button.textContent = heading.textContent;
+      button.setAttribute("aria-expanded", "true");
+      button.setAttribute("aria-controls", contents.map((content) => content.id).join(" "));
+      heading.replaceChildren(button);
+      button.addEventListener("click", () => {
+        const collapsed = section.classList.toggle("is-collapsed");
+        button.setAttribute("aria-expanded", String(!collapsed));
+        if (!collapsed && headingId === "mushroom-heading") fitMushroomImage();
+      });
+    });
+  }
+
+  function initObservationViews() {
+    const toggle = document.querySelector("#toggle-observation-view");
+    const imageView = document.querySelector("#observation-image");
+    const listView = document.querySelector("#observation-list");
+    toggle.addEventListener("click", () => {
+      const showList = listView.hidden;
+      imageView.hidden = showList;
+      listView.hidden = !showList;
+      toggle.querySelector("span").textContent = showList ? "▧" : "☷";
+      const label = showList ? "Byt till bild" : "Byt till lista";
+      toggle.setAttribute("aria-label", label);
+      toggle.title = label;
+      if (!showList) fitMushroomImage();
+    });
+  }
+
+  function fitMushroomImage() {
+    const svg = elements.mushroomSvg;
+    if (!svg) return;
+    const bounds = svg.getBBox();
+    if (!bounds.width || !bounds.height) return;
+    const imagePadding = 16;
+    svg.setAttribute("viewBox", `${bounds.x - imagePadding} ${bounds.y - imagePadding} ${bounds.width + imagePadding * 2} ${bounds.height + imagePadding * 2}`);
+    svg.removeAttribute("width");
+    svg.removeAttribute("height");
+  }
+
+  async function initMushroomImage() {
+    const host = document.querySelector("#mushroom-image");
+    const dialog = document.querySelector("#mushroom-color-dialog");
+
+    try {
+      const response = await fetch("data/adelspindling.svg");
+      if (!response.ok) throw new Error("Svampbilden kunde inte laddas.");
+      const parsed = new DOMParser().parseFromString(await response.text(), "image/svg+xml");
+      if (parsed.querySelector("parsererror") || parsed.documentElement.localName !== "svg") {
+        throw new Error("Svampbilden har ogiltigt SVG-format.");
+      }
+      const svg = document.importNode(parsed.documentElement, true);
+      if (Object.keys(MUSHROOM_FIELDS).some((id) => !svg.querySelector(`#${id}`))) {
+        throw new Error("Svampbilden saknar etikettrutor.");
+      }
+      // Keep the illustration's generic CSS classes separate from the page.
+      const shadow = host.attachShadow({ mode: "open" });
+      const style = document.createElement("style");
+      style.textContent = `
+        :host { display: block; }
+        svg { display: block; width: min(100%, 1050px); min-width: 400px; height: auto; margin: auto; }
+        .hotspot { cursor: default; }
+        .mushroom-trait, .mushroom-trait .hotspot { cursor: pointer; -webkit-user-select: none; user-select: none; }
+        .mushroom-trait:focus { outline: none; }
+        .mushroom-trait:hover rect, .mushroom-trait:focus-visible rect,
+        .mushroom-trait[aria-expanded="true"] rect { stroke-width: 5; }
+      `;
+      svg.setAttribute("role", "group");
+      svg.setAttribute("aria-label", "Svampbild med valbara egenskaper");
+      Object.entries(MUSHROOM_FIELDS).forEach(([id, fieldKey]) => {
+        const label = svg.querySelector(`#${id}`);
+        label.classList.add("mushroom-trait");
+        label.setAttribute("role", "button");
+        label.setAttribute("tabindex", "0");
+        label.setAttribute("aria-label", `Välj ${getFieldLabel(fieldKey)}`);
+        label.setAttribute("aria-haspopup", "dialog");
+        label.setAttribute("aria-expanded", "false");
+        label.addEventListener("click", () => openMushroomOptions(fieldKey));
+        label.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openMushroomOptions(fieldKey);
+          }
+        });
+      });
+      host.replaceChildren();
+      shadow.append(style, svg);
+      // Fit the drawing instead of retaining the SVG canvas's empty margins.
+      elements.mushroomSvg = svg;
+      fitMushroomImage();
+      elements.mushroomColorOptions = document.querySelector("#mushroom-color-options");
+      const extraFilters = document.querySelector("#mushroom-extra-filters");
+      elements.mushroomFilterButtons = MUSHROOM_EXTRA_FIELDS.map((field) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "mushroom-filter-button";
+        button.setAttribute("aria-haspopup", "dialog");
+        button.setAttribute("aria-controls", "mushroom-color-dialog");
+        const label = document.createElement("span");
+        label.textContent = field.label;
+        const value = document.createElement("span");
+        value.className = "mushroom-filter-value";
+        button.append(label, value);
+        button.addEventListener("click", () => openMushroomOptions(field.key));
+        extraFilters.append(button);
+        return { ...field, button, value, labelElement: label };
+      });
+      document.querySelector("#clear-mushroom-color").addEventListener("click", () => {
+        if (elements.mushroomActiveField) resetFilterGroup(elements.mushroomActiveField);
+      });
+      dialog.addEventListener("click", (event) => {
+        if (event.target !== dialog) return;
+        const bounds = dialog.getBoundingClientRect();
+        if (event.clientX < bounds.left || event.clientX > bounds.right
+          || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+      });
+      dialog.addEventListener("close", () => {
+        svg.querySelectorAll(".mushroom-trait").forEach((label) => {
+          label.setAttribute("aria-expanded", "false");
+        });
+      });
+      syncMushroomImage(getSelectedFilters());
+    } catch (error) {
+      host.textContent = "Svampbilden kunde inte visas. Du kan fortfarande välja i Vad ser du?.";
+      console.error(error);
+    }
+  }
+
+  function openMushroomOptions(fieldKey) {
+    const field = fieldKey === LANDSCAPE_FILTER_KEY
+      ? { key: fieldKey, label: "Landskap", options: Object.keys(state.landscapeOccurrences).sort((a, b) => a.localeCompare(b, "sv")) }
+      : state.fields.find((candidate) => candidate.key === fieldKey);
+    elements.mushroomActiveField = fieldKey;
+    document.querySelector("#mushroom-color-heading").textContent = field.label;
+    const clearButton = document.querySelector("#clear-mushroom-color");
+    const clearLabel = `Rensa ${field.label.toLocaleLowerCase("sv")}`;
+    clearButton.setAttribute("aria-label", clearLabel);
+    clearButton.title = clearLabel;
+    elements.mushroomColorOptions.replaceChildren();
+    field.options.forEach((option, index) => {
+      const choice = document.createElement("label");
+      choice.className = "choice";
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = `mushroom-${fieldKey}-${index}`;
+      input.value = option;
+      const text = document.createElement("span");
+      const color = getOptionColor(option);
+      if (color) {
+        choice.classList.add("choice-with-swatch");
+        text.style.setProperty("--choice-color", color);
+        text.style.setProperty("--choice-text-color", getOptionTextColor(option));
+      }
+      const optionText = document.createElement("span");
+      optionText.textContent = option;
+      text.append(optionText);
+      choice.title = getOptionHelpText(fieldKey, option) || option;
+      choice.append(input, text);
+      input.addEventListener("change", () => {
+        const original = Array.from(elements.form.querySelectorAll(`input[name="${cssEscape(fieldKey)}"]`))
+          .find((control) => control.value === option);
+        original.checked = input.checked;
+        updateResults();
+      });
+      elements.mushroomColorOptions.append(choice);
+    });
+    elements.mushroomColorOptions.append(clearButton);
+    syncMushroomImage(getSelectedFilters());
+    document.querySelector("#mushroom-color-dialog").showModal();
+    Object.entries(MUSHROOM_FIELDS).forEach(([id, key]) => {
+      elements.mushroomSvg.querySelector(`#${id}`).setAttribute("aria-expanded", String(key === fieldKey));
+    });
+  }
+
+  function syncMushroomImage(filters) {
+    if (!elements.mushroomSvg) return;
+    const values = filters[elements.mushroomActiveField] || [];
+    elements.mushroomColorOptions.querySelectorAll("input").forEach((input) => {
+      input.checked = values.includes(input.value);
+    });
+    elements.mushroomFilterButtons.forEach(({ key, label, button, value, labelElement }) => {
+      const selectedValues = filters[key] || [];
+      const first = key === "slemmig" && selectedValues.length
+        ? (selectedValues[0] === "Ja" ? "Slemmig" : "Inte slemmig")
+        : selectedValues[0];
+      value.textContent = first
+        ? `${first.charAt(0).toLocaleUpperCase("sv")}${first.slice(1)}${selectedValues.length > 1 ? ` +${selectedValues.length - 1}` : ""}`
+        : "";
+      value.hidden = !selectedValues.length;
+      labelElement.hidden = selectedValues.length > 0;
+      button.classList.toggle("is-active", selectedValues.length > 0);
+      const description = `${label}: ${selectedValues.length ? selectedValues.join(", ") : "Inget valt"}`;
+      button.setAttribute("aria-label", description);
+      button.title = description;
+    });
+
+    const svg = elements.mushroomSvg;
+    const bulbValues = filters.fotknol_form || [];
+    const bulbShape = bulbValues.includes("kantad bulb") ? "kantad"
+      : bulbValues.includes("rundad bulb") ? "rundad" : "saknas";
+    const bulbParts = {
+      kantad: ["Bulb_kantad", "Bulb_kantad_L"],
+      rundad: ["path58", "Bulb_rundad_L"],
+      saknas: ["Bulb_saknas", "Bulb_saknas_L"]
+    };
+    Object.entries(bulbParts).forEach(([shape, ids]) => {
+      ids.forEach((id) => {
+        svg.querySelector(`#${id}`).style.display = shape === bulbShape ? "inline" : "none";
+      });
+    });
+
+    const textures = filters.hattstruktur || [];
+    const smooth = textures.length === 0 || textures.includes("slät");
+    svg.querySelector("#cap-texture-scaly").style.display =
+      !smooth && textures.includes("fjällig") ? "inline" : "none";
+    svg.querySelector("#cap-texture-fibrillose").style.display =
+      !smooth && textures.includes("inväxt trådig") ? "inline" : "none";
+
+    const colorParts = {
+      hattfarg: ["cap_L", "cap_R"],
+      skivfarg_unga: ["gills-base", "Gill_L", "Gill_R"],
+      fotfarg: ["stipe_L", "Bulb_kantad_L", "Bulb_rundad_L", "Bulb_saknas_L"],
+      kottfarg: ["section-flesh", "Bulb_kantad", "path58", "Bulb_saknas"]
+    };
+    Object.entries(colorParts).forEach(([field, ids]) => {
+      paintMushroomParts(svg, field, ids, filters[field] || []);
+    });
+    const kohParts = { koh_hatt: "cap-koh", koh_fotknol: "bulb-koh", koh_kott: "flesh-koh" };
+    Object.entries(kohParts).forEach(([field, id]) => {
+      const reactions = filters[field] || [];
+      const part = svg.querySelector(`#${id}`);
+      part.style.display = reactions.length ? "inline" : "none";
+      // Outline an unchanged reaction area so "ingen" differs from no observation.
+      part.style.stroke = reactions.includes("ingen") ? "#667269" : "none";
+      part.style.strokeWidth = "1.5";
+      part.style.strokeDasharray = "4 3";
+      paintMushroomParts(svg, field, [id], reactions);
+    });
+  }
+
+  function paintMushroomParts(svg, field, ids, values) {
+    const namespace = "http://www.w3.org/2000/svg";
+    const gradientId = `observation-${field}-colors`;
+    let gradient = svg.querySelector(`#${gradientId}`);
+    if (!gradient) {
+      gradient = document.createElementNS(namespace, "linearGradient");
+      gradient.id = gradientId;
+      svg.querySelector("defs").append(gradient);
+    }
+    gradient.replaceChildren();
+    const isKoh = field.startsWith("koh_");
+    const colors = values.map((value) => {
+      if (isKoh && value === "röd") return "#cf2727";
+      if (field === "skivfarg_unga" && value === "blå") return "#6980bf";
+      if (field === "skivfarg_unga" && value === "gul") return "#c9ba51";
+      return getOptionColor(value);
+    });
+    // KOH alternatives use equal, flat bands; other surfaces retain shading.
+    colors.forEach((color, index) => {
+      const channels = (color || "#fffdf4").slice(1).match(/../g).map((channel) => parseInt(channel, 16));
+      const stops = isKoh
+        ? [[0, 0], [1, 0]] : [[0, 0.22], [0.5, 0], [1, -0.22]];
+      stops.forEach(([position, shade]) => {
+        const stop = document.createElementNS(namespace, "stop");
+        stop.setAttribute("offset", String((index + position) / colors.length));
+        const rgb = channels.map((channel) => Math.round(shade > 0
+          ? channel + (255 - channel) * shade : channel * (1 + shade)));
+        stop.setAttribute("stop-color", `rgb(${rgb.join(",")})`);
+        stop.setAttribute("stop-opacity", isKoh && values[index] === "ingen" ? "0" : "1");
+        gradient.append(stop);
+      });
+    });
+    ids.forEach((id) => {
+      const part = svg.querySelector(`#${id}`);
+      part.style.fill = values.length
+        ? `url(#${gradientId})` : "var(--surface, #fffdf4)";
+      if (isKoh) {
+        part.style.opacity = "1";
+        part.style.fillOpacity = "1";
+      }
+    });
   }
 
   function cacheElements() {
@@ -590,6 +923,7 @@
 
   function updateResults() {
     const filters = getSelectedFilters();
+    syncMushroomImage(filters);
     state.evaluated = filterSpecies(filters);
 
     if (!state.evaluated.some((result) => getSpeciesKey(result.species) === state.selectedSpeciesKey)) {
@@ -652,7 +986,9 @@
       button.type = "button";
       button.className = "species-button";
       button.setAttribute("aria-pressed", String(getSpeciesKey(result.species) === state.selectedSpeciesKey));
-      button.addEventListener("click", () => selectSpecies(result.species));
+      button.addEventListener("click", () => selectSpecies(result.species, {
+        scrollToDetails: window.matchMedia("(max-width: 860px)").matches
+      }));
 
       const swedishName = document.createElement("span");
       swedishName.className = "species-name";
@@ -2647,6 +2983,8 @@
   }
 
   function selectSpecies(species, options = {}) {
+    elements.detailsPanel.classList.remove("is-collapsed");
+    document.querySelector("#details-heading .section-toggle").setAttribute("aria-expanded", "true");
     state.selectedSpeciesKey = getSpeciesKey(species);
     renderSpeciesDetails(species, { unlocked: options.unlocked });
     renderCompactResults();

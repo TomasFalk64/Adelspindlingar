@@ -116,7 +116,7 @@ h2 {
   font-size: 1.25rem;
 }
 
-#filters-heading {
+#mushroom-heading {
   font-size: 1.42rem;
 }
 
@@ -210,17 +210,128 @@ h3 {
 .app-shell {
   --top-card-height: min(84vh, 800px);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 330px) minmax(300px, 380px);
+  grid-template-columns: minmax(400px, 640px) minmax(240px, 280px) minmax(280px, 1fr);
   gap: 24px;
   align-items: stretch;
   padding: 24px 0 42px;
 }
 
-.main-column {
-  display: grid;
-  gap: 18px;
-  min-width: 0;
+.panel.mushroom-panel {
+  align-self: start;
+  margin-top: 0;
+  padding: 12px;
+  max-height: var(--top-card-height);
+  overflow: auto;
 }
+
+.mushroom-panel .section-head {
+  margin-bottom: 4px;
+}
+
+.mushroom-panel .observation-heading {
+  flex-direction: row;
+  align-items: center;
+}
+
+.observation-view-toggle {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-soft);
+  color: var(--text);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.observation-view-toggle:hover {
+  border-color: var(--accent-strong);
+}
+
+.observation-list-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 0 12px;
+}
+
+#mushroom-image {
+  overflow-x: auto;
+}
+
+#mushroom-color-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 6px;
+}
+
+.mushroom-options-dialog {
+  width: fit-content;
+  max-width: min(640px, calc(100% - 32px));
+  border: 2px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(74, 63, 42, 0.24);
+}
+
+.mushroom-clear-button {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #cf2727;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.mushroom-clear-button:hover {
+  border-color: #cf2727;
+  background: #fbeaea;
+}
+
+.mushroom-extra-filters {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 6px 4px;
+  margin-top: 4px;
+}
+
+.mushroom-filter-button {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-soft);
+  color: var(--text);
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.mushroom-filter-button.is-active {
+  border-color: var(--accent);
+  background: #e4eee7;
+}
+
+.mushroom-filter-button:hover {
+  border-color: var(--accent-strong);
+}
+
+.mushroom-filter-value {
+  font-weight: 600;
+}
+
 
 .app-shell > *,
 .panel,
@@ -247,10 +358,6 @@ h3 {
   padding: 22px;
 }
 
-.filter-panel {
-  max-height: var(--top-card-height);
-  overflow: auto;
-}
 
 .sticky-results,
 .sticky-details {
@@ -315,6 +422,51 @@ h3 {
 .muted {
   margin: 6px 0 0;
   color: var(--muted);
+}
+
+.section-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+  padding: 2px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+.section-toggle::before {
+  content: "";
+  flex: 0 0 9px;
+  width: 9px;
+  height: 9px;
+  margin: 0 3px;
+  border-right: 2px solid var(--accent-strong);
+  border-bottom: 2px solid var(--accent-strong);
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.section-toggle[aria-expanded="false"]::before {
+  transform: rotate(-45deg);
+}
+
+.collapsible-section.is-collapsed .collapsible-content {
+  display: none;
+}
+
+.collapsible-section.is-collapsed {
+  align-self: start;
+  max-height: none;
+}
+
+.collapsible-section.is-collapsed .section-head {
+  margin-bottom: 0;
+}
+
+.details-panel > .sticky-details {
+  max-height: calc(var(--top-card-height) - 90px);
 }
 
 .secondary-button,
@@ -1973,20 +2125,13 @@ tr.clickable-row:hover {
     grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
   }
 
-  .main-column {
-    display: contents;
-  }
-
-  .main-column .panel:nth-child(1) {
-    order: 1;
-  }
-
   .results-panel {
     order: 2;
   }
 
   .details-panel {
     order: 3;
+    grid-column: 1 / -1;
   }
 
   .comparison-panel {
@@ -2014,6 +2159,11 @@ tr.clickable-row:hover {
 }
 
 @media (max-width: 860px) {
+  .panel.mushroom-panel {
+    max-height: none;
+    overflow: visible;
+  }
+
   .header-content {
     grid-template-columns: 1fr;
     gap: 4px;
@@ -2085,6 +2235,11 @@ tr.clickable-row:hover {
   .options-grid {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .filter-form .options-grid {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .filter-group {

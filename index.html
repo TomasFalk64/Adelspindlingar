@@ -64,20 +64,35 @@
     </p>
   </dialog>
 
-  <main class="app-shell wrap">
-    <div class="main-column">
-      <section class="panel filter-panel" aria-labelledby="filters-heading">
-        <div class="section-head">
-          <div>
-            <h2 id="filters-heading">Vad ser du?</h2>
-          </div>
-          <button class="secondary-button" type="button" id="reset-all">Rensa allt</button>
-        </div>
-        <div id="load-error" class="error-message" hidden></div>
-        <form id="filter-form" class="filter-form"></form>
-      </section>
+  <dialog id="mushroom-color-dialog" class="sources-dialog mushroom-options-dialog" aria-labelledby="mushroom-color-heading">
+    <div class="sources-dialog-head">
+      <h2 id="mushroom-color-heading">Hattfärg</h2>
     </div>
+    <div id="mushroom-color-options" class="options-grid">
+      <button type="button" class="mushroom-clear-button" id="clear-mushroom-color" aria-label="Rensa hattfärg" title="Rensa hattfärg">×</button>
+    </div>
+  </dialog>
 
+  <main class="app-shell wrap">
+    <section class="panel mushroom-panel" aria-labelledby="mushroom-heading">
+      <div class="section-head observation-heading">
+        <h2 id="mushroom-heading">Vad ser du?</h2>
+        <button type="button" id="toggle-observation-view" class="observation-view-toggle" aria-label="Byt till lista" title="Byt till lista" aria-controls="observation-image observation-list" data-collapse-persistent><span aria-hidden="true">☷</span></button>
+      </div>
+      <div id="mushroom-content">
+        <div id="load-error" class="error-message" hidden></div>
+        <div id="observation-image">
+          <div id="mushroom-image">Laddar svampbilden…</div>
+          <div id="mushroom-extra-filters" class="mushroom-extra-filters" role="group" aria-label="Landskap, miljö, trädslag, slemmighet och fruktkroppstid"></div>
+        </div>
+        <div id="observation-list" hidden>
+          <div class="observation-list-actions">
+            <button class="secondary-button" type="button" id="reset-all">Rensa allt</button>
+          </div>
+          <form id="filter-form" class="filter-form"></form>
+        </div>
+      </div>
+    </section>
     <aside class="results-panel" aria-labelledby="results-heading">
       <div class="sticky-results">
         <h2 id="results-heading">Kanske någon av dessa</h2>
@@ -94,6 +109,9 @@
     </aside>
 
     <aside class="details-panel panel" aria-label="Artinformation">
+      <div class="section-head">
+        <h2 id="details-heading">Artinfo</h2>
+      </div>
       <div class="sticky-details">
         <div id="species-details" class="species-details">
           <p class="muted">Välj en art i träfflistan eller tabellen för att visa detaljer.</p>

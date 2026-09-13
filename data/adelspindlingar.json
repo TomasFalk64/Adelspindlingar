@@ -4694,7 +4694,20 @@
           "vetenskapligt_namn": "Cortinarius elegantior"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/Persiljespindling_1.jpg",
+          "bildtext": "persiljespindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/Persiljespindling_2.jpg",
+          "bildtext": "persiljespindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
