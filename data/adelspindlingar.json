@@ -3723,7 +3723,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -3735,7 +3735,9 @@
         "röd",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -3772,6 +3774,7 @@
         "röd"
       ],
       "miljo": [
+        "Kalkbarrskog",
         "Barrskog"
       ],
       "fotknol_form": [
@@ -3783,7 +3786,9 @@
       "hattfarg": [
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "gul"
@@ -3825,7 +3830,7 @@
         "röd"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -3883,7 +3888,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -3894,7 +3899,9 @@
       "hattfarg": [
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -3932,6 +3939,7 @@
         "röd"
       ],
       "miljo": [
+        "Kalkbarrskog",
         "Barrskog"
       ],
       "fotknol_form": [
@@ -3944,7 +3952,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "gul",
         "vit"
@@ -3997,7 +4008,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4009,7 +4020,9 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "fjällig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -4065,7 +4078,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "ingen bulb"
@@ -4169,7 +4182,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4181,7 +4194,9 @@
         "brun",
         "vit"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -4218,7 +4233,7 @@
         "brun"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4274,7 +4289,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "ingen bulb"
@@ -4288,7 +4303,9 @@
         "grön",
         "röd"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "fjällig"
+      ],
       "fotfarg": [
         "vit",
         "gul"
@@ -4336,7 +4353,7 @@
         "gul"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "ingen bulb"
@@ -4383,7 +4400,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "ingen bulb"
@@ -4434,7 +4451,8 @@
         "gul"
       ],
       "miljo": [
-        "Barrskog"
+        "Barrskog",
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "ingen bulb"
@@ -4445,7 +4463,9 @@
       "hattfarg": [
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -4488,7 +4508,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4502,7 +4522,9 @@
         "blå",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "fjällig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -4556,7 +4578,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "ingen bulb"
@@ -4610,7 +4632,7 @@
       ],
       "koh_kott": [],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4659,7 +4681,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4674,7 +4696,10 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "gul",
         "grön"
@@ -4737,7 +4762,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4749,7 +4774,9 @@
         "blå",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -4798,7 +4825,7 @@
         "gul"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -4810,7 +4837,10 @@
       "hattfarg": [
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -4895,7 +4925,7 @@
         "brun"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4949,7 +4979,7 @@
         "röd"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -4961,7 +4991,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "gul",
         "vit"
@@ -5006,7 +5039,7 @@
         "röd"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5018,7 +5051,9 @@
         "brun",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -5061,7 +5096,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5169,7 +5204,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5181,7 +5216,9 @@
         "blå",
         "vit"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -5225,7 +5262,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5282,7 +5319,7 @@
       "koh_fotknol": [],
       "koh_kott": [],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5342,7 +5379,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -5391,7 +5428,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5403,7 +5440,10 @@
         "blå",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "blå",
         "vit"
@@ -5456,7 +5496,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5468,7 +5508,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -5517,7 +5560,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5527,7 +5570,9 @@
         "gul",
         "vit"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -5576,7 +5621,8 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Barrskog",
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -5626,7 +5672,7 @@
         "röd"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5684,7 +5730,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5695,7 +5741,10 @@
       "hattfarg": [
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -5753,7 +5802,8 @@
         "röd"
       ],
       "miljo": [
-        "Barrskog"
+        "Barrskog",
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5765,7 +5815,9 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "gul"
@@ -5816,7 +5868,7 @@
         "röd"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5873,7 +5925,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5886,7 +5938,9 @@
         "gul",
         "vit"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -5934,7 +5988,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -5984,7 +6038,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -5996,7 +6050,9 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "fjällig"
+      ],
       "fotfarg": [
         "blå",
         "vit"
@@ -6044,7 +6100,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -6053,7 +6109,9 @@
         "gran"
       ],
       "hattfarg": [],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -6091,6 +6149,7 @@
         "ingen"
       ],
       "miljo": [
+        "Kalkbarrskog",
         "Barrskog"
       ],
       "fotknol_form": [
@@ -6150,7 +6209,7 @@
         "röd"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -6214,7 +6273,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -6262,7 +6321,7 @@
         "brun"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -6273,7 +6332,9 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "fjällig"
+      ],
       "fotfarg": [
         "gul"
       ],
@@ -6316,7 +6377,7 @@
         "ingen"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "kantad bulb"
@@ -6370,7 +6431,7 @@
         "brun"
       ],
       "miljo": [
-        "Barrskog"
+        "Kalkbarrskog"
       ],
       "fotknol_form": [
         "rundad bulb"
@@ -6382,7 +6443,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "gul",
         "grön"
@@ -6415,6 +6479,57 @@
       "extra_1": [],
       "extra_2": [],
       "extra_3": []
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius varius",
+      "svenskt_namn": "Klubbspindling",
+      "skivfarg_unga": [
+        "blå"
+      ],
+      "koh_hatt": [],
+      "koh_fotknol": [],
+      "koh_kott": [
+        "gul"
+      ],
+      "fotknol_form": [
+        "rundad bulb"
+      ],
+      "miljo": [
+        "Barrskog",
+        "Kalkbarrskog"
+      ],
+      "tradslag": [],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
+      "hattstruktur": [],
+      "fotfarg": [
+        "vit"
+      ],
+      "kottfarg": [
+        "vit"
+      ],
+      "slemmig": [],
+      "lukt": "",
+      "fruktkroppstid": [],
+      "viktiga_karaktarer": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "puderspindling",
+          "vetenskapligt_namn": "Cortinarius aureopulverulentus",
+          "skillnad": "har inväxt trådig hatt och röd KOH"
+        },
+        {
+          "svenskt_namn": "lövklubbspindling",
+          "vetenskapligt_namn": "Cortinarius luteocingulatus",
+          "skillnad": ""
+        }
+      ],
+      "bilder": [],
+      "hattfarg_beskrivning": "",
+      "fotfarg_beskrivning": "",
+      "kottfarg_beskrivning": ""
     }
   ]
 }

@@ -863,7 +863,15 @@
         continue;
       }
 
-      const matches = values.some((value) => selectedValues.includes(value));
+      const matches = values.some((value) => selectedValues.includes(value)
+        || (field === "miljo" && value === "Kalkbarrskog" && selectedValues.includes("Barrskog")));
+      // A broad forest record cannot confirm or rule out its calcareous subtype.
+      if (!matches && field === "miljo"
+        && selectedValues.includes("Kalkbarrskog") && values.includes("Barrskog")) {
+        evaluations[field] = { state: "missing", values };
+        hasMissing = true;
+        continue;
+      }
       evaluations[field] = {
         state: matches ? "match" : "contradiction",
         values
@@ -3209,6 +3217,10 @@
   }
 
   function getOptionHelpText(fieldKey, option) {
+    if (fieldKey === "miljo") {
+      if (option === "Barrskog") return "Barrskog, inklusive kalkbarrskog.";
+      if (option === "Kalkbarrskog") return "En underkategori till barrskog. Arter med enbart uppgiften barrskog visas som möjliga träffar.";
+    }
     return OPTION_HELP_TEXTS[fieldKey]?.[String(option).toLocaleLowerCase("sv")] || "";
   }
 }());
