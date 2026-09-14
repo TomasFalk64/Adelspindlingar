@@ -25,7 +25,7 @@
     kottfarg_beskrivning: "Köttfärg, beskrivning",
     slemmig: "Slemmig",
     lukt: "Lukt",
-    fruktkroppstid: "Fruktkroppstid",
+    fruktkroppstid: "Årstid",
     viktiga_karaktarer: "Viktiga karaktärer",
     forvaxlingsarter: "Förväxlingsarter",
     bilder: "Bilder"
@@ -148,7 +148,7 @@
     { key: "miljo", label: "Miljö" },
     { key: "tradslag", label: "Trädslag" },
     { key: "slemmig", label: "Slemmig" },
-    { key: "fruktkroppstid", label: "Fruktkroppstid" }
+    { key: "fruktkroppstid", label: "Årstid" }
   ];
 
   const OPTION_COLORS = {
@@ -314,7 +314,7 @@
       const style = document.createElement("style");
       style.textContent = `
         :host { display: block; }
-        svg { display: block; width: min(100%, 1050px); min-width: 400px; height: auto; margin: auto; }
+        svg { display: block; width: min(100%, 1050px); min-width: 320px; height: auto; margin: auto; }
         .hotspot { cursor: default; }
         .mushroom-trait, .mushroom-trait .hotspot { cursor: pointer; -webkit-user-select: none; user-select: none; }
         .mushroom-trait:focus { outline: none; }
@@ -361,6 +361,7 @@
         extraFilters.append(button);
         return { ...field, button, value, labelElement: label };
       });
+      document.querySelector("#close-mushroom-color").addEventListener("click", () => dialog.close());
       document.querySelector("#clear-mushroom-color").addEventListener("click", () => {
         if (elements.mushroomActiveField) resetFilterGroup(elements.mushroomActiveField);
       });
@@ -1027,6 +1028,10 @@
   }
 
   function compareCompactResults(a, b) {
+    if (a.status !== b.status) {
+      return a.status === "full" ? -1 : 1;
+    }
+
     const primaryA = getCompactSortValue(a.species, state.compactSortKey);
     const primaryB = getCompactSortValue(b.species, state.compactSortKey);
     const primaryCompare = primaryA.localeCompare(primaryB, "sv");

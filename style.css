@@ -233,6 +233,7 @@ h3 {
   align-items: center;
 }
 
+.observation-reset-button,
 .observation-view-toggle {
   flex: 0 0 auto;
   width: 30px;
@@ -246,14 +247,16 @@ h3 {
   line-height: 1;
 }
 
+.observation-reset-button:hover,
 .observation-view-toggle:hover {
   border-color: var(--accent-strong);
 }
 
-.observation-list-actions {
+.observation-actions {
   display: flex;
-  justify-content: flex-end;
-  margin: 8px 0 12px;
+  flex: 0 0 auto;
+  gap: 6px;
+  margin-left: auto;
 }
 
 #mushroom-image {
@@ -276,6 +279,7 @@ h3 {
   box-shadow: 0 12px 32px rgba(74, 63, 42, 0.24);
 }
 
+.mushroom-close-button,
 .mushroom-clear-button {
   flex: 0 0 auto;
   width: 32px;
@@ -284,39 +288,57 @@ h3 {
   border: 1px solid transparent;
   border-radius: 6px;
   background: transparent;
-  color: #cf2727;
+  color: #777;
   font-size: 1.6rem;
   line-height: 1;
 }
 
+.mushroom-close-button {
+  position: relative;
+  top: -18px;
+  right: -18px;
+}
+
+.mushroom-clear-button {
+  font-size: 1.2rem;
+}
+
+.mushroom-close-button:hover,
 .mushroom-clear-button:hover {
-  border-color: #cf2727;
-  background: #fbeaea;
+  color: #333;
+  text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
 }
 
 .mushroom-extra-filters {
   display: flex;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 4px;
   overflow-x: auto;
-  padding: 6px 4px;
+  padding: 6px 0;
   margin-top: 4px;
 }
 
 .mushroom-filter-button {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 4px;
   min-height: 32px;
-  padding: 4px 8px;
+  padding: 4px 5px;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--surface-soft);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.8rem;
   white-space: nowrap;
+}
+
+.mushroom-filter-button > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mushroom-filter-button.is-active {
