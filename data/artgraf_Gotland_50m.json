@@ -1,0 +1,7608 @@
+{
+  "Ametistspindling": {
+    "Apelsinspindling": {
+      "weight": 7
+    },
+    "Bananspindling": {
+      "weight": 7
+    },
+    "Blek fagerspindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 3
+    },
+    "Karamellspindling": {
+      "weight": 3
+    },
+    "Kungsspindling": {
+      "weight": 6
+    },
+    "Pilfotsspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Saffransspindling": {
+      "weight": 6
+    },
+    "Solvändespindling": {
+      "weight": 6
+    },
+    "Spökspindling": {
+      "weight": 8
+    },
+    "Sötdoftande spindling": {
+      "weight": 5
+    }
+  },
+  "Apelsinspindling": {
+    "Ametistspindling": {
+      "weight": 7
+    },
+    "Knölfotad bananspindling": {
+      "weight": 6
+    },
+    "Mjölspindling": {
+      "weight": 5
+    },
+    "Elastisk spindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 3
+    },
+    "Grisspindling": {
+      "weight": 5
+    },
+    "Karamellspindling": {
+      "weight": 3
+    },
+    "Kornspindling": {
+      "weight": 3
+    },
+    "Kungsspindling": {
+      "weight": 4
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Pilfotsspindling": {
+      "weight": 7
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Saffransspindling": {
+      "weight": 3
+    },
+    "Safirspindling": {
+      "weight": 4
+    },
+    "Slottsspindling": {
+      "weight": 4
+    },
+    "Sockelspindling": {
+      "weight": 3
+    },
+    "Bananspindling": {
+      "weight": 6
+    },
+    "Spökspindling": {
+      "weight": 3
+    }
+  },
+  "Bananspindling": {
+    "Ametistspindling": {
+      "weight": 7
+    },
+    "Anisspindling": {
+      "weight": 10
+    },
+    "Apelsinspindling": {
+      "weight": 6
+    },
+    "Granrotspindling": {
+      "weight": 11
+    },
+    "Äggspindling": {
+      "weight": 4
+    },
+    "Odörspindling": {
+      "weight": 13
+    },
+    "Svartgrön spindling": {
+      "weight": 6
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 9
+    },
+    "Bitterspindlingar": {
+      "weight": 4
+    },
+    "Fläckig saffransspindling": {
+      "weight": 4
+    },
+    "Kungsspindling": {
+      "weight": 4
+    },
+    "Pilfotsspindling": {
+      "weight": 5
+    },
+    "Praktspindling": {
+      "weight": 3
+    },
+    "Saffransspindling": {
+      "weight": 3
+    },
+    "Knölfotad bananspindling": {
+      "weight": 3
+    }
+  },
+  "Blek fagerspindling": {
+    "Ametistspindling": {
+      "weight": 3
+    }
+  },
+  "Fläckig saffransspindling": {
+    "Ametistspindling": {
+      "weight": 3
+    },
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Bananspindling": {
+      "weight": 4
+    },
+    "Bananspindling agg.": {
+      "weight": 8
+    },
+    "Bitterspindlingar": {
+      "weight": 40
+    },
+    "Blåeggad spindling": {
+      "weight": 4
+    },
+    "Ekspindling": {
+      "weight": 9
+    },
+    "Elastisk spindling": {
+      "weight": 5
+    },
+    "Fagerspindlingar": {
+      "weight": 4
+    },
+    "Filtekspindling": {
+      "weight": 3
+    },
+    "Lundspindling": {
+      "weight": 21
+    },
+    "Jättespindling": {
+      "weight": 20
+    },
+    "Kornspindling": {
+      "weight": 7
+    },
+    "Kungsspindling": {
+      "weight": 20
+    },
+    "Mjölspindling": {
+      "weight": 24
+    },
+    "Mångkransad spindling": {
+      "weight": 11
+    },
+    "Saffransspindling": {
+      "weight": 27
+    },
+    "Grisspindling": {
+      "weight": 34
+    },
+    "Liten rävspindling": {
+      "weight": 7
+    },
+    "Lövklubbspindling": {
+      "weight": 11
+    },
+    "Odörspindling agg.": {
+      "weight": 3
+    },
+    "Pilfotsspindling": {
+      "weight": 30
+    },
+    "Praktspindling": {
+      "weight": 22
+    },
+    "Safirspindling": {
+      "weight": 10
+    },
+    "Slottsspindling": {
+      "weight": 31
+    },
+    "Sockelspindling": {
+      "weight": 11
+    },
+    "Sötdoftande spindling": {
+      "weight": 11
+    },
+    "Tallpraktspindling": {
+      "weight": 6
+    },
+    "Munkspindling": {
+      "weight": 9
+    },
+    "Grönkantad spindling": {
+      "weight": 7
+    },
+    "Knölfotad bananspindling": {
+      "weight": 13
+    },
+    "Solvändespindling": {
+      "weight": 4
+    },
+    "Spökspindling": {
+      "weight": 5
+    },
+    "Trollspindling": {
+      "weight": 5
+    },
+    "Lövstrimspindling": {
+      "weight": 3
+    }
+  },
+  "Karamellspindling": {
+    "Ametistspindling": {
+      "weight": 3
+    },
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Kungsspindling": {
+      "weight": 3
+    }
+  },
+  "Kungsspindling": {
+    "Ametistspindling": {
+      "weight": 6
+    },
+    "Anisspindling": {
+      "weight": 258
+    },
+    "Apelsinspindling": {
+      "weight": 4
+    },
+    "Bananspindling": {
+      "weight": 4
+    },
+    "Barrfagerspindling": {
+      "weight": 30
+    },
+    "Bitterspindlingar": {
+      "weight": 148
+    },
+    "Blekspindling agg.": {
+      "weight": 7
+    },
+    "Blå lökspindling": {
+      "weight": 3
+    },
+    "Blåeggad spindling": {
+      "weight": 4
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 12
+    },
+    "Bullspindling": {
+      "weight": 42
+    },
+    "Denisespindling agg.": {
+      "weight": 39
+    },
+    "Duvspindling": {
+      "weight": 71
+    },
+    "Elastisk spindling": {
+      "weight": 5
+    },
+    "Fagerspindlingar": {
+      "weight": 158
+    },
+    "Fläckig saffransspindling": {
+      "weight": 20
+    },
+    "Granrotspindling": {
+      "weight": 159
+    },
+    "Grisspindling": {
+      "weight": 24
+    },
+    "Grönkantad spindling": {
+      "weight": 6
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 39
+    },
+    "Gyllenskivig spindling": {
+      "weight": 23
+    },
+    "Gyllenspindling": {
+      "weight": 4
+    },
+    "Hjortrongul spindling": {
+      "weight": 6
+    },
+    "Jättespindling": {
+      "weight": 9
+    },
+    "Kantspindling": {
+      "weight": 184
+    },
+    "Karamellspindling": {
+      "weight": 3
+    },
+    "Klubbspindling": {
+      "weight": 146
+    },
+    "Kopparspindling": {
+      "weight": 7
+    },
+    "Kornspindling": {
+      "weight": 16
+    },
+    "Kryddspindling": {
+      "weight": 111
+    },
+    "Odörspindling agg.": {
+      "weight": 168
+    },
+    "Narrspindling": {
+      "weight": 17
+    },
+    "Violettfläckig spindling": {
+      "weight": 26
+    },
+    "Strimspindling": {
+      "weight": 31
+    },
+    "Svartgrön spindling": {
+      "weight": 137
+    },
+    "Äggspindling": {
+      "weight": 63
+    },
+    "Puderspindling": {
+      "weight": 11
+    },
+    "Odörspindling": {
+      "weight": 53
+    },
+    "Mångkransad spindling": {
+      "weight": 43
+    },
+    "Mjölspindling": {
+      "weight": 11
+    },
+    "Pilfotsspindling": {
+      "weight": 19
+    },
+    "Saffransspindling": {
+      "weight": 23
+    },
+    "Slottsspindling": {
+      "weight": 11
+    },
+    "Lundspindling": {
+      "weight": 5
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Munkspindling": {
+      "weight": 11
+    },
+    "Praktspindling": {
+      "weight": 13
+    },
+    "Safirspindling": {
+      "weight": 5
+    },
+    "Sockelspindling": {
+      "weight": 5
+    },
+    "Trollspindling": {
+      "weight": 10
+    },
+    "Tvillingspindling": {
+      "weight": 36
+    },
+    "Persiljespindling": {
+      "weight": 5
+    },
+    "Tallpraktspindling": {
+      "weight": 9
+    },
+    "Purpurspindling": {
+      "weight": 5
+    },
+    "Violettrandad spindling": {
+      "weight": 3
+    },
+    "Sötdoftande spindling": {
+      "weight": 9
+    },
+    "Sydlig denisespindling": {
+      "weight": 3
+    },
+    "Solvändespindling": {
+      "weight": 5
+    },
+    "Spökspindling": {
+      "weight": 6
+    }
+  },
+  "Pilfotsspindling": {
+    "Ametistspindling": {
+      "weight": 4
+    },
+    "Anisspindling": {
+      "weight": 5
+    },
+    "Apelsinspindling": {
+      "weight": 7
+    },
+    "Bananspindling": {
+      "weight": 5
+    },
+    "Bananspindling agg.": {
+      "weight": 5
+    },
+    "Bitterspindlingar": {
+      "weight": 37
+    },
+    "Blåeggad spindling": {
+      "weight": 10
+    },
+    "Denisespindling": {
+      "weight": 5
+    },
+    "Ekspindling": {
+      "weight": 6
+    },
+    "Elastisk spindling": {
+      "weight": 17
+    },
+    "Filtekspindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 30
+    },
+    "Frostspindling": {
+      "weight": 4
+    },
+    "Granatspindling": {
+      "weight": 3
+    },
+    "Grisspindling": {
+      "weight": 28
+    },
+    "Gyllenskivig spindling": {
+      "weight": 4
+    },
+    "Jättespindling": {
+      "weight": 17
+    },
+    "Knölfotad bananspindling": {
+      "weight": 17
+    },
+    "Kornspindling": {
+      "weight": 13
+    },
+    "Kungsspindling": {
+      "weight": 19
+    },
+    "Liten rävspindling": {
+      "weight": 4
+    },
+    "Lundspindling": {
+      "weight": 12
+    },
+    "Lövklubbspindling": {
+      "weight": 10
+    },
+    "Lövstrimspindling": {
+      "weight": 16
+    },
+    "Mjölspindling": {
+      "weight": 22
+    },
+    "Munkspindling": {
+      "weight": 32
+    },
+    "Odörspindling agg.": {
+      "weight": 4
+    },
+    "Saffransspindling": {
+      "weight": 20
+    },
+    "Slottsspindling": {
+      "weight": 32
+    },
+    "Tallpraktspindling": {
+      "weight": 11
+    },
+    "Praktspindling": {
+      "weight": 27
+    },
+    "Spökspindling": {
+      "weight": 6
+    },
+    "Safirspindling": {
+      "weight": 8
+    },
+    "Sockelspindling": {
+      "weight": 12
+    },
+    "Sötdoftande spindling": {
+      "weight": 28
+    },
+    "Sydlig denisespindling": {
+      "weight": 14
+    },
+    "Trollspindling": {
+      "weight": 4
+    },
+    "Solvändespindling": {
+      "weight": 4
+    }
+  },
+  "Praktspindling": {
+    "Ametistspindling": {
+      "weight": 5
+    },
+    "Anisspindling": {
+      "weight": 4
+    },
+    "Apelsinspindling": {
+      "weight": 5
+    },
+    "Bananspindling": {
+      "weight": 3
+    },
+    "Bananspindling agg.": {
+      "weight": 9
+    },
+    "Barrfagerspindling": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 58
+    },
+    "Blåeggad spindling": {
+      "weight": 11
+    },
+    "Bullspindling": {
+      "weight": 5
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 6
+    },
+    "Denisespindling": {
+      "weight": 3
+    },
+    "Denisespindling agg.": {
+      "weight": 8
+    },
+    "Duvspindling": {
+      "weight": 8
+    },
+    "Ekspindling": {
+      "weight": 12
+    },
+    "Elastisk spindling": {
+      "weight": 6
+    },
+    "Fagerspindlingar": {
+      "weight": 5
+    },
+    "Filtekspindling": {
+      "weight": 5
+    },
+    "Fläckig saffransspindling": {
+      "weight": 22
+    },
+    "Granrotspindling": {
+      "weight": 6
+    },
+    "Gredelinspindling": {
+      "weight": 6
+    },
+    "Grisspindling": {
+      "weight": 45
+    },
+    "Grönkantad spindling": {
+      "weight": 3
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 3
+    },
+    "Jättespindling": {
+      "weight": 40
+    },
+    "Knölfotad bananspindling": {
+      "weight": 15
+    },
+    "Kornspindling": {
+      "weight": 14
+    },
+    "Kungsspindling": {
+      "weight": 13
+    },
+    "Liten rävspindling": {
+      "weight": 7
+    },
+    "Lundspindling": {
+      "weight": 13
+    },
+    "Lövklubbspindling": {
+      "weight": 15
+    },
+    "Lövstrimspindling": {
+      "weight": 5
+    },
+    "Mjölspindling": {
+      "weight": 31
+    },
+    "Munkspindling": {
+      "weight": 17
+    },
+    "Mångkransad spindling": {
+      "weight": 4
+    },
+    "Narrspindling": {
+      "weight": 5
+    },
+    "Odörspindling": {
+      "weight": 4
+    },
+    "Odörspindling agg.": {
+      "weight": 9
+    },
+    "Pilfotsspindling": {
+      "weight": 27
+    },
+    "Safirspindling": {
+      "weight": 13
+    },
+    "Slottsspindling": {
+      "weight": 48
+    },
+    "Sockelspindling": {
+      "weight": 14
+    },
+    "Sötdoftande spindling": {
+      "weight": 15
+    },
+    "Tallpraktspindling": {
+      "weight": 10
+    },
+    "Strimspindling": {
+      "weight": 3
+    },
+    "Svartgrön spindling": {
+      "weight": 6
+    },
+    "Tvillingspindling": {
+      "weight": 3
+    },
+    "Trollspindling": {
+      "weight": 4
+    },
+    "Saffransspindling": {
+      "weight": 12
+    },
+    "Solvändespindling": {
+      "weight": 5
+    },
+    "Spökspindling": {
+      "weight": 5
+    }
+  },
+  "Saffransspindling": {
+    "Ametistspindling": {
+      "weight": 6
+    },
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Bananspindling": {
+      "weight": 3
+    },
+    "Bananspindling agg.": {
+      "weight": 5
+    },
+    "Bitterspindlingar": {
+      "weight": 26
+    },
+    "Blåeggad spindling": {
+      "weight": 3
+    },
+    "Ekspindling": {
+      "weight": 4
+    },
+    "Elastisk spindling": {
+      "weight": 7
+    },
+    "Fagerspindlingar": {
+      "weight": 8
+    },
+    "Fläckig saffransspindling": {
+      "weight": 27
+    },
+    "Grisspindling": {
+      "weight": 27
+    },
+    "Grönkantad spindling": {
+      "weight": 10
+    },
+    "Jättespindling": {
+      "weight": 8
+    },
+    "Klubbspindling": {
+      "weight": 3
+    },
+    "Knölfotad bananspindling": {
+      "weight": 3
+    },
+    "Kornspindling": {
+      "weight": 12
+    },
+    "Kungsspindling": {
+      "weight": 23
+    },
+    "Lundspindling": {
+      "weight": 8
+    },
+    "Lövklubbspindling": {
+      "weight": 7
+    },
+    "Mjölspindling": {
+      "weight": 16
+    },
+    "Munkspindling": {
+      "weight": 19
+    },
+    "Mångkransad spindling": {
+      "weight": 9
+    },
+    "Pilfotsspindling": {
+      "weight": 20
+    },
+    "Praktspindling": {
+      "weight": 12
+    },
+    "Slottsspindling": {
+      "weight": 15
+    },
+    "Safirspindling": {
+      "weight": 5
+    },
+    "Sockelspindling": {
+      "weight": 10
+    },
+    "Sötdoftande spindling": {
+      "weight": 14
+    },
+    "Ädelspindlingar": {
+      "weight": 5
+    },
+    "Solvändespindling": {
+      "weight": 6
+    },
+    "Sydlig denisespindling": {
+      "weight": 4
+    },
+    "Spökspindling": {
+      "weight": 5
+    }
+  },
+  "Solvändespindling": {
+    "Ametistspindling": {
+      "weight": 6
+    },
+    "Fläckig saffransspindling": {
+      "weight": 4
+    },
+    "Grisspindling": {
+      "weight": 3
+    },
+    "Kungsspindling": {
+      "weight": 5
+    },
+    "Mjölspindling": {
+      "weight": 5
+    },
+    "Pilfotsspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Saffransspindling": {
+      "weight": 6
+    },
+    "Spökspindling": {
+      "weight": 6
+    },
+    "Sötdoftande spindling": {
+      "weight": 3
+    }
+  },
+  "Spökspindling": {
+    "Ametistspindling": {
+      "weight": 8
+    },
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 5
+    },
+    "Kungsspindling": {
+      "weight": 6
+    },
+    "Liten rävspindling": {
+      "weight": 4
+    },
+    "Pilfotsspindling": {
+      "weight": 6
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Saffransspindling": {
+      "weight": 5
+    },
+    "Slottsspindling": {
+      "weight": 3
+    },
+    "Solvändespindling": {
+      "weight": 6
+    },
+    "Sötdoftande spindling": {
+      "weight": 6
+    },
+    "Trollspindling": {
+      "weight": 4
+    }
+  },
+  "Sötdoftande spindling": {
+    "Ametistspindling": {
+      "weight": 5
+    },
+    "Bananspindling agg.": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 13
+    },
+    "Blåeggad spindling": {
+      "weight": 7
+    },
+    "Fläckig saffransspindling": {
+      "weight": 11
+    },
+    "Granatspindling": {
+      "weight": 5
+    },
+    "Grisspindling": {
+      "weight": 9
+    },
+    "Jättespindling": {
+      "weight": 8
+    },
+    "Knölfotad bananspindling": {
+      "weight": 8
+    },
+    "Kornspindling": {
+      "weight": 8
+    },
+    "Kungsspindling": {
+      "weight": 9
+    },
+    "Liten rävspindling": {
+      "weight": 3
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Lövstrimspindling": {
+      "weight": 4
+    },
+    "Mjölspindling": {
+      "weight": 11
+    },
+    "Munkspindling": {
+      "weight": 5
+    },
+    "Pilfotsspindling": {
+      "weight": 28
+    },
+    "Praktspindling": {
+      "weight": 15
+    },
+    "Saffransspindling": {
+      "weight": 14
+    },
+    "Safirspindling": {
+      "weight": 3
+    },
+    "Slottsspindling": {
+      "weight": 10
+    },
+    "Sockelspindling": {
+      "weight": 5
+    },
+    "Solvändespindling": {
+      "weight": 3
+    },
+    "Spökspindling": {
+      "weight": 6
+    },
+    "Sydlig denisespindling": {
+      "weight": 12
+    },
+    "Tallpraktspindling": {
+      "weight": 5
+    }
+  },
+  "Bitterspindlingar": {
+    "Anisspindling": {
+      "weight": 1185
+    },
+    "Bananspindling": {
+      "weight": 4
+    },
+    "Bananspindling agg.": {
+      "weight": 29
+    },
+    "Barrfagerspindling": {
+      "weight": 88
+    },
+    "Beryllspindling": {
+      "weight": 4
+    },
+    "Granrotspindling": {
+      "weight": 456
+    },
+    "Kantspindling": {
+      "weight": 211
+    },
+    "Klubbspindling": {
+      "weight": 372
+    },
+    "Odörspindling agg.": {
+      "weight": 299
+    },
+    "Duvspindling": {
+      "weight": 221
+    },
+    "Vagabondspindling": {
+      "weight": 11
+    },
+    "Violettfläckig spindling": {
+      "weight": 218
+    },
+    "Denisespindling agg.": {
+      "weight": 75
+    },
+    "Fagerspindlingar": {
+      "weight": 156
+    },
+    "Kryddspindling": {
+      "weight": 175
+    },
+    "Svartgrön spindling": {
+      "weight": 751
+    },
+    "Bullspindling": {
+      "weight": 127
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 674
+    },
+    "Strimspindling": {
+      "weight": 39
+    },
+    "Tvillingspindling": {
+      "weight": 165
+    },
+    "Violettrandad spindling": {
+      "weight": 52
+    },
+    "Äggspindling": {
+      "weight": 146
+    },
+    "Kungsspindling": {
+      "weight": 148
+    },
+    "Puderspindling": {
+      "weight": 27
+    },
+    "Odörspindling": {
+      "weight": 788
+    },
+    "Narrspindling": {
+      "weight": 69
+    },
+    "Lundspindling": {
+      "weight": 44
+    },
+    "Ekspindling": {
+      "weight": 23
+    },
+    "Elastisk spindling": {
+      "weight": 10
+    },
+    "Fläckig saffransspindling": {
+      "weight": 40
+    },
+    "Jättespindling": {
+      "weight": 79
+    },
+    "Lövklubbspindling": {
+      "weight": 33
+    },
+    "Mjölspindling": {
+      "weight": 64
+    },
+    "Munkspindling": {
+      "weight": 24
+    },
+    "Pilfotsspindling": {
+      "weight": 37
+    },
+    "Saffransspindling": {
+      "weight": 26
+    },
+    "Slottsspindling": {
+      "weight": 75
+    },
+    "Tallpraktspindling": {
+      "weight": 76
+    },
+    "Kornspindling": {
+      "weight": 42
+    },
+    "Halmspindling": {
+      "weight": 3
+    },
+    "Mångkransad spindling": {
+      "weight": 34
+    },
+    "Filtekspindling": {
+      "weight": 13
+    },
+    "Grisspindling": {
+      "weight": 84
+    },
+    "Liten rävspindling": {
+      "weight": 10
+    },
+    "Praktspindling": {
+      "weight": 58
+    },
+    "Purpurspindling": {
+      "weight": 11
+    },
+    "Safirspindling": {
+      "weight": 20
+    },
+    "Sockelspindling": {
+      "weight": 29
+    },
+    "Sötdoftande spindling": {
+      "weight": 13
+    },
+    "Blå lökspindling": {
+      "weight": 4
+    },
+    "Blekspindling agg.": {
+      "weight": 15
+    },
+    "Siljansspindling": {
+      "weight": 7
+    },
+    "Gyllenskivig spindling": {
+      "weight": 6
+    },
+    "Hjortrongul spindling": {
+      "weight": 20
+    },
+    "Trollspindling": {
+      "weight": 150
+    },
+    "Blåeggad spindling": {
+      "weight": 9
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 10
+    },
+    "Gredelinspindling": {
+      "weight": 8
+    },
+    "Knölfotad bananspindling": {
+      "weight": 18
+    },
+    "Lövstrimspindling": {
+      "weight": 11
+    },
+    "Grönkantad spindling": {
+      "weight": 10
+    },
+    "Ädelspindlingar": {
+      "weight": 4
+    },
+    "Gyllenspindling": {
+      "weight": 3
+    },
+    "Denisespindling": {
+      "weight": 189
+    },
+    "Porslinsblå spindling": {
+      "weight": 3
+    },
+    "Fågelträcksspindling": {
+      "weight": 44
+    },
+    "Kopparspindling": {
+      "weight": 5
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 48
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 10
+    },
+    "Blyspindling agg.": {
+      "weight": 6
+    },
+    "Tallkejsarspindling": {
+      "weight": 4
+    },
+    "Blekspindling": {
+      "weight": 8
+    },
+    "Klenodspindling": {
+      "weight": 6
+    },
+    "Blek bananspindling": {
+      "weight": 3
+    }
+  },
+  "Anisspindling": {
+    "Bitterspindlingar": {
+      "weight": 1185
+    },
+    "Odörspindling agg.": {
+      "weight": 1157
+    },
+    "Granrotspindling": {
+      "weight": 1718
+    },
+    "Kantspindling": {
+      "weight": 571
+    },
+    "Klubbspindling": {
+      "weight": 995
+    },
+    "Fagerspindlingar": {
+      "weight": 356
+    },
+    "Kungsspindling": {
+      "weight": 258
+    },
+    "Duvspindling": {
+      "weight": 463
+    },
+    "Vagabondspindling": {
+      "weight": 35
+    },
+    "Violettfläckig spindling": {
+      "weight": 948
+    },
+    "Bullspindling": {
+      "weight": 330
+    },
+    "Denisespindling agg.": {
+      "weight": 277
+    },
+    "Kryddspindling": {
+      "weight": 506
+    },
+    "Svartgrön spindling": {
+      "weight": 2620
+    },
+    "Narrspindling": {
+      "weight": 162
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 2142
+    },
+    "Strimspindling": {
+      "weight": 109
+    },
+    "Tvillingspindling": {
+      "weight": 774
+    },
+    "Violettrandad spindling": {
+      "weight": 149
+    },
+    "Äggspindling": {
+      "weight": 622
+    },
+    "Barrfagerspindling": {
+      "weight": 303
+    },
+    "Puderspindling": {
+      "weight": 69
+    },
+    "Odörspindling": {
+      "weight": 3753
+    },
+    "Purpurspindling": {
+      "weight": 31
+    },
+    "Pilfotsspindling": {
+      "weight": 5
+    },
+    "Slottsspindling": {
+      "weight": 4
+    },
+    "Blå lökspindling": {
+      "weight": 5
+    },
+    "Kornspindling": {
+      "weight": 28
+    },
+    "Bananspindling agg.": {
+      "weight": 6
+    },
+    "Blekspindling agg.": {
+      "weight": 44
+    },
+    "Gyllenskivig spindling": {
+      "weight": 14
+    },
+    "Myrspindling agg.": {
+      "weight": 3
+    },
+    "Mångkransad spindling": {
+      "weight": 40
+    },
+    "Siljansspindling": {
+      "weight": 12
+    },
+    "Blek fagerspindling agg.": {
+      "weight": 4
+    },
+    "Kopparspindling": {
+      "weight": 23
+    },
+    "Hjortrongul spindling": {
+      "weight": 30
+    },
+    "Trollspindling": {
+      "weight": 387
+    },
+    "Brunfläckig spindling": {
+      "weight": 9
+    },
+    "Persiljespindling": {
+      "weight": 5
+    },
+    "Denisespindling": {
+      "weight": 566
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 416
+    },
+    "Cortinarius spadiceus": {
+      "weight": 7
+    },
+    "Gyllenspindling": {
+      "weight": 4
+    },
+    "Tallpraktspindling": {
+      "weight": 122
+    },
+    "Tuvspindling": {
+      "weight": 3
+    },
+    "Porslinsblå spindling": {
+      "weight": 5
+    },
+    "Praktspindling": {
+      "weight": 4
+    },
+    "Stor odörspindling": {
+      "weight": 21
+    },
+    "Blek bananspindling": {
+      "weight": 23
+    },
+    "Klenodspindling": {
+      "weight": 26
+    },
+    "Myrstacksspindling": {
+      "weight": 6
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 233
+    },
+    "Blyspindling agg.": {
+      "weight": 15
+    },
+    "Fågelträcksspindling": {
+      "weight": 96
+    },
+    "Tallkejsarspindling": {
+      "weight": 12
+    },
+    "Lövklubbspindling": {
+      "weight": 8
+    },
+    "Blekspindling": {
+      "weight": 36
+    },
+    "Bananspindling": {
+      "weight": 10
+    },
+    "Cortinarius caesiocanescens s.str.": {
+      "weight": 3
+    },
+    "Cortinarius infractus": {
+      "weight": 5
+    },
+    "Grynspindling": {
+      "weight": 6
+    },
+    "Blekskivig klubbspindling": {
+      "weight": 3
+    },
+    "Dvärgblekspindling": {
+      "weight": 4
+    }
+  },
+  "Odörspindling agg.": {
+    "Anisspindling": {
+      "weight": 1157
+    },
+    "Bananspindling agg.": {
+      "weight": 5
+    },
+    "Barrfagerspindling": {
+      "weight": 91
+    },
+    "Bitterspindlingar": {
+      "weight": 299
+    },
+    "Blekspindling agg.": {
+      "weight": 12
+    },
+    "Blå lökspindling": {
+      "weight": 4
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 417
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 9
+    },
+    "Brunfläckig spindling": {
+      "weight": 3
+    },
+    "Bullspindling": {
+      "weight": 116
+    },
+    "Denisespindling": {
+      "weight": 27
+    },
+    "Denisespindling agg.": {
+      "weight": 118
+    },
+    "Duvspindling": {
+      "weight": 196
+    },
+    "Ekspindling": {
+      "weight": 4
+    },
+    "Fagerspindlingar": {
+      "weight": 270
+    },
+    "Fläckig saffransspindling": {
+      "weight": 3
+    },
+    "Fågelträcksspindling": {
+      "weight": 4
+    },
+    "Granrotspindling": {
+      "weight": 697
+    },
+    "Grisspindling": {
+      "weight": 9
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 314
+    },
+    "Gyllenskivig spindling": {
+      "weight": 6
+    },
+    "Hjortrongul spindling": {
+      "weight": 6
+    },
+    "Jättespindling": {
+      "weight": 10
+    },
+    "Kantspindling": {
+      "weight": 296
+    },
+    "Klenodspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 404
+    },
+    "Kopparspindling": {
+      "weight": 14
+    },
+    "Kornspindling": {
+      "weight": 18
+    },
+    "Kryddspindling": {
+      "weight": 203
+    },
+    "Kungsspindling": {
+      "weight": 168
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Mjölspindling": {
+      "weight": 7
+    },
+    "Myrstacksspindling": {
+      "weight": 4
+    },
+    "Mångkransad spindling": {
+      "weight": 16
+    },
+    "Narrspindling": {
+      "weight": 22
+    },
+    "Odörspindling": {
+      "weight": 146
+    },
+    "Vagabondspindling": {
+      "weight": 17
+    },
+    "Violettfläckig spindling": {
+      "weight": 338
+    },
+    "Svartgrön spindling": {
+      "weight": 482
+    },
+    "Strimspindling": {
+      "weight": 43
+    },
+    "Tvillingspindling": {
+      "weight": 156
+    },
+    "Violettrandad spindling": {
+      "weight": 31
+    },
+    "Äggspindling": {
+      "weight": 277
+    },
+    "Puderspindling": {
+      "weight": 28
+    },
+    "Purpurspindling": {
+      "weight": 23
+    },
+    "Pilfotsspindling": {
+      "weight": 4
+    },
+    "Slottsspindling": {
+      "weight": 10
+    },
+    "Siljansspindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 21
+    },
+    "Tallpraktspindling": {
+      "weight": 10
+    },
+    "Stor odörspindling": {
+      "weight": 17
+    },
+    "Praktspindling": {
+      "weight": 9
+    },
+    "Sockelspindling": {
+      "weight": 3
+    }
+  },
+  "Granrotspindling": {
+    "Anisspindling": {
+      "weight": 1718
+    },
+    "Bananspindling": {
+      "weight": 11
+    },
+    "Bananspindling agg.": {
+      "weight": 6
+    },
+    "Barrfagerspindling": {
+      "weight": 155
+    },
+    "Bitterspindlingar": {
+      "weight": 456
+    },
+    "Blek bananspindling": {
+      "weight": 26
+    },
+    "Blekskivig klubbspindling": {
+      "weight": 8
+    },
+    "Blekspindling": {
+      "weight": 8
+    },
+    "Blekspindling agg.": {
+      "weight": 26
+    },
+    "Blyspindling agg.": {
+      "weight": 3
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 310
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 44
+    },
+    "Bullspindling": {
+      "weight": 400
+    },
+    "Denisespindling": {
+      "weight": 354
+    },
+    "Denisespindling agg.": {
+      "weight": 139
+    },
+    "Duvspindling": {
+      "weight": 429
+    },
+    "Fagerspindlingar": {
+      "weight": 205
+    },
+    "Fågelträcksspindling": {
+      "weight": 102
+    },
+    "Kantspindling": {
+      "weight": 288
+    },
+    "Klubbspindling": {
+      "weight": 724
+    },
+    "Odörspindling agg.": {
+      "weight": 697
+    },
+    "Vagabondspindling": {
+      "weight": 28
+    },
+    "Violettfläckig spindling": {
+      "weight": 717
+    },
+    "Kryddspindling": {
+      "weight": 213
+    },
+    "Svartgrön spindling": {
+      "weight": 2066
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 1334
+    },
+    "Strimspindling": {
+      "weight": 40
+    },
+    "Tvillingspindling": {
+      "weight": 514
+    },
+    "Violettrandad spindling": {
+      "weight": 116
+    },
+    "Äggspindling": {
+      "weight": 386
+    },
+    "Kungsspindling": {
+      "weight": 159
+    },
+    "Puderspindling": {
+      "weight": 94
+    },
+    "Narrspindling": {
+      "weight": 122
+    },
+    "Kornspindling": {
+      "weight": 18
+    },
+    "Gyllenskivig spindling": {
+      "weight": 10
+    },
+    "Mångkransad spindling": {
+      "weight": 19
+    },
+    "Gyllenspindling": {
+      "weight": 3
+    },
+    "Purpurspindling": {
+      "weight": 13
+    },
+    "Hjortrongul spindling": {
+      "weight": 7
+    },
+    "Trollspindling": {
+      "weight": 415
+    },
+    "Persiljespindling": {
+      "weight": 8
+    },
+    "Kopparspindling": {
+      "weight": 31
+    },
+    "Praktspindling": {
+      "weight": 6
+    },
+    "Mjölspindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 60
+    },
+    "Odörspindling": {
+      "weight": 1915
+    },
+    "Porslinsblå spindling": {
+      "weight": 3
+    },
+    "Myrstacksspindling": {
+      "weight": 5
+    },
+    "Klenodspindling": {
+      "weight": 57
+    },
+    "Siljansspindling": {
+      "weight": 22
+    },
+    "Rostspindling": {
+      "weight": 5
+    },
+    "Stor odörspindling": {
+      "weight": 13
+    },
+    "Tallkejsarspindling": {
+      "weight": 8
+    },
+    "Ädelspindlingar": {
+      "weight": 3
+    },
+    "Grynspindling": {
+      "weight": 3
+    }
+  },
+  "Kantspindling": {
+    "Anisspindling": {
+      "weight": 571
+    },
+    "Bananspindling agg.": {
+      "weight": 6
+    },
+    "Barrfagerspindling": {
+      "weight": 53
+    },
+    "Bitterspindlingar": {
+      "weight": 211
+    },
+    "Blekspindling": {
+      "weight": 3
+    },
+    "Blekspindling agg.": {
+      "weight": 8
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 21
+    },
+    "Bullspindling": {
+      "weight": 27
+    },
+    "Denisespindling": {
+      "weight": 41
+    },
+    "Denisespindling agg.": {
+      "weight": 41
+    },
+    "Duvspindling": {
+      "weight": 44
+    },
+    "Fagerspindlingar": {
+      "weight": 171
+    },
+    "Fågelträcksspindling": {
+      "weight": 4
+    },
+    "Granrotspindling": {
+      "weight": 288
+    },
+    "Grisspindling": {
+      "weight": 6
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 126
+    },
+    "Gyllenskivig spindling": {
+      "weight": 14
+    },
+    "Hjortrongul spindling": {
+      "weight": 9
+    },
+    "Jättespindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 309
+    },
+    "Odörspindling agg.": {
+      "weight": 296
+    },
+    "Kungsspindling": {
+      "weight": 184
+    },
+    "Narrspindling": {
+      "weight": 37
+    },
+    "Violettfläckig spindling": {
+      "weight": 132
+    },
+    "Kryddspindling": {
+      "weight": 182
+    },
+    "Strimspindling": {
+      "weight": 29
+    },
+    "Tvillingspindling": {
+      "weight": 74
+    },
+    "Violettrandad spindling": {
+      "weight": 8
+    },
+    "Äggspindling": {
+      "weight": 113
+    },
+    "Svartgrön spindling": {
+      "weight": 202
+    },
+    "Puderspindling": {
+      "weight": 14
+    },
+    "Odörspindling": {
+      "weight": 226
+    },
+    "Purpurspindling": {
+      "weight": 23
+    },
+    "Mångkransad spindling": {
+      "weight": 45
+    },
+    "Kornspindling": {
+      "weight": 17
+    },
+    "Mjölspindling": {
+      "weight": 9
+    },
+    "Lundspindling": {
+      "weight": 3
+    },
+    "Trollspindling": {
+      "weight": 40
+    },
+    "Persiljespindling": {
+      "weight": 3
+    },
+    "Slottsspindling": {
+      "weight": 5
+    },
+    "Siljansspindling": {
+      "weight": 6
+    },
+    "Tallpraktspindling": {
+      "weight": 6
+    },
+    "Vagabondspindling": {
+      "weight": 19
+    },
+    "Stor odörspindling": {
+      "weight": 4
+    },
+    "Porslinsblå spindling": {
+      "weight": 3
+    },
+    "Kopparspindling": {
+      "weight": 3
+    }
+  },
+  "Klubbspindling": {
+    "Anisspindling": {
+      "weight": 995
+    },
+    "Bananspindling agg.": {
+      "weight": 5
+    },
+    "Barrfagerspindling": {
+      "weight": 74
+    },
+    "Bitterspindlingar": {
+      "weight": 372
+    },
+    "Blekskivig klubbspindling": {
+      "weight": 4
+    },
+    "Blekspindling": {
+      "weight": 11
+    },
+    "Blekspindling agg.": {
+      "weight": 7
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 26
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 15
+    },
+    "Bullspindling": {
+      "weight": 100
+    },
+    "Denisespindling": {
+      "weight": 108
+    },
+    "Denisespindling agg.": {
+      "weight": 82
+    },
+    "Duvspindling": {
+      "weight": 135
+    },
+    "Fagerspindlingar": {
+      "weight": 233
+    },
+    "Fågelträcksspindling": {
+      "weight": 23
+    },
+    "Granrotspindling": {
+      "weight": 724
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 426
+    },
+    "Gyllenskivig spindling": {
+      "weight": 8
+    },
+    "Hjortrongul spindling": {
+      "weight": 9
+    },
+    "Jättespindling": {
+      "weight": 5
+    },
+    "Kantspindling": {
+      "weight": 309
+    },
+    "Klenodspindling": {
+      "weight": 5
+    },
+    "Odörspindling agg.": {
+      "weight": 404
+    },
+    "Kungsspindling": {
+      "weight": 146
+    },
+    "Vagabondspindling": {
+      "weight": 15
+    },
+    "Violettfläckig spindling": {
+      "weight": 262
+    },
+    "Kryddspindling": {
+      "weight": 239
+    },
+    "Svartgrön spindling": {
+      "weight": 674
+    },
+    "Strimspindling": {
+      "weight": 44
+    },
+    "Tvillingspindling": {
+      "weight": 132
+    },
+    "Violettrandad spindling": {
+      "weight": 35
+    },
+    "Äggspindling": {
+      "weight": 168
+    },
+    "Narrspindling": {
+      "weight": 44
+    },
+    "Odörspindling": {
+      "weight": 606
+    },
+    "Purpurspindling": {
+      "weight": 73
+    },
+    "Mångkransad spindling": {
+      "weight": 21
+    },
+    "Kornspindling": {
+      "weight": 18
+    },
+    "Puderspindling": {
+      "weight": 29
+    },
+    "Stor myrspindling": {
+      "weight": 3
+    },
+    "Slottsspindling": {
+      "weight": 3
+    },
+    "Kopparspindling": {
+      "weight": 14
+    },
+    "Siljansspindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 123
+    },
+    "Persiljespindling": {
+      "weight": 3
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Saffransspindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 20
+    },
+    "Porslinsblå spindling": {
+      "weight": 4
+    },
+    "Stor odörspindling": {
+      "weight": 3
+    },
+    "Prickspindling": {
+      "weight": 3
+    }
+  },
+  "Fagerspindlingar": {
+    "Anisspindling": {
+      "weight": 356
+    },
+    "Bananspindling agg.": {
+      "weight": 4
+    },
+    "Barrfagerspindling": {
+      "weight": 27
+    },
+    "Bitterspindlingar": {
+      "weight": 156
+    },
+    "Blekspindling agg.": {
+      "weight": 6
+    },
+    "Blå lökspindling": {
+      "weight": 4
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 3
+    },
+    "Bullspindling": {
+      "weight": 70
+    },
+    "Denisespindling": {
+      "weight": 8
+    },
+    "Denisespindling agg.": {
+      "weight": 64
+    },
+    "Duvspindling": {
+      "weight": 117
+    },
+    "Kantspindling": {
+      "weight": 171
+    },
+    "Klubbspindling": {
+      "weight": 233
+    },
+    "Kungsspindling": {
+      "weight": 158
+    },
+    "Odörspindling agg.": {
+      "weight": 270
+    },
+    "Granrotspindling": {
+      "weight": 205
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 60
+    },
+    "Puderspindling": {
+      "weight": 7
+    },
+    "Strimspindling": {
+      "weight": 29
+    },
+    "Svartgrön spindling": {
+      "weight": 178
+    },
+    "Violettrandad spindling": {
+      "weight": 22
+    },
+    "Narrspindling": {
+      "weight": 9
+    },
+    "Violettfläckig spindling": {
+      "weight": 21
+    },
+    "Kryddspindling": {
+      "weight": 105
+    },
+    "Tvillingspindling": {
+      "weight": 35
+    },
+    "Äggspindling": {
+      "weight": 60
+    },
+    "Myrspindling agg.": {
+      "weight": 5
+    },
+    "Gyllenskivig spindling": {
+      "weight": 16
+    },
+    "Mångkransad spindling": {
+      "weight": 29
+    },
+    "Purpurspindling": {
+      "weight": 32
+    },
+    "Kornspindling": {
+      "weight": 11
+    },
+    "Odörspindling": {
+      "weight": 31
+    },
+    "Fläckig saffransspindling": {
+      "weight": 4
+    },
+    "Lundspindling": {
+      "weight": 5
+    },
+    "Mjölspindling": {
+      "weight": 7
+    },
+    "Saffransspindling": {
+      "weight": 8
+    },
+    "Hjortrongul spindling": {
+      "weight": 5
+    },
+    "Trollspindling": {
+      "weight": 6
+    },
+    "Persiljespindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 12
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Vagabondspindling": {
+      "weight": 8
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Grisspindling": {
+      "weight": 3
+    }
+  },
+  "Duvspindling": {
+    "Anisspindling": {
+      "weight": 463
+    },
+    "Bananspindling agg.": {
+      "weight": 3
+    },
+    "Barrfagerspindling": {
+      "weight": 63
+    },
+    "Bitterspindlingar": {
+      "weight": 221
+    },
+    "Blek bananspindling": {
+      "weight": 13
+    },
+    "Blekspindling": {
+      "weight": 4
+    },
+    "Blekspindling agg.": {
+      "weight": 30
+    },
+    "Blå lökspindling": {
+      "weight": 3
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 56
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 13
+    },
+    "Bullspindling": {
+      "weight": 220
+    },
+    "Denisespindling": {
+      "weight": 167
+    },
+    "Denisespindling agg.": {
+      "weight": 58
+    },
+    "Fagerspindlingar": {
+      "weight": 117
+    },
+    "Puderspindling": {
+      "weight": 32
+    },
+    "Violettrandad spindling": {
+      "weight": 83
+    },
+    "Granrotspindling": {
+      "weight": 429
+    },
+    "Klubbspindling": {
+      "weight": 135
+    },
+    "Odörspindling agg.": {
+      "weight": 196
+    },
+    "Vagabondspindling": {
+      "weight": 3
+    },
+    "Violettfläckig spindling": {
+      "weight": 61
+    },
+    "Kryddspindling": {
+      "weight": 63
+    },
+    "Svartgrön spindling": {
+      "weight": 781
+    },
+    "Kungsspindling": {
+      "weight": 71
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 542
+    },
+    "Kantspindling": {
+      "weight": 44
+    },
+    "Strimspindling": {
+      "weight": 42
+    },
+    "Gyllenskivig spindling": {
+      "weight": 6
+    },
+    "Mångkransad spindling": {
+      "weight": 7
+    },
+    "Äggspindling": {
+      "weight": 78
+    },
+    "Kornspindling": {
+      "weight": 10
+    },
+    "Gyllenspindling": {
+      "weight": 6
+    },
+    "Siljansspindling": {
+      "weight": 5
+    },
+    "Purpurspindling": {
+      "weight": 7
+    },
+    "Hjortrongul spindling": {
+      "weight": 9
+    },
+    "Trollspindling": {
+      "weight": 98
+    },
+    "Tvillingspindling": {
+      "weight": 188
+    },
+    "Persiljespindling": {
+      "weight": 7
+    },
+    "Praktspindling": {
+      "weight": 8
+    },
+    "Mjölspindling": {
+      "weight": 4
+    },
+    "Tallpraktspindling": {
+      "weight": 117
+    },
+    "Klenodspindling": {
+      "weight": 24
+    },
+    "Odörspindling": {
+      "weight": 506
+    },
+    "Stor odörspindling": {
+      "weight": 13
+    },
+    "Myrstacksspindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 56
+    },
+    "Tallkejsarspindling": {
+      "weight": 5
+    },
+    "Fågelträcksspindling": {
+      "weight": 23
+    },
+    "Kopparspindling": {
+      "weight": 40
+    },
+    "Sockelspindling": {
+      "weight": 4
+    },
+    "Prickspindling": {
+      "weight": 3
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    }
+  },
+  "Vagabondspindling": {
+    "Anisspindling": {
+      "weight": 35
+    },
+    "Barrfagerspindling": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 11
+    },
+    "Blekspindling": {
+      "weight": 4
+    },
+    "Duvspindling": {
+      "weight": 3
+    },
+    "Fagerspindlingar": {
+      "weight": 8
+    },
+    "Fågelträcksspindling": {
+      "weight": 3
+    },
+    "Granrotspindling": {
+      "weight": 28
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 4
+    },
+    "Kantspindling": {
+      "weight": 19
+    },
+    "Klubbspindling": {
+      "weight": 15
+    },
+    "Kryddspindling": {
+      "weight": 7
+    },
+    "Odörspindling": {
+      "weight": 32
+    },
+    "Odörspindling agg.": {
+      "weight": 17
+    },
+    "Puderspindling": {
+      "weight": 3
+    },
+    "Siljansspindling": {
+      "weight": 3
+    },
+    "Svartgrön spindling": {
+      "weight": 14
+    },
+    "Trollspindling": {
+      "weight": 10
+    },
+    "Tvillingspindling": {
+      "weight": 3
+    },
+    "Violettfläckig spindling": {
+      "weight": 15
+    }
+  },
+  "Violettfläckig spindling": {
+    "Anisspindling": {
+      "weight": 948
+    },
+    "Barrfagerspindling": {
+      "weight": 66
+    },
+    "Bitterspindlingar": {
+      "weight": 218
+    },
+    "Blek bananspindling": {
+      "weight": 5
+    },
+    "Blekskivig klubbspindling": {
+      "weight": 10
+    },
+    "Blekspindling": {
+      "weight": 3
+    },
+    "Blekspindling agg.": {
+      "weight": 5
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 167
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 31
+    },
+    "Bullspindling": {
+      "weight": 46
+    },
+    "Denisespindling": {
+      "weight": 209
+    },
+    "Denisespindling agg.": {
+      "weight": 31
+    },
+    "Duvspindling": {
+      "weight": 61
+    },
+    "Fagerspindlingar": {
+      "weight": 21
+    },
+    "Fågelträcksspindling": {
+      "weight": 50
+    },
+    "Granrotspindling": {
+      "weight": 717
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 475
+    },
+    "Hjortrongul spindling": {
+      "weight": 4
+    },
+    "Kantspindling": {
+      "weight": 132
+    },
+    "Klenodspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 262
+    },
+    "Kopparspindling": {
+      "weight": 3
+    },
+    "Kornspindling": {
+      "weight": 6
+    },
+    "Kryddspindling": {
+      "weight": 118
+    },
+    "Kungsspindling": {
+      "weight": 26
+    },
+    "Narrspindling": {
+      "weight": 223
+    },
+    "Odörspindling": {
+      "weight": 1034
+    },
+    "Odörspindling agg.": {
+      "weight": 338
+    },
+    "Puderspindling": {
+      "weight": 33
+    },
+    "Purpurspindling": {
+      "weight": 12
+    },
+    "Rostspindling": {
+      "weight": 3
+    },
+    "Strimspindling": {
+      "weight": 15
+    },
+    "Svartgrön spindling": {
+      "weight": 782
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 261
+    },
+    "Tvillingspindling": {
+      "weight": 179
+    },
+    "Vagabondspindling": {
+      "weight": 15
+    },
+    "Äggspindling": {
+      "weight": 212
+    },
+    "Violettrandad spindling": {
+      "weight": 48
+    }
+  },
+  "Bullspindling": {
+    "Anisspindling": {
+      "weight": 330
+    },
+    "Barrfagerspindling": {
+      "weight": 82
+    },
+    "Bitterspindlingar": {
+      "weight": 127
+    },
+    "Blek bananspindling": {
+      "weight": 14
+    },
+    "Blekspindling": {
+      "weight": 7
+    },
+    "Blekspindling agg.": {
+      "weight": 35
+    },
+    "Blå lökspindling": {
+      "weight": 3
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 55
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 5
+    },
+    "Fagerspindlingar": {
+      "weight": 70
+    },
+    "Klubbspindling": {
+      "weight": 100
+    },
+    "Granrotspindling": {
+      "weight": 400
+    },
+    "Odörspindling agg.": {
+      "weight": 116
+    },
+    "Denisespindling agg.": {
+      "weight": 64
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 281
+    },
+    "Kantspindling": {
+      "weight": 27
+    },
+    "Kryddspindling": {
+      "weight": 33
+    },
+    "Strimspindling": {
+      "weight": 25
+    },
+    "Tvillingspindling": {
+      "weight": 126
+    },
+    "Violettrandad spindling": {
+      "weight": 115
+    },
+    "Äggspindling": {
+      "weight": 66
+    },
+    "Duvspindling": {
+      "weight": 220
+    },
+    "Kungsspindling": {
+      "weight": 42
+    },
+    "Puderspindling": {
+      "weight": 40
+    },
+    "Svartgrön spindling": {
+      "weight": 490
+    },
+    "Odörspindling": {
+      "weight": 323
+    },
+    "Kornspindling": {
+      "weight": 3
+    },
+    "Denisespindling": {
+      "weight": 80
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Tallpraktspindling": {
+      "weight": 60
+    },
+    "Siljansspindling": {
+      "weight": 14
+    },
+    "Gyllenspindling": {
+      "weight": 14
+    },
+    "Fågelträcksspindling": {
+      "weight": 37
+    },
+    "Klenodspindling": {
+      "weight": 53
+    },
+    "Trollspindling": {
+      "weight": 86
+    },
+    "Kopparspindling": {
+      "weight": 19
+    },
+    "Myrstacksspindling": {
+      "weight": 4
+    },
+    "Violettfläckig spindling": {
+      "weight": 46
+    },
+    "Persiljespindling": {
+      "weight": 3
+    },
+    "Stor odörspindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 17
+    },
+    "Knölfotad bananspindling": {
+      "weight": 6
+    },
+    "Tallkejsarspindling": {
+      "weight": 8
+    }
+  },
+  "Denisespindling agg.": {
+    "Anisspindling": {
+      "weight": 277
+    },
+    "Barrfagerspindling": {
+      "weight": 22
+    },
+    "Bitterspindlingar": {
+      "weight": 75
+    },
+    "Blekspindling agg.": {
+      "weight": 11
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 76
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 400
+    },
+    "Bullspindling": {
+      "weight": 64
+    },
+    "Denisespindling": {
+      "weight": 6
+    },
+    "Duvspindling": {
+      "weight": 58
+    },
+    "Fagerspindlingar": {
+      "weight": 64
+    },
+    "Granrotspindling": {
+      "weight": 139
+    },
+    "Klubbspindling": {
+      "weight": 82
+    },
+    "Kryddspindling": {
+      "weight": 33
+    },
+    "Odörspindling agg.": {
+      "weight": 118
+    },
+    "Svartgrön spindling": {
+      "weight": 174
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 105
+    },
+    "Kantspindling": {
+      "weight": 41
+    },
+    "Strimspindling": {
+      "weight": 41
+    },
+    "Tvillingspindling": {
+      "weight": 51
+    },
+    "Violettrandad spindling": {
+      "weight": 26
+    },
+    "Äggspindling": {
+      "weight": 100
+    },
+    "Kungsspindling": {
+      "weight": 39
+    },
+    "Puderspindling": {
+      "weight": 6
+    },
+    "Mångkransad spindling": {
+      "weight": 10
+    },
+    "Purpurspindling": {
+      "weight": 12
+    },
+    "Violettfläckig spindling": {
+      "weight": 31
+    },
+    "Narrspindling": {
+      "weight": 20
+    },
+    "Kornspindling": {
+      "weight": 11
+    },
+    "Grisspindling": {
+      "weight": 3
+    },
+    "Sockelspindling": {
+      "weight": 7
+    },
+    "Odörspindling": {
+      "weight": 113
+    },
+    "Trollspindling": {
+      "weight": 21
+    },
+    "Tallpraktspindling": {
+      "weight": 7
+    },
+    "Praktspindling": {
+      "weight": 8
+    }
+  },
+  "Kryddspindling": {
+    "Anisspindling": {
+      "weight": 506
+    },
+    "Barrfagerspindling": {
+      "weight": 35
+    },
+    "Bitterspindlingar": {
+      "weight": 175
+    },
+    "Blekspindling": {
+      "weight": 8
+    },
+    "Blekspindling agg.": {
+      "weight": 8
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 52
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 23
+    },
+    "Bullspindling": {
+      "weight": 33
+    },
+    "Denisespindling": {
+      "weight": 45
+    },
+    "Denisespindling agg.": {
+      "weight": 33
+    },
+    "Duvspindling": {
+      "weight": 63
+    },
+    "Fagerspindlingar": {
+      "weight": 105
+    },
+    "Fågelträcksspindling": {
+      "weight": 5
+    },
+    "Granrotspindling": {
+      "weight": 213
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 146
+    },
+    "Gyllenskivig spindling": {
+      "weight": 8
+    },
+    "Hjortrongul spindling": {
+      "weight": 11
+    },
+    "Kantspindling": {
+      "weight": 182
+    },
+    "Klubbspindling": {
+      "weight": 239
+    },
+    "Kopparspindling": {
+      "weight": 6
+    },
+    "Kornspindling": {
+      "weight": 3
+    },
+    "Odörspindling agg.": {
+      "weight": 203
+    },
+    "Svartgrön spindling": {
+      "weight": 179
+    },
+    "Strimspindling": {
+      "weight": 35
+    },
+    "Tvillingspindling": {
+      "weight": 90
+    },
+    "Violettrandad spindling": {
+      "weight": 14
+    },
+    "Äggspindling": {
+      "weight": 97
+    },
+    "Kungsspindling": {
+      "weight": 111
+    },
+    "Odörspindling": {
+      "weight": 263
+    },
+    "Violettfläckig spindling": {
+      "weight": 118
+    },
+    "Purpurspindling": {
+      "weight": 31
+    },
+    "Myrspindling agg.": {
+      "weight": 3
+    },
+    "Mångkransad spindling": {
+      "weight": 22
+    },
+    "Puderspindling": {
+      "weight": 12
+    },
+    "Trollspindling": {
+      "weight": 21
+    },
+    "Persiljespindling": {
+      "weight": 7
+    },
+    "Vagabondspindling": {
+      "weight": 7
+    },
+    "Porslinsblå spindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 33
+    },
+    "Tallpraktspindling": {
+      "weight": 13
+    },
+    "Siljansspindling": {
+      "weight": 6
+    }
+  },
+  "Svartgrön spindling": {
+    "Anisspindling": {
+      "weight": 2620
+    },
+    "Bananspindling": {
+      "weight": 6
+    },
+    "Bananspindling agg.": {
+      "weight": 5
+    },
+    "Barrfagerspindling": {
+      "weight": 170
+    },
+    "Bitterspindlingar": {
+      "weight": 751
+    },
+    "Blek bananspindling": {
+      "weight": 93
+    },
+    "Blekskivig klubbspindling": {
+      "weight": 9
+    },
+    "Blekspindling": {
+      "weight": 15
+    },
+    "Blekspindling agg.": {
+      "weight": 37
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 272
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 156
+    },
+    "Bullspindling": {
+      "weight": 490
+    },
+    "Cortinarius ochraceobrunneus": {
+      "weight": 4
+    },
+    "Denisespindling": {
+      "weight": 810
+    },
+    "Denisespindling agg.": {
+      "weight": 174
+    },
+    "Duvspindling": {
+      "weight": 781
+    },
+    "Fagerspindlingar": {
+      "weight": 178
+    },
+    "Fågelträcksspindling": {
+      "weight": 275
+    },
+    "Granrotspindling": {
+      "weight": 2066
+    },
+    "Grynspindling": {
+      "weight": 9
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 3529
+    },
+    "Gyllenskivig spindling": {
+      "weight": 8
+    },
+    "Hjortrongul spindling": {
+      "weight": 32
+    },
+    "Kantspindling": {
+      "weight": 202
+    },
+    "Klenodspindling": {
+      "weight": 53
+    },
+    "Klubbspindling": {
+      "weight": 674
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Kopparspindling": {
+      "weight": 10
+    },
+    "Kornspindling": {
+      "weight": 25
+    },
+    "Kryddspindling": {
+      "weight": 179
+    },
+    "Kungsspindling": {
+      "weight": 137
+    },
+    "Mjölspindling": {
+      "weight": 7
+    },
+    "Myrstacksspindling": {
+      "weight": 3
+    },
+    "Mångkransad spindling": {
+      "weight": 12
+    },
+    "Narrspindling": {
+      "weight": 279
+    },
+    "Odörspindling": {
+      "weight": 3184
+    },
+    "Odörspindling agg.": {
+      "weight": 482
+    },
+    "Persiljespindling": {
+      "weight": 5
+    },
+    "Porslinsblå spindling": {
+      "weight": 3
+    },
+    "Praktspindling": {
+      "weight": 6
+    },
+    "Prickspindling": {
+      "weight": 5
+    },
+    "Puderspindling": {
+      "weight": 73
+    },
+    "Purpurspindling": {
+      "weight": 16
+    },
+    "Rostspindling": {
+      "weight": 7
+    },
+    "Sockelspindling": {
+      "weight": 3
+    },
+    "Stor odörspindling": {
+      "weight": 10
+    },
+    "Strimspindling": {
+      "weight": 68
+    },
+    "Trollspindling": {
+      "weight": 888
+    },
+    "Tvillingspindling": {
+      "weight": 790
+    },
+    "Äggspindling": {
+      "weight": 481
+    },
+    "Violettrandad spindling": {
+      "weight": 245
+    },
+    "Violettfläckig spindling": {
+      "weight": 782
+    },
+    "Tallpraktspindling": {
+      "weight": 162
+    },
+    "Vagabondspindling": {
+      "weight": 14
+    },
+    "Ädelspindlingar": {
+      "weight": 3
+    },
+    "Tallkejsarspindling": {
+      "weight": 5
+    }
+  },
+  "Narrspindling": {
+    "Anisspindling": {
+      "weight": 162
+    },
+    "Barrfagerspindling": {
+      "weight": 20
+    },
+    "Bitterspindlingar": {
+      "weight": 69
+    },
+    "Blekspindling agg.": {
+      "weight": 7
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 11
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 5
+    },
+    "Bullspindling": {
+      "weight": 17
+    },
+    "Denisespindling": {
+      "weight": 140
+    },
+    "Denisespindling agg.": {
+      "weight": 20
+    },
+    "Duvspindling": {
+      "weight": 56
+    },
+    "Fagerspindlingar": {
+      "weight": 9
+    },
+    "Fågelträcksspindling": {
+      "weight": 7
+    },
+    "Granrotspindling": {
+      "weight": 122
+    },
+    "Grynspindling": {
+      "weight": 8
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 283
+    },
+    "Hjortrongul spindling": {
+      "weight": 20
+    },
+    "Kantspindling": {
+      "weight": 37
+    },
+    "Klenodspindling": {
+      "weight": 4
+    },
+    "Klubbspindling": {
+      "weight": 44
+    },
+    "Kornspindling": {
+      "weight": 9
+    },
+    "Kryddspindling": {
+      "weight": 33
+    },
+    "Kungsspindling": {
+      "weight": 17
+    },
+    "Odörspindling agg.": {
+      "weight": 22
+    },
+    "Violettfläckig spindling": {
+      "weight": 223
+    },
+    "Tvillingspindling": {
+      "weight": 74
+    },
+    "Odörspindling": {
+      "weight": 292
+    },
+    "Tallpraktspindling": {
+      "weight": 15
+    },
+    "Svartgrön spindling": {
+      "weight": 279
+    },
+    "Violettrandad spindling": {
+      "weight": 25
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Rostspindling": {
+      "weight": 9
+    },
+    "Trollspindling": {
+      "weight": 60
+    },
+    "Äggspindling": {
+      "weight": 30
+    },
+    "Strimspindling": {
+      "weight": 3
+    },
+    "Purpurspindling": {
+      "weight": 5
+    },
+    "Puderspindling": {
+      "weight": 6
+    }
+  },
+  "Gulsträngad fagerspindling": {
+    "Anisspindling": {
+      "weight": 2142
+    },
+    "Bananspindling": {
+      "weight": 9
+    },
+    "Barrfagerspindling": {
+      "weight": 135
+    },
+    "Bitterspindlingar": {
+      "weight": 674
+    },
+    "Blek bananspindling": {
+      "weight": 52
+    },
+    "Blekskivig klubbspindling": {
+      "weight": 3
+    },
+    "Blekspindling": {
+      "weight": 5
+    },
+    "Blekspindling agg.": {
+      "weight": 64
+    },
+    "Blyspindling agg.": {
+      "weight": 13
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 229
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 29
+    },
+    "Bullspindling": {
+      "weight": 281
+    },
+    "Cortinarius subcorrosus": {
+      "weight": 7
+    },
+    "Denisespindling": {
+      "weight": 1059
+    },
+    "Denisespindling agg.": {
+      "weight": 105
+    },
+    "Duvspindling": {
+      "weight": 542
+    },
+    "Fagerspindlingar": {
+      "weight": 60
+    },
+    "Fågelträcksspindling": {
+      "weight": 214
+    },
+    "Granrotspindling": {
+      "weight": 1334
+    },
+    "Kantspindling": {
+      "weight": 126
+    },
+    "Klubbspindling": {
+      "weight": 426
+    },
+    "Kornspindling": {
+      "weight": 13
+    },
+    "Kryddspindling": {
+      "weight": 146
+    },
+    "Kungsspindling": {
+      "weight": 39
+    },
+    "Odörspindling agg.": {
+      "weight": 314
+    },
+    "Svartgrön spindling": {
+      "weight": 3529
+    },
+    "Tallpraktspindling": {
+      "weight": 282
+    },
+    "Trollspindling": {
+      "weight": 920
+    },
+    "Strimspindling": {
+      "weight": 109
+    },
+    "Odörspindling": {
+      "weight": 2738
+    },
+    "Äggspindling": {
+      "weight": 344
+    },
+    "Violettfläckig spindling": {
+      "weight": 475
+    },
+    "Tvillingspindling": {
+      "weight": 999
+    },
+    "Myrstacksspindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 283
+    },
+    "Siljansspindling": {
+      "weight": 5
+    },
+    "Violettrandad spindling": {
+      "weight": 232
+    },
+    "Praktspindling": {
+      "weight": 3
+    },
+    "Hjortrongul spindling": {
+      "weight": 43
+    },
+    "Puderspindling": {
+      "weight": 29
+    },
+    "Kopparspindling": {
+      "weight": 10
+    },
+    "Klenodspindling": {
+      "weight": 60
+    },
+    "Purpurspindling": {
+      "weight": 3
+    },
+    "Persiljespindling": {
+      "weight": 3
+    },
+    "Prickspindling": {
+      "weight": 6
+    },
+    "Knölfotad bananspindling": {
+      "weight": 3
+    },
+    "Vagabondspindling": {
+      "weight": 4
+    },
+    "Ädelspindlingar": {
+      "weight": 7
+    },
+    "Mångkransad spindling": {
+      "weight": 7
+    },
+    "Gyllenskivig spindling": {
+      "weight": 6
+    }
+  },
+  "Strimspindling": {
+    "Anisspindling": {
+      "weight": 109
+    },
+    "Barrfagerspindling": {
+      "weight": 13
+    },
+    "Bitterspindlingar": {
+      "weight": 39
+    },
+    "Blekspindling agg.": {
+      "weight": 7
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 11
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 27
+    },
+    "Bullspindling": {
+      "weight": 25
+    },
+    "Denisespindling": {
+      "weight": 24
+    },
+    "Denisespindling agg.": {
+      "weight": 41
+    },
+    "Duvspindling": {
+      "weight": 42
+    },
+    "Fagerspindlingar": {
+      "weight": 29
+    },
+    "Fågelträcksspindling": {
+      "weight": 6
+    },
+    "Granrotspindling": {
+      "weight": 40
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 109
+    },
+    "Jättespindling": {
+      "weight": 3
+    },
+    "Kantspindling": {
+      "weight": 29
+    },
+    "Klenodspindling": {
+      "weight": 9
+    },
+    "Klubbspindling": {
+      "weight": 44
+    },
+    "Kornspindling": {
+      "weight": 3
+    },
+    "Kryddspindling": {
+      "weight": 35
+    },
+    "Kungsspindling": {
+      "weight": 31
+    },
+    "Mångkransad spindling": {
+      "weight": 6
+    },
+    "Narrspindling": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 69
+    },
+    "Odörspindling agg.": {
+      "weight": 43
+    },
+    "Praktspindling": {
+      "weight": 3
+    },
+    "Stor odörspindling": {
+      "weight": 4
+    },
+    "Tvillingspindling": {
+      "weight": 73
+    },
+    "Violettrandad spindling": {
+      "weight": 20
+    },
+    "Äggspindling": {
+      "weight": 31
+    },
+    "Svartgrön spindling": {
+      "weight": 68
+    },
+    "Violettfläckig spindling": {
+      "weight": 15
+    },
+    "Tallpraktspindling": {
+      "weight": 14
+    },
+    "Trollspindling": {
+      "weight": 21
+    }
+  },
+  "Tvillingspindling": {
+    "Anisspindling": {
+      "weight": 774
+    },
+    "Barrfagerspindling": {
+      "weight": 70
+    },
+    "Bitterspindlingar": {
+      "weight": 165
+    },
+    "Blek bananspindling": {
+      "weight": 20
+    },
+    "Blekspindling agg.": {
+      "weight": 44
+    },
+    "Blyspindling agg.": {
+      "weight": 5
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 144
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 21
+    },
+    "Bullspindling": {
+      "weight": 126
+    },
+    "Denisespindling": {
+      "weight": 277
+    },
+    "Denisespindling agg.": {
+      "weight": 51
+    },
+    "Duvspindling": {
+      "weight": 188
+    },
+    "Fagerspindlingar": {
+      "weight": 35
+    },
+    "Fågelträcksspindling": {
+      "weight": 23
+    },
+    "Granrotspindling": {
+      "weight": 514
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 999
+    },
+    "Hjortrongul spindling": {
+      "weight": 23
+    },
+    "Kantspindling": {
+      "weight": 74
+    },
+    "Klenodspindling": {
+      "weight": 55
+    },
+    "Klubbspindling": {
+      "weight": 132
+    },
+    "Kopparspindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 6
+    },
+    "Kryddspindling": {
+      "weight": 90
+    },
+    "Kungsspindling": {
+      "weight": 36
+    },
+    "Mångkransad spindling": {
+      "weight": 4
+    },
+    "Narrspindling": {
+      "weight": 74
+    },
+    "Odörspindling": {
+      "weight": 941
+    },
+    "Odörspindling agg.": {
+      "weight": 156
+    },
+    "Porslinsblå spindling": {
+      "weight": 3
+    },
+    "Praktspindling": {
+      "weight": 3
+    },
+    "Puderspindling": {
+      "weight": 12
+    },
+    "Purpurspindling": {
+      "weight": 3
+    },
+    "Rostspindling": {
+      "weight": 5
+    },
+    "Stor odörspindling": {
+      "weight": 5
+    },
+    "Strimspindling": {
+      "weight": 73
+    },
+    "Svartgrön spindling": {
+      "weight": 790
+    },
+    "Tallpraktspindling": {
+      "weight": 84
+    },
+    "Trollspindling": {
+      "weight": 154
+    },
+    "Violettfläckig spindling": {
+      "weight": 179
+    },
+    "Äggspindling": {
+      "weight": 206
+    },
+    "Vagabondspindling": {
+      "weight": 3
+    },
+    "Violettrandad spindling": {
+      "weight": 108
+    }
+  },
+  "Violettrandad spindling": {
+    "Anisspindling": {
+      "weight": 149
+    },
+    "Barrfagerspindling": {
+      "weight": 26
+    },
+    "Bitterspindlingar": {
+      "weight": 52
+    },
+    "Blek bananspindling": {
+      "weight": 4
+    },
+    "Blekspindling": {
+      "weight": 3
+    },
+    "Blekspindling agg.": {
+      "weight": 18
+    },
+    "Blyspindling agg.": {
+      "weight": 4
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 16
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 35
+    },
+    "Bullspindling": {
+      "weight": 115
+    },
+    "Denisespindling": {
+      "weight": 65
+    },
+    "Denisespindling agg.": {
+      "weight": 26
+    },
+    "Duvspindling": {
+      "weight": 83
+    },
+    "Fagerspindlingar": {
+      "weight": 22
+    },
+    "Fågelträcksspindling": {
+      "weight": 45
+    },
+    "Granrotspindling": {
+      "weight": 116
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 232
+    },
+    "Gyllenspindling": {
+      "weight": 7
+    },
+    "Hjortrongul spindling": {
+      "weight": 6
+    },
+    "Kantspindling": {
+      "weight": 8
+    },
+    "Klenodspindling": {
+      "weight": 91
+    },
+    "Klubbspindling": {
+      "weight": 35
+    },
+    "Kopparspindling": {
+      "weight": 9
+    },
+    "Kryddspindling": {
+      "weight": 14
+    },
+    "Kungsspindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 25
+    },
+    "Odörspindling": {
+      "weight": 154
+    },
+    "Odörspindling agg.": {
+      "weight": 31
+    },
+    "Persiljespindling": {
+      "weight": 8
+    },
+    "Puderspindling": {
+      "weight": 13
+    },
+    "Siljansspindling": {
+      "weight": 8
+    },
+    "Strimspindling": {
+      "weight": 20
+    },
+    "Svartgrön spindling": {
+      "weight": 245
+    },
+    "Tallkejsarspindling": {
+      "weight": 13
+    },
+    "Tallpraktspindling": {
+      "weight": 28
+    },
+    "Trollspindling": {
+      "weight": 75
+    },
+    "Tvillingspindling": {
+      "weight": 108
+    },
+    "Violettfläckig spindling": {
+      "weight": 48
+    },
+    "Äggspindling": {
+      "weight": 39
+    }
+  },
+  "Äggspindling": {
+    "Anisspindling": {
+      "weight": 622
+    },
+    "Bananspindling": {
+      "weight": 4
+    },
+    "Barrfagerspindling": {
+      "weight": 53
+    },
+    "Bitterspindlingar": {
+      "weight": 146
+    },
+    "Blek bananspindling": {
+      "weight": 5
+    },
+    "Blekspindling agg.": {
+      "weight": 9
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 184
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 78
+    },
+    "Bullspindling": {
+      "weight": 66
+    },
+    "Denisespindling": {
+      "weight": 95
+    },
+    "Denisespindling agg.": {
+      "weight": 100
+    },
+    "Duvspindling": {
+      "weight": 78
+    },
+    "Fagerspindlingar": {
+      "weight": 60
+    },
+    "Fågelträcksspindling": {
+      "weight": 13
+    },
+    "Granrotspindling": {
+      "weight": 386
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 344
+    },
+    "Gyllenskivig spindling": {
+      "weight": 4
+    },
+    "Kantspindling": {
+      "weight": 113
+    },
+    "Klenodspindling": {
+      "weight": 13
+    },
+    "Klubbspindling": {
+      "weight": 168
+    },
+    "Kryddspindling": {
+      "weight": 97
+    },
+    "Kungsspindling": {
+      "weight": 63
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Mångkransad spindling": {
+      "weight": 12
+    },
+    "Narrspindling": {
+      "weight": 30
+    },
+    "Odörspindling": {
+      "weight": 434
+    },
+    "Odörspindling agg.": {
+      "weight": 277
+    },
+    "Persiljespindling": {
+      "weight": 3
+    },
+    "Porslinsblå spindling": {
+      "weight": 3
+    },
+    "Puderspindling": {
+      "weight": 14
+    },
+    "Purpurspindling": {
+      "weight": 8
+    },
+    "Sockelspindling": {
+      "weight": 4
+    },
+    "Stor myrspindling": {
+      "weight": 3
+    },
+    "Stor odörspindling": {
+      "weight": 7
+    },
+    "Strimspindling": {
+      "weight": 31
+    },
+    "Svartgrön spindling": {
+      "weight": 481
+    },
+    "Tallpraktspindling": {
+      "weight": 13
+    },
+    "Trollspindling": {
+      "weight": 70
+    },
+    "Tvillingspindling": {
+      "weight": 206
+    },
+    "Violettfläckig spindling": {
+      "weight": 212
+    },
+    "Violettrandad spindling": {
+      "weight": 39
+    }
+  },
+  "Barrfagerspindling": {
+    "Anisspindling": {
+      "weight": 303
+    },
+    "Bananspindling agg.": {
+      "weight": 3
+    },
+    "Granrotspindling": {
+      "weight": 155
+    },
+    "Kantspindling": {
+      "weight": 53
+    },
+    "Klubbspindling": {
+      "weight": 74
+    },
+    "Odörspindling agg.": {
+      "weight": 91
+    },
+    "Svartgrön spindling": {
+      "weight": 170
+    },
+    "Blekspindling agg.": {
+      "weight": 9
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 135
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 58
+    },
+    "Bullspindling": {
+      "weight": 82
+    },
+    "Bitterspindlingar": {
+      "weight": 88
+    },
+    "Denisespindling agg.": {
+      "weight": 22
+    },
+    "Fagerspindlingar": {
+      "weight": 27
+    },
+    "Kryddspindling": {
+      "weight": 35
+    },
+    "Kungsspindling": {
+      "weight": 30
+    },
+    "Mångkransad spindling": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 179
+    },
+    "Strimspindling": {
+      "weight": 13
+    },
+    "Tvillingspindling": {
+      "weight": 70
+    },
+    "Äggspindling": {
+      "weight": 53
+    },
+    "Duvspindling": {
+      "weight": 63
+    },
+    "Kornspindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 27
+    },
+    "Praktspindling": {
+      "weight": 3
+    },
+    "Violettfläckig spindling": {
+      "weight": 66
+    },
+    "Narrspindling": {
+      "weight": 20
+    },
+    "Puderspindling": {
+      "weight": 23
+    },
+    "Violettrandad spindling": {
+      "weight": 26
+    },
+    "Gyllenspindling": {
+      "weight": 4
+    },
+    "Klenodspindling": {
+      "weight": 9
+    },
+    "Kopparspindling": {
+      "weight": 8
+    },
+    "Siljansspindling": {
+      "weight": 11
+    },
+    "Denisespindling": {
+      "weight": 32
+    },
+    "Tallpraktspindling": {
+      "weight": 12
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 11
+    },
+    "Blekspindling": {
+      "weight": 3
+    },
+    "Fågelträcksspindling": {
+      "weight": 5
+    },
+    "Vagabondspindling": {
+      "weight": 3
+    }
+  },
+  "Puderspindling": {
+    "Anisspindling": {
+      "weight": 69
+    },
+    "Barrfagerspindling": {
+      "weight": 23
+    },
+    "Bitterspindlingar": {
+      "weight": 27
+    },
+    "Blekspindling agg.": {
+      "weight": 12
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 9
+    },
+    "Bullspindling": {
+      "weight": 40
+    },
+    "Denisespindling": {
+      "weight": 10
+    },
+    "Denisespindling agg.": {
+      "weight": 6
+    },
+    "Duvspindling": {
+      "weight": 32
+    },
+    "Fagerspindlingar": {
+      "weight": 7
+    },
+    "Fågelträcksspindling": {
+      "weight": 3
+    },
+    "Granrotspindling": {
+      "weight": 94
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 29
+    },
+    "Gyllenspindling": {
+      "weight": 5
+    },
+    "Kantspindling": {
+      "weight": 14
+    },
+    "Klenodspindling": {
+      "weight": 6
+    },
+    "Klubbspindling": {
+      "weight": 29
+    },
+    "Kopparspindling": {
+      "weight": 34
+    },
+    "Kryddspindling": {
+      "weight": 12
+    },
+    "Kungsspindling": {
+      "weight": 11
+    },
+    "Narrspindling": {
+      "weight": 6
+    },
+    "Odörspindling": {
+      "weight": 70
+    },
+    "Odörspindling agg.": {
+      "weight": 28
+    },
+    "Prickspindling": {
+      "weight": 3
+    },
+    "Violettrandad spindling": {
+      "weight": 13
+    },
+    "Violettfläckig spindling": {
+      "weight": 33
+    },
+    "Svartgrön spindling": {
+      "weight": 73
+    },
+    "Trollspindling": {
+      "weight": 19
+    },
+    "Tvillingspindling": {
+      "weight": 12
+    },
+    "Äggspindling": {
+      "weight": 14
+    },
+    "Siljansspindling": {
+      "weight": 9
+    },
+    "Vagabondspindling": {
+      "weight": 3
+    }
+  },
+  "Odörspindling": {
+    "Anisspindling": {
+      "weight": 3753
+    },
+    "Bananspindling": {
+      "weight": 13
+    },
+    "Bananspindling agg.": {
+      "weight": 6
+    },
+    "Barrfagerspindling": {
+      "weight": 179
+    },
+    "Bitterspindlingar": {
+      "weight": 788
+    },
+    "Blek bananspindling": {
+      "weight": 37
+    },
+    "Blekskivig klubbspindling": {
+      "weight": 7
+    },
+    "Blekspindling": {
+      "weight": 26
+    },
+    "Blekspindling agg.": {
+      "weight": 46
+    },
+    "Blyspindling agg.": {
+      "weight": 10
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 187
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 211
+    },
+    "Brunfläckig spindling": {
+      "weight": 4
+    },
+    "Bullspindling": {
+      "weight": 323
+    },
+    "Cortinarius infractus": {
+      "weight": 4
+    },
+    "Cortinarius ochraceobrunneus": {
+      "weight": 3
+    },
+    "Cortinarius subcorrosus": {
+      "weight": 4
+    },
+    "Denisespindling": {
+      "weight": 788
+    },
+    "Denisespindling agg.": {
+      "weight": 113
+    },
+    "Duvspindling": {
+      "weight": 506
+    },
+    "Fagerspindlingar": {
+      "weight": 31
+    },
+    "Fågelträcksspindling": {
+      "weight": 109
+    },
+    "Granrotspindling": {
+      "weight": 1915
+    },
+    "Grynspindling": {
+      "weight": 10
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 2738
+    },
+    "Hjortrongul spindling": {
+      "weight": 23
+    },
+    "Kantspindling": {
+      "weight": 226
+    },
+    "Klenodspindling": {
+      "weight": 45
+    },
+    "Klubbspindling": {
+      "weight": 606
+    },
+    "Kopparspindling": {
+      "weight": 25
+    },
+    "Kornspindling": {
+      "weight": 18
+    },
+    "Kryddspindling": {
+      "weight": 263
+    },
+    "Kungsspindling": {
+      "weight": 53
+    },
+    "Lövklubbspindling": {
+      "weight": 7
+    },
+    "Mångkransad spindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 292
+    },
+    "Svartgrön spindling": {
+      "weight": 3184
+    },
+    "Äggspindling": {
+      "weight": 434
+    },
+    "Odörspindling agg.": {
+      "weight": 146
+    },
+    "Tvillingspindling": {
+      "weight": 941
+    },
+    "Violettfläckig spindling": {
+      "weight": 1034
+    },
+    "Puderspindling": {
+      "weight": 70
+    },
+    "Persiljespindling": {
+      "weight": 3
+    },
+    "Stor odörspindling": {
+      "weight": 21
+    },
+    "Violettrandad spindling": {
+      "weight": 154
+    },
+    "Tallpraktspindling": {
+      "weight": 138
+    },
+    "Trollspindling": {
+      "weight": 527
+    },
+    "Strimspindling": {
+      "weight": 69
+    },
+    "Praktspindling": {
+      "weight": 4
+    },
+    "Vagabondspindling": {
+      "weight": 32
+    },
+    "Praktspindling agg.": {
+      "weight": 3
+    },
+    "Tallkejsarspindling": {
+      "weight": 10
+    },
+    "Siljansspindling": {
+      "weight": 14
+    },
+    "Prickspindling": {
+      "weight": 11
+    },
+    "Purpurspindling": {
+      "weight": 6
+    },
+    "Tuvspindling": {
+      "weight": 3
+    }
+  },
+  "Purpurspindling": {
+    "Anisspindling": {
+      "weight": 31
+    },
+    "Bananspindling agg.": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 11
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 6
+    },
+    "Denisespindling agg.": {
+      "weight": 12
+    },
+    "Duvspindling": {
+      "weight": 7
+    },
+    "Fagerspindlingar": {
+      "weight": 32
+    },
+    "Granrotspindling": {
+      "weight": 13
+    },
+    "Grisspindling": {
+      "weight": 3
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 3
+    },
+    "Jättespindling": {
+      "weight": 4
+    },
+    "Kantspindling": {
+      "weight": 23
+    },
+    "Klubbspindling": {
+      "weight": 73
+    },
+    "Kryddspindling": {
+      "weight": 31
+    },
+    "Kungsspindling": {
+      "weight": 5
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Mjölspindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 5
+    },
+    "Odörspindling": {
+      "weight": 6
+    },
+    "Odörspindling agg.": {
+      "weight": 23
+    },
+    "Svartgrön spindling": {
+      "weight": 16
+    },
+    "Violettfläckig spindling": {
+      "weight": 12
+    },
+    "Äggspindling": {
+      "weight": 8
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Tvillingspindling": {
+      "weight": 3
+    }
+  },
+  "Slottsspindling": {
+    "Anisspindling": {
+      "weight": 4
+    },
+    "Apelsinspindling": {
+      "weight": 4
+    },
+    "Bananspindling agg.": {
+      "weight": 10
+    },
+    "Bitterspindlingar": {
+      "weight": 75
+    },
+    "Blåeggad spindling": {
+      "weight": 6
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 8
+    },
+    "Ekspindling": {
+      "weight": 14
+    },
+    "Elastisk spindling": {
+      "weight": 5
+    },
+    "Filtekspindling": {
+      "weight": 6
+    },
+    "Fläckig saffransspindling": {
+      "weight": 31
+    },
+    "Gredelinspindling": {
+      "weight": 6
+    },
+    "Grisspindling": {
+      "weight": 54
+    },
+    "Grönkantad spindling": {
+      "weight": 6
+    },
+    "Jättespindling": {
+      "weight": 47
+    },
+    "Kantspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 3
+    },
+    "Knölfotad bananspindling": {
+      "weight": 19
+    },
+    "Kornspindling": {
+      "weight": 19
+    },
+    "Kungsspindling": {
+      "weight": 11
+    },
+    "Liten rävspindling": {
+      "weight": 8
+    },
+    "Lundspindling": {
+      "weight": 18
+    },
+    "Lövklubbspindling": {
+      "weight": 16
+    },
+    "Lövstrimspindling": {
+      "weight": 9
+    },
+    "Mjölspindling": {
+      "weight": 34
+    },
+    "Munkspindling": {
+      "weight": 17
+    },
+    "Mångkransad spindling": {
+      "weight": 8
+    },
+    "Odörspindling agg.": {
+      "weight": 10
+    },
+    "Pilfotsspindling": {
+      "weight": 32
+    },
+    "Praktspindling": {
+      "weight": 48
+    },
+    "Saffransspindling": {
+      "weight": 15
+    },
+    "Safirspindling": {
+      "weight": 16
+    },
+    "Sockelspindling": {
+      "weight": 22
+    },
+    "Sötdoftande spindling": {
+      "weight": 10
+    },
+    "Tallpraktspindling": {
+      "weight": 8
+    },
+    "Spökspindling": {
+      "weight": 3
+    }
+  },
+  "Blå lökspindling": {
+    "Anisspindling": {
+      "weight": 5
+    },
+    "Bitterspindlingar": {
+      "weight": 4
+    },
+    "Bullspindling": {
+      "weight": 3
+    },
+    "Duvspindling": {
+      "weight": 3
+    },
+    "Fagerspindlingar": {
+      "weight": 4
+    },
+    "Kungsspindling": {
+      "weight": 3
+    },
+    "Odörspindling agg.": {
+      "weight": 4
+    },
+    "Mjölspindling": {
+      "weight": 4
+    }
+  },
+  "Kornspindling": {
+    "Anisspindling": {
+      "weight": 28
+    },
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Bananspindling agg.": {
+      "weight": 7
+    },
+    "Barrfagerspindling": {
+      "weight": 4
+    },
+    "Bitterspindlingar": {
+      "weight": 42
+    },
+    "Blåeggad spindling": {
+      "weight": 3
+    },
+    "Bullspindling": {
+      "weight": 3
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 5
+    },
+    "Denisespindling": {
+      "weight": 5
+    },
+    "Denisespindling agg.": {
+      "weight": 11
+    },
+    "Duvspindling": {
+      "weight": 10
+    },
+    "Ekspindling": {
+      "weight": 4
+    },
+    "Fagerspindlingar": {
+      "weight": 11
+    },
+    "Filtekspindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 7
+    },
+    "Granrotspindling": {
+      "weight": 18
+    },
+    "Grisspindling": {
+      "weight": 30
+    },
+    "Grönkantad spindling": {
+      "weight": 4
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 13
+    },
+    "Jättespindling": {
+      "weight": 19
+    },
+    "Kantspindling": {
+      "weight": 17
+    },
+    "Klubbspindling": {
+      "weight": 18
+    },
+    "Knölfotad bananspindling": {
+      "weight": 9
+    },
+    "Kryddspindling": {
+      "weight": 3
+    },
+    "Kungsspindling": {
+      "weight": 16
+    },
+    "Odörspindling agg.": {
+      "weight": 18
+    },
+    "Svartgrön spindling": {
+      "weight": 25
+    },
+    "Mjölspindling": {
+      "weight": 24
+    },
+    "Odörspindling": {
+      "weight": 18
+    },
+    "Strimspindling": {
+      "weight": 3
+    },
+    "Lundspindling": {
+      "weight": 11
+    },
+    "Mångkransad spindling": {
+      "weight": 9
+    },
+    "Saffransspindling": {
+      "weight": 12
+    },
+    "Lövklubbspindling": {
+      "weight": 6
+    },
+    "Pilfotsspindling": {
+      "weight": 13
+    },
+    "Praktspindling": {
+      "weight": 14
+    },
+    "Safirspindling": {
+      "weight": 7
+    },
+    "Slottsspindling": {
+      "weight": 19
+    },
+    "Sockelspindling": {
+      "weight": 12
+    },
+    "Sötdoftande spindling": {
+      "weight": 8
+    },
+    "Tallpraktspindling": {
+      "weight": 5
+    },
+    "Munkspindling": {
+      "weight": 6
+    },
+    "Violettfläckig spindling": {
+      "weight": 6
+    },
+    "Tvillingspindling": {
+      "weight": 6
+    },
+    "Narrspindling": {
+      "weight": 9
+    }
+  },
+  "Bananspindling agg.": {
+    "Anisspindling": {
+      "weight": 6
+    },
+    "Bitterspindlingar": {
+      "weight": 29
+    },
+    "Jättespindling": {
+      "weight": 16
+    },
+    "Kantspindling": {
+      "weight": 6
+    },
+    "Klubbspindling": {
+      "weight": 5
+    },
+    "Kornspindling": {
+      "weight": 7
+    },
+    "Mjölspindling": {
+      "weight": 16
+    },
+    "Fagerspindlingar": {
+      "weight": 4
+    },
+    "Elastisk spindling": {
+      "weight": 5
+    },
+    "Filtekspindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 8
+    },
+    "Grisspindling": {
+      "weight": 15
+    },
+    "Liten rävspindling": {
+      "weight": 3
+    },
+    "Lundspindling": {
+      "weight": 8
+    },
+    "Lövklubbspindling": {
+      "weight": 9
+    },
+    "Odörspindling agg.": {
+      "weight": 5
+    },
+    "Pilfotsspindling": {
+      "weight": 5
+    },
+    "Praktspindling": {
+      "weight": 9
+    },
+    "Purpurspindling": {
+      "weight": 3
+    },
+    "Safirspindling": {
+      "weight": 4
+    },
+    "Slottsspindling": {
+      "weight": 10
+    },
+    "Sockelspindling": {
+      "weight": 6
+    },
+    "Sötdoftande spindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 12
+    },
+    "Svartgrön spindling": {
+      "weight": 5
+    },
+    "Saffransspindling": {
+      "weight": 5
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Duvspindling": {
+      "weight": 3
+    },
+    "Granrotspindling": {
+      "weight": 6
+    },
+    "Barrfagerspindling": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 6
+    }
+  },
+  "Blekspindling agg.": {
+    "Anisspindling": {
+      "weight": 44
+    },
+    "Barrfagerspindling": {
+      "weight": 9
+    },
+    "Bitterspindlingar": {
+      "weight": 15
+    },
+    "Denisespindling agg.": {
+      "weight": 11
+    },
+    "Duvspindling": {
+      "weight": 30
+    },
+    "Fagerspindlingar": {
+      "weight": 6
+    },
+    "Granrotspindling": {
+      "weight": 26
+    },
+    "Kantspindling": {
+      "weight": 8
+    },
+    "Klubbspindling": {
+      "weight": 7
+    },
+    "Kryddspindling": {
+      "weight": 8
+    },
+    "Kungsspindling": {
+      "weight": 7
+    },
+    "Odörspindling agg.": {
+      "weight": 12
+    },
+    "Äggspindling": {
+      "weight": 9
+    },
+    "Bullspindling": {
+      "weight": 35
+    },
+    "Siljansspindling": {
+      "weight": 6
+    },
+    "Violettrandad spindling": {
+      "weight": 18
+    },
+    "Svartgrön spindling": {
+      "weight": 37
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 64
+    },
+    "Kopparspindling": {
+      "weight": 19
+    },
+    "Narrspindling": {
+      "weight": 7
+    },
+    "Odörspindling": {
+      "weight": 46
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 8
+    },
+    "Strimspindling": {
+      "weight": 7
+    },
+    "Tvillingspindling": {
+      "weight": 44
+    },
+    "Gyllenspindling": {
+      "weight": 7
+    },
+    "Klenodspindling": {
+      "weight": 8
+    },
+    "Puderspindling": {
+      "weight": 12
+    },
+    "Violettfläckig spindling": {
+      "weight": 5
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 3
+    },
+    "Denisespindling": {
+      "weight": 12
+    },
+    "Fågelträcksspindling": {
+      "weight": 8
+    },
+    "Trollspindling": {
+      "weight": 28
+    }
+  },
+  "Gyllenskivig spindling": {
+    "Anisspindling": {
+      "weight": 14
+    },
+    "Bitterspindlingar": {
+      "weight": 6
+    },
+    "Duvspindling": {
+      "weight": 6
+    },
+    "Fagerspindlingar": {
+      "weight": 16
+    },
+    "Granrotspindling": {
+      "weight": 10
+    },
+    "Grisspindling": {
+      "weight": 5
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 6
+    },
+    "Lövklubbspindling": {
+      "weight": 5
+    },
+    "Kantspindling": {
+      "weight": 14
+    },
+    "Klubbspindling": {
+      "weight": 8
+    },
+    "Kryddspindling": {
+      "weight": 8
+    },
+    "Kungsspindling": {
+      "weight": 23
+    },
+    "Mångkransad spindling": {
+      "weight": 6
+    },
+    "Odörspindling agg.": {
+      "weight": 6
+    },
+    "Äggspindling": {
+      "weight": 4
+    },
+    "Svartgrön spindling": {
+      "weight": 8
+    },
+    "Gyllenspindling": {
+      "weight": 4
+    },
+    "Pilfotsspindling": {
+      "weight": 4
+    }
+  },
+  "Myrspindling agg.": {
+    "Anisspindling": {
+      "weight": 3
+    },
+    "Fagerspindlingar": {
+      "weight": 5
+    },
+    "Kryddspindling": {
+      "weight": 3
+    }
+  },
+  "Mångkransad spindling": {
+    "Anisspindling": {
+      "weight": 40
+    },
+    "Barrfagerspindling": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 34
+    },
+    "Denisespindling agg.": {
+      "weight": 10
+    },
+    "Duvspindling": {
+      "weight": 7
+    },
+    "Ekspindling": {
+      "weight": 5
+    },
+    "Fagerspindlingar": {
+      "weight": 29
+    },
+    "Fläckig saffransspindling": {
+      "weight": 11
+    },
+    "Granrotspindling": {
+      "weight": 19
+    },
+    "Grisspindling": {
+      "weight": 13
+    },
+    "Grönkantad spindling": {
+      "weight": 5
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 7
+    },
+    "Gyllenskivig spindling": {
+      "weight": 6
+    },
+    "Jättespindling": {
+      "weight": 6
+    },
+    "Kantspindling": {
+      "weight": 45
+    },
+    "Klubbspindling": {
+      "weight": 21
+    },
+    "Kornspindling": {
+      "weight": 9
+    },
+    "Kryddspindling": {
+      "weight": 22
+    },
+    "Kungsspindling": {
+      "weight": 43
+    },
+    "Lundspindling": {
+      "weight": 9
+    },
+    "Mjölspindling": {
+      "weight": 5
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Odörspindling agg.": {
+      "weight": 16
+    },
+    "Äggspindling": {
+      "weight": 12
+    },
+    "Saffransspindling": {
+      "weight": 9
+    },
+    "Strimspindling": {
+      "weight": 6
+    },
+    "Svartgrön spindling": {
+      "weight": 12
+    },
+    "Tvillingspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 4
+    },
+    "Slottsspindling": {
+      "weight": 8
+    },
+    "Sockelspindling": {
+      "weight": 7
+    },
+    "Odörspindling": {
+      "weight": 3
+    }
+  },
+  "Siljansspindling": {
+    "Anisspindling": {
+      "weight": 12
+    },
+    "Barrfagerspindling": {
+      "weight": 11
+    },
+    "Bitterspindlingar": {
+      "weight": 7
+    },
+    "Blekspindling agg.": {
+      "weight": 6
+    },
+    "Bullspindling": {
+      "weight": 14
+    },
+    "Duvspindling": {
+      "weight": 5
+    },
+    "Granrotspindling": {
+      "weight": 22
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 5
+    },
+    "Kantspindling": {
+      "weight": 6
+    },
+    "Klenodspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 4
+    },
+    "Kopparspindling": {
+      "weight": 5
+    },
+    "Kryddspindling": {
+      "weight": 6
+    },
+    "Odörspindling": {
+      "weight": 14
+    },
+    "Odörspindling agg.": {
+      "weight": 4
+    },
+    "Puderspindling": {
+      "weight": 9
+    },
+    "Violettrandad spindling": {
+      "weight": 8
+    },
+    "Trollspindling": {
+      "weight": 3
+    },
+    "Vagabondspindling": {
+      "weight": 3
+    }
+  },
+  "Blek fagerspindling agg.": {
+    "Anisspindling": {
+      "weight": 4
+    }
+  },
+  "Kopparspindling": {
+    "Anisspindling": {
+      "weight": 23
+    },
+    "Barrfagerspindling": {
+      "weight": 8
+    },
+    "Bitterspindlingar": {
+      "weight": 5
+    },
+    "Blekspindling agg.": {
+      "weight": 19
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 5
+    },
+    "Bullspindling": {
+      "weight": 19
+    },
+    "Denisespindling": {
+      "weight": 12
+    },
+    "Duvspindling": {
+      "weight": 40
+    },
+    "Granrotspindling": {
+      "weight": 31
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 10
+    },
+    "Gyllenspindling": {
+      "weight": 3
+    },
+    "Kantspindling": {
+      "weight": 3
+    },
+    "Klenodspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 14
+    },
+    "Odörspindling agg.": {
+      "weight": 14
+    },
+    "Svartgrön spindling": {
+      "weight": 10
+    },
+    "Kryddspindling": {
+      "weight": 6
+    },
+    "Violettrandad spindling": {
+      "weight": 9
+    },
+    "Kungsspindling": {
+      "weight": 7
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Tvillingspindling": {
+      "weight": 4
+    },
+    "Puderspindling": {
+      "weight": 34
+    },
+    "Siljansspindling": {
+      "weight": 5
+    },
+    "Odörspindling": {
+      "weight": 25
+    },
+    "Violettfläckig spindling": {
+      "weight": 3
+    },
+    "Stor odörspindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 8
+    },
+    "Prickspindling": {
+      "weight": 9
+    }
+  },
+  "Hjortrongul spindling": {
+    "Anisspindling": {
+      "weight": 30
+    },
+    "Bitterspindlingar": {
+      "weight": 20
+    },
+    "Denisespindling": {
+      "weight": 14
+    },
+    "Duvspindling": {
+      "weight": 9
+    },
+    "Fagerspindlingar": {
+      "weight": 5
+    },
+    "Granrotspindling": {
+      "weight": 7
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 43
+    },
+    "Kantspindling": {
+      "weight": 9
+    },
+    "Klubbspindling": {
+      "weight": 9
+    },
+    "Kryddspindling": {
+      "weight": 11
+    },
+    "Kungsspindling": {
+      "weight": 6
+    },
+    "Odörspindling agg.": {
+      "weight": 6
+    },
+    "Svartgrön spindling": {
+      "weight": 32
+    },
+    "Trollspindling": {
+      "weight": 8
+    },
+    "Tvillingspindling": {
+      "weight": 23
+    },
+    "Violettfläckig spindling": {
+      "weight": 4
+    },
+    "Odörspindling": {
+      "weight": 23
+    },
+    "Violettrandad spindling": {
+      "weight": 6
+    },
+    "Tallpraktspindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 20
+    }
+  },
+  "Trollspindling": {
+    "Anisspindling": {
+      "weight": 387
+    },
+    "Barrfagerspindling": {
+      "weight": 27
+    },
+    "Bitterspindlingar": {
+      "weight": 150
+    },
+    "Blek bananspindling": {
+      "weight": 9
+    },
+    "Blekspindling agg.": {
+      "weight": 28
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 19
+    },
+    "Bullspindling": {
+      "weight": 86
+    },
+    "Cortinarius ochraceobrunneus": {
+      "weight": 3
+    },
+    "Denisespindling": {
+      "weight": 162
+    },
+    "Denisespindling agg.": {
+      "weight": 21
+    },
+    "Duvspindling": {
+      "weight": 98
+    },
+    "Fagerspindlingar": {
+      "weight": 6
+    },
+    "Fläckig saffransspindling": {
+      "weight": 5
+    },
+    "Fågelträcksspindling": {
+      "weight": 111
+    },
+    "Granrotspindling": {
+      "weight": 415
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 920
+    },
+    "Hjortrongul spindling": {
+      "weight": 8
+    },
+    "Kantspindling": {
+      "weight": 40
+    },
+    "Klenodspindling": {
+      "weight": 27
+    },
+    "Klubbspindling": {
+      "weight": 123
+    },
+    "Kopparspindling": {
+      "weight": 8
+    },
+    "Kryddspindling": {
+      "weight": 21
+    },
+    "Kungsspindling": {
+      "weight": 10
+    },
+    "Liten rävspindling": {
+      "weight": 4
+    },
+    "Narrspindling": {
+      "weight": 60
+    },
+    "Odörspindling": {
+      "weight": 527
+    },
+    "Odörspindling agg.": {
+      "weight": 21
+    },
+    "Pilfotsspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 4
+    },
+    "Puderspindling": {
+      "weight": 19
+    },
+    "Siljansspindling": {
+      "weight": 3
+    },
+    "Spökspindling": {
+      "weight": 4
+    },
+    "Strimspindling": {
+      "weight": 21
+    },
+    "Svartgrön spindling": {
+      "weight": 888
+    },
+    "Tallpraktspindling": {
+      "weight": 9
+    },
+    "Tvillingspindling": {
+      "weight": 154
+    },
+    "Violettfläckig spindling": {
+      "weight": 261
+    },
+    "Äggspindling": {
+      "weight": 70
+    },
+    "Violettrandad spindling": {
+      "weight": 75
+    },
+    "Vagabondspindling": {
+      "weight": 10
+    },
+    "Ädelspindlingar": {
+      "weight": 3
+    }
+  },
+  "Brunfläckig spindling": {
+    "Anisspindling": {
+      "weight": 9
+    },
+    "Odörspindling agg.": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 4
+    }
+  },
+  "Persiljespindling": {
+    "Anisspindling": {
+      "weight": 5
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 7
+    },
+    "Bullspindling": {
+      "weight": 3
+    },
+    "Duvspindling": {
+      "weight": 7
+    },
+    "Fagerspindlingar": {
+      "weight": 3
+    },
+    "Granrotspindling": {
+      "weight": 8
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 3
+    },
+    "Kantspindling": {
+      "weight": 3
+    },
+    "Klubbspindling": {
+      "weight": 3
+    },
+    "Kryddspindling": {
+      "weight": 7
+    },
+    "Kungsspindling": {
+      "weight": 5
+    },
+    "Odörspindling": {
+      "weight": 3
+    },
+    "Svartgrön spindling": {
+      "weight": 5
+    },
+    "Äggspindling": {
+      "weight": 3
+    },
+    "Violettrandad spindling": {
+      "weight": 8
+    }
+  },
+  "Denisespindling": {
+    "Anisspindling": {
+      "weight": 566
+    },
+    "Barrfagerspindling": {
+      "weight": 32
+    },
+    "Bitterspindlingar": {
+      "weight": 189
+    },
+    "Blek bananspindling": {
+      "weight": 14
+    },
+    "Blekspindling": {
+      "weight": 3
+    },
+    "Blekspindling agg.": {
+      "weight": 12
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 6
+    },
+    "Bullspindling": {
+      "weight": 80
+    },
+    "Granrotspindling": {
+      "weight": 354
+    },
+    "Kantspindling": {
+      "weight": 41
+    },
+    "Klubbspindling": {
+      "weight": 108
+    },
+    "Kryddspindling": {
+      "weight": 45
+    },
+    "Svartgrön spindling": {
+      "weight": 810
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 1059
+    },
+    "Tvillingspindling": {
+      "weight": 277
+    },
+    "Violettfläckig spindling": {
+      "weight": 209
+    },
+    "Äggspindling": {
+      "weight": 95
+    },
+    "Duvspindling": {
+      "weight": 167
+    },
+    "Odörspindling": {
+      "weight": 788
+    },
+    "Violettrandad spindling": {
+      "weight": 65
+    },
+    "Kopparspindling": {
+      "weight": 12
+    },
+    "Puderspindling": {
+      "weight": 10
+    },
+    "Tallkejsarspindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 120
+    },
+    "Fagerspindlingar": {
+      "weight": 8
+    },
+    "Odörspindling agg.": {
+      "weight": 27
+    },
+    "Klenodspindling": {
+      "weight": 11
+    },
+    "Trollspindling": {
+      "weight": 162
+    },
+    "Fågelträcksspindling": {
+      "weight": 33
+    },
+    "Strimspindling": {
+      "weight": 24
+    },
+    "Hjortrongul spindling": {
+      "weight": 14
+    },
+    "Narrspindling": {
+      "weight": 140
+    },
+    "Praktspindling": {
+      "weight": 3
+    },
+    "Denisespindling agg.": {
+      "weight": 6
+    },
+    "Kornspindling": {
+      "weight": 5
+    },
+    "Prickspindling": {
+      "weight": 5
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Pilfotsspindling": {
+      "weight": 5
+    }
+  },
+  "Blåfotad fagerspindling": {
+    "Anisspindling": {
+      "weight": 416
+    },
+    "Barrfagerspindling": {
+      "weight": 58
+    },
+    "Bitterspindlingar": {
+      "weight": 48
+    },
+    "Blek bananspindling": {
+      "weight": 3
+    },
+    "Blekspindling agg.": {
+      "weight": 8
+    },
+    "Kopparspindling": {
+      "weight": 5
+    },
+    "Bullspindling": {
+      "weight": 55
+    },
+    "Svartgrön spindling": {
+      "weight": 272
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 229
+    },
+    "Odörspindling agg.": {
+      "weight": 417
+    },
+    "Violettrandad spindling": {
+      "weight": 16
+    },
+    "Äggspindling": {
+      "weight": 184
+    },
+    "Denisespindling agg.": {
+      "weight": 76
+    },
+    "Granrotspindling": {
+      "weight": 310
+    },
+    "Klubbspindling": {
+      "weight": 26
+    },
+    "Duvspindling": {
+      "weight": 56
+    },
+    "Trollspindling": {
+      "weight": 19
+    },
+    "Narrspindling": {
+      "weight": 11
+    },
+    "Tallpraktspindling": {
+      "weight": 6
+    },
+    "Kantspindling": {
+      "weight": 21
+    },
+    "Kryddspindling": {
+      "weight": 52
+    },
+    "Denisespindling": {
+      "weight": 6
+    },
+    "Fagerspindlingar": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 187
+    },
+    "Puderspindling": {
+      "weight": 9
+    },
+    "Kungsspindling": {
+      "weight": 12
+    },
+    "Tvillingspindling": {
+      "weight": 144
+    },
+    "Klenodspindling": {
+      "weight": 10
+    },
+    "Violettfläckig spindling": {
+      "weight": 167
+    },
+    "Fågelträcksspindling": {
+      "weight": 3
+    },
+    "Strimspindling": {
+      "weight": 11
+    },
+    "Blåfotad fagerspindling agg.": {
+      "weight": 74
+    },
+    "Persiljespindling": {
+      "weight": 7
+    }
+  },
+  "Cortinarius spadiceus": {
+    "Anisspindling": {
+      "weight": 7
+    }
+  },
+  "Gyllenspindling": {
+    "Anisspindling": {
+      "weight": 4
+    },
+    "Barrfagerspindling": {
+      "weight": 4
+    },
+    "Bitterspindlingar": {
+      "weight": 3
+    },
+    "Blekspindling agg.": {
+      "weight": 7
+    },
+    "Bullspindling": {
+      "weight": 14
+    },
+    "Duvspindling": {
+      "weight": 6
+    },
+    "Granrotspindling": {
+      "weight": 3
+    },
+    "Gyllenskivig spindling": {
+      "weight": 4
+    },
+    "Violettrandad spindling": {
+      "weight": 7
+    },
+    "Puderspindling": {
+      "weight": 5
+    },
+    "Klenodspindling": {
+      "weight": 4
+    },
+    "Kopparspindling": {
+      "weight": 3
+    },
+    "Kungsspindling": {
+      "weight": 4
+    }
+  },
+  "Tallpraktspindling": {
+    "Anisspindling": {
+      "weight": 122
+    },
+    "Bananspindling agg.": {
+      "weight": 12
+    },
+    "Barrfagerspindling": {
+      "weight": 12
+    },
+    "Bitterspindlingar": {
+      "weight": 76
+    },
+    "Blek bananspindling": {
+      "weight": 10
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 6
+    },
+    "Bullspindling": {
+      "weight": 60
+    },
+    "Cortinarius subcorrosus": {
+      "weight": 4
+    },
+    "Denisespindling": {
+      "weight": 120
+    },
+    "Denisespindling agg.": {
+      "weight": 7
+    },
+    "Duvspindling": {
+      "weight": 117
+    },
+    "Elastisk spindling": {
+      "weight": 7
+    },
+    "Fagerspindlingar": {
+      "weight": 12
+    },
+    "Filtekspindling": {
+      "weight": 5
+    },
+    "Fläckig saffransspindling": {
+      "weight": 6
+    },
+    "Fågelträcksspindling": {
+      "weight": 6
+    },
+    "Granrotspindling": {
+      "weight": 60
+    },
+    "Grisspindling": {
+      "weight": 13
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 282
+    },
+    "Hjortrongul spindling": {
+      "weight": 3
+    },
+    "Jättespindling": {
+      "weight": 14
+    },
+    "Kantspindling": {
+      "weight": 6
+    },
+    "Klenodspindling": {
+      "weight": 4
+    },
+    "Klubbspindling": {
+      "weight": 20
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Kopparspindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 5
+    },
+    "Kryddspindling": {
+      "weight": 13
+    },
+    "Kungsspindling": {
+      "weight": 9
+    },
+    "Liten rävspindling": {
+      "weight": 4
+    },
+    "Lundspindling": {
+      "weight": 7
+    },
+    "Lövklubbspindling": {
+      "weight": 14
+    },
+    "Mjölspindling": {
+      "weight": 18
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Narrspindling": {
+      "weight": 15
+    },
+    "Odörspindling": {
+      "weight": 138
+    },
+    "Odörspindling agg.": {
+      "weight": 10
+    },
+    "Pilfotsspindling": {
+      "weight": 11
+    },
+    "Praktspindling": {
+      "weight": 10
+    },
+    "Purpurspindling": {
+      "weight": 4
+    },
+    "Safirspindling": {
+      "weight": 4
+    },
+    "Slottsspindling": {
+      "weight": 8
+    },
+    "Sockelspindling": {
+      "weight": 6
+    },
+    "Strimspindling": {
+      "weight": 14
+    },
+    "Svartgrön spindling": {
+      "weight": 162
+    },
+    "Sötdoftande spindling": {
+      "weight": 5
+    },
+    "Tvillingspindling": {
+      "weight": 84
+    },
+    "Violettrandad spindling": {
+      "weight": 28
+    },
+    "Trollspindling": {
+      "weight": 9
+    },
+    "Violettfläckig spindling": {
+      "weight": 4
+    },
+    "Äggspindling": {
+      "weight": 13
+    }
+  },
+  "Tuvspindling": {
+    "Anisspindling": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 3
+    }
+  },
+  "Porslinsblå spindling": {
+    "Anisspindling": {
+      "weight": 5
+    },
+    "Bitterspindlingar": {
+      "weight": 3
+    },
+    "Granrotspindling": {
+      "weight": 3
+    },
+    "Kantspindling": {
+      "weight": 3
+    },
+    "Klubbspindling": {
+      "weight": 4
+    },
+    "Kryddspindling": {
+      "weight": 3
+    },
+    "Svartgrön spindling": {
+      "weight": 3
+    },
+    "Tvillingspindling": {
+      "weight": 3
+    },
+    "Äggspindling": {
+      "weight": 3
+    }
+  },
+  "Stor odörspindling": {
+    "Anisspindling": {
+      "weight": 21
+    },
+    "Bullspindling": {
+      "weight": 3
+    },
+    "Duvspindling": {
+      "weight": 13
+    },
+    "Granrotspindling": {
+      "weight": 13
+    },
+    "Kantspindling": {
+      "weight": 4
+    },
+    "Klubbspindling": {
+      "weight": 3
+    },
+    "Kopparspindling": {
+      "weight": 4
+    },
+    "Odörspindling": {
+      "weight": 21
+    },
+    "Odörspindling agg.": {
+      "weight": 17
+    },
+    "Strimspindling": {
+      "weight": 4
+    },
+    "Svartgrön spindling": {
+      "weight": 10
+    },
+    "Äggspindling": {
+      "weight": 7
+    },
+    "Tvillingspindling": {
+      "weight": 5
+    }
+  },
+  "Blek bananspindling": {
+    "Anisspindling": {
+      "weight": 23
+    },
+    "Bitterspindlingar": {
+      "weight": 3
+    },
+    "Bullspindling": {
+      "weight": 14
+    },
+    "Duvspindling": {
+      "weight": 13
+    },
+    "Granrotspindling": {
+      "weight": 26
+    },
+    "Svartgrön spindling": {
+      "weight": 93
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 52
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 37
+    },
+    "Tvillingspindling": {
+      "weight": 20
+    },
+    "Äggspindling": {
+      "weight": 5
+    },
+    "Denisespindling": {
+      "weight": 14
+    },
+    "Violettrandad spindling": {
+      "weight": 4
+    },
+    "Tallpraktspindling": {
+      "weight": 10
+    },
+    "Trollspindling": {
+      "weight": 9
+    },
+    "Violettfläckig spindling": {
+      "weight": 5
+    },
+    "Fågelträcksspindling": {
+      "weight": 5
+    }
+  },
+  "Klenodspindling": {
+    "Anisspindling": {
+      "weight": 26
+    },
+    "Barrfagerspindling": {
+      "weight": 9
+    },
+    "Bitterspindlingar": {
+      "weight": 6
+    },
+    "Blekspindling agg.": {
+      "weight": 8
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 10
+    },
+    "Bullspindling": {
+      "weight": 53
+    },
+    "Denisespindling": {
+      "weight": 11
+    },
+    "Duvspindling": {
+      "weight": 24
+    },
+    "Fågelträcksspindling": {
+      "weight": 26
+    },
+    "Granrotspindling": {
+      "weight": 57
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 60
+    },
+    "Gyllenspindling": {
+      "weight": 4
+    },
+    "Puderspindling": {
+      "weight": 6
+    },
+    "Siljansspindling": {
+      "weight": 5
+    },
+    "Violettrandad spindling": {
+      "weight": 91
+    },
+    "Kopparspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 5
+    },
+    "Odörspindling": {
+      "weight": 45
+    },
+    "Svartgrön spindling": {
+      "weight": 53
+    },
+    "Tvillingspindling": {
+      "weight": 55
+    },
+    "Äggspindling": {
+      "weight": 13
+    },
+    "Odörspindling agg.": {
+      "weight": 5
+    },
+    "Violettfläckig spindling": {
+      "weight": 5
+    },
+    "Narrspindling": {
+      "weight": 4
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 27
+    },
+    "Strimspindling": {
+      "weight": 9
+    },
+    "Tallkejsarspindling": {
+      "weight": 4
+    }
+  },
+  "Myrstacksspindling": {
+    "Anisspindling": {
+      "weight": 6
+    },
+    "Bullspindling": {
+      "weight": 4
+    },
+    "Duvspindling": {
+      "weight": 3
+    },
+    "Granrotspindling": {
+      "weight": 5
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 3
+    },
+    "Odörspindling agg.": {
+      "weight": 4
+    },
+    "Svartgrön spindling": {
+      "weight": 3
+    }
+  },
+  "Blåfotad fagerspindling agg.": {
+    "Anisspindling": {
+      "weight": 233
+    },
+    "Barrfagerspindling": {
+      "weight": 11
+    },
+    "Bitterspindlingar": {
+      "weight": 10
+    },
+    "Blekspindling agg.": {
+      "weight": 3
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 74
+    },
+    "Odörspindling": {
+      "weight": 211
+    },
+    "Svartgrön spindling": {
+      "weight": 156
+    },
+    "Äggspindling": {
+      "weight": 78
+    },
+    "Granrotspindling": {
+      "weight": 44
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 29
+    },
+    "Tvillingspindling": {
+      "weight": 21
+    },
+    "Violettfläckig spindling": {
+      "weight": 31
+    },
+    "Klubbspindling": {
+      "weight": 15
+    },
+    "Denisespindling agg.": {
+      "weight": 400
+    },
+    "Strimspindling": {
+      "weight": 27
+    },
+    "Violettrandad spindling": {
+      "weight": 35
+    },
+    "Odörspindling agg.": {
+      "weight": 9
+    },
+    "Kryddspindling": {
+      "weight": 23
+    },
+    "Duvspindling": {
+      "weight": 13
+    },
+    "Purpurspindling": {
+      "weight": 6
+    },
+    "Narrspindling": {
+      "weight": 5
+    },
+    "Bullspindling": {
+      "weight": 5
+    }
+  },
+  "Blyspindling agg.": {
+    "Anisspindling": {
+      "weight": 15
+    },
+    "Bitterspindlingar": {
+      "weight": 6
+    },
+    "Granrotspindling": {
+      "weight": 3
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 13
+    },
+    "Odörspindling": {
+      "weight": 10
+    },
+    "Violettrandad spindling": {
+      "weight": 4
+    },
+    "Tvillingspindling": {
+      "weight": 5
+    }
+  },
+  "Fågelträcksspindling": {
+    "Anisspindling": {
+      "weight": 96
+    },
+    "Barrfagerspindling": {
+      "weight": 5
+    },
+    "Bitterspindlingar": {
+      "weight": 44
+    },
+    "Blek bananspindling": {
+      "weight": 5
+    },
+    "Blekspindling": {
+      "weight": 3
+    },
+    "Blekspindling agg.": {
+      "weight": 8
+    },
+    "Blåfotad fagerspindling": {
+      "weight": 3
+    },
+    "Bullspindling": {
+      "weight": 37
+    },
+    "Denisespindling": {
+      "weight": 33
+    },
+    "Duvspindling": {
+      "weight": 23
+    },
+    "Odörspindling": {
+      "weight": 109
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 214
+    },
+    "Kryddspindling": {
+      "weight": 5
+    },
+    "Trollspindling": {
+      "weight": 111
+    },
+    "Svartgrön spindling": {
+      "weight": 275
+    },
+    "Tallpraktspindling": {
+      "weight": 6
+    },
+    "Tvillingspindling": {
+      "weight": 23
+    },
+    "Strimspindling": {
+      "weight": 6
+    },
+    "Klenodspindling": {
+      "weight": 26
+    },
+    "Granrotspindling": {
+      "weight": 102
+    },
+    "Violettrandad spindling": {
+      "weight": 45
+    },
+    "Narrspindling": {
+      "weight": 7
+    },
+    "Odörspindling agg.": {
+      "weight": 4
+    },
+    "Violettfläckig spindling": {
+      "weight": 50
+    },
+    "Klubbspindling": {
+      "weight": 23
+    },
+    "Äggspindling": {
+      "weight": 13
+    },
+    "Puderspindling": {
+      "weight": 3
+    },
+    "Vagabondspindling": {
+      "weight": 3
+    },
+    "Kantspindling": {
+      "weight": 4
+    }
+  },
+  "Tallkejsarspindling": {
+    "Anisspindling": {
+      "weight": 12
+    },
+    "Bitterspindlingar": {
+      "weight": 4
+    },
+    "Bullspindling": {
+      "weight": 8
+    },
+    "Denisespindling": {
+      "weight": 3
+    },
+    "Duvspindling": {
+      "weight": 5
+    },
+    "Granrotspindling": {
+      "weight": 8
+    },
+    "Klenodspindling": {
+      "weight": 4
+    },
+    "Odörspindling": {
+      "weight": 10
+    },
+    "Svartgrön spindling": {
+      "weight": 5
+    },
+    "Violettrandad spindling": {
+      "weight": 13
+    }
+  },
+  "Lövklubbspindling": {
+    "Anisspindling": {
+      "weight": 8
+    },
+    "Bananspindling agg.": {
+      "weight": 9
+    },
+    "Bitterspindlingar": {
+      "weight": 33
+    },
+    "Blåeggad spindling": {
+      "weight": 5
+    },
+    "Ekspindling": {
+      "weight": 5
+    },
+    "Elastisk spindling": {
+      "weight": 9
+    },
+    "Filtekspindling": {
+      "weight": 4
+    },
+    "Fläckig saffransspindling": {
+      "weight": 11
+    },
+    "Grisspindling": {
+      "weight": 31
+    },
+    "Grönkantad spindling": {
+      "weight": 3
+    },
+    "Gyllenskivig spindling": {
+      "weight": 5
+    },
+    "Jättespindling": {
+      "weight": 22
+    },
+    "Klubbspindling": {
+      "weight": 3
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 6
+    },
+    "Kungsspindling": {
+      "weight": 3
+    },
+    "Liten rävspindling": {
+      "weight": 3
+    },
+    "Lundspindling": {
+      "weight": 11
+    },
+    "Mjölspindling": {
+      "weight": 27
+    },
+    "Odörspindling agg.": {
+      "weight": 3
+    },
+    "Pilfotsspindling": {
+      "weight": 10
+    },
+    "Praktspindling": {
+      "weight": 15
+    },
+    "Purpurspindling": {
+      "weight": 3
+    },
+    "Safirspindling": {
+      "weight": 11
+    },
+    "Slottsspindling": {
+      "weight": 16
+    },
+    "Sockelspindling": {
+      "weight": 8
+    },
+    "Sötdoftande spindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 14
+    },
+    "Munkspindling": {
+      "weight": 10
+    },
+    "Saffransspindling": {
+      "weight": 7
+    },
+    "Odörspindling": {
+      "weight": 7
+    },
+    "Äggspindling": {
+      "weight": 3
+    }
+  },
+  "Blekspindling": {
+    "Anisspindling": {
+      "weight": 36
+    },
+    "Barrfagerspindling": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 8
+    },
+    "Bullspindling": {
+      "weight": 7
+    },
+    "Fågelträcksspindling": {
+      "weight": 3
+    },
+    "Violettrandad spindling": {
+      "weight": 3
+    },
+    "Duvspindling": {
+      "weight": 4
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 11
+    },
+    "Odörspindling": {
+      "weight": 26
+    },
+    "Svartgrön spindling": {
+      "weight": 15
+    },
+    "Kantspindling": {
+      "weight": 3
+    },
+    "Vagabondspindling": {
+      "weight": 4
+    },
+    "Granrotspindling": {
+      "weight": 8
+    },
+    "Violettfläckig spindling": {
+      "weight": 3
+    },
+    "Denisespindling": {
+      "weight": 3
+    },
+    "Kryddspindling": {
+      "weight": 8
+    }
+  },
+  "Cortinarius caesiocanescens s.str.": {
+    "Anisspindling": {
+      "weight": 3
+    }
+  },
+  "Cortinarius infractus": {
+    "Anisspindling": {
+      "weight": 5
+    },
+    "Odörspindling": {
+      "weight": 4
+    }
+  },
+  "Grynspindling": {
+    "Anisspindling": {
+      "weight": 6
+    },
+    "Granrotspindling": {
+      "weight": 3
+    },
+    "Odörspindling": {
+      "weight": 10
+    },
+    "Svartgrön spindling": {
+      "weight": 9
+    },
+    "Narrspindling": {
+      "weight": 8
+    }
+  },
+  "Blekskivig klubbspindling": {
+    "Anisspindling": {
+      "weight": 3
+    },
+    "Klubbspindling": {
+      "weight": 4
+    },
+    "Odörspindling": {
+      "weight": 7
+    },
+    "Violettfläckig spindling": {
+      "weight": 10
+    },
+    "Granrotspindling": {
+      "weight": 8
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 3
+    },
+    "Svartgrön spindling": {
+      "weight": 9
+    }
+  },
+  "Dvärgblekspindling": {
+    "Anisspindling": {
+      "weight": 4
+    }
+  },
+  "Knölfotad bananspindling": {
+    "Apelsinspindling": {
+      "weight": 6
+    },
+    "Bananspindling": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 18
+    },
+    "Blåeggad spindling": {
+      "weight": 4
+    },
+    "Bullspindling": {
+      "weight": 6
+    },
+    "Denisespindling": {
+      "weight": 4
+    },
+    "Duvspindling": {
+      "weight": 4
+    },
+    "Ekspindling": {
+      "weight": 4
+    },
+    "Elastisk spindling": {
+      "weight": 4
+    },
+    "Fläckig saffransspindling": {
+      "weight": 13
+    },
+    "Grisspindling": {
+      "weight": 13
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 3
+    },
+    "Jättespindling": {
+      "weight": 13
+    },
+    "Mjölspindling": {
+      "weight": 11
+    },
+    "Svartgrön spindling": {
+      "weight": 4
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Slottsspindling": {
+      "weight": 19
+    },
+    "Kornspindling": {
+      "weight": 9
+    },
+    "Sötdoftande spindling": {
+      "weight": 8
+    },
+    "Munkspindling": {
+      "weight": 4
+    },
+    "Pilfotsspindling": {
+      "weight": 17
+    },
+    "Praktspindling": {
+      "weight": 15
+    },
+    "Lövstrimspindling": {
+      "weight": 4
+    },
+    "Saffransspindling": {
+      "weight": 3
+    },
+    "Sockelspindling": {
+      "weight": 10
+    },
+    "Lundspindling": {
+      "weight": 4
+    },
+    "Lövklubbspindling": {
+      "weight": 4
+    },
+    "Safirspindling": {
+      "weight": 4
+    }
+  },
+  "Mjölspindling": {
+    "Apelsinspindling": {
+      "weight": 5
+    },
+    "Bananspindling agg.": {
+      "weight": 16
+    },
+    "Bitterspindlingar": {
+      "weight": 64
+    },
+    "Blå lökspindling": {
+      "weight": 4
+    },
+    "Blåeggad spindling": {
+      "weight": 7
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 6
+    },
+    "Duvspindling": {
+      "weight": 4
+    },
+    "Ekspindling": {
+      "weight": 12
+    },
+    "Elastisk spindling": {
+      "weight": 10
+    },
+    "Fagerspindlingar": {
+      "weight": 7
+    },
+    "Filtekspindling": {
+      "weight": 7
+    },
+    "Fläckig saffransspindling": {
+      "weight": 24
+    },
+    "Granrotspindling": {
+      "weight": 3
+    },
+    "Gredelinspindling": {
+      "weight": 4
+    },
+    "Grisspindling": {
+      "weight": 53
+    },
+    "Grönkantad spindling": {
+      "weight": 5
+    },
+    "Jättespindling": {
+      "weight": 39
+    },
+    "Kantspindling": {
+      "weight": 9
+    },
+    "Knölfotad bananspindling": {
+      "weight": 11
+    },
+    "Kornspindling": {
+      "weight": 24
+    },
+    "Kungsspindling": {
+      "weight": 11
+    },
+    "Liten rävspindling": {
+      "weight": 6
+    },
+    "Lundspindling": {
+      "weight": 25
+    },
+    "Lövklubbspindling": {
+      "weight": 27
+    },
+    "Lövstrimspindling": {
+      "weight": 4
+    },
+    "Tallpraktspindling": {
+      "weight": 18
+    },
+    "Odörspindling agg.": {
+      "weight": 7
+    },
+    "Pilfotsspindling": {
+      "weight": 22
+    },
+    "Praktspindling": {
+      "weight": 31
+    },
+    "Purpurspindling": {
+      "weight": 3
+    },
+    "Safirspindling": {
+      "weight": 17
+    },
+    "Slottsspindling": {
+      "weight": 34
+    },
+    "Sockelspindling": {
+      "weight": 14
+    },
+    "Sötdoftande spindling": {
+      "weight": 11
+    },
+    "Mångkransad spindling": {
+      "weight": 5
+    },
+    "Saffransspindling": {
+      "weight": 16
+    },
+    "Munkspindling": {
+      "weight": 14
+    },
+    "Svartgrön spindling": {
+      "weight": 7
+    },
+    "Solvändespindling": {
+      "weight": 5
+    }
+  },
+  "Elastisk spindling": {
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Bananspindling agg.": {
+      "weight": 5
+    },
+    "Bitterspindlingar": {
+      "weight": 10
+    },
+    "Blåeggad spindling": {
+      "weight": 10
+    },
+    "Ekspindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 5
+    },
+    "Grisspindling": {
+      "weight": 13
+    },
+    "Jättespindling": {
+      "weight": 6
+    },
+    "Lundspindling": {
+      "weight": 6
+    },
+    "Lövklubbspindling": {
+      "weight": 9
+    },
+    "Mjölspindling": {
+      "weight": 10
+    },
+    "Pilfotsspindling": {
+      "weight": 17
+    },
+    "Praktspindling": {
+      "weight": 6
+    },
+    "Slottsspindling": {
+      "weight": 5
+    },
+    "Sockelspindling": {
+      "weight": 4
+    },
+    "Tallpraktspindling": {
+      "weight": 7
+    },
+    "Saffransspindling": {
+      "weight": 7
+    },
+    "Munkspindling": {
+      "weight": 20
+    },
+    "Kungsspindling": {
+      "weight": 5
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    }
+  },
+  "Grisspindling": {
+    "Apelsinspindling": {
+      "weight": 5
+    },
+    "Bananspindling agg.": {
+      "weight": 15
+    },
+    "Bitterspindlingar": {
+      "weight": 84
+    },
+    "Blåeggad spindling": {
+      "weight": 14
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 9
+    },
+    "Denisespindling agg.": {
+      "weight": 3
+    },
+    "Ekspindling": {
+      "weight": 18
+    },
+    "Elastisk spindling": {
+      "weight": 13
+    },
+    "Fagerspindlingar": {
+      "weight": 3
+    },
+    "Filtekspindling": {
+      "weight": 10
+    },
+    "Fläckig saffransspindling": {
+      "weight": 34
+    },
+    "Gredelinspindling": {
+      "weight": 6
+    },
+    "Kungsspindling": {
+      "weight": 24
+    },
+    "Mjölspindling": {
+      "weight": 53
+    },
+    "Pilfotsspindling": {
+      "weight": 28
+    },
+    "Saffransspindling": {
+      "weight": 27
+    },
+    "Slottsspindling": {
+      "weight": 54
+    },
+    "Grönkantad spindling": {
+      "weight": 11
+    },
+    "Jättespindling": {
+      "weight": 54
+    },
+    "Kornspindling": {
+      "weight": 30
+    },
+    "Lundspindling": {
+      "weight": 18
+    },
+    "Lövklubbspindling": {
+      "weight": 31
+    },
+    "Munkspindling": {
+      "weight": 23
+    },
+    "Praktspindling": {
+      "weight": 45
+    },
+    "Safirspindling": {
+      "weight": 28
+    },
+    "Sockelspindling": {
+      "weight": 26
+    },
+    "Liten rävspindling": {
+      "weight": 8
+    },
+    "Odörspindling agg.": {
+      "weight": 9
+    },
+    "Purpurspindling": {
+      "weight": 3
+    },
+    "Sötdoftande spindling": {
+      "weight": 9
+    },
+    "Tallpraktspindling": {
+      "weight": 13
+    },
+    "Kantspindling": {
+      "weight": 6
+    },
+    "Mångkransad spindling": {
+      "weight": 13
+    },
+    "Knölfotad bananspindling": {
+      "weight": 13
+    },
+    "Lövstrimspindling": {
+      "weight": 6
+    },
+    "Solvändespindling": {
+      "weight": 3
+    },
+    "Gyllenskivig spindling": {
+      "weight": 5
+    }
+  },
+  "Munkspindling": {
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Bananspindling agg.": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 24
+    },
+    "Blåeggad spindling": {
+      "weight": 8
+    },
+    "Denisespindling": {
+      "weight": 3
+    },
+    "Ekspindling": {
+      "weight": 3
+    },
+    "Elastisk spindling": {
+      "weight": 20
+    },
+    "Fagerspindlingar": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 9
+    },
+    "Grisspindling": {
+      "weight": 23
+    },
+    "Grönkantad spindling": {
+      "weight": 3
+    },
+    "Jättespindling": {
+      "weight": 10
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 6
+    },
+    "Kungsspindling": {
+      "weight": 11
+    },
+    "Lundspindling": {
+      "weight": 9
+    },
+    "Lövklubbspindling": {
+      "weight": 10
+    },
+    "Lövstrimspindling": {
+      "weight": 4
+    },
+    "Mjölspindling": {
+      "weight": 14
+    },
+    "Mångkransad spindling": {
+      "weight": 3
+    },
+    "Saffransspindling": {
+      "weight": 19
+    },
+    "Pilfotsspindling": {
+      "weight": 32
+    },
+    "Sockelspindling": {
+      "weight": 6
+    },
+    "Praktspindling": {
+      "weight": 17
+    },
+    "Slottsspindling": {
+      "weight": 17
+    },
+    "Tallpraktspindling": {
+      "weight": 3
+    },
+    "Safirspindling": {
+      "weight": 7
+    },
+    "Sötdoftande spindling": {
+      "weight": 5
+    }
+  },
+  "Safirspindling": {
+    "Apelsinspindling": {
+      "weight": 4
+    },
+    "Bananspindling agg.": {
+      "weight": 4
+    },
+    "Bitterspindlingar": {
+      "weight": 20
+    },
+    "Ekspindling": {
+      "weight": 4
+    },
+    "Fläckig saffransspindling": {
+      "weight": 10
+    },
+    "Grisspindling": {
+      "weight": 28
+    },
+    "Jättespindling": {
+      "weight": 16
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 7
+    },
+    "Kungsspindling": {
+      "weight": 5
+    },
+    "Lundspindling": {
+      "weight": 5
+    },
+    "Lövklubbspindling": {
+      "weight": 11
+    },
+    "Mjölspindling": {
+      "weight": 17
+    },
+    "Munkspindling": {
+      "weight": 7
+    },
+    "Pilfotsspindling": {
+      "weight": 8
+    },
+    "Praktspindling": {
+      "weight": 13
+    },
+    "Saffransspindling": {
+      "weight": 5
+    },
+    "Slottsspindling": {
+      "weight": 16
+    },
+    "Sockelspindling": {
+      "weight": 6
+    },
+    "Sötdoftande spindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Vattrad spindling": {
+      "weight": 4
+    }
+  },
+  "Sockelspindling": {
+    "Apelsinspindling": {
+      "weight": 3
+    },
+    "Bananspindling agg.": {
+      "weight": 6
+    },
+    "Bitterspindlingar": {
+      "weight": 29
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 3
+    },
+    "Denisespindling agg.": {
+      "weight": 7
+    },
+    "Duvspindling": {
+      "weight": 4
+    },
+    "Ekspindling": {
+      "weight": 4
+    },
+    "Elastisk spindling": {
+      "weight": 4
+    },
+    "Filtekspindling": {
+      "weight": 3
+    },
+    "Fläckig saffransspindling": {
+      "weight": 11
+    },
+    "Grisspindling": {
+      "weight": 26
+    },
+    "Grönkantad spindling": {
+      "weight": 5
+    },
+    "Jättespindling": {
+      "weight": 22
+    },
+    "Knölfotad bananspindling": {
+      "weight": 10
+    },
+    "Kornspindling": {
+      "weight": 12
+    },
+    "Kungsspindling": {
+      "weight": 5
+    },
+    "Liten rävspindling": {
+      "weight": 3
+    },
+    "Lundspindling": {
+      "weight": 6
+    },
+    "Lövklubbspindling": {
+      "weight": 8
+    },
+    "Lövstrimspindling": {
+      "weight": 3
+    },
+    "Mjölspindling": {
+      "weight": 14
+    },
+    "Munkspindling": {
+      "weight": 6
+    },
+    "Mångkransad spindling": {
+      "weight": 7
+    },
+    "Odörspindling agg.": {
+      "weight": 3
+    },
+    "Pilfotsspindling": {
+      "weight": 12
+    },
+    "Praktspindling": {
+      "weight": 14
+    },
+    "Saffransspindling": {
+      "weight": 10
+    },
+    "Safirspindling": {
+      "weight": 6
+    },
+    "Slottsspindling": {
+      "weight": 22
+    },
+    "Sötdoftande spindling": {
+      "weight": 5
+    },
+    "Tallpraktspindling": {
+      "weight": 6
+    },
+    "Svartgrön spindling": {
+      "weight": 3
+    },
+    "Äggspindling": {
+      "weight": 4
+    }
+  },
+  "Jättespindling": {
+    "Bananspindling agg.": {
+      "weight": 16
+    },
+    "Beryllspindling": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 79
+    },
+    "Blåeggad spindling": {
+      "weight": 6
+    },
+    "Cortinarius langei s.lat.": {
+      "weight": 6
+    },
+    "Ekspindling": {
+      "weight": 15
+    },
+    "Elastisk spindling": {
+      "weight": 6
+    },
+    "Filtekspindling": {
+      "weight": 8
+    },
+    "Fläckig saffransspindling": {
+      "weight": 20
+    },
+    "Gredelinspindling": {
+      "weight": 6
+    },
+    "Grisspindling": {
+      "weight": 54
+    },
+    "Grönkantad spindling": {
+      "weight": 4
+    },
+    "Kantspindling": {
+      "weight": 5
+    },
+    "Klubbspindling": {
+      "weight": 5
+    },
+    "Kornspindling": {
+      "weight": 19
+    },
+    "Kungsspindling": {
+      "weight": 9
+    },
+    "Strimspindling": {
+      "weight": 3
+    },
+    "Liten rävspindling": {
+      "weight": 8
+    },
+    "Lundspindling": {
+      "weight": 23
+    },
+    "Lövklubbspindling": {
+      "weight": 22
+    },
+    "Mjölspindling": {
+      "weight": 39
+    },
+    "Odörspindling agg.": {
+      "weight": 10
+    },
+    "Pilfotsspindling": {
+      "weight": 17
+    },
+    "Praktspindling": {
+      "weight": 40
+    },
+    "Purpurspindling": {
+      "weight": 4
+    },
+    "Safirspindling": {
+      "weight": 16
+    },
+    "Slottsspindling": {
+      "weight": 47
+    },
+    "Sockelspindling": {
+      "weight": 22
+    },
+    "Sötdoftande spindling": {
+      "weight": 8
+    },
+    "Tallpraktspindling": {
+      "weight": 14
+    },
+    "Mångkransad spindling": {
+      "weight": 6
+    },
+    "Saffransspindling": {
+      "weight": 8
+    },
+    "Knölfotad bananspindling": {
+      "weight": 13
+    },
+    "Lövstrimspindling": {
+      "weight": 6
+    },
+    "Munkspindling": {
+      "weight": 10
+    }
+  },
+  "Filtekspindling": {
+    "Bananspindling agg.": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 13
+    },
+    "Fläckig saffransspindling": {
+      "weight": 3
+    },
+    "Grisspindling": {
+      "weight": 10
+    },
+    "Jättespindling": {
+      "weight": 8
+    },
+    "Kornspindling": {
+      "weight": 3
+    },
+    "Lövklubbspindling": {
+      "weight": 4
+    },
+    "Mjölspindling": {
+      "weight": 7
+    },
+    "Pilfotsspindling": {
+      "weight": 3
+    },
+    "Praktspindling": {
+      "weight": 5
+    },
+    "Slottsspindling": {
+      "weight": 6
+    },
+    "Sockelspindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 5
+    }
+  },
+  "Liten rävspindling": {
+    "Bananspindling agg.": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 10
+    },
+    "Fläckig saffransspindling": {
+      "weight": 7
+    },
+    "Grisspindling": {
+      "weight": 8
+    },
+    "Jättespindling": {
+      "weight": 8
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Mjölspindling": {
+      "weight": 6
+    },
+    "Pilfotsspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 7
+    },
+    "Slottsspindling": {
+      "weight": 8
+    },
+    "Sockelspindling": {
+      "weight": 3
+    },
+    "Sötdoftande spindling": {
+      "weight": 3
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Spökspindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 4
+    }
+  },
+  "Lundspindling": {
+    "Bananspindling agg.": {
+      "weight": 8
+    },
+    "Beryllspindling": {
+      "weight": 3
+    },
+    "Bitterspindlingar": {
+      "weight": 44
+    },
+    "Ekspindling": {
+      "weight": 11
+    },
+    "Elastisk spindling": {
+      "weight": 6
+    },
+    "Fagerspindlingar": {
+      "weight": 5
+    },
+    "Fläckig saffransspindling": {
+      "weight": 21
+    },
+    "Grisspindling": {
+      "weight": 18
+    },
+    "Grönkantad spindling": {
+      "weight": 3
+    },
+    "Jättespindling": {
+      "weight": 23
+    },
+    "Kantspindling": {
+      "weight": 3
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 11
+    },
+    "Kungsspindling": {
+      "weight": 5
+    },
+    "Mjölspindling": {
+      "weight": 25
+    },
+    "Mångkransad spindling": {
+      "weight": 9
+    },
+    "Saffransspindling": {
+      "weight": 8
+    },
+    "Pilfotsspindling": {
+      "weight": 12
+    },
+    "Slottsspindling": {
+      "weight": 18
+    },
+    "Lövklubbspindling": {
+      "weight": 11
+    },
+    "Munkspindling": {
+      "weight": 9
+    },
+    "Tallpraktspindling": {
+      "weight": 7
+    },
+    "Praktspindling": {
+      "weight": 13
+    },
+    "Safirspindling": {
+      "weight": 5
+    },
+    "Sockelspindling": {
+      "weight": 6
+    }
+  },
+  "Beryllspindling": {
+    "Bitterspindlingar": {
+      "weight": 4
+    },
+    "Jättespindling": {
+      "weight": 3
+    },
+    "Lundspindling": {
+      "weight": 3
+    }
+  },
+  "Ekspindling": {
+    "Bitterspindlingar": {
+      "weight": 23
+    },
+    "Fläckig saffransspindling": {
+      "weight": 9
+    },
+    "Kornspindling": {
+      "weight": 4
+    },
+    "Lundspindling": {
+      "weight": 11
+    },
+    "Mjölspindling": {
+      "weight": 12
+    },
+    "Mångkransad spindling": {
+      "weight": 5
+    },
+    "Pilfotsspindling": {
+      "weight": 6
+    },
+    "Elastisk spindling": {
+      "weight": 3
+    },
+    "Saffransspindling": {
+      "weight": 4
+    },
+    "Jättespindling": {
+      "weight": 15
+    },
+    "Odörspindling agg.": {
+      "weight": 4
+    },
+    "Lövklubbspindling": {
+      "weight": 5
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Slottsspindling": {
+      "weight": 14
+    },
+    "Grisspindling": {
+      "weight": 18
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 12
+    },
+    "Safirspindling": {
+      "weight": 4
+    },
+    "Sockelspindling": {
+      "weight": 4
+    }
+  },
+  "Halmspindling": {
+    "Bitterspindlingar": {
+      "weight": 3
+    }
+  },
+  "Blåeggad spindling": {
+    "Bitterspindlingar": {
+      "weight": 9
+    },
+    "Fläckig saffransspindling": {
+      "weight": 4
+    },
+    "Grisspindling": {
+      "weight": 14
+    },
+    "Jättespindling": {
+      "weight": 6
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 3
+    },
+    "Lövklubbspindling": {
+      "weight": 5
+    },
+    "Mjölspindling": {
+      "weight": 7
+    },
+    "Munkspindling": {
+      "weight": 8
+    },
+    "Pilfotsspindling": {
+      "weight": 10
+    },
+    "Praktspindling": {
+      "weight": 11
+    },
+    "Slottsspindling": {
+      "weight": 6
+    },
+    "Sötdoftande spindling": {
+      "weight": 7
+    },
+    "Kungsspindling": {
+      "weight": 4
+    },
+    "Saffransspindling": {
+      "weight": 3
+    },
+    "Elastisk spindling": {
+      "weight": 10
+    }
+  },
+  "Cortinarius langei s.lat.": {
+    "Bitterspindlingar": {
+      "weight": 10
+    },
+    "Grisspindling": {
+      "weight": 9
+    },
+    "Jättespindling": {
+      "weight": 6
+    },
+    "Kornspindling": {
+      "weight": 5
+    },
+    "Mjölspindling": {
+      "weight": 6
+    },
+    "Praktspindling": {
+      "weight": 6
+    },
+    "Slottsspindling": {
+      "weight": 8
+    },
+    "Sockelspindling": {
+      "weight": 3
+    }
+  },
+  "Gredelinspindling": {
+    "Bitterspindlingar": {
+      "weight": 8
+    },
+    "Grisspindling": {
+      "weight": 6
+    },
+    "Jättespindling": {
+      "weight": 6
+    },
+    "Mjölspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 6
+    },
+    "Slottsspindling": {
+      "weight": 6
+    }
+  },
+  "Lövstrimspindling": {
+    "Bitterspindlingar": {
+      "weight": 11
+    },
+    "Fläckig saffransspindling": {
+      "weight": 3
+    },
+    "Grisspindling": {
+      "weight": 6
+    },
+    "Jättespindling": {
+      "weight": 6
+    },
+    "Knölfotad bananspindling": {
+      "weight": 4
+    },
+    "Munkspindling": {
+      "weight": 4
+    },
+    "Pilfotsspindling": {
+      "weight": 16
+    },
+    "Slottsspindling": {
+      "weight": 9
+    },
+    "Sockelspindling": {
+      "weight": 3
+    },
+    "Sötdoftande spindling": {
+      "weight": 4
+    },
+    "Sydlig denisespindling": {
+      "weight": 4
+    },
+    "Mjölspindling": {
+      "weight": 4
+    },
+    "Praktspindling": {
+      "weight": 5
+    }
+  },
+  "Grönkantad spindling": {
+    "Bitterspindlingar": {
+      "weight": 10
+    },
+    "Fläckig saffransspindling": {
+      "weight": 7
+    },
+    "Grisspindling": {
+      "weight": 11
+    },
+    "Lövklubbspindling": {
+      "weight": 3
+    },
+    "Mjölspindling": {
+      "weight": 5
+    },
+    "Jättespindling": {
+      "weight": 4
+    },
+    "Kornspindling": {
+      "weight": 4
+    },
+    "Kungsspindling": {
+      "weight": 6
+    },
+    "Mångkransad spindling": {
+      "weight": 5
+    },
+    "Saffransspindling": {
+      "weight": 10
+    },
+    "Slottsspindling": {
+      "weight": 6
+    },
+    "Sockelspindling": {
+      "weight": 5
+    },
+    "Munkspindling": {
+      "weight": 3
+    },
+    "Lundspindling": {
+      "weight": 3
+    },
+    "Praktspindling": {
+      "weight": 3
+    }
+  },
+  "Ädelspindlingar": {
+    "Bitterspindlingar": {
+      "weight": 4
+    },
+    "Granrotspindling": {
+      "weight": 3
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 7
+    },
+    "Saffransspindling": {
+      "weight": 5
+    },
+    "Svartgrön spindling": {
+      "weight": 3
+    },
+    "Trollspindling": {
+      "weight": 3
+    }
+  },
+  "Cortinarius ochraceobrunneus": {
+    "Odörspindling": {
+      "weight": 3
+    },
+    "Svartgrön spindling": {
+      "weight": 4
+    },
+    "Trollspindling": {
+      "weight": 3
+    }
+  },
+  "Cortinarius subcorrosus": {
+    "Gulsträngad fagerspindling": {
+      "weight": 7
+    },
+    "Tallpraktspindling": {
+      "weight": 4
+    },
+    "Odörspindling": {
+      "weight": 4
+    }
+  },
+  "Prickspindling": {
+    "Denisespindling": {
+      "weight": 5
+    },
+    "Duvspindling": {
+      "weight": 3
+    },
+    "Gulsträngad fagerspindling": {
+      "weight": 6
+    },
+    "Klubbspindling": {
+      "weight": 3
+    },
+    "Kopparspindling": {
+      "weight": 9
+    },
+    "Odörspindling": {
+      "weight": 11
+    },
+    "Svartgrön spindling": {
+      "weight": 5
+    },
+    "Puderspindling": {
+      "weight": 3
+    }
+  },
+  "Frostspindling": {
+    "Pilfotsspindling": {
+      "weight": 4
+    }
+  },
+  "Granatspindling": {
+    "Pilfotsspindling": {
+      "weight": 3
+    },
+    "Sötdoftande spindling": {
+      "weight": 5
+    }
+  },
+  "Rostspindling": {
+    "Granrotspindling": {
+      "weight": 5
+    },
+    "Narrspindling": {
+      "weight": 9
+    },
+    "Svartgrön spindling": {
+      "weight": 7
+    },
+    "Tvillingspindling": {
+      "weight": 5
+    },
+    "Violettfläckig spindling": {
+      "weight": 3
+    }
+  },
+  "Stor myrspindling": {
+    "Klubbspindling": {
+      "weight": 3
+    },
+    "Äggspindling": {
+      "weight": 3
+    }
+  },
+  "Sydlig denisespindling": {
+    "Kungsspindling": {
+      "weight": 3
+    },
+    "Lövstrimspindling": {
+      "weight": 4
+    },
+    "Pilfotsspindling": {
+      "weight": 14
+    },
+    "Saffransspindling": {
+      "weight": 4
+    },
+    "Sötdoftande spindling": {
+      "weight": 12
+    }
+  },
+  "Praktspindling agg.": {
+    "Odörspindling": {
+      "weight": 3
+    }
+  },
+  "Vattrad spindling": {
+    "Safirspindling": {
+      "weight": 4
+    }
+  }
+}

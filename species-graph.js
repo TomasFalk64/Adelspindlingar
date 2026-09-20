@@ -2,6 +2,10 @@
   const DEFAULT_MIN_WEIGHT = 1;
   const MAX_VISIBLE_SPECIES = 10;
   const GRAPH_OPTIONS = {
+    Gotland: {
+      path: "data/artgraf_Gotland_50m.json",
+      context: "Gotland - arter sedda inom 50m"
+    },
     Uppland: {
       path: "data/Artgraf_Uppland_50m.json",
       context: "Uppland - arter sedda inom 50m"

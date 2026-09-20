@@ -1867,6 +1867,65 @@ tr.clickable-row:hover {
   display: none;
 }
 
+.species-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.species-actions .species-graph-button {
+  margin: 0;
+}
+
+.other-species-dialog {
+  width: min(92vw, 620px);
+  max-height: 85vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+.other-species-dialog::backdrop {
+  background: rgb(0 0 0 / 45%);
+}
+
+.other-species-context {
+  font-weight: 700;
+}
+
+.other-species-list {
+  padding-left: 22px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.other-species-locations {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+.other-species-list a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.artfakta-button {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.artfakta-button[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: default;
+}
+
 .species-graph-button {
   display: inline-grid;
   place-items: center;

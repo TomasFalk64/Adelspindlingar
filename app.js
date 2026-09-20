@@ -900,8 +900,20 @@
   function filterSpecies(filters) {
     const { [LANDSCAPE_FILTER_KEY]: selectedLandscapes, ...fieldFilters } = filters;
     return state.species
-      .filter((species) => speciesMatchesSelectedLandscapes(species, selectedLandscapes))
-      .map((species) => evaluateSpecies(species, fieldFilters))
+      .flatMap((species) => {
+        const landscapeMatch = getLandscapeMatch(species, selectedLandscapes);
+        if (landscapeMatch === "none") {
+          return [];
+        }
+
+        const result = evaluateSpecies(species, fieldFilters);
+        if (landscapeMatch === "aggregate" && result.status !== "contradiction") {
+          result.status = "possible";
+          result.missingFields.push(LANDSCAPE_FILTER_KEY);
+          result.evaluations[LANDSCAPE_FILTER_KEY] = { state: "missing", values: [] };
+        }
+        return [result];
+      })
       .filter((result) => result.status !== "contradiction")
       .sort((a, b) => {
         if (a.status !== b.status) {
@@ -912,9 +924,9 @@
       });
   }
 
-  function speciesMatchesSelectedLandscapes(species, selectedLandscapes) {
+  function getLandscapeMatch(species, selectedLandscapes) {
     if (!Array.isArray(selectedLandscapes) || selectedLandscapes.length === 0) {
-      return true;
+      return "exact";
     }
 
     const names = [
@@ -924,10 +936,20 @@
       formatScientificName(species.vetenskapligt_namn)
     ].map(normalizeLookupName).filter(Boolean);
 
-    return selectedLandscapes.some((landscape) => {
+    let hasAggregateMatch = false;
+    for (const landscape of selectedLandscapes) {
       const occurrenceNames = state.landscapeOccurrenceLookup.get(landscape);
-      return occurrenceNames && names.some((name) => occurrenceNames.has(name));
-    });
+      if (!occurrenceNames) {
+        continue;
+      }
+      if (names.some((name) => occurrenceNames.has(name))) {
+        return "exact";
+      }
+      if (names.some((name) => occurrenceNames.has(`${name} agg.`))) {
+        hasAggregateMatch = true;
+      }
+    }
+    return hasAggregateMatch ? "aggregate" : "none";
   }
 
   function updateResults() {
@@ -1556,7 +1578,7 @@
     if (!imageGrid) {
       imageContent.className = "compact-empty-images";
     }
-    imagesSection.append(imagesHeading, imageContent, createSpeciesGraphButton(species));
+    imagesSection.append(imagesHeading, imageContent, createSpeciesActions(species));
     view.append(imagesSection);
 
     elements.details.append(view);
@@ -1846,9 +1868,226 @@
     if (!grid) {
       imageContent.className = "compact-empty-images";
     }
-    group.append(imageContent, createSpeciesGraphButton(species));
+    group.append(imageContent, createSpeciesActions(species));
 
     return group;
+  }
+
+  let taxonLookupPromise = null;
+
+  function loadTaxonLookup() {
+    if (!taxonLookupPromise) {
+      taxonLookupPromise = fetch("data/artnamn_taxonid.json").then(async (response) => {
+        if (!response.ok) throw new Error(`Kunde inte ladda TaxonId: ${response.status}`);
+        const data = await response.json();
+        if (!data || typeof data !== "object" || Array.isArray(data)) throw new Error("Ogiltig TaxonId-lista");
+        const lookup = new Map();
+        for (const [name, id] of Object.entries(data)) {
+          if (!Number.isSafeInteger(id) || id <= 0) throw new Error("Ogiltigt TaxonId");
+          const key = normalizeLookupName(name);
+          if (lookup.has(key) && lookup.get(key) !== id) throw new Error(`Flera TaxonId för ${name}`);
+          lookup.set(key, id);
+        }
+        return lookup;
+      }).catch((error) => {
+        taxonLookupPromise = null;
+        throw error;
+      });
+    }
+    return taxonLookupPromise;
+  }
+
+  function getSpeciesTaxonId(species, lookup) {
+    const ids = new Set([species.svenskt_namn, species.vetenskapligt_namn,
+      formatScientificName(species.vetenskapligt_namn)]
+      .map((name) => lookup.get(normalizeLookupName(name))).filter(Boolean));
+    return ids.size === 1 ? [...ids][0] : null;
+  }
+
+  function setArtfaktaLink(link, id, label) {
+    link.href = `https://artfakta.se/taxa/${id}/information`;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.title = `${label} – Artfakta (öppnas i ny flik)`;
+  }
+
+  function createArtfaktaButton(species) {
+    const link = document.createElement("a");
+    link.className = "species-graph-button artfakta-button";
+    link.setAttribute("aria-disabled", "true");
+    link.setAttribute("aria-label", "Visa arten i Artfakta");
+    link.title = "Laddar länk till Artfakta…";
+    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    icon.classList.add("species-graph-icon");
+    icon.setAttribute("viewBox", "0 0 24 24");
+    icon.setAttribute("fill", "none");
+    icon.setAttribute("stroke", "currentColor");
+    icon.setAttribute("stroke-width", "2");
+    icon.setAttribute("stroke-linecap", "round");
+    icon.setAttribute("stroke-linejoin", "round");
+    icon.setAttribute("aria-hidden", "true");
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", "M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5");
+    icon.append(path);
+    link.append(icon);
+    loadTaxonLookup().then((lookup) => {
+      const id = getSpeciesTaxonId(species, lookup);
+      if (id) {
+        setArtfaktaLink(link, id, getDisplayName(species));
+        link.removeAttribute("aria-disabled");
+        link.setAttribute("aria-label", "Visa arten i Artfakta (öppnas i ny flik)");
+      } else {
+        link.title = "Artfakta-länk saknas för denna art";
+        link.setAttribute("aria-label", link.title);
+      }
+    }).catch((error) => {
+      console.error(error);
+      link.title = "Artfakta-länken kunde inte laddas";
+      link.setAttribute("aria-label", link.title);
+    });
+    return link;
+  }
+
+  function getOtherSpeciesTaxa(name, provinces, lookup) {
+    const taxa = new Map();
+    const key = normalizeLookupName(name);
+    for (const province of provinces) {
+      for (const original of state.landscapeOccurrences[province] || []) {
+        if (normalizeLookupName(original).replace(/\s+agg\.$/i, "") !== key) continue;
+        const id = lookup.get(normalizeLookupName(original));
+        if (id) taxa.set(id, { name: original, id });
+      }
+    }
+    return Array.from(taxa.values()).sort((a, b) => a.name.localeCompare(b.name, "sv"));
+  }
+
+  function createSpeciesActions(species) {
+    const actions = document.createElement("div");
+    actions.className = "species-actions";
+    const otherButton = document.createElement("button");
+    otherButton.type = "button";
+    otherButton.className = "species-graph-button";
+    otherButton.title = "Andra arter att överväga";
+    otherButton.setAttribute("aria-label", otherButton.title);
+    otherButton.setAttribute("aria-haspopup", "dialog");
+    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    icon.classList.add("species-graph-icon");
+    icon.setAttribute("viewBox", "0 0 24 24");
+    icon.setAttribute("fill", "none");
+    icon.setAttribute("stroke", "currentColor");
+    icon.setAttribute("stroke-width", "2");
+    icon.setAttribute("stroke-linecap", "round");
+    icon.setAttribute("aria-hidden", "true");
+    const lines = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    lines.setAttribute("d", "M4 6h1m4 0h11M4 12h1m4 0h11M4 18h1m4 0h11");
+    icon.append(lines);
+    otherButton.append(icon);
+    otherButton.addEventListener("click", () => openOtherSpecies(otherButton));
+    actions.append(createSpeciesGraphButton(species), createArtfaktaButton(species), otherButton);
+    return actions;
+  }
+
+  async function openOtherSpecies(trigger) {
+    const selected = getSelectedFilters()[LANDSCAPE_FILTER_KEY] || [];
+    const landscapes = (selected.length ? [...selected] : Object.keys(state.landscapeOccurrences))
+      .sort((a, b) => a.localeCompare(b, "sv"));
+    const dialog = document.createElement("dialog");
+    dialog.className = "other-species-dialog";
+    dialog.setAttribute("aria-labelledby", "other-species-title");
+    const header = document.createElement("div");
+    header.className = "species-graph-head";
+    const title = document.createElement("h3");
+    title.id = "other-species-title";
+    title.textContent = "Andra arter att överväga";
+    const close = document.createElement("button");
+    close.type = "button";
+    close.className = "species-graph-close";
+    close.textContent = "×";
+    close.setAttribute("aria-label", "Stäng");
+    close.addEventListener("click", () => dialog.close());
+    header.append(title, close);
+    const context = document.createElement("p");
+    const prefix = !selected.length ? "Alla tillgängliga landskap" : selected.length === 1 ? "Valt landskap" : "Valda landskap";
+    context.textContent = `${prefix}: ${landscapes.join(", ")}`;
+    context.className = "other-species-context";
+    const info = document.createElement("p");
+    info.textContent = "Dessa arter har observerats i de valda landskapen, men saknar beskrivning i appen. Några kan vara relevanta vid bestämningen.";
+    const content = document.createElement("div");
+    content.setAttribute("aria-live", "polite");
+    content.textContent = "Laddar arter…";
+    dialog.append(header, context, info, content);
+    dialog.addEventListener("close", () => {
+      dialog.remove();
+      if (trigger.isConnected) trigger.focus();
+    }, { once: true });
+    dialog.addEventListener("click", (event) => {
+      const rect = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right
+        || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+    });
+    document.body.append(dialog);
+    dialog.showModal();
+    close.focus();
+    try {
+      const response = await fetch("data/obeskrivna_arter_landskap.json");
+      if (!response.ok) throw new Error(`Kunde inte ladda artlistan: ${response.status}`);
+      const data = await response.json();
+      const lookup = await loadTaxonLookup().catch((error) => {
+        console.error(error);
+        return new Map();
+      });
+      const rows = collectOtherSpecies(data, landscapes);
+      if (!dialog.isConnected) return;
+      if (!rows.length) {
+        content.textContent = "Inga arter utan beskrivning finns i underlaget för dessa landskap.";
+        return;
+      }
+      const list = document.createElement("ul");
+      list.className = "other-species-list";
+      rows.forEach(({ name, provinces }) => {
+        const item = document.createElement("li");
+        const taxa = getOtherSpeciesTaxa(name, provinces, lookup);
+        if (taxa.length) {
+          taxa.forEach((taxon, index) => {
+            if (index) item.append(" / ");
+            const link = document.createElement("a");
+            link.textContent = taxa.length > 1 ? taxon.name : name;
+            setArtfaktaLink(link, taxon.id, taxon.name);
+            item.append(link);
+          });
+        } else {
+          item.textContent = name;
+        }
+        if (landscapes.length > 1) {
+          const locations = document.createElement("span");
+          locations.className = "other-species-locations";
+          locations.textContent = ` — ${provinces.join(", ")}`;
+          item.append(locations);
+        }
+        list.append(item);
+      });
+      content.replaceChildren(list);
+    } catch (error) {
+      console.error(error);
+      if (dialog.isConnected) content.textContent = "Artlistan kunde inte laddas. Stäng och öppna igen för att försöka på nytt.";
+    }
+  }
+
+  function collectOtherSpecies(data, landscapes) {
+    const names = new Map();
+    for (const landscape of landscapes) {
+      if (!Array.isArray(data?.[landscape])) throw new Error(`Artlista saknas för ${landscape}`);
+      for (const rawName of data[landscape]) {
+        if (typeof rawName !== "string") throw new Error("Ogiltigt artnamn");
+        const name = rawName.trim();
+        if (!name) continue;
+        const key = normalizeLookupName(name);
+        if (!names.has(key)) names.set(key, { name, provinces: [] });
+        const row = names.get(key);
+        if (!row.provinces.includes(landscape)) row.provinces.push(landscape);
+      }
+    }
+    return Array.from(names.values()).sort((a, b) => a.name.localeCompare(b.name, "sv"));
   }
 
   function createSpeciesGraphButton(species) {
@@ -2832,7 +3071,7 @@
     if (!Array.isArray(species.bilder) || species.bilder.length === 0) {
       const emptyImages = document.createElement("div");
       emptyImages.className = "compact-empty-images";
-      elements.details.append(heading, emptyImages);
+      elements.details.append(heading, emptyImages, createSpeciesActions(species));
       return;
     }
 
@@ -2841,7 +3080,7 @@
     if (!grid) {
       imageContent.className = "compact-empty-images";
     }
-    elements.details.append(heading, imageContent, createSpeciesGraphButton(species));
+    elements.details.append(heading, imageContent, createSpeciesActions(species));
   }
 
   function createImageGrid(species, images) {
