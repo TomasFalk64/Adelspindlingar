@@ -552,6 +552,7 @@
     elements.compactResults = document.querySelector("#compact-results");
     elements.comparison = document.querySelector("#comparison");
     elements.comparisonSummary = document.querySelector("#comparison-summary");
+    elements.comparisonLikelyOnly = document.querySelector("#comparison-likely-only");
     elements.comparisonDifferingOnly = document.querySelector("#comparison-differing-only");
     elements.comparisonDifferingOnlyDuplicate = document.querySelector("#comparison-differing-only-duplicate");
     elements.lookalikeComparison = document.querySelector("#lookalike-comparison");
@@ -572,6 +573,10 @@
     elements.phlegmaciumDialog.addEventListener("click", closeDialogOnBackdropClick);
     elements.nameSearch.addEventListener("input", renderCompactResults);
     elements.sortResults.addEventListener("click", toggleCompactResultSort);
+    elements.comparisonLikelyOnly.addEventListener("change", () => {
+      const filters = getSelectedFilters();
+      renderComparison(filters, { showOnlyDiffering: elements.comparisonDifferingOnly.checked });
+    });
     elements.comparisonDifferingOnly.addEventListener("change", () => {
       const filters = getSelectedFilters();
       renderComparison(filters, { showOnlyDiffering: elements.comparisonDifferingOnly.checked });
@@ -962,10 +967,8 @@
     }
 
     renderCompactResults();
-    elements.comparisonDifferingOnly.checked = false;
-    elements.comparisonDifferingOnlyDuplicate.checked = false;
-    renderComparison(filters, { showOnlyDiffering: false });
-    renderLookalikeComparison(filters, { showOnlyDiffering: false });
+    renderComparison(filters);
+    renderLookalikeComparison(filters);
 
     if (state.selectedSpeciesKey) {
       const selected = state.evaluated.find((result) => getSpeciesKey(result.species) === state.selectedSpeciesKey);
@@ -1079,26 +1082,33 @@
   }
 
   function renderComparison(filters, options = {}) {
+    const results = elements.comparisonLikelyOnly.checked
+      ? state.evaluated.filter((result) => result.status === "full")
+      : state.evaluated;
     const selectedFields = [...new Set([
       ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY && field !== "hattstruktur"),
       ...DEFAULT_COMPARISON_FIELDS
     ])];
-    const showOnlyDiffering = Boolean(options.showOnlyDiffering);
+    const showOnlyDiffering = options.showOnlyDiffering ?? elements.comparisonDifferingOnly.checked;
     const includeMatchStatus = !showOnlyDiffering;
-    const comparisonFields = showOnlyDiffering ? selectedFields.filter(isDifferingComparisonField) : selectedFields;
+    const comparisonFields = showOnlyDiffering
+      ? selectedFields.filter((field) => isDifferingComparisonFieldForResults(results, field))
+      : selectedFields;
     elements.comparison.replaceChildren();
 
-    if (state.evaluated.length > 10) {
+    if (results.length > 10) {
       elements.comparisonSummary.textContent = "Fyll i fler observationer för att visa en detaljerad jämförelse.";
       return;
     }
 
-    if (state.evaluated.length === 0) {
-      elements.comparisonSummary.textContent = "Inga arter återstår med de valda observationerna.";
+    if (results.length === 0) {
+      elements.comparisonSummary.textContent = elements.comparisonLikelyOnly.checked
+        ? "Inga troliga arter återstår med de valda observationerna."
+        : "Inga arter återstår med de valda observationerna.";
       return;
     }
 
-    elements.comparisonSummary.textContent = `${state.evaluated.length} arter visas i jämförelsen.`;
+    elements.comparisonSummary.textContent = `${results.length} arter visas i jämförelsen.`;
 
     const table = document.createElement("table");
     const thead = document.createElement("thead");
@@ -1120,7 +1130,7 @@
 
     thead.append(headerRow);
 
-    state.evaluated.forEach((result) => {
+    results.forEach((result) => {
       const row = document.createElement("tr");
       row.className = "clickable-row";
       row.tabIndex = 0;
@@ -1189,7 +1199,7 @@
       ...Object.keys(filters).filter((field) => field !== LANDSCAPE_FILTER_KEY && field !== "hattstruktur"),
       ...DEFAULT_COMPARISON_FIELDS
     ])];
-    const { showOnlyDiffering = false } = options;
+    const showOnlyDiffering = options.showOnlyDiffering ?? elements.comparisonDifferingOnlyDuplicate.checked;
     elements.lookalikeComparison.replaceChildren();
 
     if (!state.selectedSpeciesKey) {
@@ -1316,15 +1326,6 @@
 
     table.append(thead, tbody);
     return table;
-  }
-
-  function isDifferingComparisonField(field) {
-    if (state.evaluated.length <= 1) {
-      return true;
-    }
-
-    const firstValue = getCanonicalComparisonValue(state.evaluated[0].species[field]);
-    return state.evaluated.some((result) => getCanonicalComparisonValue(result.species[field]) !== firstValue);
   }
 
   function isDifferingComparisonFieldForResults(results, field) {

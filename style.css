@@ -799,6 +799,12 @@ h3 {
   padding: 5px 7px;
 }
 
+.comparison-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
 .comparison-differing-toggle {
   display: inline-flex;
   align-items: center;

@@ -126,10 +126,16 @@
           <h2 id="comparison-heading">Jämförande resultat</h2>
           <p id="comparison-summary">Fyll i fler observationer för att visa en detaljerad jämförelse.</p>
         </div>
-        <label class="comparison-differing-toggle">
-          <input id="comparison-differing-only" type="checkbox">
-          Visa bara skiljande karaktärer
-        </label>
+        <div class="comparison-controls">
+          <label class="comparison-differing-toggle">
+            <input id="comparison-likely-only" type="checkbox" checked>
+            Visa endast troliga
+          </label>
+          <label class="comparison-differing-toggle">
+            <input id="comparison-differing-only" type="checkbox" checked>
+            Visa bara skiljande karaktärer
+          </label>
+        </div>
       </div>
       <div id="comparison" class="comparison"></div>
     </section>
@@ -141,7 +147,7 @@
           <p id="lookalike-comparison-summary">Välj en art för att se den och dess förväxlingsarter.</p>
         </div>
         <label class="comparison-differing-toggle">
-          <input id="comparison-differing-only-duplicate" type="checkbox">
+          <input id="comparison-differing-only-duplicate" type="checkbox" checked>
           Visa bara skiljande karaktärer
         </label>
       </div>
