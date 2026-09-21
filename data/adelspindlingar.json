@@ -2470,13 +2470,13 @@
       ],
       "bilder": [
         {
-          "fil": "data/bilder/saffranspindling_1.jpg",
-          "bildtext": "Saffransspindling",
+          "fil": "data/bilder/saffranspindling_1.webp",
+          "bildtext": "saffransspindling",
           "fotograf": "Tomas Falk",
           "licens": ""
         },
         {
-          "fil": "data/bilder/saffranspindling_2.jpg",
+          "fil": "data/bilder/saffranspindling_2.webp",
           "bildtext": "saffransspindling",
           "fotograf": "Tomas Falk",
           "licens": ""
@@ -4028,7 +4028,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Basalmycel vit"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "tvillingspindling",
@@ -4531,7 +4533,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Brun vid beröring och  i skador. KOH-hatt blodröd,KOH-bulb rosaröd och KOH-kött svagt rosa."
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "koboltspindling",
@@ -4650,8 +4654,21 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "viktiga_karaktarer": [
+        "KOH-reaktion rosa"
+      ],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "tvillingspindling",
+          "vetenskapligt_namn": "Cortinarius metarius",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "blåfotad fagerspindling",
+          "vetenskapligt_namn": "Cortinarius barbaricus",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "ockrafärgad med ljus kant",
       "fotfarg_beskrivning": "",
@@ -4722,13 +4739,13 @@
       ],
       "bilder": [
         {
-          "fil": "data/bilder/Persiljespindling_1.jpg",
+          "fil": "data/bilder/Persiljespindling_1.webp",
           "bildtext": "persiljespindling",
           "fotograf": "Tomas Falk",
           "licens": ""
         },
         {
-          "fil": "data/bilder/Persiljespindling_2.jpg",
+          "fil": "data/bilder/Persiljespindling_2.webp",
           "bildtext": "persiljespindling",
           "fotograf": "Tomas Falk",
           "licens": ""
@@ -4948,7 +4965,13 @@
       "viktiga_karaktarer": [
         "mörkgrön hatt med kromgula skivor"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "Pistagespindling",
+          "vetenskapligt_namn": "Cortinarius ionochlorus",
+          "skillnad": "har violetta skivor"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "kromgul",
@@ -5061,7 +5084,7 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
-        "metalliskt guldglänsande fintrådig hatt, gula velumrester på fotknölen"
+        "metalliskt guldglänsande fintrådig hatt, gula velumrester på fotknölen. I tjocka barrmattor."
       ],
       "forvaxlingsarter": [
         {
@@ -5339,7 +5362,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "KOH-hatt pupurröd. KOH-kött violett i vita delar."
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "gyllenspindling",
@@ -6060,7 +6085,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Basalmycel svavelgult"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "blåfotad fagerspindling",
@@ -6397,7 +6424,9 @@
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "KOH-reaktion först rosa, sedan särskilt på hatten klarröd"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "barrfagerspindling",

@@ -1,6 +1,9 @@
 extra/
 import/
-scripts
+scripts/*
+!scripts/import-bilder.js
+!scripts/README_bildimport.md
+node_modules/
 
 # Interna arbetsanteckningar
 /ARTGRAF-INTERN.md

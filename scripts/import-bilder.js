@@ -2,12 +2,15 @@
 
 const fs = require("fs/promises");
 const path = require("path");
+const sharp = require("sharp");
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_FILE = path.join(ROOT, "data", "adelspindlingar.json");
 const IMAGE_DIR = path.join(ROOT, "data", "bilder");
 const IMPORT_DIR = path.join(IMAGE_DIR, "import");
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
+const MAX_IMAGE_SIDE = 1600;
+const WEBP_QUALITY = 82;
 
 const isDryRun = process.argv.includes("--dry-run");
 
@@ -61,6 +64,27 @@ async function main() {
       const destinationPath = path.join(IMAGE_DIR, destinationName);
       const jsonPath = `data/bilder/${destinationName}`;
 
+      let compressed;
+      let sourceSize;
+      try {
+        // Läs till minnet så att bildbibliotekets cache inte låser importfilen på Windows.
+        const sourceBuffer = await fs.readFile(sourcePath);
+        sourceSize = sourceBuffer.length;
+        compressed = await sharp(sourceBuffer)
+          .autoOrient()
+          .resize({
+            width: MAX_IMAGE_SIDE,
+            height: MAX_IMAGE_SIDE,
+            fit: "inside",
+            withoutEnlargement: true
+          })
+          .webp({ quality: WEBP_QUALITY })
+          .toBuffer({ resolveWithObject: true });
+      } catch (error) {
+        report.skipped.push(`${path.join(photographerDir.name, entry.name)} - kunde inte komprimeras: ${error.message}`);
+        continue;
+      }
+
       species.bilder = Array.isArray(species.bilder) ? species.bilder : [];
       if (species.bilder.some((image) => image && image.fil === jsonPath)) {
         report.skipped.push(`${path.join(photographerDir.name, entry.name)} - finns redan i JSON`);
@@ -76,16 +100,20 @@ async function main() {
       usedImagePaths.add(jsonPath.toLocaleLowerCase("sv"));
 
       if (!isDryRun) {
-        await moveFile(sourcePath, destinationPath);
+        await fs.writeFile(destinationPath, compressed.data, { flag: "wx" });
+        // Spara bildkopplingen innan importfilen tas bort.
+        await saveData(data);
+        try {
+          await fs.unlink(sourcePath);
+        } catch (error) {
+          report.warnings.push(`${entry.name} importerades, men importfilen kunde inte tas bort: ${error.message}. Ta bort den innan nästa import för att undvika dubbletter.`);
+        }
       }
 
       const renameNote = destinationName === entry.name ? "" : ` som ${destinationName}`;
-      report.imported.push(`${entry.name} -> ${species.svenskt_namn}${renameNote} (${photographer})`);
+      const { width, height, size } = compressed.info;
+      report.imported.push(`${entry.name} -> ${species.svenskt_namn}${renameNote} (${photographer}), ${width} × ${height} px, ${Math.round(sourceSize / 1024)} → ${Math.round(size / 1024)} kB`);
     }
-  }
-
-  if (!isDryRun && report.imported.length > 0) {
-    await fs.writeFile(DATA_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
   }
 
   printReport(report);
@@ -178,7 +206,7 @@ function compactName(value) {
 async function getAvailableDestinationName(originalName, usedImagePaths) {
   const parsed = path.parse(originalName);
   const cleanBase = sanitizeFileBase(parsed.name) || "bild";
-  const cleanExt = parsed.ext.toLowerCase() || ".jpg";
+  const cleanExt = ".webp";
   let candidate = `${cleanBase}${cleanExt}`;
   let counter = 2;
 
@@ -211,16 +239,13 @@ async function exists(filePath) {
   }
 }
 
-async function moveFile(sourcePath, destinationPath) {
+async function saveData(data) {
+  const temporaryPath = `${DATA_FILE}.${process.pid}.tmp`;
   try {
-    await fs.rename(sourcePath, destinationPath);
-  } catch (error) {
-    if (error.code !== "EXDEV") {
-      throw error;
-    }
-
-    await fs.copyFile(sourcePath, destinationPath);
-    await fs.unlink(sourcePath);
+    await fs.writeFile(temporaryPath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+    await fs.rename(temporaryPath, DATA_FILE);
+  } finally {
+    await fs.rm(temporaryPath, { force: true });
   }
 }
 
@@ -237,6 +262,11 @@ function printReport(report) {
   if (report.skipped.length > 0) {
     console.log("\nHoppade över:");
     report.skipped.forEach((line) => console.log(`! ${line}`));
+  }
+
+  if (report.warnings.length > 0) {
+    console.log("\nVarningar:");
+    report.warnings.forEach((line) => console.log(`! ${line}`));
   }
 
   console.log(`\nImportmapp: ${path.relative(ROOT, IMPORT_DIR)}`);
