@@ -5183,7 +5183,20 @@
           "skillnad": ""
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/granrotspindling_1.webp",
+          "bildtext": "granrotspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/granrotspindling_2.webp",
+          "bildtext": "granrotspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "rotlikt förlängd",
       "kottfarg": [
@@ -7130,6 +7143,120 @@
           "skillnad": ""
         }
       ],
+      "bilder": [],
+      "hattfarg_beskrivning": "",
+      "fotfarg_beskrivning": "",
+      "kottfarg_beskrivning": ""
+    },
+    {
+      "vetenskapligt_namn": "cortinarius infractus s. lat.",
+      "svenskt_namn": "Bitterspindling",
+      "skivfarg_unga": [
+        "gråvit",
+        "blå"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "miljo": [
+        "Barrskog"
+      ],
+      "tradslag": [],
+      "hattfarg": [
+        "brun",
+        "blå"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "brun",
+        "vit",
+        "blå"
+      ],
+      "kottfarg": [
+        "vit",
+        "brun"
+      ],
+      "slemmig": [
+        "Nej"
+      ],
+      "lukt": "",
+      "fruktkroppstid": [],
+      "viktiga_karaktarer": [
+        "hygrofan hatt"
+      ],
+      "forvaxlingsarter": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/Bitterspindling_1.webp",
+          "bildtext": "Bitterspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/Bitterspindling_2.webp",
+          "bildtext": "Bitterspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
+      "hattfarg_beskrivning": "hygrofan",
+      "fotfarg_beskrivning": "",
+      "kottfarg_beskrivning": ""
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius argutus",
+      "svenskt_namn": "Asprotspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "ingen",
+        "röd"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "miljo": [],
+      "tradslag": [
+        "asp"
+      ],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "kottfarg": [
+        "vit"
+      ],
+      "slemmig": [],
+      "lukt": "",
+      "fruktkroppstid": [],
+      "viktiga_karaktarer": [
+        "Ibland utdragen fotbas"
+      ],
+      "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
