@@ -30,7 +30,9 @@
       "hattfarg": [
         "vit"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -93,7 +95,9 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "fjällig"
+      ],
       "fotfarg": [
         "gul",
         "vit"
@@ -150,7 +154,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå",
@@ -201,14 +208,19 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "gul"
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Svagt hygrofan"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "jästspindling",
@@ -263,13 +275,17 @@
         "brun",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "blå"
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Hatt med radiära orange hygrofana streck"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "safirspindling",
@@ -336,7 +352,9 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -391,14 +409,19 @@
         "vit",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "silvergråbrun urblekt hatt, klubbformig fot"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "lundspindling",
@@ -446,7 +469,9 @@
         "brun",
         "röd"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -507,7 +532,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "gul"
       ],
@@ -567,7 +595,9 @@
         "vit",
         "blå"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "blå",
         "vit"
@@ -621,7 +651,9 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "gul"
@@ -670,7 +702,9 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -725,7 +759,10 @@
         "gul",
         "vit"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -772,13 +809,17 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "jämngul hatt, vitt yttre velum"
+      ],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
@@ -819,13 +860,17 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "gul"
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "hatt mättat gröngul ofta med mörkare mitt samt ljusgult kött"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "brunskivig citronspindling",
@@ -876,7 +921,10 @@
         "blå",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -926,7 +974,9 @@
         "vit",
         "blå"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "blå"
       ],
@@ -977,7 +1027,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "gul"
@@ -1039,7 +1092,9 @@
         "blå",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "gul",
@@ -1091,7 +1146,9 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "fjällig"
+      ],
       "fotfarg": [
         "gul",
         "grön"
@@ -1148,7 +1205,9 @@
       "hattfarg": [
         "blå"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "blå",
         "vit"
@@ -1207,7 +1266,9 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -1267,7 +1328,9 @@
         "gul",
         "grön"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "gul",
         "vit"
@@ -1329,7 +1392,10 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "vit",
         "gul",
@@ -1389,13 +1455,17 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
       "lukt": "honung",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "hatt< 4 cm och halvgenomskinlig"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "granatspindling",
@@ -1445,7 +1515,9 @@
         "gul",
         "grön"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "gul"
@@ -1510,7 +1582,9 @@
         "röd",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "blå"
       ],
@@ -1625,7 +1699,9 @@
         "vit",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -1686,14 +1762,18 @@
         "blå",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "blå"
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Hatt gråaktig med inväxta fibrer och gulaktiga velumplättar"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "vattrad spindling",
@@ -1754,7 +1834,10 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -1813,7 +1896,9 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "blå",
         "gul",
@@ -1873,14 +1958,18 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "gul"
       ],
       "lukt": "angenäm citronmeliss",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Doft angenäm, hatt med låg puckel"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "kryddspindling",
@@ -1943,7 +2032,9 @@
         "röd",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -2007,7 +2098,9 @@
         "blå",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "blå"
       ],
@@ -2060,7 +2153,9 @@
         "vit",
         "blå"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -2137,7 +2232,9 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
       "fotfarg": [
         "vit",
         "gul"
@@ -2197,7 +2294,9 @@
         "brun",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "gul",
@@ -2273,7 +2372,9 @@
         "gul",
         "blå"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -2338,13 +2439,17 @@
         "gul",
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
       "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Vitfransig hattkant"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "liten rävspindling",
@@ -2396,14 +2501,19 @@
         "gul",
         "grön"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
       "fotfarg": [
         "gul",
         "grön"
       ],
       "lukt": "sötaktig",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Som ung med intensiv gröngul färg"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "mjölspindling",
@@ -2455,7 +2565,9 @@
       "hattfarg": [
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "gul"
       ],
@@ -2527,7 +2639,9 @@
         "gul",
         "vit"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -2577,7 +2691,9 @@
         "vit",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit",
         "blå"
@@ -2632,9 +2748,7 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [
-        "kantad bulb"
-      ],
+      "fotknol_form": [],
       "tradslag": [
         "bok"
       ],
@@ -2642,7 +2756,9 @@
         "vit",
         "gul"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
@@ -2716,14 +2832,16 @@
       "hattfarg": [
         "brun"
       ],
-      "hattstruktur": [],
+      "hattstruktur": [
+        "slät"
+      ],
       "fotfarg": [
         "vit"
       ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
-        "rynkad hattkant"
+        "rynkad hattkant ofta med vita velumfransar"
       ],
       "forvaxlingsarter": [],
       "bilder": [],
@@ -2758,19 +2876,53 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "hassel",
+        "lind"
+      ],
+      "hattfarg": [
+        "gul",
+        "grön",
+        "blå"
+      ],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "viktiga_karaktarer": [
+        "gulgrön hatt med blå kant"
+      ],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "lövstrimspindling",
+          "vetenskapligt_namn": "Cortinarius magicus",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "mjölspindling",
+          "vetenskapligt_namn": "Cortinarius flavovirens",
+          "skillnad": "luktar mjöl och har gulgrå skivor"
+        },
+        {
+          "svenskt_namn": "praktspindling",
+          "vetenskapligt_namn": "Cortinarius eucaeruleus",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2796,24 +2948,55 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek",
+        "hassel",
+        "lind",
+        "avenbok"
+      ],
+      "hattfarg": [
+        "gul",
+        "grön"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul",
+        "grön"
+      ],
       "lukt": "hattkant med flammiga blå toner",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "mjölspindling",
-          "vetenskapligt_namn": "Cortinarius flavovirens"
+          "vetenskapligt_namn": "Cortinarius flavovirens",
+          "skillnad": "luktar mjöl"
+        },
+        {
+          "svenskt_namn": "slottsspindling",
+          "vetenskapligt_namn": "Cortinarius rufoolivaceus",
+          "skillnad": ""
+        },
+        {
+          "svenskt_namn": "Sydlig gyllenspindling",
+          "vetenskapligt_namn": "Cortinarius bergeronii",
+          "skillnad": "växer med bok"
         }
       ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "gul",
+        "grön"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2839,20 +3022,41 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "tradslag": [
+        "avenbok",
+        "hassel"
+      ],
+      "hattfarg": [
+        "brun"
+      ],
+      "hattstruktur": [
+        "fjällig"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "gammal ost",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "viktiga_karaktarer": [
+        "Kött som gulnar"
+      ],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "rävspindling",
+          "vetenskapligt_namn": "Cortinarius vulpinus",
+          "skillnad": "gulnar inte"
+        }
+      ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "mörknar vid tumning",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
-      "kottfarg_beskrivning": "",
+      "kottfarg": [
+        "vit"
+      ],
+      "kottfarg_beskrivning": "gulnar vid tumning",
       "slemmig": [],
       "extra_1": [],
       "extra_2": [],
@@ -2876,19 +3080,36 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek"
+      ],
+      "hattfarg": [
+        "brun",
+        "gul"
+      ],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul",
+        "brun"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2915,11 +3136,20 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek"
+      ],
+      "hattfarg": [
+        "brun",
+        "gul"
+      ],
       "hattstruktur": [],
-      "fotfarg": [],
+      "fotfarg": [
+        "vit"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -2927,9 +3157,11 @@
       ],
       "forvaxlingsarter": [],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "filthårig",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2938,12 +3170,13 @@
     },
     {
       "vetenskapligt_namn": "Cortinarius rhizophorus",
-      "svenskt_namn": "apelspindling",
+      "svenskt_namn": "apelsinpindling",
       "skivfarg_unga": [
         "gråvit"
       ],
       "koh_hatt": [
-        "ingen"
+        "ingen",
+        "gul"
       ],
       "koh_fotknol": [
         "ingen"
@@ -2954,19 +3187,38 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
+      "fotknol_form": [
+        "rundad bulb"
+      ],
+      "tradslag": [
+        "ek",
+        "björk",
+        "hassel",
+        "avenbok"
+      ],
       "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "Kornspindling",
+          "vetenskapligt_namn": "cortunarius cliduchus",
+          "skillnad": "har kornig hatt"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -2994,21 +3246,48 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek",
+        "bok",
+        "avenbok",
+        "hassel",
+        "lind"
+      ],
+      "hattfarg": [
+        "röd",
+        "gul",
+        "blå",
+        "brun"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
         "flammig hatt"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "kopparspindling",
+          "vetenskapligt_namn": "Cortinarius cupreorufus",
+          "skillnad": "växer med barrträd"
+        }
+      ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "ofta flammig",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "blå",
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3034,11 +3313,19 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "rundad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "hattfarg": [
+        "brun"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -3051,9 +3338,11 @@
         }
       ],
       "bilder": [],
-      "hattfarg_beskrivning": "",
+      "hattfarg_beskrivning": "med ljusa velomplättar",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3080,19 +3369,32 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "bok"
+      ],
+      "hattfarg": [
+        "gul",
+        "brun"
+      ],
       "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotfarg": [
+        "vit",
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3117,11 +3419,24 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "hassel",
+        "ek",
+        "bok",
+        "lind"
+      ],
+      "hattfarg": [
+        "blå"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "blå"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -3131,7 +3446,10 @@
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3156,11 +3474,23 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "bok",
+        "lind"
+      ],
+      "hattfarg": [
+        "gul"
+      ],
+      "hattstruktur": [
+        "slät",
+        "fjällig"
+      ],
+      "fotfarg": [
+        "gul"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -3176,7 +3506,9 @@
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3201,19 +3533,42 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "rundad bulb"
+      ],
+      "tradslag": [
+        "ek"
+      ],
+      "hattfarg": [
+        "vit",
+        "gul",
+        "brun"
+      ],
+      "hattstruktur": [
+        "slät",
+        "fjällig",
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "vit",
+        "brun"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "liten rävspindling",
+          "vetenskapligt_namn": "Cortinarius pseudovulpinus",
+          "skillnad": "har gulnande kött"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3239,24 +3594,47 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "rundad bulb"
+      ],
+      "tradslag": [
+        "lind",
+        "hassel",
+        "ek"
+      ],
+      "hattfarg": [
+        "gul",
+        "röd",
+        "brun"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "gul",
+        "grön"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "bananspindling",
           "vetenskapligt_namn": "Cortinarius nanceiensis"
+        },
+        {
+          "svenskt_namn": "mejramspindling",
+          "vetenskapligt_namn": "Cortinarius majoranae",
+          "skillnad": ""
         }
       ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3283,11 +3661,28 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek",
+        "bok",
+        "hassel",
+        "lind"
+      ],
+      "hattfarg": [
+        "röd",
+        "blå",
+        "vit"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "röd",
+        "vit",
+        "gul"
+      ],
       "lukt": "karamell, doftschersmin",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -3296,8 +3691,10 @@
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "fotfarg_beskrivning": "rosa med gul bulb",
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3323,19 +3720,43 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "bok"
+      ],
+      "hattfarg": [
+        "vit",
+        "gul"
+      ],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "nunnespindling",
+          "vetenskapligt_namn": "Cortinarius subalbescens",
+          "skillnad": "växer med ek och hassel"
+        },
+        {
+          "svenskt_namn": "munkspindling",
+          "vetenskapligt_namn": "Cortinarius coerulescentium",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3360,19 +3781,38 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "tradslag": [
+        "lind"
+      ],
+      "hattfarg": [
+        "brun",
+        "gul"
+      ],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "lövklubbspindling",
+          "vetenskapligt_namn": "Cortinarius luteocingulatus",
+          "skillnad": "har slät hatt"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3398,14 +3838,31 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "bok",
+        "ek",
+        "avenbok",
+        "hassel"
+      ],
+      "hattfarg": [
+        "brun",
+        "gul"
+      ],
+      "hattstruktur": [
+        "inväxt trådig",
+        "slät"
+      ],
+      "fotfarg": [
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
-      "viktiga_karaktarer": [],
+      "viktiga_karaktarer": [
+        "Ockrabrun hatt och lila fot vit nedan bulben"
+      ],
       "forvaxlingsarter": [
         {
           "svenskt_namn": "lilaflockig spindling",
@@ -3414,8 +3871,10 @@
       ],
       "bilder": [],
       "hattfarg_beskrivning": "",
-      "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "fotfarg_beskrivning": "knöl vit",
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3440,20 +3899,35 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek"
+      ],
+      "hattfarg": [
+        "vit",
+        "blå"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit",
+        "blå"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
-      "kottfarg_beskrivning": "",
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
+      "kottfarg_beskrivning": "violett i foten",
       "slemmig": [],
       "extra_1": [],
       "extra_2": [],
@@ -3479,11 +3953,25 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek",
+        "bok",
+        "lind",
+        "avenbok"
+      ],
+      "hattfarg": [
+        "brun"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "blå",
+        "vit"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -3498,9 +3986,14 @@
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
       "kottfarg_beskrivning": "",
-      "slemmig": [],
+      "slemmig": [
+        "Ja"
+      ],
       "extra_1": [],
       "extra_2": [],
       "extra_3": []
@@ -3523,19 +4016,37 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "tradslag": [
+        "bok"
+      ],
+      "hattfarg": [
+        "brun"
+      ],
+      "hattstruktur": [
+        "fjällig"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "lukt": "unken",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "liten rävspindling",
+          "vetenskapligt_namn": "Cortinarius pseudovulpinus",
+          "skillnad": "växer med avenbok och hassel och har gulnande kött"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3563,11 +4074,24 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "ek"
+      ],
+      "hattfarg": [
+        "gul",
+        "grön"
+      ],
+      "hattstruktur": [
+        "slät",
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "gul",
+        "grön"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
@@ -3577,7 +4101,9 @@
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3602,11 +4128,23 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "tradslag": [
+        "bok"
+      ],
+      "hattfarg": [
+        "vit",
+        "gul"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit",
+        "gul"
+      ],
       "lukt": "jäst",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
@@ -3623,7 +4161,9 @@
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
@@ -3648,22 +4188,42 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
       "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
+      "hattfarg": [
+        "blå",
+        "gul",
+        "röd"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "gul",
+        "grön"
+      ],
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
         "distinkt violett skikt under hatthud"
       ],
-      "forvaxlingsarter": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "kopparspindling",
+          "vetenskapligt_namn": "Cortinarius cupreorufus",
+          "skillnad": "växer med barrträd"
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
-      "kottfarg_beskrivning": "",
+      "kottfarg": [
+        "gul",
+        "vit"
+      ],
+      "kottfarg_beskrivning": "violett zon under hatthuden",
       "slemmig": [],
       "extra_1": [],
       "extra_2": [],
@@ -3687,19 +4247,33 @@
       "miljo": [
         "Lövskog"
       ],
-      "fotknol_form": [],
-      "tradslag": [],
-      "hattfarg": [],
-      "hattstruktur": [],
-      "fotfarg": [],
-      "lukt": [],
+      "fotknol_form": [
+        "kantad bulb",
+        "rundad bulb"
+      ],
+      "tradslag": [
+        "ek"
+      ],
+      "hattfarg": [
+        "gul"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "gul"
+      ],
+      "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [],
       "forvaxlingsarter": [],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
-      "kottfarg": [],
+      "kottfarg": [
+        "vit",
+        "gul"
+      ],
       "kottfarg_beskrivning": "",
       "slemmig": [],
       "extra_1": [],
