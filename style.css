@@ -728,6 +728,78 @@ h3 {
   box-shadow: inset 4px 0 0 var(--accent);
 }
 
+.compact-result-row {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+
+.compact-result-row .species-button {
+  margin-bottom: 0;
+}
+
+.comparison .species-exclusion-cell {
+  width: 1%;
+  padding: 5px 3px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.species-exclusion-button {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #59635c;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.species-exclusion-button:hover {
+  background: var(--surface-soft);
+  border-color: var(--border);
+}
+
+.species-exclusion-button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.comparison tr.is-manually-excluded > td,
+.compact-result-row.is-manually-excluded .species-button {
+  background: #f0f0eb;
+  color: #59635c;
+}
+
+.is-manually-excluded .cell-values,
+.is-manually-excluded .scientific-cell,
+.is-manually-excluded .scientific-name {
+  color: #59635c;
+}
+
+.is-manually-excluded .species-name,
+.is-manually-excluded .compact-status-cell,
+.is-manually-excluded .comparison-cell,
+.is-manually-excluded .status-badge {
+  font-weight: 400;
+}
+
+.comparison .excluded-group-start > td {
+  border-top: 2px solid var(--border);
+}
+
+.compact-result-row.excluded-group-start {
+  border-top: 2px solid var(--border);
+  padding-top: 6px;
+  margin-top: 6px;
+}
+
 .species-name {
   display: block;
   grid-column: 1;
@@ -851,19 +923,15 @@ th.comparison-remove-cell {
   width: 36px;
   height: 36px;
   padding: 0;
-  border: 1px solid #e8bab6;
-  border-radius: 6px;
-  background: #fff4f3;
+  border: 0;
+  background: transparent;
   color: #b42318;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.comparison-remove:hover,
-.comparison-remove:focus-visible {
-  background: #fce0dd;
-  outline: 2px solid #b42318;
-  outline-offset: 2px;
+.comparison-remove:hover {
+  color: #861b12;
 }
 
 .comparison-differing-toggle {

@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "import:bilder": "node scripts/import-bilder.js",
-    "test": "node --test tests/import-bilder.test.js"
+    "test": "node --test tests/import-bilder.test.js tests/app-exclusion.test.js"
   },
   "dependencies": {
     "sharp": "^0.35.4"

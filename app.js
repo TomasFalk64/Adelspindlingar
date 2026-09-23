@@ -193,6 +193,7 @@
     evaluated: [],
     selectedSpeciesKey: null,
     customSpeciesKeys: [],
+    excludedSpeciesKeys: new Set(),
     compactSortKey: "svenskt_namn",
     allSpeciesSort: {
       key: "vetenskapligt_namn",
@@ -1003,14 +1004,14 @@
     const query = elements.nameSearch.value.trim().toLocaleLowerCase("sv");
     const fullCount = state.evaluated.filter((result) => result.status === "full").length;
     const possibleCount = state.evaluated.filter((result) => result.status === "possible").length;
-    const filteredByName = state.evaluated.filter((result) => {
+    const filteredByName = sortExcludableResults(state.evaluated.filter((result) => {
       if (!query) {
         return true;
       }
 
       const haystack = `${getDisplayName(result.species)} ${formatScientificName(result.species.vetenskapligt_namn)}`.toLocaleLowerCase("sv");
       return haystack.includes(query);
-    }).sort(compareCompactResults);
+    }), compareCompactResults);
 
     const sortsBySwedish = state.compactSortKey === "svenskt_namn";
     elements.sortResults.textContent = sortsBySwedish ? "↓ Svenskt namn" : "↓ Vetenskapligt namn";
@@ -1035,7 +1036,10 @@
 
     const fragment = document.createDocumentFragment();
 
-    filteredByName.forEach((result) => {
+    filteredByName.forEach((result, index) => {
+      const row = document.createElement("div");
+      row.className = "compact-result-row";
+      markExcludedRow(row, result, index, filteredByName);
       const button = document.createElement("button");
       button.type = "button";
       button.className = "species-button";
@@ -1057,7 +1061,8 @@
       status.textContent = result.status === "full" ? "Trolig" : "Möjlig";
 
       button.append(swedishName, scientificName, status);
-      fragment.append(button);
+      row.append(createExclusionButton(result.species), button);
+      fragment.append(row);
     });
 
     elements.compactResults.append(fragment);
@@ -1110,7 +1115,6 @@
       ...DEFAULT_COMPARISON_FIELDS
     ])];
     const showOnlyDiffering = options.showOnlyDiffering ?? elements.comparisonDifferingOnly.checked;
-    const includeMatchStatus = !showOnlyDiffering;
     const comparisonFields = showOnlyDiffering
       ? selectedFields.filter((field) => isDifferingComparisonFieldForResults(results, field))
       : selectedFields;
@@ -1130,76 +1134,7 @@
 
     elements.comparisonSummary.textContent = `${results.length} arter visas i jämförelsen.`;
 
-    const table = document.createElement("table");
-    const thead = document.createElement("thead");
-    const tbody = document.createElement("tbody");
-    const headerRow = document.createElement("tr");
-
-    [
-      "Svenskt namn",
-      "Vetenskapligt namn",
-      ...(includeMatchStatus ? ["Träffstatus"] : []),
-      ...comparisonFields.map(getFieldLabel),
-      "Viktiga karaktärer"
-    ].forEach((heading) => {
-      const th = document.createElement("th");
-      th.scope = "col";
-      th.textContent = heading;
-      headerRow.append(th);
-    });
-
-    thead.append(headerRow);
-
-    results.forEach((result) => {
-      const row = document.createElement("tr");
-      row.className = "clickable-row";
-      row.tabIndex = 0;
-      row.addEventListener("click", () => selectSpecies(result.species, { scrollToDetails: true }));
-      row.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          selectSpecies(result.species, { scrollToDetails: true });
-        }
-      });
-
-      appendCell(row, getDisplayName(result.species));
-      appendCell(row, formatScientificName(result.species.vetenskapligt_namn), "scientific-cell");
-      if (includeMatchStatus) {
-        appendCell(row, result.status === "full" ? "Trolig" : "Möjlig", "compact-status-cell");
-      }
-
-      comparisonFields.forEach((field) => {
-        const td = document.createElement("td");
-        const cell = document.createElement("div");
-        const evaluation = getComparisonFieldEvaluation(result, field);
-        cell.className = `comparison-cell ${getCellClass(evaluation.state)}`;
-        cell.title = getEvaluationLabel(evaluation.state);
-
-        if (evaluation.state === "missing") {
-          const missing = document.createElement("span");
-          missing.className = "unknown-marker";
-          missing.textContent = "?";
-          missing.title = "Uppgift saknas";
-          cell.append(missing);
-        } else if (MARKER_DETAIL_FIELDS.has(field)) {
-          cell.append(renderValueMarkers(evaluation.values));
-        } else {
-          const values = document.createElement("span");
-          values.className = "cell-values";
-          values.textContent = evaluation.values.length > 0 ? evaluation.values.join(", ") : "?";
-          cell.append(values);
-        }
-
-        td.append(cell);
-        row.append(td);
-      });
-
-      appendCell(row, formatList(result.species.viktiga_karaktarer));
-      tbody.append(row);
-    });
-
-    table.append(thead, tbody);
-    elements.comparison.append(table);
+    elements.comparison.append(createComparisonTable(results, comparisonFields, { includeMatchStatus: true }));
   }
 
   function getComparisonFieldEvaluation(result, field) {
@@ -1336,12 +1271,78 @@
     });
   }
 
+  function getExclusionKey(species) {
+    return species.id != null ? `id:${species.id}` : `name:${normalizeLookupName(species.vetenskapligt_namn)}`;
+  }
+
+  function isManuallyExcluded(species) {
+    return state.excludedSpeciesKeys.has(getExclusionKey(species));
+  }
+
+  function sortExcludableResults(results, compareActive) {
+    const statusOrder = { full: 0, possible: 1, contradiction: 2 };
+    return [...results].sort((a, b) => {
+      const aExcluded = isManuallyExcluded(a.species);
+      const bExcluded = isManuallyExcluded(b.species);
+      if (aExcluded !== bExcluded) return aExcluded ? 1 : -1;
+      if (!aExcluded) {
+        if (compareActive) return compareActive(a, b);
+        const statusDifference = statusOrder[a.status] - statusOrder[b.status];
+        if (statusDifference) return statusDifference;
+      }
+      return getDisplayName(a.species).localeCompare(getDisplayName(b.species), "sv")
+        || String(a.species.vetenskapligt_namn || "").localeCompare(String(b.species.vetenskapligt_namn || ""), "sv");
+    });
+  }
+
+  function markExcludedRow(row, result, index, results) {
+    if (!isManuallyExcluded(result.species)) return;
+    row.classList.add("is-manually-excluded");
+    if (index === 0 || !isManuallyExcluded(results[index - 1].species)) {
+      row.classList.add("excluded-group-start");
+    }
+  }
+
+  function createExclusionButton(species) {
+    const excluded = isManuallyExcluded(species);
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "species-exclusion-button";
+    button.textContent = excluded ? "↶" : "⊘";
+    button.title = excluded ? "Ta tillbaka arten" : "Uteslut arten";
+    button.setAttribute("aria-label", button.title);
+    button.setAttribute("aria-pressed", String(excluded));
+    button.dataset.exclusionKey = getExclusionKey(species);
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const key = getExclusionKey(species);
+      if (state.excludedSpeciesKeys.has(key)) state.excludedSpeciesKeys.delete(key);
+      else state.excludedSpeciesKeys.add(key);
+      const container = button.closest(".comparison, .compact-results");
+      const filters = getSelectedFilters();
+      renderCompactResults();
+      renderComparison(filters);
+      renderLookalikeComparison(filters);
+      renderCustomComparison(filters);
+      // Keep keyboard focus on the same control after its row moves.
+      Array.from(container?.querySelectorAll(".species-exclusion-button") || [])
+        .find((candidate) => candidate.dataset.exclusionKey === key)?.focus({ preventScroll: true });
+    });
+    return button;
+  }
+
   function createComparisonTable(results, comparisonFields, options = {}) {
     const { includeMatchStatus = true, onRemove } = options;
     const table = document.createElement("table");
     const thead = document.createElement("thead");
     const tbody = document.createElement("tbody");
     const headerRow = document.createElement("tr");
+
+    const exclusionHeading = document.createElement("th");
+    exclusionHeading.scope = "col";
+    exclusionHeading.className = "species-exclusion-cell";
+    exclusionHeading.setAttribute("aria-label", "Manuell uteslutning");
+    headerRow.append(exclusionHeading);
 
     [
       "Svenskt namn",
@@ -1360,9 +1361,11 @@
 
     thead.append(headerRow);
 
-    results.forEach((result) => {
+    const sortedResults = sortExcludableResults(results);
+    sortedResults.forEach((result, index) => {
       const row = document.createElement("tr");
       row.className = "clickable-row";
+      markExcludedRow(row, result, index, sortedResults);
       row.tabIndex = 0;
       row.addEventListener("click", () => selectSpecies(result.species, { scrollToDetails: true }));
       row.addEventListener("keydown", (event) => {
@@ -1373,6 +1376,10 @@
         }
       });
 
+      const exclusionCell = document.createElement("td");
+      exclusionCell.className = "species-exclusion-cell";
+      exclusionCell.append(createExclusionButton(result.species));
+      row.append(exclusionCell);
       appendCell(row, getDisplayName(result.species));
       appendCell(row, formatScientificName(result.species.vetenskapligt_namn), "scientific-cell");
       if (includeMatchStatus) {
