@@ -166,6 +166,26 @@
       <div id="lookalike-comparison" class="comparison"></div>
     </section>
 
+    <section class="panel comparison-panel" aria-labelledby="custom-comparison-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="custom-comparison-heading">Jämför valfria arter</h2>
+          <p id="custom-comparison-summary" aria-live="polite">Sök och lägg till arter att jämföra.</p>
+        </div>
+        <label class="comparison-differing-toggle">
+          <input id="custom-comparison-differing-only" type="checkbox" checked>
+          Visa bara skiljande karaktärer
+        </label>
+      </div>
+      <div class="custom-comparison-search">
+        <label for="custom-species-search">Lägg till art</label>
+        <input id="custom-species-search" type="search" placeholder="Skriv svenskt eller vetenskapligt artnamn" autocomplete="off" aria-controls="custom-species-suggestions">
+        <div id="custom-species-suggestions" class="lookalike-suggestions" aria-label="Artförslag" hidden></div>
+        <p id="custom-species-search-status" class="muted" role="status"></p>
+      </div>
+      <div id="custom-comparison" class="comparison"></div>
+    </section>
+
     <section class="panel all-species-panel" aria-labelledby="all-species-heading">
       <div class="section-head">
         <div>

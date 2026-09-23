@@ -192,6 +192,7 @@
     landscapeOccurrenceLookup: new Map(),
     evaluated: [],
     selectedSpeciesKey: null,
+    customSpeciesKeys: [],
     compactSortKey: "svenskt_namn",
     allSpeciesSort: {
       key: "vetenskapligt_namn",
@@ -234,6 +235,7 @@
       [".details-panel", "details-heading"],
       [".comparison-panel", "comparison-heading"],
       [".comparison-panel", "lookalike-comparison-heading"],
+      [".comparison-panel", "custom-comparison-heading"],
       [".all-species-panel", "all-species-heading"]
     ];
     sections.forEach(([selector, headingId]) => {
@@ -557,6 +559,12 @@
     elements.comparisonDifferingOnlyDuplicate = document.querySelector("#comparison-differing-only-duplicate");
     elements.lookalikeComparison = document.querySelector("#lookalike-comparison");
     elements.lookalikeComparisonSummary = document.querySelector("#lookalike-comparison-summary");
+    elements.customComparison = document.querySelector("#custom-comparison");
+    elements.customComparisonSummary = document.querySelector("#custom-comparison-summary");
+    elements.customComparisonDifferingOnly = document.querySelector("#custom-comparison-differing-only");
+    elements.customSpeciesSearch = document.querySelector("#custom-species-search");
+    elements.customSpeciesSuggestions = document.querySelector("#custom-species-suggestions");
+    elements.customSpeciesSearchStatus = document.querySelector("#custom-species-search-status");
     elements.details = document.querySelector("#species-details");
     elements.detailsPanel = document.querySelector(".details-panel");
     elements.allSpeciesTable = document.querySelector("#all-species-table");
@@ -572,6 +580,16 @@
     elements.openPhlegmacium.addEventListener("click", () => openDialog(elements.phlegmaciumDialog));
     elements.phlegmaciumDialog.addEventListener("click", closeDialogOnBackdropClick);
     elements.nameSearch.addEventListener("input", renderCompactResults);
+    elements.customSpeciesSearch.addEventListener("input", renderCustomSpeciesSuggestions);
+    elements.customComparisonDifferingOnly.addEventListener("change", () => renderCustomComparison());
+    elements.customSpeciesSearch.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        elements.customSpeciesSuggestions.querySelector("button")?.focus();
+      } else if (event.key === "Escape") {
+        elements.customSpeciesSuggestions.hidden = true;
+      }
+    });
     elements.sortResults.addEventListener("click", toggleCompactResultSort);
     elements.comparisonLikelyOnly.addEventListener("change", () => {
       const filters = getSelectedFilters();
@@ -969,6 +987,8 @@
     renderCompactResults();
     renderComparison(filters);
     renderLookalikeComparison(filters);
+    renderCustomComparison(filters);
+    renderCustomSpeciesSuggestions();
 
     if (state.selectedSpeciesKey) {
       const selected = state.evaluated.find((result) => getSpeciesKey(result.species) === state.selectedSpeciesKey);
@@ -1228,6 +1248,68 @@
     }));
   }
 
+  function renderCustomSpeciesSuggestions() {
+    const query = normalizeNameForComparison(elements.customSpeciesSearch.value);
+    const matches = query ? state.species.filter((species) =>
+      !state.customSpeciesKeys.includes(getSpeciesKey(species)) &&
+      [species.svenskt_namn, species.vetenskapligt_namn, formatScientificName(species.vetenskapligt_namn)]
+        .some((name) => normalizeNameForComparison(name).includes(query))
+    ).sort((a, b) => getDisplayName(a).localeCompare(getDisplayName(b), "sv")).slice(0, 3) : [];
+    elements.customSpeciesSuggestions.replaceChildren();
+    elements.customSpeciesSuggestions.hidden = matches.length === 0;
+    elements.customSpeciesSearchStatus.textContent = query && !matches.length
+      ? "Inga fler matchande arter att lägga till." : "";
+    matches.forEach((species) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "lookalike-suggestion";
+      const name = document.createElement("span");
+      name.className = "lookalike-suggestion-swedish";
+      name.textContent = getDisplayName(species);
+      const scientificName = document.createElement("span");
+      scientificName.className = "lookalike-suggestion-scientific";
+      scientificName.textContent = formatScientificName(species.vetenskapligt_namn);
+      button.append(name, scientificName);
+      button.addEventListener("click", () => {
+        const key = getSpeciesKey(species);
+        if (!state.customSpeciesKeys.includes(key)) state.customSpeciesKeys.push(key);
+        elements.customSpeciesSearch.value = "";
+        renderCustomComparison();
+        renderCustomSpeciesSuggestions();
+        elements.customSpeciesSearch.focus();
+      });
+      elements.customSpeciesSuggestions.append(button);
+    });
+  }
+
+  function renderCustomComparison(filters = getSelectedFilters()) {
+    elements.customComparison.replaceChildren();
+    const fieldFilters = Object.fromEntries(Object.entries(filters).filter(([field]) => field !== LANDSCAPE_FILTER_KEY));
+    const results = state.customSpeciesKeys
+      .map((key) => state.species.find((species) => getSpeciesKey(species) === key))
+      .filter(Boolean)
+      .map((species) => evaluateSpecies(species, fieldFilters));
+    elements.customComparisonSummary.textContent = results.length
+      ? `${results.length} arter visas i listan.` : "Sök och lägg till arter att jämföra.";
+    if (!results.length) return;
+    const selectedFields = [...new Set([
+      ...Object.keys(fieldFilters).filter((field) => field !== "hattstruktur"),
+      ...DEFAULT_COMPARISON_FIELDS
+    ])];
+    const showOnlyDiffering = elements.customComparisonDifferingOnly.checked;
+    const fields = showOnlyDiffering
+      ? selectedFields.filter((field) => isDifferingComparisonFieldForResults(results, field)) : selectedFields;
+    elements.customComparison.append(createComparisonTable(results, fields, {
+      includeMatchStatus: !showOnlyDiffering,
+      onRemove: (species) => {
+        state.customSpeciesKeys = state.customSpeciesKeys.filter((key) => key !== getSpeciesKey(species));
+        renderCustomComparison();
+        renderCustomSpeciesSuggestions();
+        elements.customSpeciesSearch.focus();
+      }
+    }));
+  }
+
   function getLookalikeSpecies(species) {
     if (!Array.isArray(species.forvaxlingsarter) || species.forvaxlingsarter.length === 0) {
       return [];
@@ -1255,7 +1337,7 @@
   }
 
   function createComparisonTable(results, comparisonFields, options = {}) {
-    const { includeMatchStatus = true } = options;
+    const { includeMatchStatus = true, onRemove } = options;
     const table = document.createElement("table");
     const thead = document.createElement("thead");
     const tbody = document.createElement("tbody");
@@ -1266,11 +1348,13 @@
       "Vetenskapligt namn",
       ...(includeMatchStatus ? ["Träffstatus"] : []),
       ...comparisonFields.map(getFieldLabel),
-      "Viktiga karaktärer"
+      "Viktiga karaktärer",
+      ...(onRemove ? ["Ta bort"] : [])
     ].forEach((heading) => {
       const th = document.createElement("th");
       th.scope = "col";
       th.textContent = heading;
+      if (onRemove && heading === "Ta bort") th.className = "comparison-remove-cell";
       headerRow.append(th);
     });
 
@@ -1282,6 +1366,7 @@
       row.tabIndex = 0;
       row.addEventListener("click", () => selectSpecies(result.species, { scrollToDetails: true }));
       row.addEventListener("keydown", (event) => {
+        if (event.target !== row) return;
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
           selectSpecies(result.species, { scrollToDetails: true });
@@ -1321,6 +1406,22 @@
       });
 
       appendCell(row, formatList(result.species.viktiga_karaktarer));
+      if (onRemove) {
+        const cell = document.createElement("td");
+        cell.className = "comparison-remove-cell";
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "comparison-remove";
+        button.textContent = "×";
+        button.setAttribute("aria-label", `Ta bort ${getDisplayName(result.species)} från jämförelsen`);
+        button.title = button.getAttribute("aria-label");
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+          onRemove(result.species);
+        });
+        cell.append(button);
+        row.append(cell);
+      }
       tbody.append(row);
     });
 
