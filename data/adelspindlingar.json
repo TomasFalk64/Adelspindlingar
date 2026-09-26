@@ -7313,7 +7313,20 @@
           "skillnad": ""
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/klubbspindling.webp",
+          "bildtext": "Klubbspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/klubbspindling_2.webp",
+          "bildtext": "Klubbspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg_beskrivning": ""

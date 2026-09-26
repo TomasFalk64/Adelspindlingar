@@ -364,9 +364,9 @@
         extraFilters.append(button);
         return { ...field, button, value, labelElement: label };
       });
-      document.querySelector("#close-mushroom-color").addEventListener("click", () => dialog.close());
       document.querySelector("#clear-mushroom-color").addEventListener("click", () => {
         if (elements.mushroomActiveField) resetFilterGroup(elements.mushroomActiveField);
+        dialog.close();
       });
       dialog.addEventListener("click", (event) => {
         if (event.target !== dialog) return;
@@ -421,6 +421,7 @@
           .find((control) => control.value === option);
         original.checked = input.checked;
         updateResults();
+        document.querySelector("#mushroom-color-dialog").close();
       });
       elements.mushroomColorOptions.append(choice);
     });
@@ -429,6 +430,12 @@
     document.querySelector("#mushroom-color-dialog").showModal();
     Object.entries(MUSHROOM_FIELDS).forEach(([id, key]) => {
       elements.mushroomSvg.querySelector(`#${id}`).setAttribute("aria-expanded", String(key === fieldKey));
+    });
+    const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    document.querySelector(".mushroom-panel").scrollIntoView({
+      behavior: prefersReducedMotion ? "instant" : "smooth",
+      block: "start",
+      inline: "nearest"
     });
   }
 
