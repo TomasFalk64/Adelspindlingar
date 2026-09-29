@@ -4414,7 +4414,9 @@
       ],
       "hattfarg": [
         "blå",
-        "röd"
+        "röd",
+        "gul",
+        "brun"
       ],
       "hattstruktur": [
         "slät"
@@ -4435,7 +4437,14 @@
           "skillnad": "har ljusare kött och ej anisdoft"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/anisspindling_1.webp",
+          "bildtext": "anisspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "från centrum rodnande med ålder",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -4611,7 +4620,7 @@
       "lukt": "",
       "fruktkroppstid": [],
       "viktiga_karaktarer": [
-        "Basalmycel vit. mörka fräknar och KOH -."
+        "Basalmycel vit utan KOH-reaktion. mörka fräknar och KOH -."
       ],
       "forvaxlingsarter": [
         {
@@ -4634,7 +4643,20 @@
           "vetenskapligt_namn": "Cortinarius dalecarlicus"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/barrfagerspindling_1.webp",
+          "bildtext": "barrfagerspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/barrfagerspindling_2.webp",
+          "bildtext": "barrfagerspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "centrala mörkbruna velumfjäll",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -5685,7 +5707,14 @@
           "skillnad": "större med jämnfärgad hatt och jordnötsdoft"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/gyllenspindling_1.webp",
+          "bildtext": "gyllenspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -5920,7 +5949,8 @@
       ],
       "hattfarg": [
         "blå",
-        "vit"
+        "vit",
+        "gul"
       ],
       "hattstruktur": [
         "inväxt trådig"
@@ -5936,18 +5966,27 @@
         {
           "svenskt_namn": "tallpraktspindling",
           "vetenskapligt_namn": "Cortinarius terpsichores"
-        },
-        {
-          "svenskt_namn": "duvspindling",
-          "vetenskapligt_namn": "Cortinarius caesiocanescens & foetens",
-          "skillnad": ""
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/duvspindling_3.webp",
+          "bildtext": "duvspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/duvspindling_4.webp",
+          "bildtext": "duvspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "gråblå",
       "fotfarg_beskrivning": "",
       "kottfarg": [
-        "vit"
+        "vit",
+        "blå"
       ],
       "kottfarg_beskrivning": "",
       "slemmig": [
@@ -6439,7 +6478,14 @@
           "skillnad": "luktar anis och gröngult kött"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/kopparspindling_1.webp",
+          "bildtext": "kopparspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "lilagrå, senare rödgul, hattkant länge inrullad och grålila",
       "fotfarg_beskrivning": "",
       "kottfarg": [
