@@ -4709,7 +4709,20 @@
         "cylindrisk gråvit fot"
       ],
       "forvaxlingsarter": [],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/jämtlandspindling_1.webp",
+          "bildtext": "jämtlandsspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/jämtlandspindling_2.webp",
+          "bildtext": "jämtlandsspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -4878,7 +4891,26 @@
           "vetenskapligt_namn": "Cortinarius dalecarlicus"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/violettrandad_spindling_(3).webp",
+          "bildtext": "violettrandad spindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/violettrandad_spindling_(4).webp",
+          "bildtext": "violettrandad spindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/violettrandad_spindling.webp",
+          "bildtext": "violettrandad spindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -6622,7 +6654,26 @@
           "skillnad": "har ej inväxt trådig hatthud"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/kungsspindling_1.webp",
+          "bildtext": "kungsspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/kungsspindling_2.webp",
+          "bildtext": "kungsspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/kungsspindling_3.webp",
+          "bildtext": "kungsspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
