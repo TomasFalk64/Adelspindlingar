@@ -322,7 +322,8 @@
         .mushroom-trait, .mushroom-trait .hotspot { cursor: pointer; -webkit-user-select: none; user-select: none; }
         .mushroom-trait:focus { outline: none; }
         .mushroom-trait:hover rect, .mushroom-trait:focus-visible rect,
-        .mushroom-trait[aria-expanded="true"] rect { stroke-width: 5; }
+        .mushroom-trait[aria-expanded="true"] rect,
+        .mushroom-trait.is-active rect { stroke-width: 5; }
       `;
       svg.setAttribute("role", "group");
       svg.setAttribute("aria-label", "Svampbild med valbara egenskaper");
@@ -462,6 +463,9 @@
     });
 
     const svg = elements.mushroomSvg;
+    Object.entries(MUSHROOM_FIELDS).forEach(([id, fieldKey]) => {
+      svg.querySelector(`#${id}`).classList.toggle("is-active", (filters[fieldKey] || []).length > 0);
+    });
     const bulbValues = filters.fotknol_form || [];
     const bulbShape = bulbValues.includes("kantad bulb") ? "kantad"
       : bulbValues.includes("rundad bulb") ? "rundad" : "saknas";
