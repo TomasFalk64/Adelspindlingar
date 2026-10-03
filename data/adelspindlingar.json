@@ -4523,9 +4523,12 @@
         "gul"
       ],
       "koh_hatt": [
-        "röd"
+        "ingen"
       ],
-      "koh_fotknol": [],
+      "koh_fotknol": [
+        "röd",
+        "ingen"
+      ],
       "koh_kott": [
         "röd"
       ],
@@ -4541,7 +4544,8 @@
         "tall"
       ],
       "hattfarg": [
-        "gul"
+        "gul",
+        "brun"
       ],
       "hattstruktur": [
         "slät",
