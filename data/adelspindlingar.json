@@ -4443,6 +4443,12 @@
           "bildtext": "anisspindling",
           "fotograf": "Tomas Falk",
           "licens": ""
+        },
+        {
+          "fil": "data/bilder/anisspindling.webp",
+          "bildtext": "anisspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
         }
       ],
       "hattfarg_beskrivning": "från centrum rodnande med ålder",
@@ -4979,7 +4985,14 @@
           "skillnad": "luktar bättre"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/odörspindling_1.webp",
+          "bildtext": "odörspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "blekgul mot kanten",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -6861,7 +6874,26 @@
         "Lågt sittande bulb"
       ],
       "forvaxlingsarter": [],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/strimspindling_1_(2).webp",
+          "bildtext": "strimspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/Strimspindling_2_(2).webp",
+          "bildtext": "strimspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/14-04_Strimspindling_2026-10-06_1.webp",
+          "bildtext": "strimspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
