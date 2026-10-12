@@ -6537,6 +6537,18 @@
           "bildtext": "kopparspindling",
           "fotograf": "Tomas Falk",
           "licens": ""
+        },
+        {
+          "fil": "data/bilder/kopparspindling_(2).webp",
+          "bildtext": "kopparspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/kopparspindling.webp",
+          "bildtext": "kopparspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
         }
       ],
       "hattfarg_beskrivning": "lilagrå, senare rödgul, hattkant länge inrullad och grålila",
@@ -7253,7 +7265,20 @@
           "vetenskapligt_namn": "Cortinarius splendens"
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/äggspindling_(2).webp",
+          "bildtext": "äggspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/äggspindling.webp",
+          "bildtext": "äggspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -7321,7 +7346,14 @@
           "skillnad": ""
         }
       ],
-      "bilder": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/tvillingspindling.webp",
+          "bildtext": "tvillingspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
       "kottfarg": [
@@ -7579,6 +7611,263 @@
         "Ibland utdragen fotbas"
       ],
       "forvaxlingsarter": [],
+      "bilder": [],
+      "hattfarg_beskrivning": "",
+      "fotfarg_beskrivning": "",
+      "kottfarg_beskrivning": ""
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius variecolor",
+      "svenskt_namn": "kantspindling",
+      "skivfarg_unga": [
+        "blå",
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "gul"
+      ],
+      "koh_fotknol": [
+        "gul"
+      ],
+      "koh_kott": [
+        "gul"
+      ],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "miljo": [
+        "Barrskog",
+        "Kalkbarrskog"
+      ],
+      "tradslag": [
+        "gran"
+      ],
+      "hattfarg": [
+        "brun"
+      ],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "vit",
+        "blå"
+      ],
+      "kottfarg": [
+        "vit",
+        "blå"
+      ],
+      "slemmig": [],
+      "lukt": "lite unknen",
+      "fruktkroppstid": [],
+      "viktiga_karaktarer": [
+        "lila toner på hatt el. hattkant"
+      ],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "råttspindling",
+          "vetenskapligt_namn": "Cortinarius spadicellus",
+          "skillnad": "större och utan lila toner på hatten"
+        }
+      ],
+      "bilder": [
+        {
+          "fil": "data/bilder/kantspindling_(2).webp",
+          "bildtext": "kantspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/kantspindling.webp",
+          "bildtext": "kantspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/kantspindling_3.webp",
+          "bildtext": "kantspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
+      "hattfarg_beskrivning": "",
+      "fotfarg_beskrivning": "",
+      "kottfarg_beskrivning": ""
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius subrugulosus",
+      "svenskt_namn": "fågelträcksspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "röd"
+      ],
+      "koh_fotknol": [
+        "röd"
+      ],
+      "koh_kott": [
+        "röd"
+      ],
+      "fotknol_form": [
+        "kantad bulb"
+      ],
+      "miljo": [
+        "Barrskog"
+      ],
+      "tradslag": [
+        "gran",
+        "tall"
+      ],
+      "hattfarg": [
+        "brun"
+      ],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "kottfarg": [
+        "vit"
+      ],
+      "slemmig": [],
+      "lukt": "",
+      "fruktkroppstid": [],
+      "viktiga_karaktarer": [],
+      "forvaxlingsarter": [],
+      "bilder": [
+        {
+          "fil": "data/bilder/Fågelträcksspindling_(2).webp",
+          "bildtext": "fågelträcksspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/Fågelträcksspindling_(3).webp",
+          "bildtext": "fågelträcksspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        },
+        {
+          "fil": "data/bilder/Fågelträcksspindling.webp",
+          "bildtext": "fågelträcksspindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
+      "hattfarg_beskrivning": "",
+      "fotfarg_beskrivning": "",
+      "kottfarg_beskrivning": ""
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius claricolor",
+      "svenskt_namn": "vitkransad spindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "miljo": [],
+      "tradslag": [
+        "gran",
+        "tall"
+      ],
+      "hattfarg": [
+        "brun"
+      ],
+      "hattstruktur": [
+        "slät"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "kottfarg": [
+        "vit"
+      ],
+      "slemmig": [],
+      "lukt": "",
+      "fruktkroppstid": [],
+      "viktiga_karaktarer": [
+        "Rynkad hattkant med vitt velum"
+      ],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "tuvspindling",
+          "vetenskapligt_namn": "Cortinarius turmalis",
+          "skillnad": ""
+        }
+      ],
+      "bilder": [
+        {
+          "fil": "data/bilder/13-56_Vitkransadspindling_2026-10-06_1.webp",
+          "bildtext": "vitkransad spindling",
+          "fotograf": "Tomas Falk",
+          "licens": ""
+        }
+      ],
+      "hattfarg_beskrivning": "",
+      "fotfarg_beskrivning": "",
+      "kottfarg_beskrivning": ""
+    },
+    {
+      "vetenskapligt_namn": "Cortinarius turmalis",
+      "svenskt_namn": "tuvspindling",
+      "skivfarg_unga": [
+        "gråvit"
+      ],
+      "koh_hatt": [
+        "ingen"
+      ],
+      "koh_fotknol": [
+        "ingen"
+      ],
+      "koh_kott": [
+        "ingen"
+      ],
+      "fotknol_form": [
+        "ingen bulb"
+      ],
+      "miljo": [
+        "Barrskog"
+      ],
+      "tradslag": [
+        "gran",
+        "tall"
+      ],
+      "hattfarg": [
+        "brun",
+        "gul"
+      ],
+      "hattstruktur": [
+        "inväxt trådig"
+      ],
+      "fotfarg": [
+        "vit"
+      ],
+      "kottfarg": [
+        "vit"
+      ],
+      "slemmig": [],
+      "lukt": "",
+      "fruktkroppstid": [],
+      "viktiga_karaktarer": [],
+      "forvaxlingsarter": [
+        {
+          "svenskt_namn": "vitkransad spindling",
+          "vetenskapligt_namn": "Cortinarius claricolor",
+          "skillnad": ""
+        }
+      ],
       "bilder": [],
       "hattfarg_beskrivning": "",
       "fotfarg_beskrivning": "",
