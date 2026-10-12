@@ -4529,7 +4529,7 @@
         "gul"
       ],
       "koh_hatt": [
-        "ingen"
+        "röd"
       ],
       "koh_fotknol": [
         "röd",
@@ -4543,7 +4543,8 @@
         "Barrskog"
       ],
       "fotknol_form": [
-        "rundad bulb"
+        "rundad bulb",
+        "ingen bulb"
       ],
       "tradslag": [
         "gran",
@@ -4603,7 +4604,8 @@
         "brun"
       ],
       "koh_fotknol": [
-        "ingen"
+        "ingen",
+        "brun"
       ],
       "koh_kott": [
         "ingen"
@@ -4622,10 +4624,12 @@
         "brun"
       ],
       "hattstruktur": [
-        "fjällig"
+        "fjällig",
+        "slät"
       ],
       "fotfarg": [
-        "vit"
+        "vit",
+        "brun"
       ],
       "lukt": "",
       "fruktkroppstid": [],
